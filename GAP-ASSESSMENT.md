@@ -1,0 +1,368 @@
+# ISO/IEC 42001:2023 Gap Assessment Checklist
+
+**Organization:** ___________________________
+**Assessment Date:** ___________________________
+**Assessor:** ___________________________
+**AIMS Scope:** ___________________________
+
+> Use this checklist to assess your current state against ISO/IEC 42001:2023 requirements.
+> Score each item: **C** = Conformant | **PC** = Partially Conformant | **NC** = Non-Conformant | **NA** = Not Applicable
+
+---
+
+## Scoring Summary
+
+| Clause | Total Items | C | PC | NC | NA | % Conformant |
+|--------|-------------|---|----|----|-----|-------------|
+| 4 — Context | 12 | | | | | |
+| 5 — Leadership | 10 | | | | | |
+| 6 — Planning | 15 | | | | | |
+| 7 — Support | 12 | | | | | |
+| 8 — Operation | 25 | | | | | |
+| 9 — Performance | 10 | | | | | |
+| 10 — Improvement | 6 | | | | | |
+| Annex A Controls | 38 | | | | | |
+| **TOTAL** | **128** | | | | | |
+
+---
+
+## Clause 4 — Context of the Organization
+
+### 4.1 Understanding the Organization and Its Context
+
+| # | Requirement | Status | Evidence / Notes |
+|---|-------------|--------|-----------------|
+| 4.1.1 | Has the organization identified external issues relevant to its AI governance (regulatory environment, technology landscape, societal expectations)? | | |
+| 4.1.2 | Has the organization identified internal issues relevant to AI governance (culture, resources, capabilities, existing governance structures)? | | |
+| 4.1.3 | Are these internal and external issues documented and reviewed regularly? | | |
+
+### 4.2 Understanding Needs of Interested Parties
+
+| # | Requirement | Status | Evidence / Notes |
+|---|-------------|--------|-----------------|
+| 4.2.1 | Has the organization identified interested parties relevant to the AIMS (regulators, customers, employees, AI developers, affected communities, third parties)? | | |
+| 4.2.2 | Are the relevant requirements of each interested party documented? | | |
+| 4.2.3 | Does the organization monitor and review information about interested parties and their requirements? | | |
+
+### 4.3 Determining the Scope of the AIMS
+
+| # | Requirement | Status | Evidence / Notes |
+|---|-------------|--------|-----------------|
+| 4.3.1 | Is the AIMS scope clearly defined (which AI systems, products, services, and processes are included)? | | |
+| 4.3.2 | Does the scope statement consider internal and external issues, interested party requirements, and interfaces with other systems? | | |
+| 4.3.3 | Is the scope documented and available to relevant parties? | | |
+
+### 4.4 AI Management System
+
+| # | Requirement | Status | Evidence / Notes |
+|---|-------------|--------|-----------------|
+| 4.4.1 | Has the organization established, implemented, maintained, and continually improved an AIMS? | | |
+| 4.4.2 | Does the AIMS include the processes needed and their interactions? | | |
+| 4.4.3 | Is the AIMS integrated with other management systems where appropriate (ISO 27001, ISO 9001)? | | |
+
+---
+
+## Clause 5 — Leadership
+
+### 5.1 Leadership and Commitment
+
+| # | Requirement | Status | Evidence / Notes |
+|---|-------------|--------|-----------------|
+| 5.1.1 | Does top management demonstrate leadership and commitment to the AIMS? | | |
+| 5.1.2 | Is an AI policy established and communicated throughout the organization? | | |
+| 5.1.3 | Are AIMS objectives established and compatible with the strategic direction? | | |
+| 5.1.4 | Is adequate resource for the AIMS ensured by top management? | | |
+| 5.1.5 | Does top management promote a culture that supports responsible AI? | | |
+
+### 5.2 AI Policy
+
+| # | Requirement | Status | Evidence / Notes |
+|---|-------------|--------|-----------------|
+| 5.2.1 | Is there a documented AI Policy appropriate to the organization's purpose? | | |
+| 5.2.2 | Does the AI Policy include a commitment to responsible AI development and use? | | |
+| 5.2.3 | Does the AI Policy include a commitment to comply with applicable legal requirements? | | |
+| 5.2.4 | Is the AI Policy communicated within the organization and available to interested parties? | | |
+
+### 5.3 Roles, Responsibilities and Authorities
+
+| # | Requirement | Status | Evidence / Notes |
+|---|-------------|--------|-----------------|
+| 5.3.1 | Are roles and responsibilities for AI governance clearly assigned and communicated? | | |
+
+---
+
+## Clause 6 — Planning
+
+### 6.1 Actions to Address Risks and Opportunities
+
+| # | Requirement | Status | Evidence / Notes |
+|---|-------------|--------|-----------------|
+| 6.1.1 | Has the organization determined risks and opportunities that need to be addressed for the AIMS? | | |
+| 6.1.2 | Is there a documented AI risk assessment process? | | |
+| 6.1.3 | Does the AI risk assessment identify risks associated with AI systems (bias, safety, security, transparency, data quality)? | | |
+| 6.1.4 | Are AI risks assessed using defined criteria for likelihood and consequence? | | |
+| 6.1.5 | Are AI risk assessment results documented and retained? | | |
+| 6.1.6 | Is there a documented AI risk treatment process? | | |
+| 6.1.7 | Are appropriate AI risk treatment options selected and implemented? | | |
+| 6.1.8 | Is a Statement of Applicability (SoA) for Annex A controls produced and maintained? | | |
+| 6.1.9 | Are AI risk treatment plans documented and approved? | | |
+
+### 6.2 AI Objectives
+
+| # | Requirement | Status | Evidence / Notes |
+|---|-------------|--------|-----------------|
+| 6.2.1 | Are AI objectives established at relevant functions and levels? | | |
+| 6.2.2 | Are AI objectives measurable and consistent with the AI Policy? | | |
+| 6.2.3 | Are plans for achieving AI objectives documented (what, who, when, how evaluated)? | | |
+
+---
+
+## Clause 7 — Support
+
+### 7.1 Resources
+
+| # | Requirement | Status | Evidence / Notes |
+|---|-------------|--------|-----------------|
+| 7.1.1 | Are resources needed for the AIMS determined and provided? | | |
+| 7.1.2 | Are human resources with necessary AI governance competencies available? | | |
+| 7.1.3 | Are technical infrastructure and tools required for AI governance provided? | | |
+
+### 7.2 Competence
+
+| # | Requirement | Status | Evidence / Notes |
+|---|-------------|--------|-----------------|
+| 7.2.1 | Are the competencies required for AI governance roles determined? | | |
+| 7.2.2 | Do persons doing AI governance work have necessary education, training, or experience? | | |
+| 7.2.3 | Are actions taken to acquire necessary competencies where gaps are identified? | | |
+| 7.2.4 | Is evidence of competence documented and retained? | | |
+
+### 7.3 Awareness
+
+| # | Requirement | Status | Evidence / Notes |
+|---|-------------|--------|-----------------|
+| 7.3.1 | Are persons working in the scope of the AIMS aware of the AI Policy? | | |
+| 7.3.2 | Are relevant staff aware of their contribution to AIMS effectiveness? | | |
+| 7.3.3 | Are relevant staff aware of implications of not conforming with AIMS requirements? | | |
+
+### 7.4 Communication
+
+| # | Requirement | Status | Evidence / Notes |
+|---|-------------|--------|-----------------|
+| 7.4.1 | Is there a defined internal communication process for AI governance matters? | | |
+| 7.4.2 | Is there a defined external communication process for AI governance (transparency reporting, stakeholder communications)? | | |
+
+### 7.5 Documented Information
+
+| # | Requirement | Status | Evidence / Notes |
+|---|-------------|--------|-----------------|
+| 7.5.1 | Does the AIMS include all documented information required by the standard? | | |
+| 7.5.2 | Are AIMS documents controlled (creation, update, approval, version control)? | | |
+
+---
+
+## Clause 8 — Operation
+
+### 8.1 Operational Planning and Control
+
+| # | Requirement | Status | Evidence / Notes |
+|---|-------------|--------|-----------------|
+| 8.1.1 | Are processes needed to meet AI governance requirements planned, implemented, and controlled? | | |
+| 8.1.2 | Are controls implemented to ensure externally provided AI-related products and services conform to requirements? | | |
+
+### 8.2 AI Risk Assessment (Operational)
+
+| # | Requirement | Status | Evidence / Notes |
+|---|-------------|--------|-----------------|
+| 8.2.1 | Are AI risk assessments performed at planned intervals and when significant changes occur? | | |
+| 8.2.2 | Are AI risk assessment results documented? | | |
+
+### 8.3 AI Risk Treatment (Operational)
+
+| # | Requirement | Status | Evidence / Notes |
+|---|-------------|--------|-----------------|
+| 8.3.1 | Are AI risk treatment plans implemented? | | |
+| 8.3.2 | Are records of AI risk treatment retained? | | |
+
+### 8.4 AI System Impact Assessment
+
+| # | Requirement | Status | Evidence / Notes |
+|---|-------------|--------|-----------------|
+| 8.4.1 | Is there a process to conduct AI system impact assessments (ASIA) before deployment? | | |
+| 8.4.2 | Do impact assessments consider societal impacts, fairness, privacy, and human rights? | | |
+| 8.4.3 | Are ASIA results documented and used to inform risk treatment decisions? | | |
+| 8.4.4 | Are ASIAs repeated when AI systems undergo significant changes? | | |
+
+### 8.5 AI System Lifecycle
+
+| # | Requirement | Status | Evidence / Notes |
+|---|-------------|--------|-----------------|
+| 8.5.1 | Is there a defined and documented AI system lifecycle process? | | |
+| 8.5.2 | Are data governance controls in place for AI training data (quality, provenance, bias, privacy)? | | |
+| 8.5.3 | Are AI system design and development processes controlled (documentation, version control, security by design)? | | |
+| 8.5.4 | Are AI systems verified and validated before deployment (performance testing, bias evaluation, adversarial testing)? | | |
+| 8.5.5 | Are AI system deployment processes controlled (human oversight, monitoring setup, rollback procedures)? | | |
+| 8.5.6 | Are deployed AI systems monitored (performance drift, fairness degradation, security incidents)? | | |
+| 8.5.7 | Is there a process for AI system decommissioning (data deletion, model archiving, stakeholder notification)? | | |
+
+### 8.6 Related Policies and Processes
+
+| # | Requirement | Status | Evidence / Notes |
+|---|-------------|--------|-----------------|
+| 8.6.1 | Are responsible AI principles embedded into operational processes? | | |
+| 8.6.2 | Is human oversight maintained for high-stakes AI decisions? | | |
+| 8.6.3 | Are AI incident response procedures defined and documented? | | |
+
+---
+
+## Clause 9 — Performance Evaluation
+
+### 9.1 Monitoring, Measurement, Analysis and Evaluation
+
+| # | Requirement | Status | Evidence / Notes |
+|---|-------------|--------|-----------------|
+| 9.1.1 | Are AI governance metrics defined and documented? | | |
+| 9.1.2 | Are AI governance metrics monitored at defined intervals? | | |
+| 9.1.3 | Are analysis results documented and used for decision making? | | |
+
+### 9.2 Internal Audit
+
+| # | Requirement | Status | Evidence / Notes |
+|---|-------------|--------|-----------------|
+| 9.2.1 | Is there a documented internal audit program for the AIMS? | | |
+| 9.2.2 | Are internal audits conducted at planned intervals against ISO 42001 requirements? | | |
+| 9.2.3 | Are audit findings reported to management and corrective actions taken? | | |
+
+### 9.3 Management Review
+
+| # | Requirement | Status | Evidence / Notes |
+|---|-------------|--------|-----------------|
+| 9.3.1 | Does top management review the AIMS at planned intervals? | | |
+| 9.3.2 | Do management reviews consider AIMS performance, audit results, and improvement opportunities? | | |
+| 9.3.3 | Are management review outputs documented and include decisions on improvement? | | |
+
+---
+
+## Clause 10 — Improvement
+
+### 10.1 Continual Improvement
+
+| # | Requirement | Status | Evidence / Notes |
+|---|-------------|--------|-----------------|
+| 10.1.1 | Does the organization continually improve the suitability, adequacy, and effectiveness of the AIMS? | | |
+| 10.1.2 | Is there a documented continual improvement plan? | | |
+
+### 10.2 Nonconformity and Corrective Action
+
+| # | Requirement | Status | Evidence / Notes |
+|---|-------------|--------|-----------------|
+| 10.2.1 | When nonconformities occur, are they identified and reacted to? | | |
+| 10.2.2 | Are root cause analyses conducted for nonconformities? | | |
+| 10.2.3 | Are corrective actions implemented and their effectiveness evaluated? | | |
+| 10.2.4 | Is documented information of nonconformities and corrective actions retained? | | |
+
+---
+
+## Annex A — Controls Assessment
+
+### Domain A.2 — Policies for AI
+
+| Control | Requirement | Applicable (Y/N) | Status | Notes |
+|---------|-------------|-----------------|--------|-------|
+| A.2.2 | AI Policy is documented, approved, communicated, and reviewed | | | |
+| A.2.3 | AI-specific policies address prohibited uses, ethics principles, and human oversight | | | |
+
+### Domain A.3 — Internal Organization
+
+| Control | Requirement | Applicable (Y/N) | Status | Notes |
+|---------|-------------|-----------------|--------|-------|
+| A.3.2 | Roles and responsibilities for AI governance are defined and assigned | | | |
+| A.3.3 | Segregation of duties is applied where appropriate in AI development | | | |
+| A.3.4 | Contact with AI authorities and regulators is maintained | | | |
+
+### Domain A.4 — Resources for AI Systems
+
+| Control | Requirement | Applicable (Y/N) | Status | Notes |
+|---------|-------------|-----------------|--------|-------|
+| A.4.2 | Human resources competencies for AI are maintained and documented | | | |
+| A.4.3 | Infrastructure for AI systems meets security and performance requirements | | | |
+
+### Domain A.5 — Assessing Impacts of AI Systems
+
+| Control | Requirement | Applicable (Y/N) | Status | Notes |
+|---------|-------------|-----------------|--------|-------|
+| A.5.2 | AI system impact assessments are conducted before deployment | | | |
+| A.5.3 | Societal, ethical, and human rights impacts are considered in assessments | | | |
+| A.5.4 | Assessment results inform AI risk treatment decisions | | | |
+
+### Domain A.6 — AI System Lifecycle
+
+| Control | Requirement | Applicable (Y/N) | Status | Notes |
+|---------|-------------|-----------------|--------|-------|
+| A.6.1 | AI system design requirements include responsible AI principles | | | |
+| A.6.2 | AI system development follows a documented process with version control | | | |
+| A.6.2.3 | AI model documentation (model cards) is maintained | | | |
+| A.6.2.5 | Adversarial testing and robustness testing is performed | | | |
+| A.6.2.6 | Bias evaluation is conducted during development and validation | | | |
+| A.6.2.8 | AI systems are tested in representative environments before deployment | | | |
+
+### Domain A.7 — Data for AI Systems
+
+| Control | Requirement | Applicable (Y/N) | Status | Notes |
+|---------|-------------|-----------------|--------|-------|
+| A.7.2 | Training data quality criteria are defined and applied | | | |
+| A.7.3 | Data provenance and lineage are documented | | | |
+| A.7.4 | Personal data used in AI systems is handled in compliance with privacy regulations | | | |
+| A.7.5 | Bias in training data is identified and mitigated | | | |
+
+### Domain A.8 — Information for Interested Parties
+
+| Control | Requirement | Applicable (Y/N) | Status | Notes |
+|---------|-------------|-----------------|--------|-------|
+| A.8.2 | Information about AI system capabilities and limitations is provided to users | | | |
+| A.8.3 | AI system transparency and explainability requirements are defined | | | |
+| A.8.4 | Users are informed when interacting with AI systems | | | |
+
+### Domain A.9 — Use of AI Systems
+
+| Control | Requirement | Applicable (Y/N) | Status | Notes |
+|---------|-------------|-----------------|--------|-------|
+| A.9.2 | Acceptable use policies for AI systems are defined | | | |
+| A.9.3 | Human oversight mechanisms are implemented for high-stakes AI decisions | | | |
+| A.9.4 | Processes exist to handle AI system failures and errors | | | |
+
+### Domain A.10 — Third-Party and Customer AI
+
+| Control | Requirement | Applicable (Y/N) | Status | Notes |
+|---------|-------------|-----------------|--------|-------|
+| A.10.2 | Third-party AI systems are assessed for risk before adoption | | | |
+| A.10.3 | Contractual requirements for AI governance are included in supplier agreements | | | |
+| A.10.4 | Customer AI governance requirements are identified and met | | | |
+
+---
+
+## Gap Assessment Summary and Remediation Plan
+
+### Key Findings
+
+| Priority | Finding | Clause | Risk | Recommended Action | Owner | Target Date |
+|----------|---------|--------|------|-------------------|-------|------------|
+| High | | | | | | |
+| High | | | | | | |
+| Medium | | | | | | |
+| Medium | | | | | | |
+| Low | | | | | | |
+
+### Overall Maturity Rating
+
+| Level | Description | Current Assessment |
+|-------|-------------|-------------------|
+| Level 1 — Initial | Ad hoc AI governance, minimal documentation | |
+| Level 2 — Developing | Basic policies exist, inconsistently applied | |
+| Level 3 — Defined | Documented AIMS processes, consistently followed | |
+| Level 4 — Managed | Measured and monitored AI governance | |
+| Level 5 — Optimizing | Continual improvement embedded, mature AIMS | |
+
+---
+
+*This checklist is based on ISO/IEC 42001:2023. Use alongside the full standard text for detailed requirements.*
+*Maintained by [Ankit Uniyal](https://github.com/Ankit-Uniyal) — ISO 42001 Lead Auditor | GRC Lead, PureHealth Group*

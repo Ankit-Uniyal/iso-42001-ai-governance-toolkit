@@ -1,275 +1,249 @@
 # 🤖 ISO/IEC 42001:2023 AI Governance Toolkit
 
-> **"AI is not just a technology decision — it's a governance imperative."**
-
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![ISO 42001](https://img.shields.io/badge/Standard-ISO%2042001%3A2023-blue)](https://www.iso.org/standard/81230.html)
+[![ISO Standard](https://img.shields.io/badge/Standard-ISO%2FIEC%2042001%3A2023-blue)](https://www.iso.org/standard/81230.html)
 [![Maintained by](https://img.shields.io/badge/Maintained%20by-Ankit%20Uniyal-green)](https://github.com/Ankit-Uniyal)
 
-A **free, practical implementation toolkit** for ISO/IEC 42001:2023 AI Management Systems (AIMS) — built by a practitioner, for practitioners. Includes gap assessment checklists, AI risk register templates, controls mapping, and a phased implementation roadmap.
+> *"AI is not just a technology decision — it's a governance imperative."*
+
+**The most comprehensive open-source ISO/IEC 42001:2023 AI Governance Toolkit available.** Built by an ISO 42001 Lead Auditor for GRC professionals, AI governance practitioners, compliance leads, and organizations seeking certification.
 
 ---
 
-## Table of Contents
+## 🎯 What's in this Toolkit?
 
-- [What is ISO 42001](#what-is-iso-42001)
-- [Who Should Use This](#who-should-use-this)
-- [Toolkit Contents](#toolkit-contents)
-- [ISO 42001 Structure](#iso-42001-structure)
-- [Implementation Roadmap](#implementation-roadmap)
-- [Clause Breakdown](#clause-breakdown)
-- [Framework Mapping](#framework-mapping)
-- [Resources](#resources)
-- [About the Author](#about-the-author)
+This toolkit provides **everything you need** to implement, operate, and get certified against ISO/IEC 42001:2023 — the international standard for AI Management Systems (AIMS). It covers all **10 clauses**, all **39 Annex A controls** across **9 control domains**, and every mandatory document required by the standard.
 
 ---
 
-## What is ISO 42001
+## 📁 Complete Document Library
 
-**ISO/IEC 42001:2023** is the world's first international standard for **AI Management Systems (AIMS)**. Published in December 2023, it provides a systematic framework for organizations to establish responsible AI governance, assess and treat AI-specific risks, demonstrate accountability to regulators, and align with the EU AI Act, NIST AI RMF, and other AI regulations.
+### 🏛️ Governance and Policy Documents
 
-### Key Facts
+| Document | Description | ISO 42001 Clause | Annex A Controls |
+|----------|-------------|-----------------|-----------------|
+| [AIMS-POLICY-TEMPLATE.md](./AIMS-POLICY-TEMPLATE.md) | Complete AI Management System Policy — purpose, scope, ethical principles, roles, prohibited uses, lifecycle requirements | Clause 5.2 | A.2.2, A.2.3 |
 
-| Feature | Detail |
-|---------|--------|
-| Standard | ISO/IEC 42001:2023 |
-| Published | December 2023 |
-| Type | Management System Standard (like ISO 27001, ISO 9001) |
-| Certification | Yes — third-party certification available |
-| Scope | Any organization developing, providing, or using AI systems |
-| Annex SL | Yes — compatible with ISO 27001, ISO 9001, ISO 22301 |
+### 📋 Assessment and Planning Templates
 
----
+| Document | Description | ISO 42001 Clause | Annex A Controls |
+|----------|-------------|-----------------|-----------------|
+| [GAP-ASSESSMENT.md](./GAP-ASSESSMENT.md) | Full gap assessment checklist covering all 128 requirements (Clauses 4-10 + Annex A) with scoring and maturity rating | All Clauses | All Annex A |
+| [AI-SYSTEM-IMPACT-ASSESSMENT.md](./AI-SYSTEM-IMPACT-ASSESSMENT.md) | 10-part ASIA template covering benefits, fundamental rights, bias, privacy, safety, societal impacts, human oversight | Clause 8.4 | A.5.2, A.5.3, A.5.4 |
+| [STATEMENT-OF-APPLICABILITY.md](./STATEMENT-OF-APPLICABILITY.md) | Complete SoA with all 39 Annex A controls — applicability, justification, status, implementation reference | Clause 6.1.3 | All Annex A |
+| [AI-RISK-REGISTER.md](./AI-RISK-REGISTER.md) | Risk register with 44 pre-populated risks across 8 categories, scoring matrix, and treatment log | Clause 6.1, 8.2, 8.3 | A.5.2 |
 
-## Who Should Use This
+### 🔄 Operational Procedures
 
-- **GRC Professionals** leading AI governance programs
-- **CISOs and Risk Officers** integrating AI risk into enterprise risk frameworks
-- **ISO 42001 Lead Implementers and Auditors** preparing for certification
-- **AI Product Teams** building responsible AI into development pipelines
-- **Compliance Officers** mapping AI to EU AI Act, NIST AI RMF, UAE AI Strategy
-- **Internal Auditors** assessing AI governance maturity
+| Document | Description | ISO 42001 Clause | Annex A Controls |
+|----------|-------------|-----------------|-----------------|
+| [AI-LIFECYCLE-MANAGEMENT-PROCEDURE.md](./AI-LIFECYCLE-MANAGEMENT-PROCEDURE.md) | End-to-end AI lifecycle from design to decommissioning — governance gates, model cards, bias evaluation, adversarial testing, monitoring | Clause 8.5 | A.6.1.1 – A.6.5.1 (13 controls) |
+| [AI-INCIDENT-RESPONSE-PROCEDURE.md](./AI-INCIDENT-RESPONSE-PROCEDURE.md) | 7-phase incident response lifecycle — detection, classification, containment, investigation, notification, remediation, post-incident review | Clause 10.2 | A.8.5, A.9.4, A.6.4.1 |
+| [AI-SUPPLIER-ASSESSMENT.md](./AI-SUPPLIER-ASSESSMENT.md) | Third-party AI due diligence template covering governance maturity, bias, security, privacy, regulatory compliance, and contract requirements | Clause 8.1 | A.10.2, A.10.3, A.10.4 |
 
----
+### 📊 Audit and Review Templates
 
-## Toolkit Contents
+| Document | Description | ISO 42001 Clause | Annex A Controls |
+|----------|-------------|-----------------|-----------------|
+| [INTERNAL-AUDIT-PROCEDURE.md](./INTERNAL-AUDIT-PROCEDURE.md) | Complete internal audit framework — audit program, checklist for all clauses and all 39 Annex A controls, report template, corrective action tracking | Clause 9.2 | All Annex A |
+| [MANAGEMENT-REVIEW-TEMPLATE.md](./MANAGEMENT-REVIEW-TEMPLATE.md) | Full management review template with all 13 required inputs, KPI dashboard, risk review, incident review, and output decisions | Clause 9.3 | — |
 
-| File | Description |
-|------|-------------|
-| README.md | Overview, structure, roadmap, and clause breakdown |
-| GAP-ASSESSMENT.md | Clause-by-clause gap assessment checklist (200+ questions) |
-| AI-RISK-REGISTER.md | AI risk register template with scoring methodology |
-| CONTROLS-MAPPING.md | ISO 42001 controls mapped to EU AI Act, NIST AI RMF, ISO 27001 |
-| AI-POLICY-TEMPLATE.md | Editable AI Policy and AI Ethics Policy templates |
-| IMPLEMENTATION-GUIDE.md | Phased 12-month implementation guide with milestones |
+### 🗺️ Reference and Mapping Documents
 
----
-
-## ISO 42001 Structure
-
-ISO 42001 follows the **Annex SL** high-level structure (same as ISO 27001):
-
-| Clause | Title | Key Focus |
-|--------|-------|-----------|
-| 4 | Context of the Organization | Scope, stakeholders, internal/external context |
-| 5 | Leadership | AI Policy, roles, top management commitment |
-| 6 | Planning | AI risk assessment, risk treatment, AI objectives |
-| 7 | Support | Resources, competence, awareness, communication |
-| 8 | Operation | AI lifecycle, impact assessment, data governance |
-| 9 | Performance Evaluation | Monitoring, internal audit, management review |
-| 10 | Improvement | Corrective action, continual improvement |
-| Annex A | Controls Reference | 38 controls across 9 control domains |
-
-### Annex A Control Domains
-
-| Domain | Focus Area |
-|--------|------------|
-| A.2 — Policies for AI | AI policy framework |
-| A.3 — Internal organization | AI governance structure and roles |
-| A.4 — Resources for AI systems | Compute, data, and human resources |
-| A.5 — Assessing impacts of AI | AI system impact assessment (ASIA) |
-| A.6 — AI system lifecycle | Design, develop, deploy, decommission |
-| A.7 — Data for AI systems | Data quality, bias, provenance |
-| A.8 — Information for interested parties | Transparency and disclosure |
-| A.9 — Use of AI systems | Responsible use policies |
-| A.10 — Third-party and customer relationships | Vendor AI risk, supply chain |
+| Document | Description | ISO 42001 Clause | Annex A Controls |
+|----------|-------------|-----------------|-----------------|
+| [CONTROLS-MAPPING.md](./CONTROLS-MAPPING.md) | Cross-reference of all 39 Annex A controls mapped to EU AI Act articles, NIST AI RMF functions, and ISO 27001 controls | Clause 6.1.3 | All Annex A |
+| [IMPLEMENTATION-ROADMAP.md](./IMPLEMENTATION-ROADMAP.md) | 12-month implementation roadmap — 4 phases, milestones, deliverables, resource estimates, common pitfalls | All Clauses | All Annex A |
 
 ---
 
-## Implementation Roadmap
+## 📖 ISO/IEC 42001:2023 Standard Structure
 
-### Phase 1 — Foundation (Months 1 to 2)
+### Standard Clauses Overview
 
-| Activity | Owner | Output |
-|----------|-------|--------|
-| Executive sponsorship and AI governance mandate | C-Suite | Signed mandate |
-| Appoint AI Governance Lead / AIMS Manager | HR / CISO | RACI matrix |
-| Define AIMS scope | GRC Team | Scope document |
-| AI system inventory — catalog all AI in use | IT / Business | AI asset register |
-| Conduct ISO 42001 gap assessment | GRC / Audit | Gap assessment report |
-| Identify applicable regulations | Legal / GRC | Regulatory mapping |
+| Clause | Title | Key Requirements |
+|--------|-------|-----------------|
+| **4** | Context of the Organization | Define scope, identify interested parties, understand AI context |
+| **5** | Leadership | AI Policy, top management commitment, roles and responsibilities |
+| **6** | Planning | AI risk assessment, risk treatment, Statement of Applicability, AI objectives |
+| **7** | Support | Resources, competence, awareness, communication, documented information |
+| **8** | Operation | Risk assessment execution, risk treatment, ASIA, AI lifecycle management |
+| **9** | Performance Evaluation | Monitoring, internal audit, management review |
+| **10** | Improvement | Nonconformity management, corrective action, continual improvement |
 
-### Phase 2 — Risk and Policy Framework (Months 3 to 4)
+### Annex A Controls by Domain (39 Controls Total)
 
-| Activity | Owner | Output |
-|----------|-------|--------|
-| Develop AI Policy and AI Ethics Policy | GRC / Legal | Approved policies |
-| Define AI risk appetite and tolerance | Risk Committee | Risk appetite statement |
-| Build AI risk register | Risk Team | AI risk register v1 |
-| Conduct AI impact assessments for high-risk AI | GRC / Product | Impact assessment reports |
-| Map interested parties | GRC | Stakeholder register |
-| Define AI objectives and KPIs | Leadership | AI objectives document |
+#### Domain A.2 — Policies for AI (2 controls)
+| Control | Title | Key Requirement |
+|---------|-------|----------------|
+| A.2.2 | AI Policy | Document, approve, communicate, and review organizational AI policy |
+| A.2.3 | AI-Specific Policies | Policies for prohibited uses, ethics, human oversight, acceptable use |
 
-### Phase 3 — Controls Implementation (Months 5 to 8)
+#### Domain A.3 — Internal Organization (4 controls)
+| Control | Title | Key Requirement |
+|---------|-------|----------------|
+| A.3.2 | AI Governance Roles | Define and assign AI governance responsibilities |
+| A.3.3 | Segregation of Duties | Protect AI system integrity through appropriate separation |
+| A.3.4 | Contact with AI Authorities | Maintain relationships with AI regulators and standards bodies |
+| A.3.6 | AI in Project Management | Embed AI governance into project methodology |
 
-| Activity | Owner | Output |
-|----------|-------|--------|
-| Implement Annex A controls | GRC / IT | Controls implementation log |
-| Establish AI system lifecycle procedures | IT / AI Teams | Lifecycle procedures |
-| Implement data governance for AI training data | Data Team | Data governance framework |
-| Deploy AI monitoring and logging | IT / SecOps | Monitoring dashboards |
-| Conduct AI security assessment | Security Team | Assessment report |
-| Deliver AI awareness training to all staff | HR / GRC | Training completion records |
-| Establish AI incident response process | GRC / SecOps | AI IR playbook |
+#### Domain A.4 — Resources for AI Systems (3 controls)
+| Control | Title | Key Requirement |
+|---------|-------|----------------|
+| A.4.2 | AI Competencies | Ensure required AI governance competencies are maintained |
+| A.4.3 | AI Infrastructure Security | Secure computing infrastructure for AI systems |
+| A.4.4 | AI Tool Security | Assess and control AI development tools and libraries |
 
-### Phase 4 — Audit and Certification Prep (Months 9 to 10)
+#### Domain A.5 — Assessing Impacts of AI Systems (3 controls)
+| Control | Title | Key Requirement |
+|---------|-------|----------------|
+| A.5.2 | AI System Impact Assessment (ASIA) | Conduct pre-deployment impact assessments |
+| A.5.3 | Societal and Ethical Impact | Consider societal, human rights, and fairness impacts |
+| A.5.4 | Use of Assessment Results | Use ASIA findings to inform risk treatment decisions |
 
-| Activity | Owner | Output |
-|----------|-------|--------|
-| Internal audit against ISO 42001 clauses | Internal Audit | Audit report and findings |
-| Corrective action for non-conformities | Process Owners | CAR log |
-| Management review meeting | Leadership | Management review minutes |
-| Pre-certification readiness assessment | External Consultant | Readiness report |
-| Select and engage certification body | GRC Lead | Certification agreement |
+#### Domain A.6 — AI System Lifecycle (12 controls)
+| Control | Title | Key Requirement |
+|---------|-------|----------------|
+| A.6.1.1 | AI Design Requirements | Include responsible AI principles in design specifications |
+| A.6.1.2 | AI Design Documentation | Document system design, architecture, and responsible AI decisions |
+| A.6.2.1 | AI Development Process | Follow controlled, documented development process |
+| A.6.2.3 | AI Model Documentation | Maintain model cards for all AI models |
+| A.6.2.5 | AI Adversarial Testing | Test resistance to adversarial attacks and manipulation |
+| A.6.2.6 | AI Bias Evaluation | Evaluate and mitigate bias across demographic groups |
+| A.6.2.8 | Testing in Representative Environments | Pre-deployment testing in production-representative conditions |
+| A.6.3.1 | AI Deployment Controls | Controlled deployment with authorization and rollback |
+| A.6.3.3 | Human Oversight at Deployment | Operational human oversight mechanisms |
+| A.6.4.1 | AI Operation Monitoring | Production monitoring of performance, accuracy, fairness |
+| A.6.4.2 | AI Performance Drift Monitoring | Detect and respond to model degradation |
+| A.6.5.1 | AI Decommissioning | Secure system retirement with data deletion and archiving |
 
-### Phase 5 — Certification and Continual Improvement (Months 11 to 12)
+#### Domain A.7 — Data for AI Systems (5 controls)
+| Control | Title | Key Requirement |
+|---------|-------|----------------|
+| A.7.2 | AI Data Quality | Define and apply data quality criteria |
+| A.7.3 | Data Provenance | Document training data lineage and provenance |
+| A.7.4 | Data Privacy for AI | Comply with privacy laws in AI data processing |
+| A.7.5 | Bias Mitigation in Data | Identify and mitigate bias in training data |
+| A.7.6 | Data Access Controls | Least-privilege access to AI data and models |
 
-| Activity | Owner | Output |
-|----------|-------|--------|
-| Stage 1 audit (document review) | Certification Body | Stage 1 report |
-| Address Stage 1 findings | GRC Team | Evidence package |
-| Stage 2 audit (on-site or remote) | Certification Body | Certification decision |
-| Continual improvement plan | GRC Lead | Improvement roadmap |
-| Annual surveillance audit planning | GRC Lead | Audit schedule |
+#### Domain A.8 — Information for Interested Parties (4 controls)
+| Control | Title | Key Requirement |
+|---------|-------|----------------|
+| A.8.2 | AI Capability Information | Provide accurate AI capability and limitation information |
+| A.8.3 | AI Explainability | Define and implement appropriate explainability |
+| A.8.4 | AI Disclosure to Users | Inform users when interacting with AI systems |
+| A.8.5 | AI Incident Communication | Communicate AI incidents to affected parties |
 
----
+#### Domain A.9 — Use of AI Systems (3 controls)
+| Control | Title | Key Requirement |
+|---------|-------|----------------|
+| A.9.2 | Acceptable Use of AI | Define and enforce AI acceptable use policies |
+| A.9.3 | Human Oversight | Implement oversight for high-stakes AI decisions |
+| A.9.4 | AI Error Handling | Define processes for AI system error detection and handling |
 
-## Clause Breakdown
-
-### Clause 4 — Context
-
-Understand internal and external factors, identify interested parties (regulators, customers, affected communities), and define the AIMS scope. Use PESTLE analysis for external context and SWOT for internal context. Start with a narrow scope — it is easier to certify and expand later.
-
-### Clause 5 — Leadership
-
-Top management must actively demonstrate commitment. Establish a formal AI Policy covering responsible AI principles, prohibited AI uses, data ethics, and human oversight. Consider creating an AI Ethics Board or AI Governance Committee at executive level.
-
-### Clause 6 — Planning
-
-Conduct structured AI risk assessments covering model risks, data risks, operational risks, and societal impacts.
-
-| Risk Category | Examples |
-|--------------|----------|
-| Bias and fairness | Discriminatory outcomes from AI models |
-| Transparency | Inability to explain AI decisions to regulators |
-| Data quality and privacy | Training data issues, PII leakage in outputs |
-| Security | Adversarial attacks, model poisoning, prompt injection |
-| Operational | Model drift, performance degradation, system failure |
-| Regulatory | Non-compliance with EU AI Act, GDPR, sector regulations |
-| Third-party AI | Risks from vendor AI systems and external APIs |
-
-### Clause 8 — Operation
-
-Implement the full AI system lifecycle with controls at each stage:
-
-| Lifecycle Stage | Key Controls |
-|----------------|-------------|
-| Data Collection | Data provenance, bias testing, privacy compliance, consent management |
-| Model Design | Fairness metrics, explainability requirements, security by design |
-| Development | Version control, adversarial testing, documentation standards |
-| Validation | Independent testing, bias evaluation, performance benchmarking |
-| Deployment | Human oversight mechanisms, monitoring setup, rollback procedures |
-| Operation | Continuous monitoring, drift detection, incident logging |
-| Decommissioning | Data deletion, model archiving, stakeholder notification |
-
-### Clause 9 — Performance Evaluation
-
-| Metric | Description | Frequency |
-|--------|-------------|-----------|
-| AI Risk Treatment Rate | % of AI risks with active treatment plans | Monthly |
-| Model Performance Drift | Deviation from baseline performance | Per model weekly |
-| AI Incident Rate | Number of AI-related incidents | Quarterly |
-| Bias Test Coverage | % of AI models with documented bias testing | Quarterly |
-| AI Training Completion | % of staff completed AI ethics training | Annually |
-| ASIA Completion Rate | % of new AI deployments with impact assessments | Per deployment |
-| Control Effectiveness | % of Annex A controls tested and passed | Annually |
+#### Domain A.10 — Third-Party and Customer AI (3 controls)
+| Control | Title | Key Requirement |
+|---------|-------|----------------|
+| A.10.2 | Third-Party AI Risk Assessment | Assess third-party AI before adoption |
+| A.10.3 | AI Supplier Contracts | Include AI governance clauses in supplier agreements |
+| A.10.4 | Customer AI Governance | Identify and meet customer AI governance requirements |
 
 ---
 
-## Framework Mapping
+## 🚀 Quick Start Guide
 
-| Framework | Relationship to ISO 42001 |
-|-----------|--------------------------|
-| **EU AI Act** | ISO 42001 helps satisfy technical documentation, risk management, and conformity assessment for high-risk AI |
-| **NIST AI RMF 1.0** | GOVERN/MAP/MEASURE/MANAGE functions map directly to ISO 42001 clauses 4-10 |
-| **ISO/IEC 27001** | AI security controls in ISO 42001 Annex A complement ISO 27001 Annex A |
-| **MITRE ATLAS** | AI adversarial threat intelligence that feeds ISO 42001 risk assessments |
-| **OWASP LLM Top 10** | Technical AI vulnerability guidance relevant to Clause 8 |
-| **UAE National AI Strategy 2031** | ISO 42001 aligns with UAE's national AI governance agenda |
-| **GDPR and UAE PDPL** | Data protection requirements relevant to ISO 42001 data governance controls |
+### For Organizations Starting ISO 42001 Implementation:
+1. **Read** [IMPLEMENTATION-ROADMAP.md](./IMPLEMENTATION-ROADMAP.md) — understand the 12-month journey
+2. **Conduct** gap assessment using [GAP-ASSESSMENT.md](./GAP-ASSESSMENT.md)
+3. **Complete** [STATEMENT-OF-APPLICABILITY.md](./STATEMENT-OF-APPLICABILITY.md) to determine which controls apply
+4. **Draft** your AI Policy using [AIMS-POLICY-TEMPLATE.md](./AIMS-POLICY-TEMPLATE.md)
+5. **Populate** [AI-RISK-REGISTER.md](./AI-RISK-REGISTER.md) with your organization's AI risks
+6. **Conduct** AI System Impact Assessments using [AI-SYSTEM-IMPACT-ASSESSMENT.md](./AI-SYSTEM-IMPACT-ASSESSMENT.md)
 
----
+### For GRC Professionals Auditing AI Governance:
+1. Use [INTERNAL-AUDIT-PROCEDURE.md](./INTERNAL-AUDIT-PROCEDURE.md) as your complete audit toolkit
+2. Reference [CONTROLS-MAPPING.md](./CONTROLS-MAPPING.md) for cross-framework evidence mapping
+3. Use [GAP-ASSESSMENT.md](./GAP-ASSESSMENT.md) for client maturity assessments
 
-## Resources
-
-### Official Standards
-- [ISO/IEC 42001:2023 — AI Management Systems](https://www.iso.org/standard/81230.html)
-- [ISO/IEC 23894:2023 — AI Risk Management Guidance](https://www.iso.org/standard/77304.html)
-- [ISO/IEC 38507:2022 — Governance of AI](https://www.iso.org/standard/56641.html)
-
-### Regulatory Frameworks
-- [EU AI Act](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689)
-- [NIST AI Risk Management Framework 1.0](https://airc.nist.gov/RMF)
-- [OECD AI Principles](https://oecd.ai/en/ai-principles)
-
-### Technical References
-- [MITRE ATLAS](https://atlas.mitre.org/)
-- [OWASP LLM Top 10](https://owasp.org/www-project-top-10-for-large-language-model-applications/)
-- [ENISA AI Cybersecurity Guidance](https://www.enisa.europa.eu/topics/artificial-intelligence)
-
-### Certifications
-- [ISO 42001 Lead Implementer — PECB](https://pecb.com/en/education-and-certification-for-individuals/iso-iec-42001)
-- [AI Governance Professional — IAPP](https://iapp.org/certify/aigp/)
+### For AI Teams Building Responsible AI:
+1. Follow [AI-LIFECYCLE-MANAGEMENT-PROCEDURE.md](./AI-LIFECYCLE-MANAGEMENT-PROCEDURE.md) for governance-embedded development
+2. Use the model card template in the lifecycle document for all AI models
+3. Use [AI-SYSTEM-IMPACT-ASSESSMENT.md](./AI-SYSTEM-IMPACT-ASSESSMENT.md) before every deployment
 
 ---
 
-## About the Author
+## 🔗 Framework Alignment
 
-**Ankit Uniyal** — GRC Lead, PureHealth Group | ISO 42001 Lead Auditor | AI Governance Professional
+This toolkit aligns with and maps to:
 
-- 10+ years in Information Security, GRC, and IT Audit across healthcare, banking, and fintech
-- ISO 42001 Lead Auditor certified — hands-on AIMS implementation experience
-- Currently overseeing AI governance across 100+ hospitals at PureHealth Group, Abu Dhabi UAE
-- Builder of the free [AI Risk Navigator](https://ankituniyalprofile.com/) — maps AI risks across 12+ frameworks in 5 minutes
-
-**Connect:** [LinkedIn](https://linkedin.com/in/ankituniyal8) | [GitHub](https://github.com/Ankit-Uniyal) | [Portfolio](https://ankituniyalprofile.com/)
-
----
-
-## Contributing
-
-Contributions are welcome! Please open a Pull Request or Issue if you want to add:
-- Additional checklist items from real audit experience
-- Sector-specific regulatory mappings (healthcare, financial services, government)
-- Tool recommendations for AI governance automation
-- Case studies or implementation lessons
+| Framework | Alignment |
+|-----------|-----------|
+| **EU AI Act (2024)** | All 39 controls mapped to relevant EU AI Act articles |
+| **NIST AI RMF 1.0** | Controls mapped to GOVERN, MAP, MEASURE, MANAGE functions |
+| **ISO/IEC 27001:2022** | Controls integrated with information security management |
+| **GDPR/UK GDPR** | Privacy requirements embedded throughout data controls (A.7) |
+| **OECD AI Principles** | Ethical AI principles aligned with A.2 and A.9 controls |
 
 ---
 
-## License
+## 📚 Mandatory Documents Checklist
 
-Released under the [MIT License](LICENSE). Free to use, adapt, and share — attribution appreciated.
+Use this checklist to track your AIMS documentation completeness:
+
+- [ ] AIMS Scope Statement (Clause 4.3)
+- [ ] AI Policy — AIMS-POLICY-TEMPLATE.md (Clause 5.2)
+- [ ] Statement of Applicability — STATEMENT-OF-APPLICABILITY.md (Clause 6.1.3) ⚠️ MANDATORY
+- [ ] AI Risk Assessment Records — AI-RISK-REGISTER.md (Clause 6.1)
+- [ ] AI Risk Treatment Plans (Clause 6.1, 8.3)
+- [ ] AI Objectives Documentation (Clause 6.2)
+- [ ] Evidence of Competence — Training Records (Clause 7.2)
+- [ ] AI System Impact Assessments — AI-SYSTEM-IMPACT-ASSESSMENT.md (Clause 8.4)
+- [ ] AI Lifecycle Records — AI-LIFECYCLE-MANAGEMENT-PROCEDURE.md (Clause 8.5)
+- [ ] Monitoring and Measurement Results (Clause 9.1)
+- [ ] Internal Audit Records — INTERNAL-AUDIT-PROCEDURE.md (Clause 9.2)
+- [ ] Management Review Records — MANAGEMENT-REVIEW-TEMPLATE.md (Clause 9.3)
+- [ ] Nonconformity and Corrective Action Records (Clause 10.2)
 
 ---
 
-*Built by a GRC practitioner who believes AI governance should be accessible to everyone, not locked behind expensive consultants.*
+## 🏆 Certification Journey
+
+### Certification Bodies (ISO 42001)
+Accredited CBs offering ISO 42001 certification include:
+BSI Group | Bureau Veritas | DNV | SGS | TÜV | LRQA | NQA
+
+### Timeline to Certification
+- **Gap Assessment:** 2-4 weeks
+- **Implementation:** 6-12 months (depending on organizational size and AI maturity)
+- **Stage 1 Audit (Document Review):** Typically 1-2 days
+- **Stage 2 Audit (Effectiveness):** 2-5 days (depending on scope)
+- **Certification Decision:** 2-4 weeks after Stage 2
+
+---
+
+## 👤 About the Author
+
+**Ankit Uniyal** — ISO 42001 Lead Auditor | GRC Lead, PureHealth Group
+
+- 🌐 [ankituniyalprofile.com](https://ankituniyalprofile.com/)
+- ISO/IEC 42001:2023 Lead Auditor Certified
+- Practitioner in AI governance, GRC, and information security management
+- Experience across healthcare, technology, and financial services
+
+---
+
+## ⚠️ Disclaimer
+
+This toolkit is provided for **guidance purposes only**. It does not constitute legal, regulatory, or professional advice. Always refer to the official ISO/IEC 42001:2023 standard text for definitive requirements. Organizations should seek qualified professional advice for their specific implementation context. Templates must be adapted to your organizational context before use.
+
+The ISO/IEC 42001:2023 standard must be purchased from ISO or your national standards body.
+
+---
+
+## 📄 License
+
+MIT License — free to use, adapt, and distribute with attribution.
+
+---
+
+*If this toolkit helps your AI governance work, please ⭐ star the repository and share with the GRC and AI governance community.*

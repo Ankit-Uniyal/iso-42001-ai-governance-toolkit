@@ -8,9 +8,7 @@ Covers all 10 clauses, all 39 Annex A controls across 9 domains, and every manda
 
 ## How to Use This Toolkit
 
-The files are designed to be used in sequence, following the ISO/IEC 42001:2023 implementation lifecycle. The order below mirrors the standard's clause structure and the recommended implementation journey.
-
-Start with the [Implementation Roadmap](IMPLEMENTATION-ROADMAP.md) to understand the 12-month journey, then work through each phase in order.
+The files are designed to be used in sequence, following the ISO/IEC 42001:2023 clause structure. The order below is the correct implementation journey — from establishing context through to continual improvement.
 
 ---
 
@@ -19,7 +17,7 @@ Start with the [Implementation Roadmap](IMPLEMENTATION-ROADMAP.md) to understand
 ---
 
 ### PHASE 1 — UNDERSTAND AND PLAN
-*Clauses 4 and 6 | Establish your baseline and plan the implementation*
+*Clauses 4 and 6 | Establish your baseline and build the implementation plan*
 
 ---
 
@@ -40,7 +38,7 @@ The gap assessment tells you which controls are already in place, which need wor
 ---
 
 #### File 2 — IMPLEMENTATION-ROADMAP.md
-**Use: Phase 1 — after the gap assessment, to plan the implementation**
+**Use: Phase 1 — after the gap assessment, to structure the implementation**
 
 | Field | Detail |
 |-------|--------|
@@ -49,17 +47,17 @@ The gap assessment tells you which controls are already in place, which need wor
 | Output | Project plan, responsibility assignments, milestone tracker |
 | ISO 42001 Clause | All clauses |
 | Who completes it | AI Governance Lead / Project Manager |
-| When to revisit | Monthly to track progress; quarterly to adjust plan |
+| When to revisit | Monthly to track progress; quarterly to adjust |
 
 ---
 
 ### PHASE 2 — GOVERNANCE FOUNDATIONS
-*Clauses 4, 5, and 6 | Define scope, set policy, assign accountability*
+*Clauses 5 and 6 | Top management commitment, scope, policy, and control selection*
 
 ---
 
 #### File 3 — AIMS-POLICY-TEMPLATE.md
-**Use: Phase 2 — first governance document to draft and approve**
+**Use: Phase 2 — first governance document to draft and get approved**
 
 | Field | Detail |
 |-------|--------|
@@ -71,41 +69,24 @@ The gap assessment tells you which controls are already in place, which need wor
 | Who completes it | AI Governance Lead; approved by CEO or Board |
 | When to revisit | Annually; after scope changes or significant incidents |
 
-The AI Policy is the instrument of top management commitment. Every other document flows from it.
+The AI Policy is the instrument of top management commitment. Without it signed and in force, the AIMS is not established.
 
 ---
 
 #### File 4 — STATEMENT-OF-APPLICABILITY.md
-**Use: Phase 2 — after gap assessment and policy, before risk treatment**
+**Use: Phase 2 — after the gap assessment and policy, before risk treatment begins**
 
 | Field | Detail |
 |-------|--------|
 | Purpose | Mandatory SoA — declares which of the 39 Annex A controls apply, why, and their implementation status |
-| Covers | All 39 controls across Domains A.2–A.10; applicability, justification, status, implementation reference |
+| Covers | All 39 controls across Domains A.2–A.10; applicability, justification, status, and implementation reference |
 | Output | Completed, approved SoA |
 | ISO 42001 Clause | Clause 6.1.3 — MANDATORY |
 | Annex A Controls | All 39 controls |
 | Who completes it | AI Governance Lead / CISO / DPO |
 | When to revisit | When scope changes; when new AI systems come into scope; annually |
 
-The SoA is one of the most scrutinised documents in a certification audit. It must be completed before finalising risk treatment, because it determines which controls the organisation is committing to implement.
-
----
-
-#### File 5 — ANNEX-A-CONTROLS.md
-**Use: Phase 2 onwards — the implementation reference for every Annex A control**
-
-| Field | Detail |
-|-------|--------|
-| Purpose | Control-by-control implementation, audit, and evidence guide for all 39 Annex A controls |
-| Covers | All 39 controls: What It Means, Why It Matters, How to Implement, Documents to Prepare, How to Audit, Evidence Required, Common Gaps, Cross-References |
-| Output | Implementation guidance; audit checklist; document master list; interview question bank |
-| ISO 42001 Clause | Clause 6.1.3 and all Annex A domains |
-| Annex A Controls | All 39 controls across A.2–A.10 |
-| Who uses it | Implementers, auditors, GRC teams |
-| When to revisit | Continuously during implementation; before internal and external audits |
-
-Once the SoA is complete, this document provides the operational instruction for how to implement each control, what documents to create, and how they will be audited.
+The SoA is one of the most scrutinised documents in a certification audit. It determines which controls the organisation is committing to implement and must be completed before finalising risk treatment plans.
 
 ---
 
@@ -114,22 +95,22 @@ Once the SoA is complete, this document provides the operational instruction for
 
 ---
 
-#### File 6 — AI-RISK-REGISTER.md
-**Use: Phase 3 — concurrent with policy; maintained throughout the AIMS lifecycle**
+#### File 5 — AI-RISK-REGISTER.md
+**Use: Phase 3 — begins concurrently with policy; maintained throughout the AIMS lifecycle**
 
 | Field | Detail |
 |-------|--------|
-| Purpose | AI risk register with 44 pre-populated risks across 8 categories, scoring matrix, and treatment log |
+| Purpose | AI risk register with 44 pre-populated risks across 8 categories, scoring matrix, and risk treatment log |
 | Covers | Model risks, data risks, operational risks, ethical and fairness risks, security risks, legal and regulatory risks, third-party risks, reputational risks |
 | Output | Live risk register; risk treatment plans; residual risk records |
-| ISO 42001 Clause | Clause 6.1, Clause 8.2, Clause 8.3 |
+| ISO 42001 Clause | Clause 6.1 (Risk assessment), Clause 8.2 (Risk assessment execution), Clause 8.3 (Risk treatment) |
 | Annex A Controls | A.5.2, A.5.4 |
 | Who completes it | AI Risk Manager / AI Governance Lead |
 | When to revisit | Quarterly; after every ASIA; after every significant incident; annually |
 
 ---
 
-#### File 7 — AI-SYSTEM-IMPACT-ASSESSMENT.md
+#### File 6 — AI-SYSTEM-IMPACT-ASSESSMENT.md
 **Use: Phase 3 and ongoing — before every AI system deployment**
 
 | Field | Detail |
@@ -147,11 +128,11 @@ The ASIA must be completed before deployment — not after. This is one of the m
 ---
 
 ### PHASE 4 — OPERATIONAL CONTROLS
-*Clause 8 | Procedures and processes that make governance operational*
+*Clause 8 | The procedures and processes that make governance operational*
 
 ---
 
-#### File 8 — AI-LIFECYCLE-MANAGEMENT-PROCEDURE.md
+#### File 7 — AI-LIFECYCLE-MANAGEMENT-PROCEDURE.md
 **Use: Phase 4 — implement before any new AI systems are built or deployed**
 
 | Field | Detail |
@@ -159,29 +140,14 @@ The ASIA must be completed before deployment — not after. This is one of the m
 | Purpose | End-to-end AI lifecycle governance procedure from design to decommissioning |
 | Covers | Design governance gates, development controls, model documentation, bias evaluation, adversarial testing, pre-deployment testing, deployment authorisation, production monitoring, drift detection, decommissioning |
 | Output | Controlled AI development and deployment procedure; governance gate records; model card template |
-| ISO 42001 Clause | Clause 8.5 |
+| ISO 42001 Clause | Clause 8.5 (AI system lifecycle) |
 | Annex A Controls | A.6.1.1 through A.6.5.1 (all 12 lifecycle controls) |
 | Who uses it | ML Engineers, Data Scientists, MLOps, Product Owners, AI Governance Lead |
 | When to revisit | Annually; when new development methodologies are adopted; after lifecycle-related audit findings |
 
 ---
 
-#### File 9 — AI-INCIDENT-RESPONSE-PROCEDURE.md
-**Use: Phase 4 — establish before any AI system goes into production**
-
-| Field | Detail |
-|-------|--------|
-| Purpose | 7-phase AI incident response lifecycle — detection, classification, containment, investigation, notification, remediation, and post-incident review |
-| Covers | AI-specific incident types (bias, errors, security, performance, privacy), severity classification, escalation, regulatory notification, lessons learned |
-| Output | Incident response procedure; incident log; post-incident review records |
-| ISO 42001 Clause | Clause 10.2 |
-| Annex A Controls | A.8.5, A.9.4, A.6.4.1 |
-| Who uses it | Operations, AI Governance Lead, CISO, DPO, Legal, Communications |
-| When to revisit | After every AI incident; annually; when regulatory requirements change |
-
----
-
-#### File 10 — AI-SUPPLIER-ASSESSMENT.md
+#### File 8 — AI-SUPPLIER-ASSESSMENT.md
 **Use: Phase 4 — before adopting any third-party AI system, API, or model**
 
 | Field | Detail |
@@ -189,19 +155,19 @@ The ASIA must be completed before deployment — not after. This is one of the m
 | Purpose | Third-party AI due diligence template covering governance maturity, bias, security, privacy, regulatory compliance, and contract requirements |
 | Covers | Pre-adoption risk assessment for third-party AI, supplier governance review, DPA requirements, contract clause requirements |
 | Output | Completed supplier assessment per third-party AI; approval decision record |
-| ISO 42001 Clause | Clause 8.1 |
+| ISO 42001 Clause | Clause 8.1 (Operational planning and control) |
 | Annex A Controls | A.10.2, A.10.3, A.10.4 |
 | Who completes it | AI Risk Manager / Procurement / Legal / DPO |
 | When to revisit | Before every new third-party AI adoption; annually for existing high-risk suppliers |
 
 ---
 
-### PHASE 5 — MONITOR AND MEASURE
-*Clause 9 | Internal controls for performance evaluation*
+### PHASE 5 — PERFORMANCE EVALUATION
+*Clause 9 | Monitor, measure, audit, and review*
 
 ---
 
-#### File 11 — INTERNAL-AUDIT-PROCEDURE.md
+#### File 9 — INTERNAL-AUDIT-PROCEDURE.md
 **Use: Phase 5 — before Stage 2 certification audit; then on an ongoing annual cycle**
 
 | Field | Detail |
@@ -209,35 +175,72 @@ The ASIA must be completed before deployment — not after. This is one of the m
 | Purpose | Complete internal audit framework — audit programme, clause-by-clause and Annex A checklist, audit report template, corrective action tracking |
 | Covers | All Clauses 4–10 and all 39 Annex A controls; audit planning, execution, and follow-up |
 | Output | Internal audit programme; completed audit checklists; audit reports; corrective action register |
-| ISO 42001 Clause | Clause 9.2 — MANDATORY |
+| ISO 42001 Clause | Clause 9.2 (Internal audit) — MANDATORY |
 | Annex A Controls | All 39 controls |
 | Who uses it | Internal auditors, AI Governance Lead, external consultants conducting readiness assessments |
 | When to use | At least annually; before each certification audit; after major AIMS changes |
 
 ---
 
-#### File 12 — MANAGEMENT-REVIEW-TEMPLATE.md
-**Use: Phase 5 — annually minimum; linked to the audit and risk review cycle**
+#### File 10 — MANAGEMENT-REVIEW-TEMPLATE.md
+**Use: Phase 5 — annually minimum; after the internal audit cycle**
 
 | Field | Detail |
 |-------|--------|
 | Purpose | Management review template with all 13 required inputs, KPI dashboard, risk review, incident review, and output decisions |
 | Covers | All mandatory management review inputs per Clause 9.3; performance metrics; AIMS improvement decisions |
 | Output | Completed management review record; AIMS improvement decisions; updated objectives |
-| ISO 42001 Clause | Clause 9.3 — MANDATORY |
+| ISO 42001 Clause | Clause 9.3 (Management review) — MANDATORY |
 | Annex A Controls | N/A (clause-level requirement) |
 | Who completes it | Top management; facilitated by AI Governance Lead |
-| When to use | At least annually; output feeds into the next planning cycle |
+| When to use | At least annually; outputs feed into the next planning cycle |
 
 ---
 
-### PHASE 6 — REFERENCE
-*Supporting document used throughout the lifecycle*
+### PHASE 6 — IMPROVEMENT
+*Clause 10 | Nonconformity management, corrective action, and continual improvement*
+
+---
+
+#### File 11 — AI-INCIDENT-RESPONSE-PROCEDURE.md
+**Use: Phase 6 — establish before any AI system goes into production; activated when incidents occur**
+
+| Field | Detail |
+|-------|--------|
+| Purpose | 7-phase AI incident response lifecycle — detection, classification, containment, investigation, notification, remediation, and post-incident review |
+| Covers | AI-specific incident types (bias, errors, security, performance, privacy), severity classification, escalation, regulatory notification, lessons learned |
+| Output | Incident response procedure; incident log; post-incident review records; corrective action register |
+| ISO 42001 Clause | Clause 10.2 (Nonconformity and corrective action) |
+| Annex A Controls | A.8.5 (Incident communication), A.9.4 (Error handling), A.6.4.1 (Operation monitoring) |
+| Who uses it | Operations, AI Governance Lead, CISO, DPO, Legal, Communications |
+| When to revisit | After every AI incident; annually; when regulatory requirements change |
+
+Clause 10 covers nonconformity, corrective action, and continual improvement. The incident response procedure is the primary operational mechanism for identifying nonconformities and driving corrective action in the AIMS.
+
+---
+
+### PHASE 7 — REFERENCE
+*Supporting documents used across all phases*
+
+---
+
+#### File 12 — ANNEX-A-CONTROLS.md
+**Use: Throughout — primary implementation and audit reference for all 39 Annex A controls**
+
+| Field | Detail |
+|-------|--------|
+| Purpose | Control-by-control implementation, audit, and evidence guide for all 39 Annex A controls |
+| Covers | All 39 controls: What It Means, Why It Matters, How to Implement, Documents to Prepare, How to Audit, Evidence Required, Common Gaps, Cross-References |
+| Output | Implementation guidance per control; audit procedures; document master list; interview question bank |
+| ISO 42001 Clause | Clause 6.1.3 and all Annex A domains |
+| Annex A Controls | All 39 controls across A.2–A.10 |
+| Who uses it | Implementers, internal auditors, GRC teams, certification consultants |
+| When to use | Continuously from Phase 2 onwards; before every internal and external audit |
 
 ---
 
 #### File 13 — CONTROLS-MAPPING.md
-**Use: Throughout — whenever cross-framework alignment is needed**
+**Use: Throughout — cross-framework alignment and regulatory mapping**
 
 | Field | Detail |
 |-------|--------|
@@ -247,44 +250,46 @@ The ASIA must be completed before deployment — not after. This is one of the m
 | ISO 42001 Clause | Clause 6.1.3 |
 | Annex A Controls | All 39 controls |
 | Who uses it | GRC teams managing multiple frameworks, Legal and Compliance, certification preparation teams |
-| When to use | During SoA completion, regulatory gap analysis, multi-framework evidence mapping |
+| When to use | During SoA completion (Phase 2), regulatory gap analysis, and multi-framework evidence mapping |
 
 ---
 
 ## Implementation Sequence — Summary
 
 ```
-PHASE 1 — UNDERSTAND AND PLAN
-├── 1. GAP-ASSESSMENT.md                       Start here. Measure your baseline.
-└── 2. IMPLEMENTATION-ROADMAP.md               Plan the 12-month implementation.
+PHASE 1 — UNDERSTAND AND PLAN              (Clauses 4, 6)
+├── 1.  GAP-ASSESSMENT.md                  Start here. Measure your baseline.
+└── 2.  IMPLEMENTATION-ROADMAP.md          Build the 12-month plan.
 
-PHASE 2 — GOVERNANCE FOUNDATIONS
-├── 3. AIMS-POLICY-TEMPLATE.md                 Get top management approval signed.
-├── 4. STATEMENT-OF-APPLICABILITY.md           Declare which controls apply. MANDATORY.
-└── 5. ANNEX-A-CONTROLS.md                     How to implement every control. Use throughout.
+PHASE 2 — GOVERNANCE FOUNDATIONS           (Clauses 5, 6)
+├── 3.  AIMS-POLICY-TEMPLATE.md            Top management commitment. Signed policy.
+└── 4.  STATEMENT-OF-APPLICABILITY.md      Declare which controls apply. MANDATORY.
 
-PHASE 3 — RISK MANAGEMENT
-├── 6. AI-RISK-REGISTER.md                     Identify and treat AI risks.
-└── 7. AI-SYSTEM-IMPACT-ASSESSMENT.md          Assess each AI system before deployment. MANDATORY.
+PHASE 3 — RISK MANAGEMENT                  (Clauses 6, 8)
+├── 5.  AI-RISK-REGISTER.md                Identify and treat AI risks.
+└── 6.  AI-SYSTEM-IMPACT-ASSESSMENT.md     Assess each AI system before deployment. MANDATORY.
 
-PHASE 4 — OPERATIONAL CONTROLS
-├── 8. AI-LIFECYCLE-MANAGEMENT-PROCEDURE.md    Govern AI from design to retirement.
-├── 9. AI-INCIDENT-RESPONSE-PROCEDURE.md       Respond to AI failures and incidents.
-└── 10. AI-SUPPLIER-ASSESSMENT.md              Assess third-party AI before adoption.
+PHASE 4 — OPERATIONAL CONTROLS             (Clause 8)
+├── 7.  AI-LIFECYCLE-MANAGEMENT-PROCEDURE.md   Govern AI from design to decommissioning.
+└── 8.  AI-SUPPLIER-ASSESSMENT.md          Assess third-party AI before adoption.
 
-PHASE 5 — MONITOR AND MEASURE
-├── 11. INTERNAL-AUDIT-PROCEDURE.md            Audit your AIMS. MANDATORY.
-└── 12. MANAGEMENT-REVIEW-TEMPLATE.md          Top management review. MANDATORY.
+PHASE 5 — PERFORMANCE EVALUATION           (Clause 9)
+├── 9.  INTERNAL-AUDIT-PROCEDURE.md        Audit your AIMS. MANDATORY.
+└── 10. MANAGEMENT-REVIEW-TEMPLATE.md      Top management review. MANDATORY.
 
-PHASE 6 — REFERENCE
-└── 13. CONTROLS-MAPPING.md                    Cross-map to EU AI Act, NIST AI RMF, ISO 27001.
+PHASE 6 — IMPROVEMENT                      (Clause 10)
+└── 11. AI-INCIDENT-RESPONSE-PROCEDURE.md  Nonconformity, corrective action, lessons learned.
+
+PHASE 7 — REFERENCE                        (Annex A / Cross-framework)
+├── 12. ANNEX-A-CONTROLS.md               Control-by-control implementation and audit guide.
+└── 13. CONTROLS-MAPPING.md               EU AI Act, NIST AI RMF, ISO 27001 cross-mapping.
 ```
 
 ---
 
 ## Mandatory Documents
 
-ISO/IEC 42001:2023 requires the following documents as a minimum.
+ISO/IEC 42001:2023 requires the following documents as a minimum. All are covered in this toolkit.
 
 | # | Document | Clause | File |
 |---|----------|--------|------|
@@ -292,8 +297,8 @@ ISO/IEC 42001:2023 requires the following documents as a minimum.
 | 2 | AI Policy | 5.2 | AIMS-POLICY-TEMPLATE.md |
 | 3 | AI Risk Assessment Records | 6.1, 8.2 | AI-RISK-REGISTER.md |
 | 4 | AI Risk Treatment Plans | 6.1, 8.3 | AI-RISK-REGISTER.md |
-| 5 | AI Objectives Documentation | 6.2 | MANAGEMENT-REVIEW-TEMPLATE.md |
-| 6 | Statement of Applicability | 6.1.3 | STATEMENT-OF-APPLICABILITY.md |
+| 5 | Statement of Applicability | 6.1.3 | STATEMENT-OF-APPLICABILITY.md |
+| 6 | AI Objectives Documentation | 6.2 | MANAGEMENT-REVIEW-TEMPLATE.md |
 | 7 | Evidence of Competence | 7.2 | ANNEX-A-CONTROLS.md (A.4.2) |
 | 8 | AI System Impact Assessments | 8.4 | AI-SYSTEM-IMPACT-ASSESSMENT.md |
 | 9 | AI Lifecycle Records | 8.5 | AI-LIFECYCLE-MANAGEMENT-PROCEDURE.md |
@@ -315,7 +320,7 @@ ISO/IEC 42001:2023 requires the following documents as a minimum.
 | 8 | Operation | Risk assessment execution, risk treatment, ASIA, AI lifecycle management |
 | 9 | Performance Evaluation | Monitoring, internal audit, management review |
 | 10 | Improvement | Nonconformity management, corrective action, continual improvement |
-| Annex A | Controls | 39 controls across 9 domains |
+| Annex A | Controls | 39 controls across 9 domains (A.2–A.10) |
 
 ---
 

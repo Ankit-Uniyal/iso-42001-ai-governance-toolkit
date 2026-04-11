@@ -1,4 +1,4 @@
-1-GAP-ASSESSMENT.md# ISO/IEC 42001:2023 Gap Assessment Checklist
+# ISO/IEC 42001:2023 Gap Assessment Checklist
 
 **Organization:** ___________________________
 **Assessment Date:** ___________________________

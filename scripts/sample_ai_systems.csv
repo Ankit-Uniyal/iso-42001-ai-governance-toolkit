@@ -1,0 +1,11 @@
+system_id,system_name,owner,risk_level,last_assessment_date
+AI-001,Customer Churn Predictor,Data Science Team,High,2025-10-15
+AI-002,Resume Screening Engine,HR Technology,High,2025-04-20
+AI-003,Fraud Detection Model,Risk & Compliance,Critical,2024-12-01
+AI-004,Demand Forecasting System,Supply Chain Analytics,Medium,2025-09-03
+AI-005,Sentiment Analysis Pipeline,Product Analytics,Low,2025-11-22
+AI-006,Loan Approval Assistant,Credit Risk,Critical,2024-11-10
+AI-007,Predictive Maintenance AI,Engineering Ops,Medium,2025-03-30
+AI-008,Chatbot - Customer Support,CX Technology,Medium,2025-08-14
+AI-009,Image Classification Service,Computer Vision Team,High,
+AI-010,Employee Attrition Model,People Analytics,Medium,2025-07-19

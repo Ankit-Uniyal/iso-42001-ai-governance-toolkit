@@ -1,0 +1,47 @@
+# AI System Assessment Currency Check
+# ISO/IEC 42001:2023 | Clause 9.1 — Automated Monitoring
+# 
+# This workflow runs the ai_assessment_checker.py script weekly to verify
+# that all AI systems in the inventory have current assessments.
+# It generates an audit-ready report and fails if overdue systems are found.
+
+name: AI Assessment Currency Check
+
+on:
+  schedule:
+      - cron: '0 8 * * 1'  # Every Monday at 08:00 UTC
+        workflow_dispatch:       # Allow manual trigger
+
+        jobs:
+          check-assessments:
+              runs-on: ubuntu-latest
+                  name: Check AI System Assessment Currency
+
+                      steps:
+                            - name: Checkout repository
+                                    uses: actions/checkout@v4
+
+                                          - name: Set up Python
+                                                  uses: actions/setup-python@v5
+                                                          with:
+                                                                    python-version: '3.11'
+
+                                                                          - name: Run AI Assessment Currency Checker
+                                                                                  run: |
+                                                                                            python 12-SCRIPTS/ai_assessment_checker.py \
+                                                                                                        --input 12-SCRIPTS/sample_ai_systems.csv \
+                                                                                                                    --threshold 365 \
+                                                                                                                                --output reports/assessment_report.txt
+                                                                                                                                
+                                                                                                                                      - name: Upload Assessment Report
+                                                                                                                                              if: always()
+                                                                                                                                                      uses: actions/upload-artifact@v4
+                                                                                                                                                              with:
+                                                                                                                                                                        name: ai-assessment-report
+                                                                                                                                                                                  path: reports/assessment_report.txt
+                                                                                                                                                                                            retention-days: 90
+                                                                                                                                                                                            
+                                                                                                                                                                                                  - name: Check for failures
+                                                                                                                                                                                                          run: |
+                                                                                                                                                                                                                    echo "Assessment check complete. See artifact for full report."
+                                                                                                                                                                                                                              echo "Non-zero exit code indicates overdue or missing assessments."

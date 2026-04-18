@@ -27,6 +27,7 @@ Work through folders in numbered order. Each clause folder has a `README.md` lis
 | 11 | [11-CONTROLS-MAPPING.md](11-CONTROLS-MAPPING.md) | Cross-mapping to EU AI Act, NIST AI RMF, ISO 27001 |
 | 12 | [12-ANNEX-B-AI-CONCEPTS.md](12-ANNEX-B-AI-CONCEPTS.md) | Annex B — AI concepts, terminology, and risk classification guide |
 | 13 | [13-ANNEX-C-AI-DEVELOPERS.md](13-ANNEX-C-AI-DEVELOPERS.md) | Annex C — Guidance for organisations developing AI for others |
+| 14 | [14-WORKED-EXAMPLE/](14-WORKED-EXAMPLE/) | Worked examples — Nexus Financial Services fictional AIMS implementation |
 
 ---
 
@@ -144,6 +145,22 @@ Folder: [12-SCRIPTS/](12-SCRIPTS/)
 | [ai_assessment_checker.py](12-SCRIPTS/ai_assessment_checker.py) | Automated AIMS gap assessment checker |
 | [aims_soa_tracker.py](12-SCRIPTS/aims_soa_tracker.py) | SoA implementation tracker — all 38 controls with progress reporting |
 | [sample_ai_systems.csv](12-SCRIPTS/sample_ai_systems.csv) | Sample AI systems inventory CSV |
+
+---
+
+### Worked Example — Nexus Financial Services
+
+Folder: [14-WORKED-EXAMPLE/](14-WORKED-EXAMPLE/)
+
+> Fictional implementation reference — completed templates for educational use only.
+
+| # | File | What It Shows |
+|---|---|---|
+| 1 | [README.md](14-WORKED-EXAMPLE/README.md) | Folder overview and NFS organisation profile |
+| 2 | [NFS-AIMS-SCOPE-STATEMENT.md](14-WORKED-EXAMPLE/NFS-AIMS-SCOPE-STATEMENT.md) | Completed AIMS Scope Statement (Clause 4.3) |
+| 3 | [NFS-AI-SYSTEM-MODEL-CARD.md](14-WORKED-EXAMPLE/NFS-AI-SYSTEM-MODEL-CARD.md) | Completed Model Card for CreditIQ v2.1 (Clause 8.4) |
+| 4 | [NFS-RISK-REGISTER-ENTRY.md](14-WORKED-EXAMPLE/NFS-RISK-REGISTER-ENTRY.md) | Three populated AI risk register entries (Clause 6.1) |
+| 5 | [NFS-INCIDENT-LOG-ENTRY.md](14-WORKED-EXAMPLE/NFS-INCIDENT-LOG-ENTRY.md) | Completed AI incident log entries (Clause 10.1) |
 
 ---
 

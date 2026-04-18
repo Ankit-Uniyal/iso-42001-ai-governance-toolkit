@@ -11,6 +11,8 @@
 |------|---------|
 | README.md | This clause guide |
 | AI-INCIDENT-RESPONSE-PROCEDURE.md | How to detect, respond to, and learn from AI incidents |
+| NCR-REGISTER.md | Nonconformity and Corrective Action Register template |
+| CONTINUAL-IMPROVEMENT-LOG.md | Continual Improvement Log template |
 
 ---
 
@@ -200,4 +202,4 @@ This creates a genuine management system — not a static compliance checklist.
 
 ---
 
-*ISO/IEC 42001:2023 AI Governance Toolkit — Clause 10 of 7 | See root README.md for full index*
+*ISO/IEC 42001:2023 AI Governance Toolkit — Clause 10 of 10 | See root README.md for full index*

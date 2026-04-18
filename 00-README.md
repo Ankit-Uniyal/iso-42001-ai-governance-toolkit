@@ -2,7 +2,7 @@
 
 An open-source implementation toolkit for ISO/IEC 42001:2023 — the international standard for AI Management Systems (AIMS). Built by an ISO 42001 Lead Auditor.
 
-Covers all 10 clauses, all 39 Annex A controls across 9 domains, and every mandatory document required by the standard.
+Covers all 10 clauses, all 38 Annex A controls across 9 domains, and every mandatory document required by the standard.
 
 ---
 
@@ -180,7 +180,7 @@ The files are numbered and ordered to follow the ISO/IEC 42001:2023 clause struc
 | Field | Detail |
 |-------|--------|
 | Purpose | Management review template with all 13 required inputs, KPI dashboard, risk review, incident review, and output decisions |
-| Covers | All mandatory management review inputs per Clause 9.3; performance metrics; AIMS improvement decisions |
+| Covers | All mandatory management review inputs per Clause 9.3; performance metrics; AIMS improvement decisions |h
 | Output | Completed management review record; AIMS improvement decisions; updated objectives |
 | ISO 42001 Clause | Clause 9.3 (Management review) — MANDATORY |
 | Annex A Controls | N/A (clause-level requirement) |

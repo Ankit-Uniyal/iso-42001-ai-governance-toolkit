@@ -2,15 +2,15 @@
 
 A practical, open-source implementation toolkit for ISO/IEC 42001:2023 — the international standard for AI Management Systems (AIMS).
 
-Built by an **ISO 42001 Lead Auditor**. Covers all 10 clauses, all 38 Annex A controls across 9 domains, and every mandatory document required by the standard.
+Built by an **ISO 42001 Lead Auditor**. Covers all 10 clauses, all 38 Annex A controls across 9 domains, every mandatory document required by the standard, plus Annex B/C reference guides, AI Ethics Framework, Legal Register, and GRC automation scripts.
 
 ---
 
 ## How to Navigate This Toolkit
 
-Work through the folders in numbered order. Each clause folder has a `README.md` that lists its files in the correct reading order.
+Work through folders in numbered order. Each clause folder has a `README.md` listing its files in the correct reading order.
 
-**Start here:** Gap Assessment > Implementation Roadmap > Clause 4 > 5 > 6 > 7 > 8 > 9 > 10 > Annex A > Controls Mapping
+**Start here:** Gap Assessment > Implementation Roadmap > Clause 4 > 5 > 6 > 7 > 8 > 9 > 10 > Annex A > Controls Mapping > Annex B > Annex C
 
 ---
 
@@ -25,6 +25,8 @@ Work through the folders in numbered order. Each clause folder has a `README.md`
 | 02 | [02-IMPLEMENTATION-ROADMAP.md](02-IMPLEMENTATION-ROADMAP.md) | 12-month phased implementation roadmap |
 | 10 | [10-ANNEX-A-CONTROLS.md](10-ANNEX-A-CONTROLS.md) | All 38 Annex A controls — implementation and audit guide |
 | 11 | [11-CONTROLS-MAPPING.md](11-CONTROLS-MAPPING.md) | Cross-mapping to EU AI Act, NIST AI RMF, ISO 27001 |
+| 12 | [12-ANNEX-B-AI-CONCEPTS.md](12-ANNEX-B-AI-CONCEPTS.md) | Annex B — AI concepts, terminology, and risk classification guide |
+| 13 | [13-ANNEX-C-AI-DEVELOPERS.md](13-ANNEX-C-AI-DEVELOPERS.md) | Annex C — Guidance for organisations developing AI for others |
 
 ---
 
@@ -37,8 +39,9 @@ Folder: [03-CLAUSE4-CONTEXT/](03-CLAUSE4-CONTEXT/)
 | 1 | [CONTEXT-REGISTER.md](03-CLAUSE4-CONTEXT/CONTEXT-REGISTER.md) | Internal and external issues register (PESTLE) |
 | 2 | [AI-SYSTEMS-INVENTORY.md](03-CLAUSE4-CONTEXT/AI-SYSTEMS-INVENTORY.md) | Register of all AI systems in scope |
 | 3 | [INTERESTED-PARTIES-REGISTER.md](03-CLAUSE4-CONTEXT/INTERESTED-PARTIES-REGISTER.md) | Stakeholder needs and binding requirements |
-| 4 | [AIMS-SCOPE-STATEMENT.md](03-CLAUSE4-CONTEXT/AIMS-SCOPE-STATEMENT.md) | Formal AIMS scope definition |
-| 5 | [AIMS-PROCESS-MAP.md](03-CLAUSE4-CONTEXT/AIMS-PROCESS-MAP.md) | All AIMS processes, owners and connections |
+| 4 | [LEGAL-REGULATORY-REQUIREMENTS-REGISTER.md](03-CLAUSE4-CONTEXT/LEGAL-REGULATORY-REQUIREMENTS-REGISTER.md) | All legal, regulatory, and contractual AI obligations |
+| 5 | [AIMS-SCOPE-STATEMENT.md](03-CLAUSE4-CONTEXT/AIMS-SCOPE-STATEMENT.md) | Formal AIMS scope definition |
+| 6 | [AIMS-PROCESS-MAP.md](03-CLAUSE4-CONTEXT/AIMS-PROCESS-MAP.md) | All AIMS processes, owners and connections |
 
 ---
 
@@ -50,8 +53,9 @@ Folder: [04-CLAUSE5-LEADERSHIP/](04-CLAUSE5-LEADERSHIP/)
 |---|------|---------|
 | 1 | [AIMS-POLICY-TEMPLATE.md](04-CLAUSE5-LEADERSHIP/AIMS-POLICY-TEMPLATE.md) | AI Management System Policy |
 | 2 | [LEADERSHIP-COMMITMENT-STATEMENT.md](04-CLAUSE5-LEADERSHIP/LEADERSHIP-COMMITMENT-STATEMENT.md) | Top management commitment statement |
-| 3 | [RACI-MATRIX.md](04-CLAUSE5-LEADERSHIP/RACI-MATRIX.md) | Roles and responsibilities across all AIMS activities |
-| 4 | [AI-SYSTEM-OWNERSHIP-REGISTER.md](04-CLAUSE5-LEADERSHIP/AI-SYSTEM-OWNERSHIP-REGISTER.md) | Named accountable owner per AI system |
+| 3 | [AI-ETHICS-FRAMEWORK.md](04-CLAUSE5-LEADERSHIP/AI-ETHICS-FRAMEWORK.md) | 8-principle AI Ethics Framework with governance structure |
+| 4 | [RACI-MATRIX.md](04-CLAUSE5-LEADERSHIP/RACI-MATRIX.md) | Roles and responsibilities across all AIMS activities |
+| 5 | [AI-SYSTEM-OWNERSHIP-REGISTER.md](04-CLAUSE5-LEADERSHIP/AI-SYSTEM-OWNERSHIP-REGISTER.md) | Named accountable owner per AI system |
 
 ---
 
@@ -64,7 +68,7 @@ Folder: [05-CLAUSE6-PLANNING/](05-CLAUSE6-PLANNING/)
 | 1 | [AI-RISK-ASSESSMENT-PROCESS.md](05-CLAUSE6-PLANNING/AI-RISK-ASSESSMENT-PROCESS.md) | Documented AI risk assessment process |
 | 2 | [AI-RISK-REGISTER.md](05-CLAUSE6-PLANNING/AI-RISK-REGISTER.md) | Live AI risk register with scores |
 | 3 | [RISK-TREATMENT-PLAN.md](05-CLAUSE6-PLANNING/RISK-TREATMENT-PLAN.md) | Controls and treatment options per risk |
-| 4 | [STATEMENT-OF-APPLICABILITY.md](05-CLAUSE6-PLANNING/STATEMENT-OF-APPLICABILITY.md) | Annex A controls inclusion/exclusion SoA |
+| 4 | [STATEMENT-OF-APPLICABILITY.md](05-CLAUSE6-PLANNING/STATEMENT-OF-APPLICABILITY.md) | Full SoA — all 38 Annex A controls with status and evidence |
 | 5 | [AI-OBJECTIVES-REGISTER.md](05-CLAUSE6-PLANNING/AI-OBJECTIVES-REGISTER.md) | AIMS objectives, KPIs, owners, achievement plans |
 | 6 | [AIMS-CHANGE-LOG.md](05-CLAUSE6-PLANNING/AIMS-CHANGE-LOG.md) | Log of all planned AIMS changes |
 
@@ -100,6 +104,7 @@ Folder: [07-CLAUSE8-OPERATION/](07-CLAUSE8-OPERATION/)
 | 6 | [AI-MODEL-CARD-TEMPLATE.md](07-CLAUSE8-OPERATION/AI-MODEL-CARD-TEMPLATE.md) | Model documentation card per AI system |
 | 7 | [AI-SUPPLIER-ASSESSMENT.md](07-CLAUSE8-OPERATION/AI-SUPPLIER-ASSESSMENT.md) | Vendor/supplier assessment questionnaire |
 | 8 | [AI-SUPPLIER-RISK-REGISTER.md](07-CLAUSE8-OPERATION/AI-SUPPLIER-RISK-REGISTER.md) | Tiered register of AI suppliers with risk ratings |
+| 9 | [AI-SUPPLIER-CONTRACT-CLAUSES.md](07-CLAUSE8-OPERATION/AI-SUPPLIER-CONTRACT-CLAUSES.md) | Standard AI governance clauses for supplier contracts |
 
 ---
 
@@ -134,7 +139,11 @@ Folder: [09-CLAUSE10-IMPROVEMENT/](09-CLAUSE10-IMPROVEMENT/)
 
 Folder: [12-SCRIPTS/](12-SCRIPTS/)
 
-Automation scripts for GRC workflows, risk register exports, and AIMS reporting.
+| File | Purpose |
+|------|---------|
+| [ai_assessment_checker.py](12-SCRIPTS/ai_assessment_checker.py) | Automated AIMS gap assessment checker |
+| [aims_soa_tracker.py](12-SCRIPTS/aims_soa_tracker.py) | SoA implementation tracker — all 38 controls with progress reporting |
+| [sample_ai_systems.csv](12-SCRIPTS/sample_ai_systems.csv) | Sample AI systems inventory CSV |
 
 ---
 
@@ -143,12 +152,19 @@ Automation scripts for GRC workflows, risk register exports, and AIMS reporting.
 - All 10 ISO 42001 clauses with implementation templates
 - - All 38 Annex A controls across 9 domains
   - - Every mandatory document required by the standard
-    - - Cross-mapping to EU AI Act, NIST AI RMF, and ISO 27001
-     
-      - ---
+    - - Full Statement of Applicability with pre-populated control mapping
+      - - AI Ethics Framework (8 principles + governance structure)
+        - - Legal and Regulatory Requirements Register (EU AI Act, GDPR, UK, US)
+          - - Annex B — AI concepts and risk classification reference
+            - - Annex C — Guidance for AI developers/suppliers
+              - - AI Supplier Contract Clauses template
+                - - Cross-mapping to EU AI Act, NIST AI RMF, and ISO 27001
+                  - - GRC automation scripts (Python)
+                   
+                    - ---
 
-      ## Maintained by
+                    ## Maintained by
 
-      Ankit Uniyal — ISO 42001 Lead Auditor | GRC Lead
+                    Ankit Uniyal — ISO 42001 Lead Auditor | GRC Lead
 
-      See [00-README.md](00-README.md) for the full implementation guide.
+                    See [00-README.md](00-README.md) for the full implementation guide.

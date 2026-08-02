@@ -56,7 +56,7 @@ Files are organised into numbered folders that follow the ISO/IEC 42001:2023 cla
 | 5 | [AIMS-SCOPE-STATEMENT.md](03-CLAUSE4-CONTEXT/AIMS-SCOPE-STATEMENT.md) | 4.3 | Formal, management-approved scope — **mandatory** |
 | 6 | [AIMS-PROCESS-MAP.md](03-CLAUSE4-CONTEXT/AIMS-PROCESS-MAP.md) | 4.4 | AIMS processes, owners and interactions |
 
-**Who owns this phase:** AI Governance Lead, with sign-off from top management.
+**Who owns this phase:** AI Governance Lead, with sign-off from top management.  
 **When to revisit:** annually, and whenever scope, regulation or the AI portfolio changes.
 
 ---
@@ -72,7 +72,7 @@ Files are organised into numbered folders that follow the ISO/IEC 42001:2023 cla
 | 4 | [RACI-MATRIX.md](04-CLAUSE5-LEADERSHIP/RACI-MATRIX.md) | 5.3 | Roles, responsibilities and authorities; supports A.3.2 |
 | 5 | [AI-SYSTEM-OWNERSHIP-REGISTER.md](04-CLAUSE5-LEADERSHIP/AI-SYSTEM-OWNERSHIP-REGISTER.md) | 5.3 | A named accountable owner for every AI system |
 
-**Who owns this phase:** top management, facilitated by the AI Governance Lead.
+**Who owns this phase:** top management, facilitated by the AI Governance Lead.  
 **When to revisit:** annually; after significant incidents or reorganisations.
 
 ---
@@ -91,7 +91,7 @@ Files are organised into numbered folders that follow the ISO/IEC 42001:2023 cla
 
 The AI system impact assessment *process* is required by Clause 6.1.4; the template and completed assessments live in Phase 6 under Clause 8.4.
 
-**Who owns this phase:** AI Risk Manager and AI Governance Lead; SoA approved by top management.
+**Who owns this phase:** AI Risk Manager and AI Governance Lead; SoA approved by top management.  
 **When to revisit:** quarterly for the risk register; annually for the SoA and objectives.
 
 ---

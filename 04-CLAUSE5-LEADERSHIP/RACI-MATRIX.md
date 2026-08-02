@@ -1,10 +1,10 @@
 # RACI Matrix — AIMS Activities
 ## ISO/IEC 42001:2023 | Clause 5.3 — Template
 
-**Document ID:** AIMS-RACI-001
-**Version:** 1.0
-**Owner:** AI Governance Lead
-**Date:** ___________________________
+**Document ID:** AIMS-RACI-001  
+**Version:** 1.0  
+**Owner:** AI Governance Lead  
+**Date:** ___________________________  
 **Review Cycle:** Annual or upon role/structure change
 
 ---

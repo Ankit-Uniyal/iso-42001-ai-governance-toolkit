@@ -1,9 +1,9 @@
 # AI Risk Register Template — ISO/IEC 42001:2023
 
-**Organization:** ___________________________
-**AI System / Scope:** ___________________________
-**Risk Owner:** ___________________________
-**Last Updated:** ___________________________
+**Organization:** ___________________________  
+**AI System / Scope:** ___________________________  
+**Risk Owner:** ___________________________  
+**Last Updated:** ___________________________  
 **Review Frequency:** Quarterly
 
 > This risk register template is aligned with ISO/IEC 42001:2023 Clause 6.1 (AI Risk Assessment) and Annex C (Guidance on AI Risk Management).

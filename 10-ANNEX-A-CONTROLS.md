@@ -339,20 +339,267 @@ The people closest to an AI system are usually the first to notice that somethin
 
 ---
 
-## DOMAIN A.4 — RESOURCES
-*3 Controls | Ensuring adequate competence, infrastructure, and tools for AI governance*
+## DOMAIN A.4 — RESOURCES FOR AI SYSTEMS
+*5 Controls | Identifying and managing the data, tooling, computing and human resources that AI systems depend on*
 
 ---
 
-### A.4.2 — AI Competencies and Awareness
+### A.4.2 — Resource Documentation
 
-**Control Statement:** The organization shall determine, develop, and maintain the competencies required for responsible AI development, deployment, and governance, and ensure relevant personnel are aware of their AI governance obligations.
+**Control Statement:** The organization shall identify and document the resources required for each stage of the AI system life cycle, so that the resources necessary to develop, deploy, operate and maintain AI systems responsibly are known and planned.
 
 ---
 
 #### What It Means
 
-A.4.2 addresses the human capability dimension of AI governance. AI systems require people who understand not just the technical aspects — but also the ethical, legal, and governance dimensions. This control requires systematic assessment of competence gaps and closing them through training and hiring.
+A.4.2 is the umbrella control for the whole of Domain A.4. It requires the organization to write down, per AI system and per life cycle stage, what resources it depends on. Those resources fall into four categories that the remaining controls in this domain expand upon: data (A.4.3), tooling (A.4.4), systems and computing (A.4.5), and human resources (A.4.6). The intent is that resource needs are deliberately identified rather than discovered when something fails.
+
+#### Why It Matters
+
+Undocumented resource dependencies are a common root cause of AI failures. If nobody has recorded that a model depends on a particular third-party API, a specific data feed, or one engineer's undocumented knowledge, the organization cannot assess concentration risk, plan continuity, or budget realistically. Auditors use this control to test whether AI is being run as a managed capability or as a collection of undocumented projects.
+
+#### How to Implement
+
+- **Document resources per AI system** — For each system in the AI inventory, record the data, tools, infrastructure and people it depends on across its life cycle.
+- **Cover every life cycle stage** — Requirements, design, development, verification, deployment, operation, monitoring and retirement each have distinct resource needs.
+- **Identify single points of failure** — Flag dependencies on one vendor, one dataset or one individual, and record the mitigation.
+- **Link to budget and capacity planning** — Resource documentation should feed the AIMS resource plan and the annual planning cycle.
+- **Keep it current** — Update the documentation when systems change, and review it as part of the change control process.
+
+#### Documents to Prepare
+
+| Document | Description | Owner |
+|---|---|---|
+| AIMS Resource Plan | Consolidated view of human, financial, data and infrastructure resources for the AIMS | AI Governance Lead |
+| AI System Resource Register | Per-system record of data, tooling, compute and people dependencies | AI System Owners |
+| Dependency and Continuity Analysis | Identification of single points of failure and mitigations | AI Governance Lead / IT |
+
+#### How to Audit
+
+**Document Review:**
+- Confirm resource documentation exists and covers all systems in the AI inventory
+- Check that all four resource types are addressed: data, tooling, compute, people
+- Verify the documentation spans the full life cycle, not just development
+- Confirm it is version controlled and has been updated as systems changed
+
+**Personnel Interviews:**
+- Ask an AI System Owner: "What does this system depend on to keep running, and where is that written down?"
+- Ask the AI Governance Lead: "How do resource needs for AI feed into your planning and budget cycle?"
+
+**Evidence Required**
+- Documented resource register covering in-scope AI systems
+- Evidence of linkage to budgeting and capacity planning
+- Change records showing resource documentation is maintained
+- Dependency analysis identifying critical resources
+
+**Common Gaps Found in Audits**
+- Resources documented for development only, with operations and monitoring ignored
+- No record of third-party dependencies such as model APIs or data feeds
+- Documentation created once at certification and never updated
+- Key person dependencies well known informally but never formally recorded
+
+#### Cross-References
+
+| Framework | Reference |
+|---|---|
+| EU AI Act | Art. 17 (Quality management system); Art. 11 (Technical documentation) |
+| NIST AI RMF | GOVERN 1.2, MAP 1.1, MAP 3.1 |
+| ISO 27001:2022 | A.5.9 (Inventory of associated assets) |
+
+---
+
+### A.4.3 — Data Resources
+
+**Control Statement:** The organization shall document and manage the data resources used for its AI systems, including their origin, intended purpose, and the requirements they must satisfy.
+
+---
+
+#### What It Means
+
+A.4.3 treats data as a governed resource of the AI system rather than as raw material. It requires the organization to know which datasets underpin each AI system, where they came from, what they may legitimately be used for, and what quality and legal constraints attach to them. It is the resource-planning counterpart to the deeper data controls in Domain A.7.
+
+#### Why It Matters
+
+Data is the most common source of AI risk. Models trained on data the organization had no right to use create legal exposure; models trained on unrepresentative data create discriminatory outcomes; models fed by a data pipeline nobody owns fail silently when that pipeline changes. Documenting data resources is the precondition for controlling any of these risks.
+
+#### How to Implement
+
+- **Maintain a data inventory per AI system** — Record each dataset used for training, tuning, testing and operation.
+- **Record origin and lawful basis** — Capture where data came from, the licence or contractual terms, and the lawful basis for processing personal data.
+- **Record intended and prohibited uses** — State explicitly what the dataset may and may not be used for, so it is not silently repurposed.
+- **Define quality requirements** — Specify accuracy, completeness, timeliness and representativeness expectations appropriate to the system risk level.
+- **Assign data ownership** — Name an accountable owner for each significant dataset.
+- **Review on change** — Reassess when a data source, supplier or purpose changes.
+
+#### Documents to Prepare
+
+| Document | Description | Owner |
+|---|---|---|
+| AI Data Inventory | Register of datasets per AI system with origin, purpose and owner | Chief Data Officer / AI System Owners |
+| Data Licensing and Lawful Basis Record | Licences, contracts and lawful basis for each dataset | Legal / DPO |
+| Data Quality Requirements | Defined quality thresholds per dataset and system risk level | Data Governance Lead |
+
+#### How to Audit
+
+**Document Review:**
+- Verify a data inventory exists and reconciles to the AI systems inventory
+- Sample datasets and confirm origin, licence and lawful basis are recorded
+- Check that intended and prohibited uses are stated
+- Confirm data quality requirements are defined and monitored
+
+**Personnel Interviews:**
+- Ask a data scientist: "Where did the training data for this model come from and what are you permitted to use it for?"
+- Ask the DPO: "How do you assure the lawful basis for personal data used in AI training?"
+
+**Evidence Required**
+- AI data inventory mapped to AI systems
+- Licence, contract or consent records for datasets
+- Documented data quality requirements
+- Review records where data sources changed
+
+**Common Gaps Found in Audits**
+- Training data provenance unknown, particularly for scraped or vendor-supplied datasets
+- Data acquired for one purpose reused for model training with no reassessment
+- No named owner for critical datasets
+- Quality requirements stated as aspirations with no measurement
+
+#### Cross-References
+
+| Framework | Reference |
+|---|---|
+| EU AI Act | Art. 10 (Data and data governance) |
+| NIST AI RMF | MAP 2.3, MEASURE 2.2 |
+| ISO 27001:2022 | A.5.9 (Inventory of assets); A.5.34 (Privacy and protection of PII) |
+
+---
+
+### A.4.4 — Tooling Resources
+
+**Control Statement:** The organization shall document and manage the tooling resources used for its AI systems, including development frameworks, libraries, pre-trained models and MLOps platforms, together with their approval, versioning and vulnerability management.
+
+---
+
+#### What It Means
+
+A.4.4 requires the organization to know and govern the tooling its AI systems depend on, and to manage the supply chain risk those tools carry: the open-source ML frameworks (TensorFlow, PyTorch, scikit-learn), pre-trained models (from Hugging Face, model providers, etc.), data science notebooks (Jupyter), and MLOps tools (MLflow, Kubeflow, etc.). Each component carries security vulnerabilities and governance risks.
+
+#### Why It Matters
+
+The AI tool ecosystem contains significant supply chain risk: open-source ML libraries with known CVEs in active use; pre-trained models from public repositories that may contain backdoors, biases, or license restrictions; notebooks with hard-coded credentials; third-party ML tools with excessive data exfiltration.
+
+#### How to Implement
+
+- **Create an approved AI tools and libraries list** — Register of approved ML frameworks, libraries, and tools with approved versions.
+- **Implement tool approval process** — New tools require security assessment before use in development or production.
+- **Software Composition Analysis (SCA)** — Automated scanning of AI project dependencies for known vulnerabilities. Integrate into CI/CD pipeline.
+- **Pre-trained model governance** — For each pre-trained model: document source and version; review license terms for AI training use; assess for known vulnerabilities and bias concerns; maintain in a controlled model registry.
+- **Notebook security** — Prevent hard-coded credentials in notebooks. Use secrets management. Review notebooks in code review.
+
+#### Documents to Prepare
+
+| Document | Description | Owner |
+|---|---|---|
+| Approved AI Tools and Libraries List | Register of approved ML frameworks, libraries, and tools | CISO / AI Governance Lead |
+| Pre-trained Model Registry | Register of all pre-trained models with source, version, license, and security assessment | AI Governance Lead / ML Lead |
+| Tool Approval Process | Process for requesting and approving new AI development tools | CISO |
+| SCA Scan Results | Automated dependency vulnerability scan results | DevOps / CISO |
+| License Compliance Register | AI training license compliance status for pre-trained models and datasets | Legal / AI Governance Lead |
+
+#### How to Audit
+
+**Document Review:**
+- Verify approved tools list exists and is current
+- Check pre-trained model registry — are all in-use models listed with source and license?
+- Review SCA scan results — are there unresolved high/critical CVEs?
+
+**Evidence Required**
+- Approved AI tools and libraries list
+- Pre-trained model registry
+- SCA scan results and remediation records
+
+**Common Gaps Found in Audits**
+- No approved tools list — developers use whatever libraries they prefer
+- Pre-trained models from Hugging Face adopted without any security or license review
+- SCA scanning in place for application code but not applied to ML dependencies
+- Hard-coded API keys found in notebooks committed to version control
+
+#### Cross-References
+
+| Framework | Reference |
+|---|---|
+| NIST AI RMF | MAP 5.1, MANAGE 2.2 |
+| ISO 27001:2022 | A.8.30 (Outsourced development); A.8.8 (Management of technical vulnerabilities) |
+
+### A.4.5 — System and Computing Resources
+
+**Control Statement:** The organization shall document and manage the system and computing resources required by its AI systems, including compute, storage, networking and development environments, applying protection and capacity management proportionate to the risk of the AI system.
+
+---
+
+#### What It Means
+
+A.4.5 ensures that the technical infrastructure underlying AI systems is appropriately secured and maintained. AI infrastructure has unique security considerations: training data repositories containing sensitive or personal data; GPU compute environments; model artifact storage; MLOps pipelines; production inference infrastructure.
+
+#### Why It Matters
+
+AI infrastructure security failures can lead to: training data exfiltration (personal or proprietary data); model theft or tampering (adversarial modification of model weights); poisoning attacks through compromised training pipelines; unauthorized access to AI production systems leading to manipulation of outputs.
+
+#### How to Implement
+
+- **Create an AI infrastructure inventory** — All infrastructure components supporting AI: cloud GPU instances, training clusters, data lakes, model registries, MLOps platforms, inference endpoints.
+- **Apply security standards** — Access controls, encryption at rest and in transit, network segmentation, vulnerability management, and patching.
+- **Secure MLOps pipelines** — Treat the training pipeline as a critical system: version control, integrity verification, access controls on pipeline configuration.
+- **Protect model artifacts** — Model weights are intellectual property and security-sensitive. Apply access controls, integrity verification, and audit logging.
+- **Maintain and patch** — AI infrastructure requires active patching. Define patching cadence and track compliance.
+- **Disaster recovery** — For critical AI services, ensure infrastructure is covered by DR plans with defined RTO/RPO.
+
+#### Documents to Prepare
+
+| Document | Description | Owner |
+|---|---|---|
+| AI Infrastructure Inventory | Complete list of AI infrastructure components with classification | CISO / DevOps |
+| AI Infrastructure Security Standards | Security requirements applicable to AI infrastructure | CISO |
+| AI Infrastructure Access Control Matrix | Who can access what AI infrastructure, with what privilege | CISO / DevOps |
+| Patching and Maintenance Records | Evidence of vulnerability management and patching | DevOps |
+| AI Infrastructure DR Plan | Disaster recovery provisions for critical AI infrastructure | CISO / DevOps |
+
+#### How to Audit
+
+**Document Review:**
+- Verify AI infrastructure inventory exists and is complete
+- Check access controls are configured for least privilege
+- Review patching records — are AI infrastructure components patched to current standards?
+
+**Evidence Required**
+- AI infrastructure inventory
+- Access control configuration records
+- Patching and vulnerability management records
+- DR plan coverage for AI infrastructure
+
+**Common Gaps Found in Audits**
+- Training data stored in unsecured S3 buckets or file shares
+- Model registry lacks access controls — any developer can overwrite production models
+- MLOps pipeline configuration not in version control and not access-controlled
+- AI infrastructure excluded from standard vulnerability management processes
+
+#### Cross-References
+
+| Framework | Reference |
+|---|---|
+| NIST AI RMF | MANAGE 2.2, MAP 5.2 |
+| ISO 27001:2022 | A.8.1 (User endpoint devices); A.8.9 (Configuration management) |
+
+---
+
+### A.4.6 — Human Resources
+
+**Control Statement:** The organization shall document and manage the human resources required for its AI systems, including the roles, competences, training and awareness needed to develop, deploy, operate and oversee AI responsibly.
+
+---
+
+#### What It Means
+
+A.4.6 addresses the human capability dimension of AI governance. AI systems require people who understand not just the technical aspects — but also the ethical, legal, and governance dimensions. This control requires systematic assessment of competence gaps and closing them through training and hiring.
 
 #### Why It Matters
 
@@ -410,130 +657,12 @@ Competence gaps are one of the most common root causes of AI governance failures
 
 ---
 
-### A.4.3 — AI Infrastructure Security
-
-**Control Statement:** The organization shall identify, protect, and appropriately maintain the infrastructure required for AI systems, including compute, storage, networking, and development environments, applying security controls proportionate to the AI risk.
-
----
-
-#### What It Means
-
-A.4.3 ensures that the technical infrastructure underlying AI systems is appropriately secured and maintained. AI infrastructure has unique security considerations: training data repositories containing sensitive or personal data; GPU compute environments; model artifact storage; MLOps pipelines; production inference infrastructure.
-
-#### Why It Matters
-
-AI infrastructure security failures can lead to: training data exfiltration (personal or proprietary data); model theft or tampering (adversarial modification of model weights); poisoning attacks through compromised training pipelines; unauthorized access to AI production systems leading to manipulation of outputs.
-
-#### How to Implement
-
-- **Create an AI infrastructure inventory** — All infrastructure components supporting AI: cloud GPU instances, training clusters, data lakes, model registries, MLOps platforms, inference endpoints.
-- **Apply security standards** — Access controls, encryption at rest and in transit, network segmentation, vulnerability management, and patching.
-- **Secure MLOps pipelines** — Treat the training pipeline as a critical system: version control, integrity verification, access controls on pipeline configuration.
-- **Protect model artifacts** — Model weights are intellectual property and security-sensitive. Apply access controls, integrity verification, and audit logging.
-- **Maintain and patch** — AI infrastructure requires active patching. Define patching cadence and track compliance.
-- **Disaster recovery** — For critical AI services, ensure infrastructure is covered by DR plans with defined RTO/RPO.
-
-#### Documents to Prepare
-
-| Document | Description | Owner |
-|---|---|---|
-| AI Infrastructure Inventory | Complete list of AI infrastructure components with classification | CISO / DevOps |
-| AI Infrastructure Security Standards | Security requirements applicable to AI infrastructure | CISO |
-| AI Infrastructure Access Control Matrix | Who can access what AI infrastructure, with what privilege | CISO / DevOps |
-| Patching and Maintenance Records | Evidence of vulnerability management and patching | DevOps |
-| AI Infrastructure DR Plan | Disaster recovery provisions for critical AI infrastructure | CISO / DevOps |
-
-#### How to Audit
-
-**Document Review:**
-- Verify AI infrastructure inventory exists and is complete
-- Check access controls are configured for least privilege
-- Review patching records — are AI infrastructure components patched to current standards?
-
-**Evidence Required**
-- AI infrastructure inventory
-- Access control configuration records
-- Patching and vulnerability management records
-- DR plan coverage for AI infrastructure
-
-**Common Gaps Found in Audits**
-- Training data stored in unsecured S3 buckets or file shares
-- Model registry lacks access controls — any developer can overwrite production models
-- MLOps pipeline configuration not in version control and not access-controlled
-- AI infrastructure excluded from standard vulnerability management processes
-
-#### Cross-References
-
-| Framework | Reference |
-|---|---|
-| NIST AI RMF | MANAGE 2.2, MAP 5.2 |
-| ISO 27001:2022 | A.8.1 (User endpoint devices); A.8.9 (Configuration management) |
+## DOMAIN A.5 — ASSESSING IMPACTS OF AI SYSTEMS
+*4 Controls | Assessing and documenting the impacts of AI on individuals, groups and society*
 
 ---
 
-### A.4.4 — AI Tool Security
-
-**Control Statement:** The organization shall manage the security of AI development tools, frameworks, libraries, and pre-trained models used in AI development and deployment, including approval processes and vulnerability assessment for these components.
-
----
-
-#### What It Means
-
-A.4.4 addresses the supply chain security of AI tooling: the open-source ML frameworks (TensorFlow, PyTorch, scikit-learn), pre-trained models (from Hugging Face, model providers, etc.), data science notebooks (Jupyter), and MLOps tools (MLflow, Kubeflow, etc.). Each component carries security vulnerabilities and governance risks.
-
-#### Why It Matters
-
-The AI tool ecosystem contains significant supply chain risk: open-source ML libraries with known CVEs in active use; pre-trained models from public repositories that may contain backdoors, biases, or license restrictions; notebooks with hard-coded credentials; third-party ML tools with excessive data exfiltration.
-
-#### How to Implement
-
-- **Create an approved AI tools and libraries list** — Register of approved ML frameworks, libraries, and tools with approved versions.
-- **Implement tool approval process** — New tools require security assessment before use in development or production.
-- **Software Composition Analysis (SCA)** — Automated scanning of AI project dependencies for known vulnerabilities. Integrate into CI/CD pipeline.
-- **Pre-trained model governance** — For each pre-trained model: document source and version; review license terms for AI training use; assess for known vulnerabilities and bias concerns; maintain in a controlled model registry.
-- **Notebook security** — Prevent hard-coded credentials in notebooks. Use secrets management. Review notebooks in code review.
-
-#### Documents to Prepare
-
-| Document | Description | Owner |
-|---|---|---|
-| Approved AI Tools and Libraries List | Register of approved ML frameworks, libraries, and tools | CISO / AI Governance Lead |
-| Pre-trained Model Registry | Register of all pre-trained models with source, version, license, and security assessment | AI Governance Lead / ML Lead |
-| Tool Approval Process | Process for requesting and approving new AI development tools | CISO |
-| SCA Scan Results | Automated dependency vulnerability scan results | DevOps / CISO |
-| License Compliance Register | AI training license compliance status for pre-trained models and datasets | Legal / AI Governance Lead |
-
-#### How to Audit
-
-**Document Review:**
-- Verify approved tools list exists and is current
-- Check pre-trained model registry — are all in-use models listed with source and license?
-- Review SCA scan results — are there unresolved high/critical CVEs?
-
-**Evidence Required**
-- Approved AI tools and libraries list
-- Pre-trained model registry
-- SCA scan results and remediation records
-
-**Common Gaps Found in Audits**
-- No approved tools list — developers use whatever libraries they prefer
-- Pre-trained models from Hugging Face adopted without any security or license review
-- SCA scanning in place for application code but not applied to ML dependencies
-- Hard-coded API keys found in notebooks committed to version control
-
-#### Cross-References
-
-| Framework | Reference |
-|---|---|
-| NIST AI RMF | MAP 5.1, MANAGE 2.2 |
-| ISO 27001:2022 | A.8.30 (Outsourced development); A.8.8 (Management of technical vulnerabilities) |
-
-## DOMAIN A.5 — IMPACT ASSESSMENT
-*3 Controls | Assessing the impacts of AI systems before deployment and throughout lifecycle*
-
----
-
-### A.5.2 — AI System Impact Assessment (ASIA)
+### A.5.2 — AI System Impact Assessment Process
 
 **Control Statement:** The organization shall conduct documented AI System Impact Assessments (ASIAs) for AI systems before deployment and at significant change points, covering potential harms, benefits, ethical implications, and societal impacts.
 
@@ -599,7 +728,149 @@ AI systems can cause harms not anticipated by their designers: discriminatory ou
 
 ---
 
-### A.5.3 — Societal and Ethical Impact of AI Systems
+### A.5.3 — Documentation of AI System Impact Assessments
+
+**Control Statement:** The organization shall document the results of its AI system impact assessments and retain those records for a defined period, making them available to relevant interested parties where appropriate.
+
+---
+
+#### What It Means
+
+A.5.2 defines the process; A.5.3 governs its output. Every impact assessment must produce a durable, retrievable record that shows what was assessed, who was involved, what impacts were identified, what decisions followed and what mitigations were committed. The record must be retained and, where there is a legal or contractual duty, made available to regulators, customers or affected parties.
+
+#### Why It Matters
+
+An impact assessment that leaves no record is worthless in an audit or an investigation. When an AI system causes harm, the first question asked by a regulator, a court or a customer is what the organization knew and when it knew it. Well-kept impact assessment records are the organization's primary evidence of due diligence; missing or retrospectively created records are treated as an aggravating factor.
+
+#### How to Implement
+
+- **Standardize the record format** — Use a consistent template so every assessment captures scope, methodology, participants, identified impacts, severity, mitigations, residual risk and approval.
+- **Record the decision and the approver** — Note explicitly who accepted the residual impact and on what authority.
+- **Version the assessments** — Reassessments should build on prior versions so the history of the system's risk profile is visible.
+- **Set a retention period** — Define how long assessments are kept, aligned to the operational life of the system plus any statutory limitation period.
+- **Control access and disclosure** — Define who may see assessments internally, and the process for releasing them to regulators, customers or the public.
+- **Link records to the AI inventory** — Each system in the inventory should point to its current impact assessment.
+
+#### Documents to Prepare
+
+| Document | Description | Owner |
+|---|---|---|
+| AI System Impact Assessment Template | Standard format ensuring consistent, complete records | AI Governance Lead |
+| Completed Impact Assessment Records | Per-system assessment records with approvals | AI System Owners |
+| Records Retention Schedule | Retention periods for impact assessments and supporting evidence | Compliance / Records Manager |
+| Disclosure Procedure | Process for providing assessments to regulators or customers | Legal / AI Governance Lead |
+
+#### How to Audit
+
+**Document Review:**
+- Confirm a standard template is in use and completed consistently across systems
+- Sample AI systems from the inventory and verify a current, approved assessment exists for each
+- Check that approvals name an individual with appropriate authority
+- Verify retention periods are defined and being honoured
+- Confirm reassessments are versioned rather than overwriting prior records
+
+**Personnel Interviews:**
+- Ask the AI Governance Lead: "Show me the impact assessment for this system and its approval history."
+- Ask Legal: "If a regulator requested our impact assessments tomorrow, how would you produce them?"
+
+**Evidence Required**
+- Completed, approved and dated impact assessment records
+- Retention schedule covering impact assessments
+- Version history showing reassessment over time
+- Records of any external disclosure
+
+**Common Gaps Found in Audits**
+- Assessments performed in workshops but never written up
+- Records held in personal drives or chat threads rather than a controlled repository
+- No approver recorded, so accountability for accepting residual impact is unclear
+- Reassessments overwrite the original, destroying the audit trail
+- No retention period defined, so records are deleted or kept indefinitely without basis
+
+#### Cross-References
+
+| Framework | Reference |
+|---|---|
+| EU AI Act | Art. 27 (Fundamental rights impact assessment); Art. 11 and Annex IV (Technical documentation); Art. 18 (Documentation keeping) |
+| NIST AI RMF | MAP 5.1, MAP 5.2, GOVERN 1.4 |
+| ISO 27001:2022 | A.5.33 (Protection of records); A.5.37 (Documented operating procedures) |
+
+---
+
+### A.5.4 — Assessing AI System Impact on Individuals or Groups of Individuals
+
+**Control Statement:** The organization shall assess and document the potential impacts of its AI systems on individuals and on groups of individuals throughout the system life cycle.
+
+---
+
+#### What It Means
+
+A.5.4 narrows the impact assessment to the people on the receiving end of an AI decision. It requires the organization to work out who is affected, how they could be harmed, and how severely — covering not just the direct user but anyone subject to or affected by the system's output. It explicitly extends to groups, because harms such as discrimination often appear only when outcomes are examined across a protected characteristic rather than case by case.
+
+#### Why It Matters
+
+Individual and group harm is the risk that regulators, courts and the public care about most. AI systems have denied people credit, filtered them out of hiring processes, mispriced their insurance and misidentified them to law enforcement. These harms are rarely visible in aggregate accuracy metrics: a model can be 95 percent accurate overall and still fail systematically for one subgroup. A.5.4 forces that analysis to happen deliberately and before deployment rather than after a complaint.
+
+#### How to Implement
+
+- **Identify all affected parties** — Distinguish users, decision subjects, bystanders and vulnerable groups. The decision subject is frequently not the user.
+- **Categorize potential harms** — Consider physical safety, psychological harm, financial loss, discrimination, loss of opportunity, privacy intrusion, loss of autonomy and loss of access to essential services.
+- **Assess by subgroup, not just in aggregate** — Analyse outcomes across relevant characteristics such as age, sex, ethnicity, disability and socioeconomic status, within what the law permits.
+- **Rate severity, likelihood and reversibility** — An irreversible harm to a small group can outweigh a minor harm to many, and should be scored accordingly.
+- **Give particular weight to vulnerable groups** — Children, elderly people, people with disabilities and people in precarious circumstances warrant heightened scrutiny.
+- **Involve affected people where practicable** — Consultation, user research or representative panels produce harms that internal teams miss.
+- **Define mitigations and residual impact** — Record what will be done, who owns it, and what impact remains after mitigation.
+- **Reassess on change** — Repeat when the model, data, population or deployment context changes.
+
+#### Documents to Prepare
+
+| Document | Description | Owner |
+|---|---|---|
+| Individual and Group Impact Assessment | Per-system analysis of affected parties, harms, severity and mitigations | AI System Owner / AI Governance Lead |
+| Affected Parties Register | Identification of users, decision subjects and vulnerable groups per system | AI Governance Lead |
+| Subgroup Outcome Analysis | Evidence of performance and outcome testing across relevant subgroups | Data Science / ML Engineering |
+| Stakeholder Consultation Records | Evidence of engagement with or research into affected populations | Product / AI Governance Lead |
+
+#### How to Audit
+
+**Document Review:**
+- Verify assessments identify decision subjects and not only direct users
+- Confirm harm categories extend beyond privacy and security to fairness, autonomy and access
+- Check for evidence of subgroup analysis rather than aggregate metrics alone
+- Confirm vulnerable groups were explicitly considered
+- Verify mitigations have named owners and that residual impact was formally accepted
+- Check reassessment occurred after significant model or context changes
+
+**Personnel Interviews:**
+- Ask the AI System Owner: "Who is affected by this system's decisions, and what is the worst outcome for them?"
+- Ask a data scientist: "How does this model perform for the groups most likely to be disadvantaged by it?"
+- Ask the AI Governance Lead: "How did you involve or represent affected people in this assessment?"
+
+**Evidence Required**
+- Completed impact assessments covering individuals and groups
+- Subgroup performance and outcome testing results
+- Records of vulnerable group consideration
+- Mitigation plans with owners and residual impact sign-off
+- Consultation or user research evidence where applicable
+
+**Common Gaps Found in Audits**
+- Assessment considers the customer using the system but ignores the person the system decides about
+- Harm analysis limited to data protection, omitting discrimination and loss of opportunity
+- Only aggregate accuracy reported, with no subgroup breakdown
+- Vulnerable groups not identified at all
+- Assessment completed once before launch and never repeated after retraining
+- Mitigations listed with no owner, deadline or verification that they were implemented
+
+#### Cross-References
+
+| Framework | Reference |
+|---|---|
+| EU AI Act | Art. 27 (Fundamental rights impact assessment); Art. 9 (Risk management); Art. 5 (Prohibited practices); Art. 14 (Human oversight) |
+| NIST AI RMF | MAP 1.1, MAP 3.3, MAP 5.1, MEASURE 2.11 |
+| ISO 27001:2022 | A.5.34 (Privacy and protection of PII) |
+
+---
+
+### A.5.5 — Assessing Societal Impacts of AI Systems
 
 **Control Statement:** The organization shall assess and address the broader societal and ethical implications of its AI systems, including impacts on communities, institutions, human autonomy, and social cohesion beyond direct individual harms.
 
@@ -607,7 +878,7 @@ AI systems can cause harms not anticipated by their designers: discriminatory ou
 
 #### What It Means
 
-A.5.3 extends impact assessment beyond direct individual harm to consider macro-level societal and ethical implications: systemic effects at population scale; environmental impact of large AI model training; impacts on human autonomy and agency; effects on labor markets and employment; concentration of power implications.
+A.5.5 extends impact assessment beyond direct individual harm to consider macro-level societal and ethical implications: systemic effects at population scale; environmental impact of large AI model training; impacts on human autonomy and agency; effects on labor markets and employment; concentration of power implications.
 
 #### Why It Matters
 
@@ -654,67 +925,6 @@ Individual-level harm assessments can miss systemic harms. A system that causes 
 | NIST AI RMF | MAP 1.5, MAP 1.6 |
 
 ---
-
-### A.5.4 — Use of AI System Impact Assessment Results
-
-**Control Statement:** The organization shall ensure that AI System Impact Assessment results are used to inform AI risk treatment decisions, design choices, deployment conditions, and operational controls, with findings tracked through to resolution.
-
----
-
-#### What It Means
-
-A.5.4 closes the loop on A.5.2 and A.5.3. It is not enough to conduct an ASIA — the findings must drive action. This control requires that ASIA findings are formally transferred into the risk management and control implementation process, and that resolution of identified risks is tracked.
-
-#### Why It Matters
-
-The most common failure in impact assessment programs is the "document and forget" pattern: ASIAs are completed as a compliance exercise, findings are noted, and nothing changes. A.5.4 exists to prevent this. Auditors will test the chain from ASIA finding to risk register entry to implemented control to evidence of effectiveness.
-
-#### How to Implement
-
-- **Map ASIA findings to the AI risk register** — Every risk identified in the ASIA must be entered into the AI risk register as a formal risk entry.
-- **Define risk treatment for each finding** — Accept, mitigate, avoid, or transfer. Document the rationale.
-- **Track implementation** — For mitigation actions, assign an owner, define a timeline, and track to completion.
-- **Verify effectiveness** — After implementation, verify that the control is effective and risk has been reduced as intended.
-- **Close the loop in AIMS management review** — ASIA findings and treatment status should be reported at management review.
-
-#### Documents to Prepare
-
-| Document | Description | Owner |
-|---|---|---|
-| ASIA-to-Risk Register Mapping | Documented linkage between ASIA findings and risk register entries | AI Risk Manager |
-| Risk Treatment Plans | Treatment decisions and implementation plans for ASIA-identified risks | AI Risk Manager / Model Owner |
-| Risk Treatment Implementation Records | Evidence that agreed mitigations have been implemented | Model Owner / AI Governance Lead |
-| Control Effectiveness Reviews | Evidence that implemented controls are achieving intended risk reduction | AI Governance Lead / Internal Audit |
-
-#### How to Audit
-
-**Document Review:**
-- Select a completed ASIA. Trace each significant finding to the AI risk register.
-- For each risk register entry, verify a treatment decision exists.
-- For mitigation actions, verify implementation records exist.
-
-**Personnel Interviews:**
-- Ask the AI Risk Manager: "Show me how a finding from this ASIA resulted in a change to this AI system's design or controls."
-- Ask the AI Governance Lead: "Has any ASIA finding ever resulted in a deployment being delayed or cancelled? Tell me about it."
-
-**Evidence Required**
-- ASIA-to-risk register mapping
-- Risk treatment decisions and implementation records
-- Evidence of control effectiveness verification
-- Management review reports including ASIA findings status
-
-**Common Gaps Found in Audits**
-- ASIA findings not entered in risk register — no traceability
-- Risk treatment decisions documented but not implemented
-- No follow-up on whether implemented controls are effective
-
-#### Cross-References
-
-| Framework | Reference |
-|---|---|
-| EU AI Act | Art. 9 (Risk management — risk treatment) |
-| NIST AI RMF | MANAGE 1.1, MANAGE 2.1 |
-| ISO 27001:2022 | ISO 27001 Clause 6.1.3 (Risk treatment) |
 
 ## DOMAIN A.6 — AI LIFECYCLE
 *10 Controls | Governing AI from design through decommissioning*

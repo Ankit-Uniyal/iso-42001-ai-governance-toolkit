@@ -165,7 +165,7 @@ The AI system impact assessment *process* is required by Clause 6.1.4; the templ
 | [11-CONTROLS-MAPPING.md](11-CONTROLS-MAPPING.md) | Annex A mapped to EU AI Act articles, NIST AI RMF functions and ISO/IEC 27001:2022 controls |
 | [12-ANNEX-B-AI-CONCEPTS.md](12-ANNEX-B-AI-CONCEPTS.md) | AI concepts, terminology and risk classification reference |
 | [13-ANNEX-C-AI-DEVELOPERS.md](13-ANNEX-C-AI-DEVELOPERS.md) | Guidance for organisations that build AI for other organisations |
-| [12-SCRIPTS/](12-SCRIPTS/) | Python automation: assessment currency checker and SoA implementation tracker |
+| [15-SCRIPTS/](15-SCRIPTS/) | Python automation: assessment currency checker and SoA implementation tracker |
 | [14-WORKED-EXAMPLE/](14-WORKED-EXAMPLE/) | Completed templates for a fictional organisation, Nexus Financial Services |
 
 ---

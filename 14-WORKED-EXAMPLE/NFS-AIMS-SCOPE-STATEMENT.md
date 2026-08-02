@@ -2,7 +2,7 @@
 
 ## ISO/IEC 42001:2023 | Clause 4.3 | FICTIONAL REFERENCE ONLY
 
-**Document ID:** NFS-AIMS-SCOPE-001
+**Document ID:** NFS-AIMS-SCOPE-001  
 **Version:** 1.2 | **Owner:** Chief Risk Officer | **Date:** 14 March 2025 | **Review Cycle:** Annual
 
 > **FICTIONAL EXAMPLE:** This document is a completed worked example for the fictional organisation Nexus Financial Services Ltd. It is for educational reference only and does not represent any real organisation, product, or compliance status.
@@ -11,11 +11,11 @@
 
 ## 1. Organisation Overview
 
-**Organisation Name:** Nexus Financial Services Ltd (NFS)
-**Registered Address:** 12 Exchange Square, Manchester, M2 7BL, United Kingdom
-**Company Number:** 04782193
-**FCA Reference:** 789234
-**Industry:** Retail banking and consumer lending
+**Organisation Name:** Nexus Financial Services Ltd (NFS)  
+**Registered Address:** 12 Exchange Square, Manchester, M2 7BL, United Kingdom  
+**Company Number:** 04782193  
+**FCA Reference:** 789234  
+**Industry:** Retail banking and consumer lending  
 **Size:** Approximately 3,200 employees across 14 UK branch locations
 
 NFS provides personal loans, mortgages, credit cards, and current accounts to approximately 860,000 retail customers across the United Kingdom. NFS operates as both a data controller and data processor under UK GDPR and is authorised and regulated by the Financial Conduct Authority (FCA).

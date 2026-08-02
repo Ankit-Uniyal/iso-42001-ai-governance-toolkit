@@ -1,4 +1,4 @@
-—# AIMS Resource Plan
+# AIMS Resource Plan
 ## ISO/IEC 42001:2023 | Clause 7.1 — Template
 
 **Document ID:** AIMS-RESPLAN-001

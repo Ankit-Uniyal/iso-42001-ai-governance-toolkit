@@ -20,22 +20,23 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) 
 - Repaired markdown corruption (runaway blockquotes, doubled bullets, doubled list numbers) in the Clause 4 and Clause 5 folder READMEs, `13-ANNEX-C-AI-DEVELOPERS.md`, `README.md`, `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md` and this changelog.
 - Reframed `12-ANNEX-B-AI-CONCEPTS.md` and `13-ANNEX-C-AI-DEVELOPERS.md` as supplementary guides. Annex B of the standard is implementation guidance for the Annex A controls and Annex C is potential AI-related organisational objectives and risk sources.
 - Repaired `.github/workflows/ai-assessment-check.yml`, which had invalid YAML indentation and had never run successfully.
-- Fixed `12-SCRIPTS/ai_assessment_checker.py`: default paths pointed at a non-existent `scripts/` directory and the report directory was never created.
+- Fixed `15-SCRIPTS/ai_assessment_checker.py`: default paths pointed at a non-existent `scripts/` directory and the report directory was never created.
 - Replaced the placeholder contact address in `SECURITY.md`.
 
 ### Added
 - Missing folder README entries for `LEGAL-REGULATORY-REQUIREMENTS-REGISTER.md`, `AI-ETHICS-FRAMEWORK.md` and `AI-SUPPLIER-CONTRACT-CLAUSES.md`.
-- Documentation for `aims_soa_tracker.py` in `12-SCRIPTS/README.md`.
+- Documentation for `aims_soa_tracker.py` in `15-SCRIPTS/README.md`.
 
 ### Changed
-- Refreshed `12-SCRIPTS/sample_ai_systems.csv` so the sample inventory still demonstrates compliant, due-soon, overdue and missing-date outcomes.
+- Refreshed `15-SCRIPTS/sample_ai_systems.csv` so the sample inventory still demonstrates compliant, due-soon, overdue and missing-date outcomes.
+- Renamed the scripts folder from `12-SCRIPTS/` to `15-SCRIPTS/` so it no longer shares the `12-` prefix with `12-ANNEX-B-AI-CONCEPTS.md`. All references, including the GitHub Actions workflow and `.gitignore`, were updated with it.
 
 ---
 
 ## [1.1.0] — 2026-08-02
 
 ### Fixed
-- Rebuilt `05-CLAUSE6-PLANNING/STATEMENT-OF-APPLICABILITY.md`, `10-ANNEX-A-CONTROLS.md`, `11-CONTROLS-MAPPING.md` and `12-SCRIPTS/aims_soa_tracker.py` against the correct ISO/IEC 42001:2023 Annex A structure of 38 controls across nine domains.
+- Rebuilt `05-CLAUSE6-PLANNING/STATEMENT-OF-APPLICABILITY.md`, `10-ANNEX-A-CONTROLS.md`, `11-CONTROLS-MAPPING.md` and `15-SCRIPTS/aims_soa_tracker.py` against the correct ISO/IEC 42001:2023 Annex A structure of 38 controls across nine domains.
 
 ---
 

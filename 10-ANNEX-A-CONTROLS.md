@@ -2079,13 +2079,13 @@ Undisclosed AI use erodes trust, undermines informed consent, and in some jurisd
 ---
 
 ## DOMAIN A.9 — USE OF AI SYSTEMS
-*3 Controls | Governing how AI is used in operational contexts*
+*3 Controls | Governing how AI systems are actually used in operational contexts*
 
 ---
 
-### A.9.2 — Acceptable Use of AI
+### A.9.2 — Processes for Responsible Use of AI Systems
 
-**Control Statement:** The organization shall define, document, communicate, and enforce acceptable use policies for AI systems, covering permitted and prohibited uses, responsible use guidance, and consequences for policy violations.
+**Control Statement:** The organization shall define and implement processes for the responsible use of its AI systems, covering permitted and prohibited use, the human oversight that applies, and how erroneous or contested outputs are handled.
 
 ---
 
@@ -2104,6 +2104,9 @@ Without acceptable use policies, employees make their own judgments about what A
 3. **Address organizational AI system use** — Use cases within and outside validated scope; Requirements for human review; Escalation procedures; Recording requirements for AI-assisted decisions.
 4. **Communicate and enforce policy** — Training, intranet publication, and acknowledgment. Technical controls where feasible (block access to prohibited AI services).
 5. **Update regularly** — As new AI tools proliferate, update the approved list and conditions.
+
+- **Define the human oversight that applies** — State which decisions require human review, at what level, and what authority the reviewer has to question, modify or override an output. Oversight must be genuine: reviewers need the time, information, competence and standing to disagree, otherwise it becomes rubber-stamping.
+- **Define how errors and contested outputs are handled** — Provide a route for users and affected people to flag an incorrect output, specify who investigates, how corrections are made, and how systemic errors are escalated into the incident and risk processes.
 
 #### Documents to Prepare
 
@@ -2156,182 +2159,243 @@ Without acceptable use policies, employees make their own judgments about what A
 
 ---
 
-### A.9.3 — Human Oversight
+### A.9.3 — Objectives for Responsible Use of AI Systems
 
-**Control Statement:** The organization shall implement effective human oversight mechanisms for AI systems used in high-stakes decisions, ensuring humans have the ability to understand, review, override, and suspend AI outputs, and that oversight personnel are appropriately qualified.
+**Control Statement:** The organization shall identify and document the objectives that govern the responsible use of its AI systems, and shall take those objectives into account when deploying and operating them.
 
 ---
 
 #### What It Means
 
-A.9.3 is the operational human oversight control — applying in live production operations. It requires that qualified people are actively and meaningfully reviewing AI decisions, overrides are being exercised appropriately, and humans are not simply rubber-stamping AI outputs.
+Where A.6.1.2 sets objectives for building AI responsibly, A.9.3 sets them for using it. The organization must state what it is trying to achieve, and what it will not accept, when AI is put to work: the outcomes it expects, the limits it places on reliance, the level of human involvement it requires, and the effects on staff, customers and affected parties that it considers unacceptable.
 
 #### Why It Matters
 
-Automation bias — the tendency to over-trust automated systems — is well-documented and dangerous. In high-stakes AI applications (medical diagnosis, credit decisioning, criminal justice, hiring), the consequence of blind AI acceptance can be serious and irreversible harm.
+Organizations routinely deploy AI with an implicit objective, usually efficiency, and no stated counterweight. The result is predictable: reliance grows beyond what the system can support, human review is quietly reduced to meet throughput targets, and quality or fairness degrades without anyone having decided to accept that. Documented use objectives make the trade-off explicit and reviewable, and give staff a legitimate basis to push back when operational pressure conflicts with responsible use.
 
 #### How to Implement
 
-1. **Define "high-stakes" for your context** — Criteria: Impact on fundamental rights; Irreversibility; Severity of potential harm; Regulatory requirement. Examples: automated employment decisions; credit/loan decisions; medical treatment recommendations; law enforcement decisions.
-2. **Design meaningful oversight** — Informed (overseers see what they need); Timely (can operate at the speed of decisions); Empowered (can override without friction); Proportionate to risk level.
-3. **Prevent automation bias** — Present AI recommendation with uncertainty; Show supporting evidence; Require active human judgment rather than passive confirmation.
-4. **Qualify overseers** — Overseers must have domain knowledge and AI literacy to meaningfully evaluate AI outputs.
-5. **Monitor oversight quality** — Track override rates; investigate suspiciously low override rates; conduct periodic oversight quality audits.
+- **State what the organization is optimising for** — Efficiency, consistency, accuracy, accessibility, cost, and where those goals conflict, which one yields.
+- **State the limits on reliance** — Define the decisions the organization will not delegate to an AI system regardless of measured performance.
+- **Set objectives for human involvement** — Express the intended level of human review in terms that cannot be silently eroded by throughput targets.
+- **Include objectives for affected people** — Fair outcomes, ability to contest, availability of a human alternative, and clarity about when AI is involved.
+- **Consider the effect on staff** — Deskilling, workload, monitoring and job design are legitimate objectives of responsible use.
+- **Make them measurable and assign owners** — Each objective needs a measure, a target and someone accountable.
+- **Align them with the AI objectives register** — Use objectives should sit alongside the AIMS objectives set under Clause 6.2 rather than in a separate silo.
+- **Review them against reality** — Compare intended use objectives with what monitoring shows is actually happening.
 
 #### Documents to Prepare
 
 | Document | Description | Owner |
-|----------|-------------|-------|
-| Human Oversight Policy | Defines which AI decisions require oversight and at what level | AI Governance Lead |
-| AI Human Oversight Procedure | Operational procedure for oversight personnel | Operations / AI Governance Lead |
-| Overseer Qualification Requirements | Required qualifications and competencies for each oversight role | HR / AI Governance Lead |
-| Override Log | Record of human overrides and their basis | Operations |
-| Oversight Quality Audit Reports | Periodic audits of oversight effectiveness | AI Governance Lead / Internal Audit |
-| Automation Bias Risk Assessment | Assessment of automation bias risk and design mitigations | UX Lead / AI Governance Lead |
+|---|---|---|
+| Responsible Use Objectives | Documented objectives for AI use with measures, targets and owners | AI Governance Lead |
+| AI Objectives Register | Consolidated AIMS objectives including use objectives | AI Governance Lead |
+| Deployment Approval Records | Evidence that use objectives were considered before go-live | AI System Owner |
+| Performance Review Reports | Measurement of actual use against stated objectives | AI Governance Lead |
 
 #### How to Audit
 
 **Document Review:**
-- Verify oversight policy identifies all high-stakes AI decisions requiring oversight
-- Check override logs — are overrides occurring at plausible rates?
+- Confirm responsible use objectives are documented and distinct from development objectives
+- Check objectives are measurable and have named owners
+- Verify limits on reliance and required human involvement are explicitly stated
+- Confirm objectives address affected people and staff, not only efficiency
+- Compare stated objectives against monitoring data to see whether practice matches intent
 
-**Behavioral Testing:**
-- Observe oversight personnel: Do they actively consider AI recommendations or passively approve?
-- Present an overseer with a clearly wrong AI recommendation: Do they catch it? Can they override?
+**Personnel Interviews:**
+- Ask the AI System Owner: "What is this system supposed to achieve, and what would count as using it irresponsibly?"
+- Ask an operational user: "Have review expectations changed since launch, and who authorised that?"
+- Ask the AI Governance Lead: "How do you know the intended level of human involvement is still happening?"
 
-**Interview Questions:**
-- Ask an overseer: "When did you last override an AI recommendation? Why? What happened next?"
-- Ask a manager: "What is your AI override rate? Is that what you'd expect?"
-- "Can you show me a case where a human reviewer changed an AI decision?"
+**Evidence Required**
+- Documented responsible use objectives with measures and owners
+- Deployment records showing objectives were considered
+- Monitoring evidence comparing actual use against objectives
+- Records of decisions to change reliance or oversight levels
+- Review records showing objectives are kept current
 
-**Audit Testing:**
-- Review override logs for 3 months. Calculate override rate. Is it plausible?
-- Check overseer training records and qualification verification.
-
-#### Evidence Required
-
-- Human oversight policy
-- Override logs with rates and documented reasons
-- Overseer qualification records
-- Anti-automation-bias design evidence
-- Oversight quality audit reports
-
-#### Common Gaps Found in Audits
-
-- Zero override rate over 6 months for high-volume AI — clear rubber-stamping
-- Overseers lack domain knowledge to evaluate AI recommendations
-- Override mechanism requires 3 approvals and IT tickets — never used in practice
-- High-stakes AI decisions list is 18 months out of date — missing new AI deployments
+**Common Gaps Found in Audits**
+- Only efficiency and cost objectives exist, with no counterbalancing limits
+- Objectives for use are conflated with objectives for development
+- Required human review level stated in policy but contradicted by operational targets
+- No measurement of whether use objectives are actually being met
+- Objectives never revisited after the system's role expanded
 
 #### Cross-References
 
 | Framework | Reference |
-|-----------|-----------|
-| EU AI Act | Art. 14 (Human oversight for high-risk AI) |
-| NIST AI RMF | MANAGE 1.3, GOVERN 6.2 |
-| ISO 27001:2022 | A.8.15 (Logging) |
+|---|---|
+| EU AI Act | Art. 26 (Deployer obligations); Art. 14 (Human oversight) |
+| NIST AI RMF | GOVERN 1.1, GOVERN 5.1, MANAGE 1.1 |
+| ISO 27001:2022 | Clause 6.2 (Objectives and planning to achieve them) |
 
 ---
 
-### A.9.4 — AI Error Handling
+### A.9.4 — Intended Use of the AI System
 
-**Control Statement:** The organization shall define and implement processes to detect, handle, log, and respond to AI system errors, failures, unexpected behaviors, and outputs that fall outside expected parameters.
+**Control Statement:** The organization shall ensure that its AI systems are used in accordance with their intended purpose and documented conditions of use, including any limitations specified by the provider of the system.
 
 ---
 
 #### What It Means
 
-AI systems fail differently from traditional software — they do not "crash" clearly; they produce wrong outputs confidently. A.9.4 requires error handling specifically designed for AI: detecting when AI output is outside expected bounds, handling gracefully, logging for investigation, and triggering appropriate response.
+A.9.4 requires that AI systems are actually used for what they were built, validated and approved for. Every AI system has a defined intended purpose and a set of conditions under which its performance was established: a population, a data distribution, an operating environment, and stated limitations. Using it outside those boundaries invalidates its testing, and the organization must have controls that detect and prevent that drift.
 
 #### Why It Matters
 
-Silent AI failures — where the system produces output without raising a technical error — are a unique AI risk. A classifier returning 50% confidence raises no system alert but is providing unreliable output. A generative AI that hallucinates raises no error. AI error handling must catch "soft failures" that traditional monitoring misses.
+Use outside intended purpose is one of the most common and least detected AI failures, because nothing breaks visibly. A model validated for one customer segment gets applied to another; a triage tool built to prioritise becomes the de facto decision-maker; a system approved for internal drafting ends up producing customer-facing output. The system keeps returning confident results, and its validation evidence no longer means anything. This is also where liability shifts decisively: a deployer that uses a system outside the provider's stated conditions generally assumes the provider's responsibilities.
 
 #### How to Implement
 
-1. **Define AI error categories** — Hard failures (crashes, timeouts); Soft failures (below-threshold confidence, out-of-distribution outputs); Behavioral anomalies (sudden output distribution shifts, unusual inputs).
-2. **Implement confidence-based handling** — Define minimum confidence thresholds; below threshold: route to human review, decline to respond, or return "uncertain" response.
-3. **Implement output validation** — Validate AI outputs against expected ranges and constraints before acting on them.
-4. **Comprehensive error logging** — Log all errors (hard and soft) with: triggering input; AI output; error type and confidence; timestamp; system context.
-5. **Error response procedures** — Define what happens at each error category level: immediate response; root cause investigation; escalation to incident response.
-6. **Human fallback** — For high-stakes AI, define a human fallback for when AI is unavailable or unreliable.
+- **Document intended purpose per system** — Record what the system is for, the population and conditions it was validated against, and the outputs it is authorised to produce.
+- **Document the limitations explicitly** — Capture what the system must not be used for, including provider-stated restrictions, and make this visible to users rather than buried in technical documentation.
+- **Communicate boundaries to users** — Present the constraints at the point of use, not only in onboarding material.
+- **Control access by use case** — Where feasible, enforce boundaries technically through configuration, input validation or access restrictions rather than relying on user discipline.
+- **Monitor for out-of-scope use** — Track input distributions, request patterns and output uses to detect creeping expansion of the system's role.
+- **Require change approval for new uses** — Treat a new use case as a change requiring reassessment, revalidation and re-approval, not as business as usual.
+- **Respect provider conditions for third-party systems** — Record the provider's stated intended use and limitations, and verify the organization's deployment stays within them.
+- **Reassess periodically** — Confirm at defined intervals that actual use still matches documented intended use.
 
 #### Documents to Prepare
 
 | Document | Description | Owner |
-|----------|-------------|-------|
-| AI Error Handling Design | Technical design for error detection and handling per system | ML Engineer / Software Architect |
-| AI Error Classification Scheme | Categories of AI errors and handling procedures | AI Governance Lead / ML Engineer |
-| AI Error Log | Technical log of AI errors in production (hard and soft) | DevOps / ML Engineer |
-| Error Response Procedure | Operational procedure for responding to AI errors | Operations / AI Governance Lead |
-| Human Fallback Procedure | Documented fallback for when AI is unavailable or unreliable | Operations |
-| Error Trend Analysis Reports | Regular review of AI error patterns | AI Governance Lead / Model Owner |
+|---|---|---|
+| Intended Use Statement | Per-system purpose, validated conditions, authorised outputs and limitations | AI System Owner |
+| AI Model Card | Documentation including intended use and out-of-scope uses | AI System Owner / Data Science |
+| Provider Documentation Record | Third-party provider's stated intended use and restrictions | Procurement / AI System Owner |
+| Use Monitoring Reports | Evidence of monitoring for out-of-scope or expanded use | AI Governance Lead |
+| Change Approval Records | Approvals for new use cases with revalidation evidence | Change Authority |
 
 #### How to Audit
 
 **Document Review:**
-- Verify error handling design covers both hard and soft failures
-- Check error logs are generated, retained, and reviewed
-- Confirm human fallback procedures exist for high-stakes AI systems
+- Confirm each AI system has a documented intended purpose and stated limitations
+- Verify limitations are communicated to users at the point of use
+- Check whether actual observed use matches the documented intended use
+- Confirm new use cases went through change control and revalidation
+- For third-party systems, verify provider conditions are recorded and respected
+- Check monitoring exists for out-of-scope use
 
-**Technical Review:**
-- Review AI system code for confidence threshold implementation
-- Check output validation configuration
-- Review error log completeness and retention period
+**Personnel Interviews:**
+- Ask a user: "What is this system not supposed to be used for?"
+- Ask the AI System Owner: "Has anyone started using this system for something new since launch?"
+- Ask Procurement: "What did the vendor say this product must not be used for?"
 
-**Interview Questions:**
-- "What happens if this AI returns a recommendation with very low confidence? How is that handled?"
-- "Show me the error log for this AI. How often are errors occurring? How are they investigated?"
-- "If this AI system went down completely right now, what would operations do?"
+**Evidence Required**
+- Documented intended use statements and model cards
+- Evidence that limitations are surfaced to users
+- Monitoring reports covering actual usage patterns
+- Change approvals and revalidation records for new use cases
+- Provider documentation for third-party systems
 
-**Audit Testing:**
-- Test AI system with boundary inputs: Does it handle them gracefully? Does it log the error?
-- Request error log for past month: Are errors being reviewed?
-
-#### Evidence Required
-
-- AI error handling design documentation
-- Error logs for production AI systems
-- Confidence threshold configuration evidence
-- Error investigation records
-- Human fallback procedure documentation
-
-#### Common Gaps Found in Audits
-
-- Error handling limited to server errors — soft failures not logged or handled
-- No confidence thresholds — AI always responds with same authority regardless of actual confidence
-- Error logs retained for 7 days — insufficient for investigation
-- No human fallback for high-stakes AI — "call IT" is not an adequate procedure
-- Errors logged but never reviewed — no trend analysis
+**Common Gaps Found in Audits**
+- Intended use documented internally but never communicated to the people using the system
+- System quietly applied to a population it was never validated for
+- Advisory output treated as a decision in practice, with no reassessment
+- No monitoring capable of detecting scope creep
+- Third-party system used in ways the vendor's terms expressly exclude
+- New use cases added without revalidation or approval
 
 #### Cross-References
 
 | Framework | Reference |
-|-----------|-----------|
-| EU AI Act | Art. 9 (Risk management — error detection); Art. 15 (Accuracy, robustness) |
-| NIST AI RMF | MANAGE 2.2, MANAGE 3.2 |
-| ISO 27001:2022 | A.8.16 (Monitoring activities) |
+|---|---|
+| EU AI Act | Art. 26 (Deployer obligations, use in accordance with instructions); Art. 25 (Responsibilities along the value chain); Art. 13 (Instructions for use) |
+| NIST AI RMF | MAP 1.1, MAP 3.4, MANAGE 1.2 |
+| ISO 27001:2022 | A.5.10 (Acceptable use of information and other associated assets) |
 
 ---
 
-## DOMAIN A.10 — THIRD-PARTY AND CUSTOMER AI
-*3 Controls | Managing AI risk across the supply chain and customer relationships*
+## DOMAIN A.10 — THIRD-PARTY AND CUSTOMER RELATIONSHIPS
+*3 Controls | Managing responsibilities across the AI value chain, suppliers and customers*
 
 ---
 
-### A.10.2 — Third-Party AI Risk Assessment
+### A.10.2 — Allocating Responsibilities
 
-**Control Statement:** The organization shall conduct documented risk assessments of third-party AI systems, APIs, models, and services before adoption, covering technical performance, bias, security, privacy, regulatory compliance, and supplier governance maturity.
+**Control Statement:** The organization shall allocate responsibilities for its AI systems across the parties involved in the AI value chain, and shall document that allocation so that each party understands what it is accountable for.
 
 ---
 
 #### What It Means
 
-Before adopting an AI system, API, or service from a third party — whether a vendor AI product, a cloud AI service, an open-source model, or an embedded AI component — the organization must systematically assess the risks. A.10.2 requires this to be documented, structured, and proportionate to the risk level of the third-party AI.
+Modern AI systems are rarely built and run by one organization. A typical deployment involves a foundation model provider, a platform or cloud host, an integrator, the deploying organization and sometimes a downstream customer. A.10.2 requires the organization to work out, and write down, who is responsible for what across that chain: data, testing, monitoring, incident handling, transparency and regulatory duties. It is the control that prevents responsibility falling into the gaps between organizations.
 
 #### Why It Matters
 
-Most organizations today use more third-party AI than they build themselves. Every cloud AI service, every SaaS product with AI features, every pre-trained model adopted from Hugging Face is a third-party AI in scope for A.10.2. These systems carry inherited risks: bias baked into training data the organization never saw; security vulnerabilities in the model or API; regulatory non-compliance in the supplier's practices; data handling practices that conflict with privacy obligations. Governance of third-party AI is one of the most significant gaps in most organizations' AI risk management.
+Unallocated responsibility is where AI governance fails most reliably. Each party assumes another is monitoring for bias, testing for robustness or handling incident notification, and none is. Regulators have made clear that a deployer cannot discharge its obligations simply by pointing at a vendor, and the EU AI Act sets out explicit rules on how responsibility shifts along the value chain, including circumstances in which a deployer becomes a provider. Establishing this allocation before deployment is far cheaper than establishing it during an incident.
+
+#### How to Implement
+
+- **Map the value chain per AI system** — Identify every party that contributes to or relies on the system, including sub-processors and model providers behind an integrator.
+- **Determine each party's regulatory role** — Establish who is provider, deployer, importer or distributor, since obligations follow from that classification and can change if the system is substantially modified or rebranded.
+- **Allocate responsibility by activity** — Work through data quality, testing, bias evaluation, security, monitoring, human oversight, logging, incident response, user information and regulatory reporting, and name the responsible party for each.
+- **Record it contractually** — Reflect the allocation in contracts and data processing agreements rather than leaving it as a shared assumption.
+- **Identify and close the gaps** — Explicitly look for activities nobody has taken responsibility for, which is the point of the exercise.
+- **Retain accountability internally** — Responsibility can be delegated to a supplier, but the organization remains accountable to its own regulators and customers; name the internal owner for each outsourced activity.
+- **Reassess on change** — Fine-tuning a third-party model, rebranding it or changing its purpose can move the organization's role and obligations.
+
+#### Documents to Prepare
+
+| Document | Description | Owner |
+|---|---|---|
+| AI Value Chain Map | Per-system map of all parties and their contributions | AI Governance Lead |
+| Responsibility Allocation Matrix | Activity-by-activity RACI across internal and external parties | AI Governance Lead / Legal |
+| Regulatory Role Determination | Documented assessment of provider or deployer status per system | Legal / Compliance |
+| Contracts and Data Processing Agreements | Contractual reflection of the agreed allocation | Legal / Procurement |
+
+#### How to Audit
+
+**Document Review:**
+- Confirm a value chain map exists for significant AI systems
+- Verify the organization's regulatory role has been determined and justified per system
+- Check the responsibility matrix covers the full set of governance activities
+- Confirm the allocation is reflected in contracts, not just internal documents
+- Look for activities with no named responsible party
+- Verify roles were reassessed where systems were fine-tuned, rebranded or repurposed
+
+**Personnel Interviews:**
+- Ask the AI Governance Lead: "For this system, who monitors for bias in production, and where is that agreed?"
+- Ask Legal: "Are we a provider or a deployer for this system, and what changed that determination?"
+- Ask the AI System Owner: "Which governance activities do you rely on the vendor to perform?"
+
+**Evidence Required**
+- Value chain maps and responsibility allocation matrices
+- Documented regulatory role determinations
+- Contracts and DPAs reflecting allocated responsibilities
+- Internal ownership records for outsourced activities
+- Reassessment records following material changes
+
+**Common Gaps Found in Audits**
+- Responsibility assumed to sit with the vendor but never agreed or documented
+- Provider versus deployer status never assessed, so obligations are unknown
+- Bias monitoring, logging or incident notification allocated to nobody
+- Fine-tuning a third-party model without recognising the change in regulatory role
+- Allocation documented internally but absent from the actual contract
+
+#### Cross-References
+
+| Framework | Reference |
+|---|---|
+| EU AI Act | Art. 25 (Responsibilities along the AI value chain); Art. 26 (Deployer obligations); Art. 16 (Provider obligations) |
+| NIST AI RMF | GOVERN 2.1, GOVERN 6.1, GOVERN 6.2, MAP 4.1 |
+| ISO 27001:2022 | A.5.19 (Information security in supplier relationships); A.5.2 (Roles and responsibilities) |
+
+---
+
+### A.10.3 — Suppliers
+
+**Control Statement:** The organization shall establish and apply a process for managing suppliers of AI systems, components and services, covering the assessment of supplier risk, the contractual terms agreed, and the ongoing monitoring of supplier performance against those terms.
+
+---
+
+#### What It Means
+
+Before adopting an AI system, API, or service from a third party — whether a vendor AI product, a cloud AI service, an open-source model, or an embedded AI component — the organization must systematically assess the risks. A.10.3 requires this to be documented, structured, and proportionate to the risk level of the third-party AI.
+
+#### Why It Matters
+
+Most organizations today use more third-party AI than they build themselves. Every cloud AI service, every SaaS product with AI features, every pre-trained model adopted from Hugging Face is a third-party AI in scope for A.10.3. These systems carry inherited risks: bias baked into training data the organization never saw; security vulnerabilities in the model or API; regulatory non-compliance in the supplier's practices; data handling practices that conflict with privacy obligations. Governance of third-party AI is one of the most significant gaps in most organizations' AI risk management.
 
 #### How to Implement
 
@@ -2342,10 +2406,17 @@ Most organizations today use more third-party AI than they build themselves. Eve
 5. **Approval gate** — Third-party AI above a defined risk threshold requires formal approval before adoption.
 6. **Ongoing review** — Reassess periodically (annually minimum) and on significant changes.
 
+- **Translate assessment findings into contract terms** — Agree AI-specific clauses covering permitted use of the organization's data (including whether it may be used for the supplier's model training), performance and accuracy commitments, bias testing and reporting obligations, security requirements, audit and evidence rights, incident notification timescales, change notification for model updates, subcontractor and sub-processor disclosure, liability and indemnity, and exit and transition provisions.
+- **Monitor suppliers against the terms agreed** — Reassess at a frequency proportionate to risk, track performance and incidents, and require notice of material model changes rather than discovering them through degraded output.
+- **Plan for exit** — Record how the organization would migrate away from the supplier, what happens to its data, and what continuity arrangements apply if the service is withdrawn.
+
 #### Documents to Prepare
 
 | Document | Description | Owner |
 |----------|-------------|-------|
+| AI Supplier Contract Clauses | Standard AI governance clauses for inclusion in supplier agreements | Legal / Procurement |
+| Supplier Monitoring and Review Records | Ongoing performance, incident and change tracking per supplier | Procurement / AI System Owner |
+| Exit and Transition Plan | Migration, data return and continuity arrangements per critical supplier | Procurement / IT |
 | Third-Party AI Inventory | Complete register of all third-party AI in use or evaluation | AI Governance Lead / Procurement |
 | Third-Party AI Risk Assessment Template | Standardized assessment covering all required domains | AI Risk Manager |
 | Completed Third-Party AI Assessments | One per third-party AI system assessed, with risk ratings | AI Risk Manager |
@@ -2398,84 +2469,9 @@ Most organizations today use more third-party AI than they build themselves. Eve
 
 ---
 
-### A.10.3 — AI Supplier Contracts
+### A.10.4 — Customers
 
-**Control Statement:** The organization shall ensure that contracts with AI suppliers include appropriate AI governance, responsible AI, transparency, compliance, and notification obligations, including the right to audit and requirements for incident notification.
-
----
-
-#### What It Means
-
-A risk assessment alone is not sufficient — the organization must contractually bind AI suppliers to governance obligations. A.10.3 requires that AI-specific terms are included in supplier contracts: performance obligations, ethical AI commitments, incident notification requirements, audit rights, data handling obligations, and regulatory compliance obligations.
-
-#### Why It Matters
-
-Without contractual protections, organizations have no recourse when a third-party AI system causes harm. If the supplier's model exhibits bias that causes discrimination in your deployment, if they suffer a security breach affecting your data, if their model degrades significantly — you need contractual levers to demand remedy, access information, and exit if necessary. Generic commercial contracts do not address AI-specific risks.
-
-#### How to Implement
-
-1. **Develop an AI supplier contract standard clauses library** — A set of required contractual provisions for AI supplier agreements. Engage legal and AI governance to develop these.
-2. **Define required clauses by risk tier** — Higher-risk AI suppliers require more comprehensive contractual protections. Minimum clauses for all AI suppliers: Performance obligations and SLAs; Data handling obligations (DPA where required); Incident notification obligations (including AI-specific incidents); Right to request information about AI system changes; Liability for AI-related harms.
-3. **Enhanced clauses for high-risk AI suppliers** — Additionally: Audit rights (right to review supplier's AI governance practices); Bias and fairness obligations (supplier must disclose bias evaluation results; must notify of significant bias findings); Regulatory compliance obligations (must comply with applicable AI regulations; must notify of regulatory investigations); Change notification (must notify of significant changes to AI model, training data, or system architecture); Exit obligations (data return/deletion; cooperation with transition).
-4. **Integrate into procurement process** — AI-specific contract terms must be reviewed and agreed before any high-risk AI supplier contract is executed.
-5. **Review existing contracts** — For existing AI supplier relationships, identify gaps against the standard clauses library and seek to amend or negotiate at renewal.
-6. **Maintain contract register** — Track AI supplier contracts, key terms, expiry dates, and review schedule.
-
-#### Documents to Prepare
-
-| Document | Description | Owner |
-|----------|-------------|-------|
-| AI Supplier Standard Contract Clauses | Library of required AI-specific contractual provisions by risk tier | Legal / AI Governance Lead |
-| AI Supplier Contract Register | Register of all AI supplier contracts with key terms and dates | Legal / Procurement |
-| AI Supplier Contract Review Records | Evidence of legal and AI governance review of supplier contracts | Legal |
-| Contract Gap Analysis for Existing Suppliers | Assessment of existing contracts against required AI clauses | Legal / AI Risk Manager |
-| DPA Register | Register of Data Processing Agreements with AI suppliers | DPO / Legal |
-
-#### How to Audit
-
-**Document Review:**
-- Verify AI standard contract clauses library exists and covers all required areas
-- Review sample AI supplier contracts against the standard — are required clauses present?
-- Check DPA register — are DPAs in place for all AI suppliers processing personal data?
-
-**Personnel Interviews:**
-- Ask Legal: "When we procure an AI service, what AI-specific terms do we require in the contract? Show me a recent example."
-- Ask Procurement: "Has our standard supplier contract been updated to include AI governance clauses?"
-- Ask the AI Governance Lead: "Do you have audit rights over your AI suppliers? Have you exercised them?"
-
-**Audit Testing:**
-- Select 3 AI supplier contracts. Check for presence of: performance SLAs; data handling obligations; AI incident notification obligation; right to information on AI system changes; audit rights (for high-risk suppliers); regulatory compliance obligations.
-- For one key AI supplier, verify DPA is executed and covers the specific AI processing activities.
-
-#### Evidence Required
-
-- AI supplier standard contract clauses document
-- Sample AI supplier contracts with required clauses highlighted
-- DPAs for AI suppliers processing personal data
-- Contract gap analysis for existing suppliers
-- AI supplier contract register
-
-#### Common Gaps Found in Audits
-
-- No AI-specific contract clauses — standard commercial terms only
-- Data Processing Agreements in place but do not specifically address AI model training use of data
-- No incident notification obligation — organization would not be informed if supplier's AI suffered a security breach or produced systematic bias
-- No audit rights — no mechanism to verify supplier's AI governance practices
-- Existing high-risk AI supplier contracts have no AI-specific protections — not remediated
-
-#### Cross-References
-
-| Framework | Reference |
-|-----------|-----------|
-| EU AI Act | Art. 25 (Distributor obligations); Art. 28 (AI system providers and deployers) |
-| NIST AI RMF | MAP 5.2, GOVERN 6.1 |
-| ISO 27001:2022 | A.5.20 (Addressing security within supplier agreements) |
-
----
-
-### A.10.4 — Customer AI Governance
-
-**Control Statement:** Where the organization provides AI-enabled products or services to customers, it shall identify and meet applicable customer AI governance, transparency, explainability, and compliance requirements.
+**Control Statement:** The organization shall determine and document its responsibilities towards customers to whom it provides AI systems or AI-based services, including the information, support and contractual commitments those customers require.
 
 ---
 
@@ -2549,138 +2545,161 @@ As AI governance matures, sophisticated customers — particularly in regulated 
 
 ---
 
-## MASTER SUMMARY — ALL 39 ANNEX A CONTROLS AT A GLANCE
+## MASTER SUMMARY — ALL 38 ANNEX A CONTROLS AT A GLANCE
 
 | Control | Title | Domain | Key Document(s) | Key Audit Test |
 |---------|-------|--------|-----------------|----------------|
-| A.2.2 | AI Policy | Policies | AI Policy (AIMS-POL-001) | Check signature, date, communication evidence |
-| A.2.3 | AI-Specific Policies | Policies | Prohibited Use Policy; Acceptable Use Policy | Verify GenAI tool use is explicitly addressed |
-| A.3.2 | AI Governance Roles | Organisation | RACI Matrix; Role Profiles | Trace a deployment — who approved it? |
-| A.3.3 | Segregation of Duties | Organisation | SoD Policy; Access Control Matrix | Developer ≠ deployment approver: verify in system |
-| A.3.4 | Contact with AI Authorities | Organisation | Regulatory Watch List; Engagement Log | Evidence of regulatory intelligence feeding AIMS |
-| A.3.6 | AI in Project Management | Organisation | AI Project Governance Framework | Sample 3 AI projects — all governance gates completed? |
-| A.4.2 | AI Competencies | Resources | Competency Framework; Training Records | Gap assessments current; training effectiveness evaluated |
-| A.4.3 | AI Infrastructure Security | Resources | Infrastructure Inventory; DR Plan | Access controls and patching for AI infrastructure |
-| A.4.4 | AI Tool Security | Resources | Approved Tools List; SCA Reports | Any unapproved tools or unassessed pre-trained models? |
-| A.5.2 | AI System Impact Assessment | Impact | ASIA Template; ASIA Register | ASIA completed BEFORE deployment — check dates |
-| A.5.3 | Societal & Ethical Impact | Impact | ASIA Societal Section; Ethics Review | Societal section substantive, not blank or N/A |
-| A.5.4 | Use of Assessment Results | Impact | ASIA-to-Risk Register Mapping | Trace ASIA finding → risk register → implemented control |
-| A.6.1.1 | AI Design Requirements | Lifecycle | AI Requirements Spec | Fairness requirements specific and measurable? |
-| A.6.1.2 | AI Design Documentation | Lifecycle | Architecture Doc; Model Design Doc | Updated after last system change? |
-| A.6.2.1 | AI Development Process | Lifecycle | ADLC Procedure; Code Review Records | Version control in use for model artifacts? |
-| A.6.2.3 | Model Documentation (Model Cards) | Lifecycle | Model Card Template; Model Registry | Subgroup fairness metrics populated in model cards? |
-| A.6.2.5 | Adversarial Testing | Lifecycle | Adversarial Test Plan; Test Results | LLM prompt injection tested? Red team results? |
-| A.6.2.6 | Bias Evaluation | Lifecycle | Bias Eval Reports; Fairness Thresholds | Disaggregated metrics by protected attribute — passed threshold? |
-| A.6.2.8 | Testing in Representative Environments | Lifecycle | Test Plan; Test Results | Production-representative data used for testing? |
-| A.6.3.1 | AI Deployment Controls | Lifecycle | Deployment Auth Records; Rollback Procedure | Authorization pre-deployment; rollback tested? |
-| A.6.3.3 | Human Oversight at Deployment | Lifecycle | Oversight Verification Record | Demonstrate override works — live test |
-| A.6.4.1 | AI Operation Monitoring | Lifecycle | Monitoring Dashboard; Alert Config | Unresolved alerts? Who reviews and how often? |
-| A.6.4.2 | Performance Drift Monitoring | Lifecycle | Drift Detection Config; Retraining Records | Drift monitoring active; retraining decisions documented |
-| A.6.5.1 | AI Decommissioning | Lifecycle | Decommissioning Procedure; Data Deletion Records | Any "switched-off" AI with data still on servers? |
-| A.7.2 | AI Data Quality | Data | Data Quality Standards; Assessment Records | Specific, measurable quality thresholds defined and met |
-| A.7.3 | Data Provenance | Data | Data Catalog; Lineage Docs; Licensing Register | Can you reproduce a training run? License for AI training confirmed? |
-| A.7.4 | Data Privacy for AI | Data | DPIAs; Lawful Basis Register; DPAs | DPIAs for all AI with personal data; DPA for cloud AI APIs |
-| A.7.5 | Bias Mitigation in Data | Data | Training Data Bias Assessment; Mitigation Records | Training data bias assessed before model training? |
-| A.7.6 | Data Access Controls | Data | AI Data Access Matrix; Access Review Records | Least privilege applied; access reviewed; logs retained |
-| A.8.2 | AI Capability Information | Information | Capability Sheets; Performance Fact Sheets | Marketing claims match verified performance metrics? |
-| A.8.3 | AI Explainability | Information | Explainability Requirements; Explanation Design | Affected individuals receive meaningful, actionable explanations |
-| A.8.4 | AI Disclosure to Users | Information | Disclosure Policy; UI/UX Evidence | Users told they are interacting with AI — clear and prominent? |
-| A.8.5 | AI Incident Communication | Information | Incident Comm Policy; Templates; Comm Log | Notifiable AI incidents — communication timelines met? |
-| A.9.2 | Acceptable Use of AI | Use | Acceptable Use Policy; Approved Tools List | GenAI tools addressed; employees aware and signed off |
-| A.9.3 | Human Oversight | Use | Oversight Policy; Override Log | Override rate plausible? Overseers qualified? |
-| A.9.4 | AI Error Handling | Use | Error Handling Design; Error Log; Fallback Procedure | Soft failures logged? Confidence thresholds configured? |
-| A.10.2 | Third-Party AI Risk Assessment | Third Party | 3P AI Inventory; Assessment Records; Approval Register | All third-party AI inventoried; assessments pre-adoption |
-| A.10.3 | AI Supplier Contracts | Third Party | Standard AI Contract Clauses; DPA Register | AI clauses in supplier contracts; audit rights; incident notification |
-| A.10.4 | Customer AI Governance | Third Party | Customer-Facing AI Docs; Requirements Register | Customer obligations met; audit requests can be supported |
+| A.2.2 | AI Policy | Policies related to AI | AI Policy (AIMS-POL-001) | Check signature, date and communication evidence |
+| A.2.3 | Alignment with Other Organizational Policies | Policies related to AI | Policy Interaction Map; Amended Policies | Sample related policies for contradictions with the AI policy |
+| A.2.4 | Review of the AI Policy | Policies related to AI | Policy Review Records; Version History | Confirm the stated review interval has actually been honoured |
+| A.3.2 | AI Roles and Responsibilities | Internal organization | RACI Matrix; Role Profiles | Trace a deployment — who approved it? |
+| A.3.3 | Reporting of Concerns | Internal organization | AI Concern Reporting Procedure; Concerns Register | Ask staff how they would raise a concern; check the register |
+| A.4.2 | Resource Documentation | Resources for AI systems | AIMS Resource Plan; AI System Resource Register | Sample a system — are all four resource types documented? |
+| A.4.3 | Data Resources | Resources for AI systems | AI Data Inventory; Lawful Basis Record | Check dataset origin, licence and permitted use are recorded |
+| A.4.4 | Tooling Resources | Resources for AI systems | Approved Tooling Register; SBOM | Verify approval and vulnerability management for ML tooling |
+| A.4.5 | System and Computing Resources | Resources for AI systems | Infrastructure Register; Capacity Plan | Check environment segregation and access to training compute |
+| A.4.6 | Human Resources | Resources for AI systems | Competence Matrix; Training Plan and Records | Sample a role — is the required competence evidenced? |
+| A.5.2 | AI System Impact Assessment Process | Assessing impacts of AI systems | AI System Impact Assessment Procedure | Confirm the process defines triggers, method and approval |
+| A.5.3 | Documentation of AI System Impact Assessments | Assessing impacts of AI systems | Completed Assessments; Retention Schedule | Sample the AI inventory — does each system have a current record? |
+| A.5.4 | Assessing AI System Impact on Individuals or Groups | Assessing impacts of AI systems | Individual and Group Impact Assessment | Check subgroup analysis exists, not just aggregate accuracy |
+| A.5.5 | Assessing Societal Impacts of AI Systems | Assessing impacts of AI systems | Societal Impact Assessment | Verify societal and environmental effects were considered |
+| A.6.1.2 | Objectives for Responsible Development of AI Systems | AI system life cycle | Responsible AI Development Objectives | Are objectives measurable and known to developers? |
+| A.6.1.3 | Processes for Responsible AI System Design and Development | AI system life cycle | AI Lifecycle Management Procedure | Sample a project — were all gates completed and evidenced? |
+| A.6.2.2 | AI System Requirements and Specification | AI system life cycle | AI Requirements Specification | Trace a responsible-AI requirement into the built system |
+| A.6.2.3 | Documentation of AI System Design and Development | AI system life cycle | Design Documentation; Decision Log | Check design rationale and alternatives are recorded |
+| A.6.2.4 | AI System Verification and Validation | AI system life cycle | V and V Plan; Test and Bias Evaluation Results | Were acceptance criteria set before testing and met? |
+| A.6.2.5 | AI System Deployment | AI system life cycle | Deployment Checklist; Release Approval | Verify rollback exists and approval was independent |
+| A.6.2.6 | AI System Operation and Monitoring | AI system life cycle | Performance Monitoring Plan; Drift Reports | Check drift thresholds are defined and alerts are acted on |
+| A.6.2.7 | AI System Technical Documentation | AI system life cycle | AI Model Card; Technical Documentation | Is documentation current for the deployed model version? |
+| A.6.2.8 | AI System Recording of Event Logs | AI system life cycle | Logging Standard; Log Retention Schedule | Reconstruct a past decision from logs alone |
+| A.7.2 | Data for Development and Enhancement of AI Systems | Data for AI systems | AI Data Requirements Specification | Are data requirements tied to intended purpose? |
+| A.7.3 | Acquisition of Data | Data for AI systems | Data Acquisition Procedure; Source Approvals | Check lawful basis and licence terms were assessed pre-acquisition |
+| A.7.4 | Quality of Data for AI Systems | Data for AI systems | Data Quality Requirements and Reports | Are quality thresholds defined and measured, not aspirational? |
+| A.7.5 | Data Provenance | Data for AI systems | Data Provenance Records; Lineage Diagrams | Trace a training dataset back to its original source |
+| A.7.6 | Data Preparation | Data for AI systems | Data Preparation Procedure; Labelling Standards | Check preparation and bias treatment steps are documented |
+| A.8.2 | System Documentation and Information for Users | Information for interested parties | User Documentation; Model Card | Can a user state the system limitations from what they were given? |
+| A.8.3 | External Reporting | Information for interested parties | External Reporting Obligations Register | Does the register reflect current regulation and named owners? |
+| A.8.4 | Communication of Incidents | Information for interested parties | AI Incident Response Procedure | Check notification timescales against regulatory deadlines |
+| A.8.5 | Information for Interested Parties | Information for interested parties | AI Disclosure Standard; Transparency Notices | Verify people are told when they interact with or are assessed by AI |
+| A.9.2 | Processes for Responsible Use of AI Systems | Use of AI systems | Acceptable Use Policy; Human Oversight Policy | Is oversight genuine, or rubber-stamping under time pressure? |
+| A.9.3 | Objectives for Responsible Use of AI Systems | Use of AI systems | Responsible Use Objectives; AI Objectives Register | Do objectives balance efficiency with limits on reliance? |
+| A.9.4 | Intended Use of the AI System | Use of AI systems | Intended Use Statement; Model Card | Does observed use still match the documented intended purpose? |
+| A.10.2 | Allocating Responsibilities | Third-party and customer relationships | Value Chain Map; Responsibility Matrix | Find an activity nobody has taken responsibility for |
+| A.10.3 | Suppliers | Third-party and customer relationships | Supplier Assessments; AI Contract Clauses | Check audit rights and model-change notification are contracted |
+| A.10.4 | Customers | Third-party and customer relationships | Customer AI Governance Pack; Contracts | Verify customers receive the information they need to comply |
 
 ---
 
 ## MASTER DOCUMENT CHECKLIST
 
-Use this checklist to track documentation completeness across all 39 Annex A controls.
+Use this checklist to track documentation completeness across all 38 Annex A controls.
 
-### Governance & Policy Documents
+### Policies Related to AI (A.2)
 - [ ] AI Policy (AIMS-POL-001) — A.2.2
-- [ ] AI-Specific Sub-Policies (Prohibited Use, Acceptable Use, Human Oversight, Ethics, Data Governance) — A.2.3
+- [ ] Policy Communication Records — A.2.2
+- [ ] Policy Interaction Map (AI policy vs related policies) — A.2.3
+- [ ] Amended Related Policies (security, privacy, data, HR, procurement) — A.2.3
+- [ ] AI Policy Review Procedure and Review Records — A.2.4
+- [ ] AI Policy Version History and Re-approval Records — A.2.4
+
+### Internal Organization (A.3)
 - [ ] AI Governance RACI Matrix and Role Profiles — A.3.2
-- [ ] AI SoD Policy and Access Control Matrix — A.3.3
-- [ ] Regulatory Watch List and Engagement Log — A.3.4
-- [ ] AI Project Governance Framework — A.3.6
+- [ ] AI System Ownership Register — A.3.2
+- [ ] AI Concern Reporting Procedure — A.3.3
+- [ ] Non-Retaliation Statement — A.3.3
+- [ ] AI Concerns Register and Outcome Records — A.3.3
 
-### Resources & Competence Documents
-- [ ] AI Competency Framework and Gap Assessments — A.4.2
-- [ ] Training Records and Effectiveness Reviews — A.4.2
-- [ ] AI Infrastructure Inventory and Security Standards — A.4.3
+### Resources for AI Systems (A.4)
+- [ ] AIMS Resource Plan — A.4.2
+- [ ] AI System Resource Register and Dependency Analysis — A.4.2
+- [ ] AI Data Inventory — A.4.3
+- [ ] Data Licensing and Lawful Basis Records — A.4.3
 - [ ] Approved AI Tools and Libraries List — A.4.4
-- [ ] Pre-trained Model Registry — A.4.4
+- [ ] Pre-trained Model Registry and Vulnerability Records — A.4.4
+- [ ] AI Infrastructure Inventory and Security Standards — A.4.5
+- [ ] Compute Capacity and Environment Controls — A.4.5
+- [ ] AI Competency Framework and Gap Assessments — A.4.6
+- [ ] Training Plan, Records and Effectiveness Reviews — A.4.6
 
-### Impact Assessment Documents
-- [ ] ASIA Template — A.5.2
-- [ ] Completed ASIAs per AI System — A.5.2
-- [ ] ASIA Register — A.5.2
-- [ ] Environmental Impact Assessments for Large Models — A.5.3
-- [ ] ASIA-to-Risk Register Mapping — A.5.4
+### Assessing Impacts of AI Systems (A.5)
+- [ ] AI System Impact Assessment Procedure — A.5.2
+- [ ] Impact Assessment Trigger Criteria — A.5.2
+- [ ] Impact Assessment Template — A.5.3
+- [ ] Completed Impact Assessment Records per AI System — A.5.3
+- [ ] Impact Assessment Retention Schedule — A.5.3
+- [ ] Individual and Group Impact Assessments — A.5.4
+- [ ] Subgroup Outcome Analysis and Vulnerable Group Records — A.5.4
+- [ ] Societal Impact Assessments — A.5.5
+- [ ] Environmental Impact Assessments for Large Models — A.5.5
 
-### AI Lifecycle Documents
-- [ ] Responsible AI Requirements Template — A.6.1.1
-- [ ] AI System Requirements Specifications — A.6.1.1
-- [ ] AI System Architecture Documents — A.6.1.2
-- [ ] Model Design Documents — A.6.1.2
-- [ ] AI Development Lifecycle Procedure — A.6.2.1
-- [ ] Code Review and Checkpoint Records — A.6.2.1
-- [ ] Model Card Template and Completed Model Cards — A.6.2.3
-- [ ] Model Registry — A.6.2.3
-- [ ] Adversarial Testing Plans and Results — A.6.2.5
-- [ ] Bias Evaluation Methodology and Reports — A.6.2.6
-- [ ] Fairness Criteria per AI System — A.6.2.6
-- [ ] Test Environment Standards and Test Results — A.6.2.8
-- [ ] AI Deployment Procedure — A.6.3.1
-- [ ] Deployment Authorization Records — A.6.3.1
-- [ ] Rollback Procedures (tested) — A.6.3.1
-- [ ] Human Oversight Design Documents — A.6.3.3
-- [ ] Oversight Verification Records — A.6.3.3
-- [ ] AI Monitoring Framework and Dashboards — A.6.4.1
-- [ ] Drift Detection Configuration and Reports — A.6.4.2
-- [ ] Retraining Decision Records — A.6.4.2
-- [ ] AI Decommissioning Procedure and Records — A.6.5.1
+### AI System Life Cycle (A.6)
+- [ ] Responsible AI Development Objectives — A.6.1.2
+- [ ] AI Objectives Register and Design Review Records — A.6.1.2
+- [ ] AI Lifecycle Management Procedure — A.6.1.3
+- [ ] Development Checkpoint and Code Review Records — A.6.1.3
+- [ ] AI System Requirements Specifications — A.6.2.2
+- [ ] Responsible AI Requirements Template — A.6.2.2
+- [ ] AI System Architecture and Design Documents — A.6.2.3
+- [ ] Design Decision and Rationale Log — A.6.2.3
+- [ ] Verification and Validation Plan — A.6.2.4
+- [ ] Test, Bias Evaluation and Adversarial Testing Results — A.6.2.4
+- [ ] Release Approval Records — A.6.2.4
+- [ ] AI Deployment Procedure and Checklist — A.6.2.5
+- [ ] Deployment Authorization and Rollback Records — A.6.2.5
+- [ ] AI Monitoring Framework and Dashboards — A.6.2.6
+- [ ] Drift Detection Configuration and Retraining Decisions — A.6.2.6
+- [ ] AI Decommissioning Procedure and Records — A.6.2.6
+- [ ] Model Card Template and Completed Model Cards — A.6.2.7
+- [ ] Model Registry and Technical Documentation — A.6.2.7
+- [ ] AI Logging Standard and Retention Schedule — A.6.2.8
+- [ ] Log Access Control and Traceability Evidence — A.6.2.8
 
-### Data Documents
-- [ ] AI Data Quality Standards and Assessment Records — A.7.2
-- [ ] AI Data Catalog and Lineage Documentation — A.7.3
-- [ ] Data Licensing Register — A.7.3
-- [ ] DPIAs for AI Systems — A.7.4
-- [ ] Lawful Basis Register for AI Processing — A.7.4
-- [ ] DPAs for Cloud AI Services — A.7.4
-- [ ] Training Data Bias Assessment Reports — A.7.5
-- [ ] AI Data Access Control Matrix and Review Records — A.7.6
+### Data for AI Systems (A.7)
+- [ ] AI Data Requirements Specification — A.7.2
+- [ ] Data Partitioning Standard and Enhancement Data Procedure — A.7.2
+- [ ] Data Acquisition Procedure and Source Approval Records — A.7.3
+- [ ] AI Data Access Control Matrix and Review Records — A.7.3
+- [ ] DPIAs, Lawful Basis Register and DPAs for AI Processing — A.7.3
+- [ ] AI Data Quality Standards and Assessment Records — A.7.4
+- [ ] AI Data Catalog and Lineage Documentation — A.7.5
+- [ ] Data Licensing and Provenance Register — A.7.5
+- [ ] Data Preparation and Labelling Procedures — A.7.6
+- [ ] Training Data Bias Assessment Reports — A.7.6
 
-### Information & Transparency Documents
+### Information for Interested Parties (A.8)
 - [ ] AI Capability and Limitation Sheets — A.8.2
-- [ ] Explainability Requirements and Design Documentation — A.8.3
-- [ ] AI Disclosure Policy and UI/UX Evidence — A.8.4
-- [ ] AI Incident Communication Policy and Templates — A.8.5
+- [ ] User Documentation and Explainability Material — A.8.2
+- [ ] External Reporting Obligations Register — A.8.3
+- [ ] Regulatory Reporting Procedure and Submitted Reports Archive — A.8.3
+- [ ] AI Incident Communication Policy and Templates — A.8.4
+- [ ] Incident Notification Records — A.8.4
+- [ ] AI Disclosure Policy and UI/UX Evidence — A.8.5
+- [ ] Transparency Notices for Interested Parties — A.8.5
 
-### Use & Oversight Documents
+### Use of AI Systems (A.9)
 - [ ] Acceptable Use of AI Policy — A.9.2
 - [ ] Approved External AI Tools List — A.9.2
-- [ ] Human Oversight Policy and Procedures — A.9.3
-- [ ] Override Logs and Quality Audit Reports — A.9.3
-- [ ] AI Error Handling Design and Error Logs — A.9.4
-- [ ] Human Fallback Procedures — A.9.4
+- [ ] Human Oversight Policy and Procedures — A.9.2
+- [ ] AI Error Handling and Contest Procedure — A.9.2
+- [ ] Responsible Use Objectives and Measures — A.9.3
+- [ ] Use Performance Review Reports — A.9.3
+- [ ] Intended Use Statements per AI System — A.9.4
+- [ ] Use Monitoring Reports and Change Approvals — A.9.4
 
-### Third-Party & Customer Documents
-- [ ] Third-Party AI Inventory — A.10.2
-- [ ] Third-Party AI Assessment Records — A.10.2
-- [ ] AI Supplier Standard Contract Clauses — A.10.3
-- [ ] AI Supplier Contract Register — A.10.3
-- [ ] Customer-Facing AI Documentation Pack — A.10.4
-- [ ] Customer AI Governance Requirements Register — A.10.4
+### Third-Party and Customer Relationships (A.10)
+- [ ] AI Value Chain Map — A.10.2
+- [ ] Responsibility Allocation Matrix and Regulatory Role Determination — A.10.2
+- [ ] Third-Party AI Inventory and Risk Assessments — A.10.3
+- [ ] AI Supplier Contract Clauses and Signed Agreements — A.10.3
+- [ ] Supplier Monitoring, Review and Exit Plans — A.10.3
+- [ ] Customer AI Governance and Support Documentation — A.10.4
+- [ ] Customer Information and Contractual Commitments — A.10.4
 
 ---
 
 ## AUDIT INTERVIEW QUESTION BANK
 
-A consolidated list of the most impactful audit questions across all 39 controls. Use these in Stage 1 (document review) and Stage 2 (effectiveness audit) interviews.
+A consolidated list of the most impactful audit questions across all 38 controls. Use these in Stage 1 (document review) and Stage 2 (effectiveness audit) interviews.
 
 **Opening Questions (to any interviewee):**
 1. "Describe your role in AI governance. What are you personally responsible for?"
@@ -2745,7 +2764,7 @@ This document must be reviewed and updated when:
 
 | Version | Date | Author | Changes |
 |---------|------|--------|---------|
-| 1.0 | April 2026 | Ankit Uniyal | Initial release — all 39 Annex A controls |
+| 1.0 | April 2026 | Ankit Uniyal | Initial release — all 38 Annex A controls |
 
 ---
 

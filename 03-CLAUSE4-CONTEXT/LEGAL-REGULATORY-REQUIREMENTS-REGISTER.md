@@ -1,10 +1,10 @@
 # Legal and Regulatory Requirements Register
 ## ISO/IEC 42001:2023 | Clause 4.2
 
-**Document ID:** AIMS-LEGAL-001
-**Version:** 1.0
-**Owner:** AI Governance Lead / Data Privacy Officer
-**Date:** ___________________________
+**Document ID:** AIMS-LEGAL-001  
+**Version:** 1.0  
+**Owner:** AI Governance Lead / Data Privacy Officer  
+**Date:** ___________________________  
 **Review Cycle:** Annual and upon regulatory change
 
 ---

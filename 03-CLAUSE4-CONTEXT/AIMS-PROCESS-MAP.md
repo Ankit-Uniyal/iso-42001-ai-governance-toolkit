@@ -1,10 +1,10 @@
 # AIMS Process Map
 ## ISO/IEC 42001:2023 | Clause 4.4 — Template
 
-**Document ID:** AIMS-PMAP-001
-**Version:** 1.0
-**Owner:** AI Governance Lead
-**Date:** ___________________________
+**Document ID:** AIMS-PMAP-001  
+**Version:** 1.0  
+**Owner:** AI Governance Lead  
+**Date:** ___________________________  
 **Review Cycle:** Annual or upon significant AIMS change
 
 ---

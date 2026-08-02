@@ -1,9 +1,9 @@
 # Leadership Commitment Statement
 ## ISO/IEC 42001:2023 | Clause 5.1 — Template
 
-**Document ID:** AIMS-LCS-001
-**Version:** 1.0
-**Classification:** Internal — Public on Request
+**Document ID:** AIMS-LCS-001  
+**Version:** 1.0  
+**Classification:** Internal — Public on Request  
 **Review Cycle:** Annual
 
 ---

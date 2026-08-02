@@ -63,7 +63,7 @@ The files are numbered and ordered to follow the ISO/IEC 42001:2023 clause struc
 | Covers | Organisational AI commitments, ethical principles, roles, prohibited uses, scope, lifecycle requirements |
 | Output | Approved, signed AI Policy ready for communication |
 | ISO 42001 Clause | Clause 5.2 (AI Policy) |
-| Annex A Controls | A.2.2 (AI Policy), A.2.3 (AI-Specific Policies) |
+| Annex A Controls | A.2.2 (AI Policy), A.2.3 (Alignment with Other Organizational Policies), A.2.4 (Review of the AI Policy) |
 | Who completes it | AI Governance Lead; approved by CEO or Board |
 | When to revisit | Annually; after scope changes or significant incidents |
 

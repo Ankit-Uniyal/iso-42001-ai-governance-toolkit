@@ -1,4 +1,4 @@
-.github/ISSUE_TEMPLATE/bug-report.md---
+---
 name: Bug or Error Report
 about: Report an error, incorrect content, or broken link in the toolkit
 title: '[BUG] '

@@ -27,7 +27,7 @@ The files are numbered and ordered to follow the ISO/IEC 42001:2023 clause struc
 | Field | Detail |
 |-------|--------|
 | Purpose | Baseline assessment of current AI governance maturity against all ISO 42001 requirements |
-| Covers | All Clauses 4–10 and all 39 Annex A controls (128 requirements total) |
+| Covers | All Clauses 4–10 and all 38 Annex A controls (128 requirements total) |
 | Output | Maturity score, gap list, prioritised remediation plan |
 | ISO 42001 Clause | Clause 4 (Context), Clause 6 (Planning) |
 | Who completes it | AI Governance Lead / GRC Lead / Consultant |
@@ -74,11 +74,11 @@ The files are numbered and ordered to follow the ISO/IEC 42001:2023 clause struc
 
 | Field | Detail |
 |-------|--------|
-| Purpose | Mandatory SoA — declares which of the 39 Annex A controls apply, why, and their implementation status |
-| Covers | All 39 controls across Domains A.2–A.10; applicability, justification, status, and implementation reference |
+| Purpose | Mandatory SoA — declares which of the 38 Annex A controls apply, why, and their implementation status |
+| Covers | All 38 controls across Domains A.2–A.10; applicability, justification, status, and implementation reference |
 | Output | Completed, approved SoA |
 | ISO 42001 Clause | Clause 6.1.3 — MANDATORY |
-| Annex A Controls | All 39 controls |
+| Annex A Controls | All 38 controls |
 | Who completes it | AI Governance Lead / CISO / DPO |
 | When to revisit | When scope changes; when new AI systems come into scope; annually |
 
@@ -133,7 +133,7 @@ The files are numbered and ordered to follow the ISO/IEC 42001:2023 clause struc
 | Covers | Design governance gates, development controls, model documentation, bias evaluation, adversarial testing, pre-deployment testing, deployment authorisation, production monitoring, drift detection, decommissioning |
 | Output | Controlled AI development and deployment procedure; governance gate records; model card template |
 | ISO 42001 Clause | Clause 8.5 (AI system lifecycle) |
-| Annex A Controls | A.6.1.1 through A.6.5.1 (all 12 lifecycle controls) |
+| Annex A Controls | A.6.1.2 through A.6.2.8 (all 9 lifecycle controls) |
 | Who uses it | ML Engineers, Data Scientists, MLOps, Product Owners, AI Governance Lead |
 | When to revisit | Annually; when new development methodologies are adopted; after lifecycle-related audit findings |
 
@@ -165,10 +165,10 @@ The files are numbered and ordered to follow the ISO/IEC 42001:2023 clause struc
 | Field | Detail |
 |-------|--------|
 | Purpose | Complete internal audit framework — audit programme, clause-by-clause and Annex A checklist, audit report template, corrective action tracking |
-| Covers | All Clauses 4–10 and all 39 Annex A controls; audit planning, execution, and follow-up |
+| Covers | All Clauses 4–10 and all 38 Annex A controls; audit planning, execution, and follow-up |
 | Output | Internal audit programme; completed audit checklists; audit reports; corrective action register |
 | ISO 42001 Clause | Clause 9.2 (Internal audit) — MANDATORY |
-| Annex A Controls | All 39 controls |
+| Annex A Controls | All 38 controls |
 | Who uses it | Internal auditors, AI Governance Lead, external consultants |
 | When to use | At least annually; before each certification audit; after major AIMS changes |
 
@@ -203,7 +203,7 @@ The files are numbered and ordered to follow the ISO/IEC 42001:2023 clause struc
 | Covers | AI-specific incident types (bias, errors, security, performance, privacy), severity classification, escalation, regulatory notification, lessons learned |
 | Output | Incident response procedure; incident log; post-incident review records; corrective action register |
 | ISO 42001 Clause | Clause 10.2 (Nonconformity and corrective action) |
-| Annex A Controls | A.8.5, A.9.4, A.6.4.1 |
+| Annex A Controls | A.8.3, A.8.4, A.6.2.6 |
 | Who uses it | Operations, AI Governance Lead, CISO, DPO, Legal, Communications |
 | When to revisit | After every AI incident; annually; when regulatory requirements change |
 
@@ -215,15 +215,15 @@ The files are numbered and ordered to follow the ISO/IEC 42001:2023 clause struc
 ---
 
 #### [12-ANNEX-A-CONTROLS.md](12-ANNEX-A-CONTROLS.md)
-**Use: Throughout — primary implementation and audit reference for all 39 Annex A controls**
+**Use: Throughout — primary implementation and audit reference for all 38 Annex A controls**
 
 | Field | Detail |
 |-------|--------|
-| Purpose | Control-by-control implementation, audit, and evidence guide for all 39 Annex A controls |
-| Covers | All 39 controls: What It Means, Why It Matters, How to Implement, Documents to Prepare, How to Audit, Evidence Required, Common Gaps, Cross-References |
+| Purpose | Control-by-control implementation, audit, and evidence guide for all 38 Annex A controls |
+| Covers | All 38 controls: What It Means, Why It Matters, How to Implement, Documents to Prepare, How to Audit, Evidence Required, Common Gaps, Cross-References |
 | Output | Implementation guidance per control; audit procedures; document master list; interview question bank |
 | ISO 42001 Clause | Clause 6.1.3 and all Annex A domains |
-| Annex A Controls | All 39 controls across A.2–A.10 |
+| Annex A Controls | All 38 controls across A.2–A.10 |
 | Who uses it | Implementers, internal auditors, GRC teams, certification consultants |
 | When to use | Continuously from Phase 2 onwards; before every internal and external audit |
 
@@ -234,11 +234,11 @@ The files are numbered and ordered to follow the ISO/IEC 42001:2023 clause struc
 
 | Field | Detail |
 |-------|--------|
-| Purpose | Cross-reference of all 39 Annex A controls mapped to EU AI Act articles, NIST AI RMF functions, and ISO 27001 controls |
+| Purpose | Cross-reference of all 38 Annex A controls mapped to EU AI Act articles, NIST AI RMF functions, and ISO 27001 controls |
 | Covers | Full mapping: ISO 42001 Annex A to EU AI Act, NIST AI RMF 1.0, and ISO/IEC 27001:2022 |
 | Output | Evidence reuse map; regulatory alignment documentation; multi-framework compliance planning |
 | ISO 42001 Clause | Clause 6.1.3 |
-| Annex A Controls | All 39 controls |
+| Annex A Controls | All 38 controls |
 | Who uses it | GRC teams managing multiple frameworks, Legal and Compliance, certification preparation teams |
 | When to use | During SoA completion (Phase 2), regulatory gap analysis, and multi-framework evidence mapping |
 
@@ -310,7 +310,7 @@ PHASE 7 — REFERENCE                        (Annex A / Cross-framework)
 | 8 | Operation | Risk assessment execution, risk treatment, ASIA, AI lifecycle management |
 | 9 | Performance Evaluation | Monitoring, internal audit, management review |
 | 10 | Improvement | Nonconformity management, corrective action, continual improvement |
-| Annex A | Controls | 39 controls across 9 domains (A.2–A.10) |
+| Annex A | Controls | 38 controls across 9 domains (A.2–A.10) |
 
 ---
 
@@ -318,7 +318,7 @@ PHASE 7 — REFERENCE                        (Annex A / Cross-framework)
 
 | Framework | Alignment |
 |-----------|-----------|
-| EU AI Act (2024) | All 39 controls mapped to relevant articles — see 13-CONTROLS-MAPPING.md |
+| EU AI Act (2024) | All 38 controls mapped to relevant articles — see 13-CONTROLS-MAPPING.md |
 | NIST AI RMF 1.0 | Controls mapped to GOVERN, MAP, MEASURE, MANAGE functions |
 | ISO/IEC 27001:2022 | Controls integrated with information security management |
 | GDPR / UK GDPR | Privacy requirements embedded throughout data controls (A.7) |

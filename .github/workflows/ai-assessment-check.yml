@@ -1,7 +1,7 @@
 # AI System Assessment Currency Check
 # ISO/IEC 42001:2023 | Clause 9.1 - Automated Monitoring
 #
-# Runs 12-SCRIPTS/ai_assessment_checker.py on a schedule to verify that every
+# Runs 15-SCRIPTS/ai_assessment_checker.py on a schedule to verify that every
 # AI system in the inventory has a current assessment, and publishes an
 # audit-ready report as a build artifact.
 #
@@ -38,17 +38,17 @@ jobs:
         id: checker
         continue-on-error: true
         run: |
-          python 12-SCRIPTS/ai_assessment_checker.py \
-            --input 12-SCRIPTS/sample_ai_systems.csv \
+          python 15-SCRIPTS/ai_assessment_checker.py \
+            --input 15-SCRIPTS/sample_ai_systems.csv \
             --threshold 365 \
-            --output 12-SCRIPTS/reports/assessment_report.txt
+            --output 15-SCRIPTS/reports/assessment_report.txt
 
       - name: Upload Assessment Report
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: ai-assessment-report
-          path: 12-SCRIPTS/reports/assessment_report.txt
+          path: 15-SCRIPTS/reports/assessment_report.txt
           if-no-files-found: warn
           retention-days: 90
 

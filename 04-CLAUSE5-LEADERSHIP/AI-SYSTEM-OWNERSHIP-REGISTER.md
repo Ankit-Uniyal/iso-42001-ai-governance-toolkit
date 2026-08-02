@@ -1,10 +1,10 @@
 # AI System Ownership Register
 ## ISO/IEC 42001:2023 | Clause 5.3 — Template
 
-**Document ID:** AIMS-SOWR-001
-**Version:** 1.0
-**Owner:** AI Governance Lead
-**Date:** ___________________________
+**Document ID:** AIMS-SOWR-001  
+**Version:** 1.0  
+**Owner:** AI Governance Lead  
+**Date:** ___________________________  
 **Review Cycle:** Quarterly or upon system change
 
 ---

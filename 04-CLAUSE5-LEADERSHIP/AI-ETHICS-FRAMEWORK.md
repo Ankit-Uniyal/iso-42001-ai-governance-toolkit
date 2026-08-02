@@ -1,11 +1,11 @@
 # AI Ethics Framework
 ## ISO/IEC 42001:2023 | Clause 5.2 / Annex A.7
 
-**Document ID:** AIMS-ETHICS-001
-**Version:** 1.0
-**Owner:** AI Governance Lead / Chief Ethics Officer
-**Approved By:** [CEO / Board]
-**Date:** ___________________________
+**Document ID:** AIMS-ETHICS-001  
+**Version:** 1.0  
+**Owner:** AI Governance Lead / Chief Ethics Officer  
+**Approved By:** [CEO / Board]  
+**Date:** ___________________________  
 **Review Cycle:** Annual
 
 ---

@@ -3,9 +3,9 @@
 
 ---
 
-**Document ID:** AIMS-PROC-003
-**Version:** 1.0
-**Owner:** CISO / AI Governance Lead
+**Document ID:** AIMS-PROC-003  
+**Version:** 1.0  
+**Owner:** CISO / AI Governance Lead  
 **Classification:** Internal — Controlled Document
 
 ---
@@ -126,13 +126,13 @@ AI incidents may be detected through:
 
 #### 4.3 Initial Incident Log Entry
 
-**Incident ID:** AI-INC-[YYYY]-[NNN]
-**Date/Time Reported:** ___________
-**Reported By:** ___________
-**AI System Affected:** ___________
-**Incident Category:** (select from 2.1) ___________
-**Initial Severity Assessment:** P1 / P2 / P3 / P4
-**Incident Commander Assigned:** ___________
+**Incident ID:** AI-INC-[YYYY]-[NNN]  
+**Date/Time Reported:** ___________  
+**Reported By:** ___________  
+**AI System Affected:** ___________  
+**Incident Category:** (select from 2.1) ___________  
+**Initial Severity Assessment:** P1 / P2 / P3 / P4  
+**Incident Commander Assigned:** ___________  
 **Initial Description:** ___________
 
 ---
@@ -332,9 +332,9 @@ A post-incident review (PIR) shall be conducted:
 
 **PIR Template:**
 
-**Incident ID:** ___________
-**PIR Date:** ___________
-**PIR Facilitator:** ___________
+**Incident ID:** ___________  
+**PIR Date:** ___________  
+**PIR Facilitator:** ___________  
 **Attendees:** ___________
 
 **1. Incident Summary**

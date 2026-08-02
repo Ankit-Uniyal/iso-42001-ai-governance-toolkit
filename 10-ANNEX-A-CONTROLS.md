@@ -1,10 +1,10 @@
 # ANNEX A CONTROLS — ISO/IEC 42001:2023
-## Complete Implementation, Audit & Evidence Guide — All 39 Controls
+## Complete Implementation, Audit & Evidence Guide — All 38 Controls
 
 ---
 
-## DOMAIN A.2 — POLICIES
-*2 Controls | Establishing the AI governance policy framework*
+## DOMAIN A.2 — POLICIES RELATED TO AI
+*3 Controls | Establishing, aligning and maintaining the AI governance policy framework*
 
 ---
 
@@ -71,82 +71,141 @@ Without a board- or senior-management-approved AI Policy, the entire AIMS lacks 
 
 ---
 
-### A.2.3 — AI-Specific Policies
+### A.2.3 — Alignment with Other Organizational Policies
 
-**Control Statement:** The organization shall establish, document, communicate, and maintain topic-specific AI policies covering areas such as prohibited AI use cases, acceptable use, human oversight, ethics, and data governance.
+**Control Statement:** The organization shall identify where the AI policy interacts with other organizational policies and ensure that those policies are aligned and mutually consistent.
 
 ---
 
 #### What It Means
 
-A.2.3 recognizes that the top-level AI Policy (A.2.2) is insufficient on its own. Topic-specific policies translate high-level intent into operational guidance that employees can actually follow. These sub-policies address specific domains: what is and is not permitted use of AI; how human oversight is operationalized; how AI-related data is governed.
+The AI policy does not operate in isolation. AI activity touches information security, privacy and data protection, data governance, quality management, procurement, HR and health and safety. A.2.3 requires the organization to identify every existing policy that AI activity intersects with, and to reconcile them so they do not contradict one another or leave gaps.
 
 #### Why It Matters
 
-Without specific policies on prohibited uses, employees must make their own judgments — often resulting in risky or inconsistent behavior. As generative AI has proliferated, the gap between generic AI policies and the reality of employee behavior has grown dramatically. A.2.3 requires policies that specifically address modern AI risks.
+Conflicting policies create both audit findings and genuine operational risk. If the AI policy permits the use of production data for model training while the data protection policy forbids it, staff receive contradictory instructions and the organization cannot demonstrate control. Auditors routinely test policy alignment because it reveals whether AI governance has been genuinely integrated into the management system or simply bolted on.
 
 #### How to Implement
 
-**Required policy topics (minimum):**
-- **Prohibited AI Use Policy** — Explicitly lists AI use cases that are not permitted under any circumstances. Must be specific and unambiguous.
-- **Acceptable Use of AI Policy** — Covers both organizational AI systems and employee use of external AI tools.
-- **Human Oversight Policy** — Defines which AI decisions require human review and at what level.
-- **AI Ethics Policy** — Embeds the organization's ethical commitments: fairness, transparency, accountability, privacy.
-- **AI Data Governance Policy** — Covers data quality requirements, provenance, privacy obligations, and access controls for AI-specific data.
-
-**For each policy:**
-- Define scope — who it applies to
-- Assign ownership — who is responsible for maintaining it
-- Define consequences for non-compliance
-- Link to supporting procedures
-- Establish a review cycle
+- **Map the policy landscape** — Produce an inventory of all policies that AI touches: information security, privacy, data governance, acceptable use, procurement, change management, HR and code of conduct.
+- **Perform a conflict analysis** — Review each policy against the AI policy and record any contradictions, overlaps, or gaps in coverage.
+- **Amend the related policies** — Update the affected policies so AI obligations are reflected consistently, rather than duplicating AI rules in multiple places.
+- **Assign clear ownership at the boundaries** — Where two policies overlap, name which policy takes precedence and who arbitrates disputes.
+- **Synchronize review cycles** — Align review dates so related policies are revised together and do not drift apart over time.
 
 #### Documents to Prepare
 
 | Document | Description | Owner |
 |---|---|---|
-| Prohibited AI Use Policy | Explicit list of prohibited AI use cases with rationale | AI Governance Lead / Legal |
-| Acceptable Use of AI Policy | Governs permitted, conditional, and prohibited AI use | AI Governance Lead / CISO |
-| Human Oversight Policy | Defines oversight requirements by AI risk level | AI Governance Lead |
-| AI Ethics Policy | Ethical principles and obligations for AI development and deployment | AI Governance Lead / Ethics Committee |
-| AI Data Governance Policy | Data quality, provenance, privacy, and access requirements for AI | Chief Data Officer / AI Governance Lead |
+| Policy Interaction Map | Matrix showing the AI policy against all intersecting organizational policies | AI Governance Lead |
+| Policy Alignment Review Record | Documented analysis of conflicts, gaps and resolutions | AI Governance Lead / Compliance |
+| Updated Related Policies | Revised versions of policies amended to reflect AI obligations | Individual policy owners |
 
 #### How to Audit
 
 **Document Review:**
-- Verify each required topic-specific policy exists
-- Check policies explicitly address generative AI and LLM tools — this is the most common gap
-- Confirm policies are current, reviewed, and approved
+- Verify a policy interaction map or equivalent analysis exists and is current
+- Sample two or three related policies and check they do not contradict the AI policy
+- Confirm amendments to related policies were formally approved and version controlled
+- Check that review cycles across related policies are coordinated
 
 **Personnel Interviews:**
-- Ask an employee: "Are you allowed to use ChatGPT, Claude, or Copilot for work tasks? What are the rules?"
-- Ask a developer: "What AI use cases are prohibited in this organization?"
+- Ask the AI Governance Lead: "Which other policies does the AI policy interact with, and how were conflicts resolved?"
+- Ask a policy owner such as the CISO or DPO: "Was your policy reviewed when the AI policy was introduced?"
 
 **Evidence Required**
-- Suite of topic-specific AI policies with approval records
-- Evidence policies address external AI tool use (generative AI)
-- Communication and acknowledgment records
+- Policy interaction map or cross-policy analysis
+- Records of the alignment review and decisions taken
+- Version history of amended policies showing AI-related changes
+- Coordinated policy review schedule
 
 **Common Gaps Found in Audits**
-- Policies written pre-generative AI — do not address LLMs, ChatGPT, Copilot
-- Prohibited use policy exists but is vague ("AI may not be used inappropriately") rather than specific
-- No human oversight policy — oversight requirements left undefined
-- Policies exist on paper but are not communicated or enforced
+- AI policy written in isolation by a single team with no reference to existing policies
+- Direct contradictions between the AI policy and the data protection or security policy
+- Related policies never updated after the AIMS was implemented
+- No named owner for resolving conflicts where two policies overlap
 
 #### Cross-References
 
 | Framework | Reference |
 |---|---|
-| EU AI Act | Art. 26 (Deployer obligations — instructions to staff) |
-| NIST AI RMF | GOVERN 1.1, GOVERN 1.3, GOVERN 1.7 |
+| EU AI Act | Art. 17 (Quality management system) |
+| NIST AI RMF | GOVERN 1.1, GOVERN 2.1 |
 | ISO 27001:2022 | A.5.1 (Policies for information security) |
-
-## DOMAIN A.3 — ORGANISATION
-*4 Controls | Defining AI governance structures and responsibilities*
 
 ---
 
-### A.3.2 — AI Governance Roles and Responsibilities
+### A.2.4 — Review of the AI Policy
+
+**Control Statement:** The AI policy shall be reviewed at planned intervals, and additionally whenever significant changes occur, to ensure its continuing suitability, adequacy and effectiveness.
+
+---
+
+#### What It Means
+
+A.2.4 makes policy review an explicit, auditable obligation rather than an assumption. The AI policy must be re-examined on a defined schedule and also triggered by events: new regulation, a material change in how the organization uses AI, an AI incident, a merger, or the adoption of a new class of technology such as generative AI or autonomous agents.
+
+#### Why It Matters
+
+AI is one of the fastest-moving risk domains in the organization. A policy written before a major regulatory or technological shift becomes actively misleading, giving staff false assurance that they are compliant. This is among the most frequently raised nonconformities in AIMS audits, because organizations write a strong policy during certification preparation and then never revisit it.
+
+#### How to Implement
+
+- **Define the review interval** — Set a minimum frequency, typically annual, and record it in the policy itself.
+- **Define the trigger events** — Specify what forces an off-cycle review: regulatory change, significant AI incident, new high-risk AI system, change of scope, adoption of a new AI capability, or findings from audits.
+- **Assign the reviewer and the approver** — Name who conducts the review and who has authority to re-approve the policy.
+- **Record the outcome even when nothing changes** — A review that concludes no amendment is required is still a review and must be evidenced.
+- **Feed the review into management review** — Link the policy review to the Clause 9.3 management review so top management formally considers its continued suitability.
+
+#### Documents to Prepare
+
+| Document | Description | Owner |
+|---|---|---|
+| AI Policy Review Procedure | Defines review frequency, triggers, roles and approval route | AI Governance Lead |
+| AI Policy Review Record | Dated record of each review, findings and decisions | AI Governance Lead |
+| Policy Version History | Change log showing revisions, rationale and re-approval | Document Controller |
+| Management Review Minutes | Evidence that top management considered the AI policy | Top Management |
+
+#### How to Audit
+
+**Document Review:**
+- Confirm the policy states its review interval and that the interval has been honoured
+- Check review records exist for each cycle, including reviews concluding no change was needed
+- Verify off-cycle reviews were triggered by relevant events such as new regulation or incidents
+- Confirm re-approval was given by an appropriate authority and the version history is complete
+
+**Personnel Interviews:**
+- Ask the AI Governance Lead: "When was the policy last reviewed, what prompted it, and what changed?"
+- Ask top management: "How does the AI policy reach you for review, and what did you challenge?"
+
+**Evidence Required**
+- Dated and signed policy review records
+- Version history with change rationale and approver
+- Evidence of event-triggered reviews
+- Management review minutes referencing the AI policy
+
+**Common Gaps Found in Audits**
+- Policy has a stated annual review cycle that has demonstrably lapsed
+- No record kept when a review concludes that no change is required
+- Reviews are administrative re-dating exercises with no substantive challenge
+- Major regulatory or technology changes did not trigger a review
+
+#### Cross-References
+
+| Framework | Reference |
+|---|---|
+| EU AI Act | Art. 17 (Quality management system); Art. 9 (Risk management as a continuous process) |
+| NIST AI RMF | GOVERN 1.1, GOVERN 1.2, MANAGE 4.1 |
+| ISO 27001:2022 | A.5.1 (Policies reviewed at planned intervals) |
+
+---
+
+## DOMAIN A.3 — INTERNAL ORGANIZATION
+*2 Controls | Establishing accountability structures and safe escalation routes for AI*
+
+---
+
+### A.3.2 — AI Roles and Responsibilities
 
 **Control Statement:** The organization shall define, assign, and communicate AI governance roles and responsibilities, ensuring accountability for AI risk management, ethical AI, and AIMS implementation is clearly allocated at appropriate levels.
 
@@ -209,184 +268,76 @@ AI governance failures frequently occur not because policies don't exist, but be
 
 ---
 
-### A.3.3 — Segregation of Duties
+### A.3.3 — Reporting of Concerns
 
-**Control Statement:** The organization shall identify and implement appropriate segregation of duties for AI-related activities where conflicts of interest could compromise AI integrity, safety, or governance.
-
----
-
-#### What It Means
-
-A.3.3 applies segregation of duties — well-established in financial controls and IT security — specifically to AI. The key risk: the person who builds or benefits from an AI system should not be the sole arbiter of whether it is safe, fair, and approved for deployment.
-
-#### Why It Matters
-
-Conflicts of interest in AI governance create governance failures: a model developer approving their own model for production; a business unit that benefits from AI speed deciding whether human oversight is required; an AI provider conducting their own bias evaluation without independent verification.
-
-#### How to Implement
-
-- **Identify conflicts of interest** — Map AI lifecycle activities and identify where the same person or team should not hold multiple roles.
-- **Key segregations to implement:**
-  - Developer ≠ Deployment approver (technical review and production approval must be separated)
-  - Model developer ≠ Bias evaluator (independent evaluation required)
-  - Business unit ≠ Sole ethics reviewer (ethics review requires independence)
-  - AI system owner ≠ Sole incident investigator
-- **Document the SoD policy** — Formally document which activities must be segregated and the rationale.
-- **Implement access controls** — Where feasible, enforce SoD through technical controls (production deployment requires separate approver in CI/CD pipeline).
-- **Compensating controls** — Where SoD is not possible (small teams), document and implement compensating controls.
-
-#### Documents to Prepare
-
-| Document | Description | Owner |
-|---|---|---|
-| AI Segregation of Duties Policy | Policy defining required SoD for AI lifecycle activities | AI Governance Lead / CISO |
-| AI SoD Matrix | Maps activities to roles and documents required separations | AI Governance Lead |
-| Access Control Configuration Records | Evidence that technical controls enforce SoD where implemented | CISO / DevOps |
-| Compensating Controls Register | Documents where SoD cannot be achieved and compensating controls in place | AI Governance Lead |
-
-#### How to Audit
-
-**Document Review:**
-- Verify SoD policy and matrix exist
-- Check matrix covers deployment approval, bias evaluation, ethics review, incident investigation
-- Review access control configuration — does CI/CD enforce deployment approval separation?
-
-**Audit Testing:**
-- Select last 5 AI deployments to production. For each: who requested? Who approved? Are they different? Is approval documented?
-
-**Evidence Required**
-- SoD policy and matrix
-- Deployment approval records showing developer ≠ approver
-- Access control configuration evidence
-
-**Common Gaps Found in Audits**
-- No formal SoD policy — developers deploy their own models to production
-- SoD matrix exists but access controls not configured to enforce it
-- Same individual listed as model developer and bias evaluator
-
-#### Cross-References
-
-| Framework | Reference |
-|---|---|
-| NIST AI RMF | GOVERN 2.2, GOVERN 6.2 |
-| ISO 27001:2022 | A.5.3 (Segregation of duties) |
-
----
-
-### A.3.4 — Contact with AI Authorities and External Bodies
-
-**Control Statement:** The organization shall establish and maintain appropriate contacts with relevant AI authorities, regulatory bodies, standards organizations, and other external parties relevant to AI governance.
+**Control Statement:** The organization shall provide a mechanism through which personnel and other interested parties can report concerns about the organization's AI systems, in a manner that is accessible and protects the person raising the concern.
 
 ---
 
 #### What It Means
 
-A.3.4 ensures the organization does not operate in isolation from the rapidly evolving AI regulatory and governance landscape. AI regulation is moving faster than almost any other domain — the EU AI Act, national AI strategies, sectoral AI regulations, and evolving standards require active monitoring and engagement.
+A.3.3 requires a defined, usable route for raising worries about AI — covering safety, fairness, bias, misuse, unlawful or unethical behaviour, or an AI system simply not performing as claimed. It applies to internal staff and, where relevant, to external parties such as contractors, users and affected individuals. Critically, the mechanism must protect the reporter, which in practice means offering confidentiality or anonymity and guaranteeing freedom from retaliation.
 
 #### Why It Matters
 
-Organizations that fail to monitor AI regulatory developments risk: compliance failures as regulations come into force; missing industry intelligence on emerging AI risks; not being prepared for regulatory inquiries; falling behind on evolving standards.
+The people closest to an AI system are usually the first to notice that something is wrong, but they will only speak up if it is safe and straightforward to do so. Many of the most damaging publicly reported AI failures were foreseen internally by engineers or domain experts whose concerns had no route upward, were dismissed, or carried a career cost. A functioning reporting channel converts scattered private doubts into early, actionable governance signal, and it is increasingly expected by regulators as evidence of a genuine speak-up culture.
 
 #### How to Implement
 
-- **Identify relevant authorities and bodies** — Sector regulator; data protection authority; national AI authority (where established); EU AI Office (for EU AI Act); standards bodies (ISO/IEC JTC 1/SC 42, IEEE, NIST); industry associations.
-- **Establish contacts** — Identify a named organizational contact for each relevant authority. Subscribe to regulatory publications and updates.
-- **Create a regulatory watch process** — Designate someone responsible for monitoring AI regulatory developments. Define how intelligence is gathered, assessed, and fed into the AIMS.
-- **Maintain an engagement log** — Record contacts made, information received, and actions taken.
+- **Provide a clearly identified channel** — This can extend an existing whistleblowing or ethics hotline, but AI concerns must be an explicitly named category so people recognise it applies to them.
+- **Allow confidential and anonymous reporting** — Give reporters a genuine choice, and make sure anonymous reports are still triaged seriously.
+- **Guarantee non-retaliation** — State the protection explicitly in policy, and make clear that it covers concerns raised in good faith even if they turn out to be unfounded.
+- **Define triage, ownership and timescales** — Specify who receives reports, how they are assessed for severity, target response times, and the escalation path to the AI governance function or board.
+- **Route serious concerns into the risk and incident processes** — Concerns that indicate real harm should feed the AI risk register and the incident response procedure rather than being handled informally.
+- **Close the loop with the reporter** — Tell the reporter what happened, so far as confidentiality permits, or the channel will fall into disuse.
+- **Publicise it and keep records** — Cover it in onboarding and AI training, and retain records of every concern, its assessment and its outcome.
 
 #### Documents to Prepare
 
 | Document | Description | Owner |
 |---|---|---|
-| AI Regulatory Watch List | Register of relevant AI authorities, regulatory bodies, and intelligence sources | AI Governance Lead / Legal |
-| External Contact Register | Named contacts at relevant authorities and bodies | AI Governance Lead |
-| Regulatory Intelligence Log | Record of regulatory developments monitored and assessed | AI Governance Lead / Legal |
-| AI Governance Engagement Log | Record of communications with external AI authorities | AI Governance Lead |
+| AI Concern Reporting Procedure | Defines channels, triage, timescales, escalation and protections | AI Governance Lead / Compliance |
+| Non-Retaliation Statement | Formal protection for those raising concerns in good faith | HR / Legal |
+| AI Concerns Register | Log of concerns raised, assessment, actions and outcomes | AI Governance Lead |
+| Awareness and Training Material | Evidence that staff are told the channel exists and how to use it | HR / Communications |
 
 #### How to Audit
 
 **Document Review:**
-- Verify a regulatory watch list exists and covers relevant authorities for the organization's jurisdiction and sector
-- Check intelligence log — is it being maintained? Are recent regulatory developments captured?
+- Verify a documented reporting procedure exists and explicitly covers AI-related concerns
+- Confirm anonymous or confidential routes are available and functioning
+- Check the non-retaliation commitment is formally documented
+- Inspect the concerns register: were reports triaged, actioned and closed within defined timescales?
+- Confirm serious concerns were escalated into the risk register or incident process
 
 **Personnel Interviews:**
-- Ask the AI Governance Lead: "What significant AI regulatory developments have occurred in the last 6 months? What did you do as a result?"
+- Ask a sample of staff: "If you thought one of our AI systems was producing unfair or unsafe results, what would you do?"
+- Ask the AI Governance Lead: "How many AI concerns were raised in the last 12 months and what happened to them?"
+- Ask HR: "What protection does someone have if they raise a concern that turns out to be wrong?"
 
 **Evidence Required**
-- Regulatory watch list
-- Engagement log with external bodies
-- Evidence that regulatory intelligence has triggered AIMS updates
+- Documented AI concern reporting procedure
+- Records of concerns raised, with triage and resolution history
+- Non-retaliation policy statement
+- Communication and training records showing staff awareness
+- Escalation records where concerns fed the risk or incident process
 
 **Common Gaps Found in Audits**
-- No regulatory watch process — organization learns about AI regulations from news rather than systematic monitoring
-- Intelligence gathered but not fed into management review or AIMS updates
+- A general whistleblowing line exists but AI is never mentioned, so staff do not realise it applies
+- No anonymous option, so reporters must expose themselves to raise a concern
+- Zero concerns ever recorded, which usually signals distrust rather than an absence of issues
+- Concerns are received but there is no register, triage criteria or defined response time
+- Reporters are never told the outcome, so confidence in the channel erodes
 
 #### Cross-References
 
 | Framework | Reference |
 |---|---|
-| EU AI Act | Art. 23 (Cooperation with competent authorities) |
-| NIST AI RMF | GOVERN 1.4 |
-| ISO 27001:2022 | A.5.5 (Contact with authorities) |
+| EU AI Act | Art. 26 (Deployer obligations); Art. 73 (Reporting of serious incidents); Whistleblower protection under Directive (EU) 2019/1937 |
+| NIST AI RMF | GOVERN 4.1, GOVERN 4.2, GOVERN 4.3 |
+| ISO 27001:2022 | A.6.8 (Information security event reporting) |
 
 ---
-
-### A.3.6 — AI in Project Management
-
-**Control Statement:** The organization shall integrate AI governance requirements into project management processes to ensure that AI-related risks, impacts, and compliance obligations are addressed throughout the project lifecycle.
-
----
-
-#### What It Means
-
-A.3.6 ensures AI governance is not an afterthought in project delivery. AI systems often emerge from innovation projects or digital transformation initiatives where commercial pressures can override governance requirements. A.3.6 requires AI governance gates to be embedded in project management methodology from initiation to closure.
-
-#### Why It Matters
-
-Without project-level AI governance integration, organizations find AI systems in production that were never formally assessed, approved, or documented. The AI governance team learns about new AI deployments only when something goes wrong. By then, remediation is expensive and governance gaps have already materialized into risk.
-
-#### How to Implement
-
-- **Integrate AI governance into project initiation** — Every project involving AI development, procurement, or deployment must trigger AI governance requirements at initiation.
-- **Define mandatory AI governance gates** — Checkpoints every AI project must pass: AI Impact Assessment completion; ethics review; security and privacy review; model approval; deployment authorization; post-deployment review.
-- **Update project templates** — Embed AI governance requirements in project charters, risk registers, and closure documentation.
-- **Train project managers** — PMs must understand what constitutes an AI project and what governance requirements it triggers.
-
-#### Documents to Prepare
-
-| Document | Description | Owner |
-|---|---|---|
-| AI Project Governance Framework | Defines AI governance gates and requirements for projects involving AI | AI Governance Lead / PMO |
-| AI Project Identification Criteria | Criteria for identifying whether a project involves AI | AI Governance Lead / PMO |
-| AI Governance Gate Checklist | Per-gate checklist of required approvals and documentation | AI Governance Lead |
-| AI Project Register | Register of all active and completed AI projects | PMO / AI Governance Lead |
-
-#### How to Audit
-
-**Document Review:**
-- Verify AI project governance framework exists and defines mandatory gates
-- Check AI project register — are all live AI systems traceable to a project record?
-
-**Audit Testing:**
-- Select 3 AI systems in production. For each: identify the delivering project; verify governance gates were completed; check ASIA was completed before deployment (date comparison); confirm deployment authorization was obtained.
-
-**Evidence Required**
-- AI project governance framework
-- Completed gate records for sample AI projects
-- AI project register
-
-**Common Gaps Found in Audits**
-- AI governance gates not embedded in project methodology — governance team engaged ad hoc
-- Projects use external AI APIs without triggering AI governance requirements
-- ASIA completed post-go-live rather than before deployment
-
-#### Cross-References
-
-| Framework | Reference |
-|---|---|
-| EU AI Act | Art. 9 (Risk management system) |
-| NIST AI RMF | GOVERN 1.1, MAP 2.1 |
-| ISO 27001:2022 | A.5.8 (Information security in project management) |
 
 ## DOMAIN A.4 — RESOURCES
 *3 Controls | Ensuring adequate competence, infrastructure, and tools for AI governance*

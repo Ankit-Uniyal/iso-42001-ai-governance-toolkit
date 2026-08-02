@@ -142,14 +142,19 @@ Establish, implement, maintain, and continually improve an AIMS — including al
 - The system must be reviewed and improved continuously, not set up once and forgotten
 
 ### AIMS High-Level Process Flow
-- ```
-Clause 4 (Context) ──► Clause 5 (Leadership) ──► Clause 6 (Planning)
-│
-▼
-Clause 10 (Improvement) ◄── Clause 9 (Performance) ◄── Clause 7 (Support)
-│
-▼
-Clause 8 (Operations)
+```
+Clause 4 (Context) --> Clause 5 (Leadership) --> Clause 6 (Planning)
+                                                          |
+                                                          v
+                                                  Clause 7 (Support)
+                                                          |
+                                                          v
+                                                  Clause 8 (Operation)
+                                                          |
+                                                          v
+Clause 10 (Improvement) <------------------------ Clause 9 (Performance)
+        |
+        +--> feeds back into Clause 4 (continual improvement loop)
 ```
 
 ### Documents Required

@@ -1,11 +1,11 @@
 # AI Change Control Procedure
 ## ISO/IEC 42001:2023 | Clause 8.1 — Template
 
-**Document ID:** AIMS-CHGCTRL-001
-**Version:** 1.0
-**Owner:** AI Governance Lead
-**Approved by:** ___________________________
-**Date:** ___________________________
+**Document ID:** AIMS-CHGCTRL-001  
+**Version:** 1.0  
+**Owner:** AI Governance Lead  
+**Approved by:** ___________________________  
+**Date:** ___________________________  
 **Review Cycle:** Annual
 
 ---
@@ -52,12 +52,12 @@ Applies to all changes to in-scope AI systems including: new system deployments;
 
 ## Change Request Form
 
-**Change Request ID:** CHG-[####]
-**Date Raised:** ___________________________
-**AI System:** ___________________________
-**System ID:** ___________________________
-**Change Type:** Major / Standard / Minor
-**Requested By:** ___________________________
+**Change Request ID:** CHG-[####]  
+**Date Raised:** ___________________________  
+**AI System:** ___________________________  
+**System ID:** ___________________________  
+**Change Type:** Major / Standard / Minor  
+**Requested By:** ___________________________  
 **Target Date:** ___________________________
 
 **Description of Change:**

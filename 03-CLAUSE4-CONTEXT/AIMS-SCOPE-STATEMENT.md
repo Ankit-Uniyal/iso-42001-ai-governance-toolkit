@@ -1,12 +1,12 @@
 # AIMS Scope Statement
 ## ISO/IEC 42001:2023 | Clause 4.3 — Template
 
-**Document ID:** AIMS-SCOPE-001
-**Version:** 1.0
-**Owner:** AI Governance Lead
-**Classification:** Internal — Controlled Document
-**Approved by:** ___________________________ [Name, Title]
-**Date of Approval:** ___________________________
+**Document ID:** AIMS-SCOPE-001  
+**Version:** 1.0  
+**Owner:** AI Governance Lead  
+**Classification:** Internal — Controlled Document  
+**Approved by:** ___________________________ [Name, Title]  
+**Date of Approval:** ___________________________  
 **Review Date:** ___________________________ (annual minimum or upon material change)
 
 ---

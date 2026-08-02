@@ -1,10 +1,10 @@
 # Continual Improvement Log
 ## ISO/IEC 42001:2023 | Clause 10.1 — Template
 
-**Document ID:** AIMS-CI-001
-**Version:** 1.0
-**Owner:** AI Governance Lead
-**Date:** ___________________________
+**Document ID:** AIMS-CI-001  
+**Version:** 1.0  
+**Owner:** AI Governance Lead  
+**Date:** ___________________________  
 **Review Cycle:** Monthly review; comprehensive review at management review
 
 ---

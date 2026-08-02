@@ -10,7 +10,7 @@ Built by an **ISO 42001 Lead Auditor**. Covers all 10 clauses, all 38 Annex A co
 
 Work through folders in numbered order. Each clause folder has a `README.md` listing its files in the correct reading order.
 
-**Start here:** Gap Assessment > Implementation Roadmap > Clause 4 > 5 > 6 > 7 > 8 > 9 > 10 > Annex A > Controls Mapping > Annex B > Annex C
+**Start here:** [00-README.md](00-README.md) for the phased implementation guide, then Gap Assessment > Implementation Roadmap > Clause 4 > 5 > 6 > 7 > 8 > 9 > 10 > Annex A > Controls Mapping > reference guides
 
 ---
 
@@ -21,12 +21,12 @@ Work through folders in numbered order. Each clause folder has a `README.md` lis
 | # | File | Purpose |
 |---|------|---------|
 | - | [00-README.md](00-README.md) | Detailed implementation guide (read this first) |
-| 01 | [01-GAP-ASSESSMENT.md](01-GAP-ASSESSMENT.md) | Baseline gap assessment checklist (128 requirements) |
+| 01 | [01-GAP-ASSESSMENT.md](01-GAP-ASSESSMENT.md) | Baseline gap assessment checklist (124 requirements) |
 | 02 | [02-IMPLEMENTATION-ROADMAP.md](02-IMPLEMENTATION-ROADMAP.md) | 12-month phased implementation roadmap |
 | 10 | [10-ANNEX-A-CONTROLS.md](10-ANNEX-A-CONTROLS.md) | All 38 Annex A controls — implementation and audit guide |
 | 11 | [11-CONTROLS-MAPPING.md](11-CONTROLS-MAPPING.md) | Cross-mapping to EU AI Act, NIST AI RMF, ISO 27001 |
-| 12 | [12-ANNEX-B-AI-CONCEPTS.md](12-ANNEX-B-AI-CONCEPTS.md) | Annex B — AI concepts, terminology, and risk classification guide |
-| 13 | [13-ANNEX-C-AI-DEVELOPERS.md](13-ANNEX-C-AI-DEVELOPERS.md) | Annex C — Guidance for organisations developing AI for others |
+| 12 | [12-ANNEX-B-AI-CONCEPTS.md](12-ANNEX-B-AI-CONCEPTS.md) | AI concepts, terminology and risk classification reference |
+| 13 | [13-ANNEX-C-AI-DEVELOPERS.md](13-ANNEX-C-AI-DEVELOPERS.md) | Guidance for organisations developing AI for other organisations |
 | 14 | [14-WORKED-EXAMPLE/](14-WORKED-EXAMPLE/) | Worked examples — Nexus Financial Services fictional AIMS implementation |
 
 ---
@@ -130,9 +130,9 @@ Folder: [09-CLAUSE10-IMPROVEMENT/](09-CLAUSE10-IMPROVEMENT/)
 
 | # | File | Purpose |
 |---|------|---------|
-| 1 | [NCR-REGISTER.md](09-CLAUSE10-IMPROVEMENT/NCR-REGISTER.md) | Nonconformity and Corrective Action Register |
-| 2 | [CONTINUAL-IMPROVEMENT-LOG.md](09-CLAUSE10-IMPROVEMENT/CONTINUAL-IMPROVEMENT-LOG.md) | Improvement initiatives with PDCA tracking |
-| 3 | [AI-INCIDENT-RESPONSE-PROCEDURE.md](09-CLAUSE10-IMPROVEMENT/AI-INCIDENT-RESPONSE-PROCEDURE.md) | AI system incident response procedure |
+| 1 | [NCR-REGISTER.md](09-CLAUSE10-IMPROVEMENT/NCR-REGISTER.md) | Nonconformity and Corrective Action Register (10.2) |
+| 2 | [AI-INCIDENT-RESPONSE-PROCEDURE.md](09-CLAUSE10-IMPROVEMENT/AI-INCIDENT-RESPONSE-PROCEDURE.md) | AI system incident response procedure (10.2) |
+| 3 | [CONTINUAL-IMPROVEMENT-LOG.md](09-CLAUSE10-IMPROVEMENT/CONTINUAL-IMPROVEMENT-LOG.md) | Improvement initiatives with PDCA tracking (10.1) |
 
 ---
 
@@ -166,21 +166,21 @@ Folder: [14-WORKED-EXAMPLE/](14-WORKED-EXAMPLE/)
 
 ## What's Covered
 
-- All 10 ISO 42001 clauses with implementation templates
-- - All 38 Annex A controls across 9 domains
-  - - Every mandatory document required by the standard
-    - - Full Statement of Applicability with pre-populated control mapping
-      - - AI Ethics Framework (8 principles + governance structure)
-        - - Legal and Regulatory Requirements Register (EU AI Act, GDPR, UK, US)
-          - - Annex B — AI concepts and risk classification reference
-            - - Annex C — Guidance for AI developers/suppliers
-              - - AI Supplier Contract Clauses template
-                - - Cross-mapping to EU AI Act, NIST AI RMF, and ISO 27001
-                  - - GRC automation scripts (Python)
-                   
-                    - ---
+- All of Clauses 4 to 10 with implementation templates
+- All 38 Annex A controls across nine domains (A.2 to A.10)
+- Every item of documented information the standard requires
+- Full Statement of Applicability with pre-populated control mapping
+- AI Ethics Framework (eight principles plus governance structure)
+- Legal and Regulatory Requirements Register (EU AI Act, GDPR, UK, US)
+- AI concepts and risk classification reference
+- Guidance for organisations developing AI for other organisations
+- AI Supplier Contract Clauses template
+- Cross-mapping to EU AI Act, NIST AI RMF and ISO/IEC 27001:2022
+- GRC automation scripts (Python)
 
-                    ## Maintained by
+---
+
+## Maintained by
 
                     Ankit Uniyal — ISO 42001 Lead Auditor | GRC Lead
 

@@ -1,13 +1,13 @@
 # AI Model Card / AI System Card
 ## ISO/IEC 42001:2023 | Clause 8.1 / Annex A.6.2.3 — Template
 
-**Document ID:** AIMS-MODELCARD-[SystemID]
-**AI System Name:** ___________________________
-**System ID:** ___________________________
-**Version:** ___________________________
-**Owner:** ___________________________
-**Date Created:** ___________________________
-**Last Updated:** ___________________________
+**Document ID:** AIMS-MODELCARD-[SystemID]  
+**AI System Name:** ___________________________  
+**System ID:** ___________________________  
+**Version:** ___________________________  
+**Owner:** ___________________________  
+**Date Created:** ___________________________  
+**Last Updated:** ___________________________  
 **Classification:** Internal
 
 ---
@@ -91,7 +91,7 @@
 | Age | Over 65 | | | | |
 | Ethnicity | [Group] | | | | |
 
-**Fairness Methodology:** [Describe approach — e.g., disparate impact analysis]
+**Fairness Methodology:** [Describe approach — e.g., disparate impact analysis]  
 **Known Limitations / Residual Bias:** [Describe any known fairness limitations]
 
 ---

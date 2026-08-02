@@ -1,6 +1,6 @@
 # AI System Model Card — CreditIQ v2.1
 
-## ISO/IEC 42001:2023 | Clause 8.4 & Annex A.6 | FICTIONAL REFERENCE ONLY
+## ISO/IEC 42001:2023 | Clause 8.1 & Annex A.6.2.3 / A.6.2.7 | FICTIONAL REFERENCE ONLY
 
 **Document ID:** NFS-MODELCARD-002
 **Version:** 2.1.3 | **Owner:** Head of AI Governance | **Date:** 01 April 2025 | **Review Cycle:** Quarterly
@@ -179,4 +179,4 @@ SHAP (SHapley Additive exPlanations) values are calculated per decision. Plain E
 
 ---
 
-*ISO/IEC 42001:2023 AI Governance Toolkit | Worked Example — Clause 8.4 / Annex A.6 | See root README.md for full index*
+*ISO/IEC 42001:2023 AI Governance Toolkit | Worked Example — Clause 8.1 / Annex A.6.2.3 | See root README.md for full index*

@@ -1,5 +1,5 @@
-————————# Continual Improvement Log
-## ISO/IEC 42001:2023 | Clause 10.2 — Template
+# Continual Improvement Log
+## ISO/IEC 42001:2023 | Clause 10.1 — Template
 
 **Document ID:** AIMS-CI-001
 **Version:** 1.0
@@ -15,9 +15,9 @@ This log records proactive improvement opportunities identified for the AIMS —
 
 ---
 
-## Difference Between Corrective Action (10.1) and Continual Improvement (10.2)
+## Difference Between Corrective Action (10.2) and Continual Improvement (10.1)
 
-| Aspect | Corrective Action (10.1) | Continual Improvement (10.2) |
+| Aspect | Corrective Action (10.2) | Continual Improvement (10.1) |
 |--------|--------------------------|------------------------------|
 | Trigger | Something went wrong | Proactive identification of better ways |
 | Nature | Reactive — fixing a failure | Proactive — making things better |
@@ -85,4 +85,4 @@ For each improvement, follow the Plan-Do-Check-Act cycle:
 
 ---
 
-*ISO/IEC 42001:2023 AI Governance Toolkit | Clause 10.2 | See root README.md for full index*
+*ISO/IEC 42001:2023 AI Governance Toolkit | Clause 10.1 | See root README.md for full index*

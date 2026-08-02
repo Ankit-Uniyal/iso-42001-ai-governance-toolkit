@@ -1,17 +1,17 @@
 # AI Incident Log — Worked Examples
 
-## ISO/IEC 42001:2023 | Clause 10.1 & Annex A.9 | FICTIONAL REFERENCE ONLY
+## ISO/IEC 42001:2023 | Clause 10.2 & Annex A.8.4 | FICTIONAL REFERENCE ONLY
 
 **Document ID:** NFS-INCIDENT-LOG-EXAMPLE
 **Version:** 1.0 | **Owner:** Head of AI Governance | **Date:** 14 March 2025
 
-> **FICTIONAL EXAMPLE:** All incidents, individuals, and outcomes described here relate to the fictional organisation Nexus Financial Services Ltd. This is for educational illustration of ISO/IEC 42001:2023 Clause 10.1 nonconformity and corrective action documentation only.
+> **FICTIONAL EXAMPLE:** All incidents, individuals, and outcomes described here relate to the fictional organisation Nexus Financial Services Ltd. This is for educational illustration of ISO/IEC 42001:2023 Clause 10.2 nonconformity and corrective action documentation only.
 
 ---
 
 ## How to Read These Entries
 
-These entries follow the structure of the blank Nonconformity and Corrective Action Log in `09-CLAUSE10-IMPROVEMENT/NONCONFORMITY-CORRECTIVE-ACTION-LOG.md`. Two complete AI incident entries are shown: a bias monitoring alert (closed) and a data quality incident (in progress).
+These entries follow the structure of the blank Nonconformity and Corrective Action Log in `09-CLAUSE10-IMPROVEMENT/NCR-REGISTER.md`. Two complete AI incident entries are shown: a bias monitoring alert (closed) and a data quality incident (in progress).
 
 ---
 
@@ -30,7 +30,7 @@ These entries follow the structure of the blank Nonconformity and Corrective Act
 | **Reported To** | Head of AI Governance (Priya Sharma) |
 | **Report Time** | 07 January 2025, 09:30 UTC |
 | **Incident Classification** | Level 2 — Significant (potential regulatory reporting obligation; contained) |
-| **AIMS Control Affected** | A.6.2.5 — Fairness monitoring; A.9.3 — Incident response |
+| **AIMS Control Affected** | A.6.2.6 — AI system operation and monitoring; A.8.4 — Communication of incidents |
 
 ### Part B: Incident Description
 
@@ -126,7 +126,7 @@ The affected period was December 2024 (31 days of production decisions). During 
 | **Detection Method** | API health check failure: Experian endpoint returning HTTP 503 for > 5 minutes |
 | **Reported To** | Head of IT Operations; Head of AI Governance |
 | **Incident Classification** | Level 2 — Significant (operational disruption; no customer harm) |
-| **AIMS Control Affected** | A.9.3 — AI system incident management; A.7.4 — Operational continuity |
+| **AIMS Control Affected** | A.8.4 — Communication of incidents; A.7.4 — Quality of data for AI systems |
 
 ### Part B: Incident Description
 
@@ -162,4 +162,4 @@ Experian confirmed the outage was caused by a misconfigured load balancer deploy
 
 ---
 
-*ISO/IEC 42001:2023 AI Governance Toolkit | Worked Example — Clause 10.1 / Annex A.9 | See root README.md for full index*
+*ISO/IEC 42001:2023 AI Governance Toolkit | Worked Example — Clause 10.2 / Annex A.8.4 | See root README.md for full index*

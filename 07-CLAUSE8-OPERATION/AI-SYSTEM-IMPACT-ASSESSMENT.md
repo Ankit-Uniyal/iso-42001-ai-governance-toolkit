@@ -3,14 +3,14 @@
 
 ---
 
-**Document ID:** AIMS-TEMP-001
-**Version:** 1.0
-**Classification:** Internal — Controlled Document
-**ASIA Reference Number:** ASIA-[YYYY]-[NNN]
-**AI System Name:** ___________________________
-**AI System Owner:** ___________________________
-**Assessment Lead:** ___________________________
-**Assessment Date:** ___________________________
+**Document ID:** AIMS-TEMP-001  
+**Version:** 1.0  
+**Classification:** Internal — Controlled Document  
+**ASIA Reference Number:** ASIA-[YYYY]-[NNN]  
+**AI System Name:** ___________________________  
+**AI System Owner:** ___________________________  
+**Assessment Lead:** ___________________________  
+**Assessment Date:** ___________________________  
 **Next Review Date:** ___________________________
 
 ---

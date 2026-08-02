@@ -1,8 +1,8 @@
 # ISO/IEC 42001:2023 Gap Assessment Checklist
 
-**Organization:** ___________________________
-**Assessment Date:** ___________________________
-**Assessor:** ___________________________
+**Organization:** ___________________________  
+**Assessment Date:** ___________________________  
+**Assessor:** ___________________________  
 **AIMS Scope:** ___________________________
 
 > Use this checklist to assess your current state against ISO/IEC 42001:2023 requirements.

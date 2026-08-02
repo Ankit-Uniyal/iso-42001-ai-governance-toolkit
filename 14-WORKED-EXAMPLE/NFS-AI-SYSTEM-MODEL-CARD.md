@@ -2,7 +2,7 @@
 
 ## ISO/IEC 42001:2023 | Clause 8.1 & Annex A.6.2.3 / A.6.2.7 | FICTIONAL REFERENCE ONLY
 
-**Document ID:** NFS-MODELCARD-002
+**Document ID:** NFS-MODELCARD-002  
 **Version:** 2.1.3 | **Owner:** Head of AI Governance | **Date:** 01 April 2025 | **Review Cycle:** Quarterly
 
 > **FICTIONAL EXAMPLE:** CreditIQ v2.1 is a fictional AI system created for educational illustration of ISO/IEC 42001:2023 compliance. No real organisation, credit data, or individuals are represented.

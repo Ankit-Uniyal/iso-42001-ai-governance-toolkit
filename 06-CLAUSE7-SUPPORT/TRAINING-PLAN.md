@@ -1,10 +1,10 @@
 # AIMS Training Plan and Records
 ## ISO/IEC 42001:2023 | Clause 7.2 — Template
 
-**Document ID:** AIMS-TRAINPLAN-001
-**Version:** 1.0
-**Owner:** HR / AI Governance Lead
-**Date:** ___________________________
+**Document ID:** AIMS-TRAINPLAN-001  
+**Version:** 1.0  
+**Owner:** HR / AI Governance Lead  
+**Date:** ___________________________  
 **Review Cycle:** Annual; updated when gaps identified
 
 ---

@@ -104,63 +104,67 @@ This scope is bounded to CreditIQ v2.1 as the primary in-scope AI system for the
 ### 7.1 System Boundaries
 
 ```
-[Customer Application] --> [NFS Loan Portal] --> [CreditIQ v2.1 API]
-                                                        |
-                                                                                      +-------------------------+-------------------------+
-                                                                                                                    |                         |                         |
-                                                                                                                                        [Credit Bureau Feed]    [Internal Transaction Data]    [Fraud Score Feed]
-                                                                                                                                                            (Experian, Equifax)      (NFS Core Banking T24)        (FraudGuard v3.0)
-                                                                                                                                                                                          |                         |                         |
-                                                                                                                                                                                                                        +-------------------------+-------------------------+
-                                                                                                                                                                                                                                                                                |
-                                                                                                                                                                                                                                                                                                                              [Decision Output]
-                                                                                                                                                                                                                                                                                                                                                                                      |
-                                                                                                                                                                                                                                                                                                                                                                                                                    +-------------------------+-------------------------+
-                                                                                                                                                                                                                                                                                                                                                                                                                                                  |                                                   |
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                      [Approved: Automated]                            [Declined/Borderline:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          (score >= 720)                                    Human Review Panel]
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ```
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ### 7.2 Interfaces with Other Management Systems
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+[Customer Application]
+          |
+          v
+   [NFS Loan Portal]  ------>  [CreditIQ v2.1 API]
+                                        |
+        +-------------------------------+-------------------------------+
+        |                               |                               |
+[Credit Bureau Feed]      [Internal Transaction Data]        [Fraud Score Feed]
+(Experian, Equifax)       (NFS Core Banking T24)             (FraudGuard v3.0)
+        |                               |                               |
+        +-------------------------------+-------------------------------+
+                                        |
+                                        v
+                              [Decision Output]
+                                        |
+                    +-------------------+-------------------+
+                    |                                       |
+          [Approved: Automated]              [Declined / Borderline:
+             (score >= 720)                    Human Review Panel]
+```
+
+### 7.2 Interfaces with Other Management Systems
+
 | Interface | System | Integration Point |
 |---|---|---|
 | Information security | ISO 27001 ISMS | Shared risk register; model data classified under IS asset register |
 | Data protection | UK GDPR programme | DPIA for CreditIQ maintained by DPO; shared with AIMS |
 | Business continuity | BCP/DR plan | CreditIQ failover procedure documented in BCP |
 | Operational risk | FCA ICARA process | AI risk included in ICARA operational risk assessment |
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ---
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ## 8. Exclusions and Justifications
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+
+---
+
+## 8. Exclusions and Justifications
+
 | Exclusion | Justification |
 |---|---|
 | Annex A.10.3 (Suppliers) — model acquisition aspects | NFS develops CreditIQ in-house; no third-party AI model is acquired within the AIMS scope. Supplier controls remain applicable for AI tooling and infrastructure. |
 | FraudGuard v3.0 | Separate risk profile; Phase 2 AIMS expansion planned Q4 2026 |
 | Mortgage AI tools (third-party) | Operated by partner organisations; NFS is data processor only; separate DPA in place |
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ---
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ## 9. Scope Approval
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+
+---
+
+## 9. Scope Approval
+
 | Role | Name | Signature | Date |
 |---|---|---|---|
 | Chief Risk Officer | Sarah Mitchell | *[signed]* | 14 March 2025 |
 | Chief Executive Officer | James Okafor | *[signed]* | 17 March 2025 |
 | Head of AI Governance | Priya Sharma | *[signed]* | 14 March 2025 |
 | External AIMS Consultant | Dr. Wei Chen (BSI) | *[signed]* | 20 March 2025 |
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ---
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ## Review History
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+
+---
+
+## Review History
+
 | Version | Date | Changes | Approved By |
 |---|---|---|---|
 | 1.0 | 02 Sep 2024 | Initial scope drafted | S. Mitchell |
 | 1.1 | 10 Jan 2025 | Added EU AI Act external context; updated interested parties | P. Sharma |
 | 1.2 | 14 Mar 2025 | Scope boundary diagram added; exclusions formalised | S. Mitchell |
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ---
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          *ISO/IEC 42001:2023 AI Governance Toolkit | Worked Example — Clause 4.3 | See root README.md for full index*
+
+---
+
+*ISO/IEC 42001:2023 AI Governance Toolkit | Worked Example — Clause 4.3 | See root README.md for full index*

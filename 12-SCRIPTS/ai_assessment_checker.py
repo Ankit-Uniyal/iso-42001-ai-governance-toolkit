@@ -10,19 +10,19 @@ Purpose:
     Supports ISO 42001 Clause 9.1 (Monitoring, Measurement, Analysis and Evaluation).
 
 Usage:
-    python scripts/ai_assessment_checker.py --input scripts/sample_ai_systems.csv
-    python scripts/ai_assessment_checker.py --input scripts/sample_ai_systems.csv --threshold 180
+    python 12-SCRIPTS/ai_assessment_checker.py --input 12-SCRIPTS/sample_ai_systems.csv
+    python 12-SCRIPTS/ai_assessment_checker.py --input 12-SCRIPTS/sample_ai_systems.csv --threshold 180
 
 Expected CSV Columns:
     system_id, system_name, owner, risk_level, last_assessment_date (YYYY-MM-DD)
 
 Output:
     - Console summary table
-    - Saves a report to: scripts/assessment_report.txt
+    - Saves a report to: 12-SCRIPTS/reports/assessment_report.txt
 
 Author:  Ankit Uniyal
 Toolkit: ISO/IEC 42001:2023 AI Governance Toolkit
-Version: 1.0.0
+Version: 1.1.0
 """
 
 import csv
@@ -165,7 +165,9 @@ def save_report(results, threshold, output_path):
         for r in overdue_items:
             lines.append(f"  - [{r['system_id']}] {r['system_name']} (Owner: {r['owner']})")
 
-    Path(output_path).write_text("\n".join(lines), encoding="utf-8")
+    out_file = Path(output_path)
+    out_file.parent.mkdir(parents=True, exist_ok=True)
+    out_file.write_text("\n".join(lines), encoding="utf-8")
     print(f"  Report saved to: {output_path}\n")
 
 
@@ -177,8 +179,8 @@ def main():
     )
     parser.add_argument(
         "--input", "-i",
-        default="scripts/sample_ai_systems.csv",
-        help="Path to the AI systems CSV file (default: scripts/sample_ai_systems.csv)"
+        default="12-SCRIPTS/sample_ai_systems.csv",
+        help="Path to the AI systems CSV file (default: 12-SCRIPTS/sample_ai_systems.csv)"
     )
     parser.add_argument(
         "--threshold", "-t",
@@ -188,8 +190,8 @@ def main():
     )
     parser.add_argument(
         "--output", "-o",
-        default="scripts/assessment_report.txt",
-        help="Path for the output report file (default: scripts/assessment_report.txt)"
+        default="12-SCRIPTS/reports/assessment_report.txt",
+        help="Path for the output report file (default: 12-SCRIPTS/reports/assessment_report.txt)"
     )
     args = parser.parse_args()
 

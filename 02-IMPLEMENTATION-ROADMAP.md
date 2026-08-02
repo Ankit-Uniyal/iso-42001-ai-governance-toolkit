@@ -246,7 +246,7 @@ AIMS-PROC-001: AI Risk Assessment Procedure
 - [ ] Set up drift detection
 - [ ] Create monitoring dashboards
 
-**A.6.2.6 — Decommissioning and retirement:**
+**A.6.1.3 / A.6.2.6 — Decommissioning and retirement:**
 - [ ] Create decommissioning checklist
 - [ ] Integrate with data retention/deletion procedures
 
@@ -490,8 +490,8 @@ Focus areas for Stage 2 auditors:
 | Tool Category | Purpose | Examples |
 |--------------|---------|---------|
 | Model Registry | Version control for AI models | MLflow, W&B, DVC |
-| Bias/Fairness Testing | A.6.2.6 | Fairlearn, AIF360, Aequitas |
-| Adversarial Testing | A.6.2.5 | Adversarial Robustness Toolbox, TextAttack |
+| Bias/Fairness Testing | A.6.2.4 | Fairlearn, AIF360, Aequitas |
+| Adversarial Testing | A.6.2.4 | Adversarial Robustness Toolbox, TextAttack |
 | AI Monitoring | A.6.2.6 | Evidently AI, Fiddler, Arize AI, WhyLabs |
 | Explainability | A.8.3 | SHAP, LIME, InterpretML |
 | GRC Platform | AIMS documentation | ServiceNow, OneTrust, LogicGate, Archer |

@@ -7,7 +7,7 @@ This is an open-source governance toolkit repository containing documentation te
 | Resource Type | Security Support |
 |--------------|-----------------|
 | Markdown templates and guides | Maintained — issues welcomed |
-| Python automation scripts (12-SCRIPTS/) | Actively maintained |
+| Python automation scripts (15-SCRIPTS/) | Actively maintained |
 
 ---
 
@@ -46,7 +46,7 @@ If you are using this toolkit to implement an ISO/IEC 42001:2023 AIMS, note the 
 
 **Sensitive Data:** Do not store actual risk assessments, incident records, or confidential organisational information in public forks of this repository. All real AIMS documentation should be stored in your organisation's secure, access-controlled systems.
 
-**Scripts:** The Python scripts in `12-SCRIPTS/` read CSV files and generate reports. Review all scripts before running them in your environment. No network calls are made and no data is transmitted externally.
+**Scripts:** The Python scripts in `15-SCRIPTS/` read CSV files and generate reports. Review all scripts before running them in your environment. No network calls are made and no data is transmitted externally.
 
 **Credentials:** Never store API keys, passwords, or credentials in AIMS templates or documentation files.
 

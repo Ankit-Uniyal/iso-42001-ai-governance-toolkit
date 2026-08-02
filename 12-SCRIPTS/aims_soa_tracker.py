@@ -30,57 +30,53 @@ from typing import Optional
 # ─────────────────────────────────────────────────────────────────────────────
 
 ANNEX_A_CONTROLS = [
-      # Domain 1: Policies for AI (A.2)
-    {"id": "A.2.2", "domain": "Policies for AI", "control": "AI policy", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
-      {"id": "A.2.3", "domain": "Policies for AI", "control": "Allocation of roles and responsibilities", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
-      {"id": "A.2.4", "domain": "Policies for AI", "control": "Reporting obligations", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
-      {"id": "A.2.5", "domain": "Policies for AI", "control": "Addressing AI considerations in contracts", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
-      {"id": "A.2.6", "domain": "Policies for AI", "control": "Records related to AI systems", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
-
-      # Domain 2: Human Oversight (A.3)
-      {"id": "A.3.2", "domain": "Human Oversight of AI Systems", "control": "Establishment of human oversight mechanisms", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
-
-      # Domain 3: Responsibilities (A.4)
-      {"id": "A.4.2", "domain": "Responsibilities Related to AI Systems", "control": "Intended use", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
-      {"id": "A.4.3", "domain": "Responsibilities Related to AI Systems", "control": "Accuracy, reliability and performance of AI systems", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
-      {"id": "A.4.4", "domain": "Responsibilities Related to AI Systems", "control": "Safety of AI systems", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
-      {"id": "A.4.5", "domain": "Responsibilities Related to AI Systems", "control": "Security of AI systems", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
-      {"id": "A.4.6", "domain": "Responsibilities Related to AI Systems", "control": "Availability of AI systems", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
-      {"id": "A.4.7", "domain": "Responsibilities Related to AI Systems", "control": "Eliminating bias and promoting fairness", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
-      {"id": "A.4.8", "domain": "Responsibilities Related to AI Systems", "control": "Transparency", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
-      {"id": "A.4.9", "domain": "Responsibilities Related to AI Systems", "control": "Privacy", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
-      {"id": "A.4.10", "domain": "Responsibilities Related to AI Systems", "control": "Accountability", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
-
-      # Domain 4: Impact Assessment (A.5)
-      {"id": "A.5.2", "domain": "Impact Assessment for AI Systems", "control": "AI system impact assessment process", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
-      {"id": "A.5.3", "domain": "Impact Assessment for AI Systems", "control": "Documentation of AI system impact assessments", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
-
-      # Domain 5: AI System Lifecycle (A.6)
-      {"id": "A.6.1.2", "domain": "AI System Lifecycle", "control": "General lifecycle management", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
-      {"id": "A.6.2.2", "domain": "AI System Lifecycle", "control": "Data for AI systems", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
-      {"id": "A.6.2.3", "domain": "AI System Lifecycle", "control": "Acquisition of AI systems and components", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
-      {"id": "A.6.2.4", "domain": "AI System Lifecycle", "control": "Design and development of AI systems", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
-      {"id": "A.6.2.5", "domain": "AI System Lifecycle", "control": "Testing of AI systems", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
-      {"id": "A.6.2.6", "domain": "AI System Lifecycle", "control": "AI system documentation", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
-      {"id": "A.6.2.7", "domain": "AI System Lifecycle", "control": "Deployment of AI systems", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
-      {"id": "A.6.2.8", "domain": "AI System Lifecycle", "control": "Operation of AI systems", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
-      {"id": "A.6.2.9", "domain": "AI System Lifecycle", "control": "Human oversight of AI systems during operation", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
-      {"id": "A.6.2.10", "domain": "AI System Lifecycle", "control": "Monitoring AI systems", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
-      {"id": "A.6.2.11", "domain": "AI System Lifecycle", "control": "Change management of AI systems", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
-      {"id": "A.6.2.12", "domain": "AI System Lifecycle", "control": "Decommissioning of AI systems", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
-      {"id": "A.6.2.13", "domain": "AI System Lifecycle", "control": "Incident management for AI systems", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
-
-      # Domain 6: Responsible and Trustworthy AI (A.7)
-      {"id": "A.7.2", "domain": "Responsible and Trustworthy AI", "control": "Responsible and ethical use", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
-
-      # Domain 7: AI System Suppliers (A.8)
-      {"id": "A.8.2", "domain": "AI System Suppliers", "control": "Supplier relationships for AI systems", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
-
-      # Domain 8: Documentation and Information (A.9)
-      {"id": "A.9.2", "domain": "Documentation and Information Related to AI Systems", "control": "Documentation of AI systems", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
-
-      # Domain 9: AI Standards and Sector-Specific Issues (A.10)
-      {"id": "A.10.2", "domain": "AI Standards and Sector-Specific Issues", "control": "Compliance with applicable standards", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
+    # Domain: Policies related to AI
+    {"id": "A.2.2", "domain": "Policies related to AI", "control": "AI policy", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
+    {"id": "A.2.3", "domain": "Policies related to AI", "control": "Alignment with other organisational policies", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
+    {"id": "A.2.4", "domain": "Policies related to AI", "control": "Review of the AI policy", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
+    # Domain: Internal organization
+    {"id": "A.3.2", "domain": "Internal organization", "control": "AI roles and responsibilities", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
+    {"id": "A.3.3", "domain": "Internal organization", "control": "Reporting of concerns", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
+    # Domain: Resources for AI systems
+    {"id": "A.4.2", "domain": "Resources for AI systems", "control": "Resource documentation", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
+    {"id": "A.4.3", "domain": "Resources for AI systems", "control": "Data resources", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
+    {"id": "A.4.4", "domain": "Resources for AI systems", "control": "Tooling resources", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
+    {"id": "A.4.5", "domain": "Resources for AI systems", "control": "System and computing resources", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
+    {"id": "A.4.6", "domain": "Resources for AI systems", "control": "Human resources", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
+    # Domain: Assessing impacts of AI systems
+    {"id": "A.5.2", "domain": "Assessing impacts of AI systems", "control": "AI system impact assessment process", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
+    {"id": "A.5.3", "domain": "Assessing impacts of AI systems", "control": "Documentation of AI system impact assessments", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
+    {"id": "A.5.4", "domain": "Assessing impacts of AI systems", "control": "Assessing AI system impact on individuals or groups of individuals", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
+    {"id": "A.5.5", "domain": "Assessing impacts of AI systems", "control": "Assessing societal impacts of AI systems", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
+    # Domain: AI system life cycle
+    {"id": "A.6.1.2", "domain": "AI system life cycle", "control": "Objectives for responsible development of AI systems", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
+    {"id": "A.6.1.3", "domain": "AI system life cycle", "control": "Processes for responsible AI system design and development", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
+    {"id": "A.6.2.2", "domain": "AI system life cycle", "control": "AI system requirements and specification", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
+    {"id": "A.6.2.3", "domain": "AI system life cycle", "control": "Documentation of AI system design and development", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
+    {"id": "A.6.2.4", "domain": "AI system life cycle", "control": "AI system verification and validation", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
+    {"id": "A.6.2.5", "domain": "AI system life cycle", "control": "AI system deployment", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
+    {"id": "A.6.2.6", "domain": "AI system life cycle", "control": "AI system operation and monitoring", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
+    {"id": "A.6.2.7", "domain": "AI system life cycle", "control": "AI system technical documentation", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
+    {"id": "A.6.2.8", "domain": "AI system life cycle", "control": "AI system recording of event logs", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
+    # Domain: Data for AI systems
+    {"id": "A.7.2", "domain": "Data for AI systems", "control": "Data for development and enhancement of AI systems", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
+    {"id": "A.7.3", "domain": "Data for AI systems", "control": "Acquisition of data", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
+    {"id": "A.7.4", "domain": "Data for AI systems", "control": "Quality of data for AI systems", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
+    {"id": "A.7.5", "domain": "Data for AI systems", "control": "Data provenance", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
+    {"id": "A.7.6", "domain": "Data for AI systems", "control": "Data preparation", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
+    # Domain: Information for interested parties
+    {"id": "A.8.2", "domain": "Information for interested parties", "control": "System documentation and information for users", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
+    {"id": "A.8.3", "domain": "Information for interested parties", "control": "External reporting", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
+    {"id": "A.8.4", "domain": "Information for interested parties", "control": "Communication of incidents", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
+    {"id": "A.8.5", "domain": "Information for interested parties", "control": "Information for interested parties", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
+    # Domain: Use of AI systems
+    {"id": "A.9.2", "domain": "Use of AI systems", "control": "Processes for responsible use of AI systems", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
+    {"id": "A.9.3", "domain": "Use of AI systems", "control": "Objectives for responsible use of AI systems", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
+    {"id": "A.9.4", "domain": "Use of AI systems", "control": "Intended use of the AI system", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
+    # Domain: Third-party and customer relationships
+    {"id": "A.10.2", "domain": "Third-party and customer relationships", "control": "Allocating responsibilities", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
+    {"id": "A.10.3", "domain": "Third-party and customer relationships", "control": "Suppliers", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
+    {"id": "A.10.4", "domain": "Third-party and customer relationships", "control": "Customers", "mandatory": False, "status": "not_started", "evidence": "", "owner": ""}
 ]
 
 STATUS_OPTIONS = ["implemented", "partial", "planned", "not_started", "excluded"]

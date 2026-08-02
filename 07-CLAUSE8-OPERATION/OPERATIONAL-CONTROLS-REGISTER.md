@@ -1,4 +1,4 @@
-————————————————# Operational Controls Register
+# Operational Controls Register
 ## ISO/IEC 42001:2023 | Clause 8.1 — Template
 
 **Document ID:** AIMS-OPCONT-001

@@ -3,12 +3,12 @@
 
 ---
 
-**Document ID:** AIMS-POL-001
-**Version:** 1.0
-**Classification:** Internal — Controlled Document
-**Owner:** Chief AI Officer / AIMS Steering Committee
-**Approved By:** [CEO / Board]
-**Approval Date:** [Date]
+**Document ID:** AIMS-POL-001  
+**Version:** 1.0  
+**Classification:** Internal — Controlled Document  
+**Owner:** Chief AI Officer / AIMS Steering Committee  
+**Approved By:** [CEO / Board]  
+**Approval Date:** [Date]  
 **Next Review Date:** [Date + 1 Year]
 
 ---

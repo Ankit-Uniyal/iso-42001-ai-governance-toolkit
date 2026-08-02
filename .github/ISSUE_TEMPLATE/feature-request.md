@@ -12,7 +12,7 @@ Describe the feature, new template, or content improvement you are requesting.
 
 ## Which Clause or Control Does This Relate To?
 
-(e.g., Clause 8.2 — AI System Impact Assessment; Annex A.7.5 — Bias Mitigation in Data)
+(e.g., Clause 8.4 — AI system impact assessment; Annex A.7.5 — Data provenance)
 
 ## Why Is This Needed?
 

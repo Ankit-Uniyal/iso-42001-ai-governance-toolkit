@@ -1,5 +1,5 @@
 # AI Incident Response Procedure
-## ISO/IEC 42001:2023 — Clause 10.2, Annex A Controls A.8.5, A.9.4, A.6.4.1
+## ISO/IEC 42001:2023 — Clause 10.2, Annex A Controls A.8.4, A.6.2.6, A.3.3
 
 ---
 

@@ -235,7 +235,7 @@ def export_csv(controls: list, filepath: str) -> None:
 def interactive_update(controls: list) -> list:
       """Interactive CLI to update control status."""
     print("\nINTERACTIVE SOA UPDATE MODE")
-    print("Enter control ID to update (e.g., A.4.7), or 'q' to quit, 'list' to show all IDs\n")
+    print("Enter control ID to update (e.g., A.4.6), or 'q' to quit, 'list' to show all IDs\n")
 
     control_map = {c["id"]: i for i, c in enumerate(controls)}
 

@@ -1,10 +1,10 @@
 # Awareness and Communication Plan
 ## ISO/IEC 42001:2023 | Clauses 7.3 and 7.4 — Template
 
-**Document ID:** AIMS-COMMPLAN-001
-**Version:** 1.0
-**Owner:** AI Governance Lead
-**Date:** ___________________________
+**Document ID:** AIMS-COMMPLAN-001  
+**Version:** 1.0  
+**Owner:** AI Governance Lead  
+**Date:** ___________________________  
 **Review Cycle:** Annual or when significant changes occur
 
 ---

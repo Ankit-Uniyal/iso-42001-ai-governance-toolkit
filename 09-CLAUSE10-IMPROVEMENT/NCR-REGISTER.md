@@ -1,5 +1,5 @@
 # Nonconformity and Corrective Action Register (NCR Register)
-## ISO/IEC 42001:2023 | Clause 10.1 — Template
+## ISO/IEC 42001:2023 | Clause 10.2 — Template
 
 **Document ID:** AIMS-NCR-001
 **Version:** 1.0
@@ -76,4 +76,4 @@
 
 ---
 
-*ISO/IEC 42001:2023 AI Governance Toolkit | Clause 10.1 | See root README.md for full index*
+*ISO/IEC 42001:2023 AI Governance Toolkit | Clause 10.2 | See root README.md for full index*

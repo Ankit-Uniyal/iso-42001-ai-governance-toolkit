@@ -1,10 +1,10 @@
 # Competence Requirements Matrix
 ## ISO/IEC 42001:2023 | Clause 7.2 — Template
 
-**Document ID:** AIMS-COMPMAT-001
-**Version:** 1.0
-**Owner:** HR / AI Governance Lead
-**Date:** ___________________________
+**Document ID:** AIMS-COMPMAT-001  
+**Version:** 1.0  
+**Owner:** HR / AI Governance Lead  
+**Date:** ___________________________  
 **Review Cycle:** Annual or upon role change
 
 ---

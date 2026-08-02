@@ -1,13 +1,13 @@
 # AI Deployment Checklist
 ## ISO/IEC 42001:2023 | Clause 8.1 — Pre-Deployment Gate Template
 
-**Document ID:** AIMS-DEPCHK-001 / [System-specific instance ID]
-**AI System Name:** ___________________________
-**System ID:** ___________________________
-**Deployment Type:** New System / Major Update / Minor Update
-**Version Being Deployed:** ___________________________
-**Deployment Date Requested:** ___________________________
-**System Owner:** ___________________________
+**Document ID:** AIMS-DEPCHK-001 / [System-specific instance ID]  
+**AI System Name:** ___________________________  
+**System ID:** ___________________________  
+**Deployment Type:** New System / Major Update / Minor Update  
+**Version Being Deployed:** ___________________________  
+**Deployment Date Requested:** ___________________________  
+**System Owner:** ___________________________  
 **Review Date:** ___________________________
 
 ---

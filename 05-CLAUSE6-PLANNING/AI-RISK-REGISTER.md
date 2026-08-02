@@ -6,7 +6,7 @@
 **Last Updated:** ___________________________  
 **Review Frequency:** Quarterly
 
-> This risk register template is aligned with ISO/IEC 42001:2023 Clause 6.1 (AI Risk Assessment) and Annex C (Guidance on AI Risk Management).
+> This risk register template is aligned with ISO/IEC 42001:2023 Clause 6.1 (AI Risk Assessment) and Annex C (Potential AI-related organisational objectives and risk sources).
 
 ---
 

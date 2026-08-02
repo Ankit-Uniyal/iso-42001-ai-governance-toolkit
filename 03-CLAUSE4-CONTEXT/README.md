@@ -47,16 +47,16 @@ Identify all internal and external issues relevant to your purpose that affect y
 ### Implementation Steps
 1. Run a PESTLE analysis focused on AI — document each factor
 2. Conduct an internal AI capability review — systems, people, processes
-   3. Populate the **Context Register** (template: `CONTEXT-REGISTER.md`)
-      4. Get sign-off from senior management
-         5. Schedule annual review and trigger-based updates
-           
-            ### Documents Required
-            - Context of the Organisation Register (internal + external issues, rated by relevance)
-               - AI Systems Inventory (all AI systems: name, purpose, owner, risk level, status)
-                 - PESTLE Analysis Worksheet
-                  
-                   ---
+3. Populate the **Context Register** (template: `CONTEXT-REGISTER.md`)
+4. Get sign-off from senior management
+5. Schedule annual review and trigger-based updates
+
+### Documents Required
+- Context of the Organisation Register (internal + external issues, rated by relevance)
+- AI Systems Inventory (all AI systems: name, purpose, owner, risk level, status)
+- PESTLE Analysis Worksheet
+
+---
 
 ## 4.2 — Understanding Needs and Expectations of Interested Parties
 
@@ -77,15 +77,15 @@ Identify who has a stake in your AI systems, what they need, and which of those 
 ### Implementation Steps
 1. Brainstorm all stakeholder groups using the table above as a starting point
 2. For each group, document: who they are, what they need, legal or contractual basis
-   3. Classify requirements as mandatory or best practice
-      4. Feed mandatory requirements into your AIMS controls and policies
-         5. Review when stakeholder landscape changes
-           
-            ### Documents Required
-            - Interested Parties Register
-               - Legal and Regulatory Requirements Register → `LEGAL-REGULATORY-REQUIREMENTS-REGISTER.md`
-                
-                 ---
+3. Classify requirements as mandatory or best practice
+4. Feed mandatory requirements into your AIMS controls and policies
+5. Review when stakeholder landscape changes
+
+### Documents Required
+- Interested Parties Register
+- Legal and Regulatory Requirements Register → `LEGAL-REGULATORY-REQUIREMENTS-REGISTER.md`
+
+---
 
 ## 4.3 — Determining the Scope of the AIMS
 
@@ -113,22 +113,22 @@ Approved by: [Name, Title] | Date: [Date] | Version: 1.0
 ### How to Determine Scope
 1. List every AI system in your AI Systems Inventory
 2. Decide which systems are high enough risk to include
-   3. Consider starting with a pilot scope (1–2 AI systems) then expanding
-      4. Align scope with 4.1 context and 4.2 stakeholder findings
-         5. Document exclusions with clear justification
-            6. Get formal approval from top management
-              
-               ### Common Mistakes to Avoid
-               - Scope too vague — be specific about which AI systems are included
-                  - Scope not approved — needs top management sign-off
-                    - Scope inconsistent with context — should flow logically from 4.1 and 4.2
-                      - Exclusions not justified — auditors will challenge them
-                       
-                        ### Documents Required
-                        - AIMS Scope Statement (formal document, management approved)
-                          - Scope Exclusion Justification Log
-                           
-                            ---
+3. Consider starting with a pilot scope (1–2 AI systems) then expanding
+4. Align scope with 4.1 context and 4.2 stakeholder findings
+5. Document exclusions with clear justification
+6. Get formal approval from top management
+
+### Common Mistakes to Avoid
+- Scope too vague — be specific about which AI systems are included
+- Scope not approved — needs top management sign-off
+- Scope inconsistent with context — should flow logically from 4.1 and 4.2
+- Exclusions not justified — auditors will challenge them
+
+### Documents Required
+- AIMS Scope Statement (formal document, management approved)
+- Scope Exclusion Justification Log
+
+---
 
 ## 4.4 — The AI Management System
 
@@ -138,19 +138,19 @@ Establish, implement, maintain, and continually improve an AIMS — including al
 ### What This Means in Practice
 - Every process must have: owner, inputs, outputs, controls, and records
 - Processes must be documented at the level needed to ensure consistency
-  - Processes must connect to each other (risk feeds operations; audits feed improvement)
-    - The system must be reviewed and improved continuously, not set up once and forgotten
-     
-      ### AIMS High-Level Process Flow
-      - ```
-        Clause 4 (Context) ──► Clause 5 (Leadership) ──► Clause 6 (Planning)
-                                                                  │
-                                                                  ▼
-        Clause 10 (Improvement) ◄── Clause 9 (Performance) ◄── Clause 7 (Support)
-                                                                  │
-                                                                  ▼
-                                                          Clause 8 (Operations)
-        ```
+- Processes must connect to each other (risk feeds operations; audits feed improvement)
+- The system must be reviewed and improved continuously, not set up once and forgotten
+
+### AIMS High-Level Process Flow
+- ```
+Clause 4 (Context) ──► Clause 5 (Leadership) ──► Clause 6 (Planning)
+│
+▼
+Clause 10 (Improvement) ◄── Clause 9 (Performance) ◄── Clause 7 (Support)
+│
+▼
+Clause 8 (Operations)
+```
 
 ### Documents Required
 - AIMS Process Map (visual or table showing all processes, owners, and connections)

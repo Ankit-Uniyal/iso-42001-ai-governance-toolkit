@@ -3,16 +3,16 @@
 
 ---
 
-**Document ID:** AIMS-TEMP-002
-**Version:** 1.0
-**Owner:** Procurement / AI Governance Lead
+**Document ID:** AIMS-TEMP-002  
+**Version:** 1.0  
+**Owner:** Procurement / AI Governance Lead  
 **Classification:** Internal — Controlled Document
 
-**Assessment Reference:** TPAI-[YYYY]-[NNN]
-**Supplier / Vendor Name:** ___________________________
-**AI System / API / Service:** ___________________________
-**Assessment Date:** ___________________________
-**Assessor:** ___________________________
+**Assessment Reference:** TPAI-[YYYY]-[NNN]  
+**Supplier / Vendor Name:** ___________________________  
+**AI System / API / Service:** ___________________________  
+**Assessment Date:** ___________________________  
+**Assessor:** ___________________________  
 **Next Review Date:** ___________________________
 
 ---
@@ -72,7 +72,7 @@ This template supports the assessment of third-party AI systems, APIs, models, a
 | Human Oversight | Does the supplier support human oversight mechanisms? | | |
 | Regulatory Compliance | Does the supplier demonstrate EU AI Act compliance (if applicable)? | | |
 
-**Governance Score:** ___ / 45
+**Governance Score:** ___ / 45  
 **Governance Maturity Assessment:** [ ] Advanced (36-45) | [ ] Intermediate (27-35) | [ ] Basic (18-26) | [ ] Immature (<18)
 
 ### 2.2 Prohibited Use Check

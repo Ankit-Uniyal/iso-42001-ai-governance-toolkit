@@ -78,12 +78,12 @@ ISO/IEC 42001:2023 Clause 6.2 requires the organisation to establish AI objectiv
 
 | Objective Category | Example Objectives | Relevant Annex A Controls |
 |------------------|------------------|--------------------------|
-| Fairness | Reduce demographic disparity in AI outcomes to < 5% | A.4.7 |
-| Transparency | 100% of AI systems have published model cards | A.4.8, A.9.2 |
-| Accountability | 100% of AI systems have named owners | A.2.3, A.4.10 |
-| Safety | Zero high-severity AI incidents per quarter | A.4.4, A.6.2.13 |
-| Privacy | Zero GDPR violations related to AI | A.4.9 |
-| Performance | All AI systems operating within 5% of baseline | A.4.3, A.6.2.10 |
+| Fairness | Reduce demographic disparity in AI outcomes to < 5% | A.7.6 |
+| Transparency | 100% of AI systems have published model cards | A.8.2, A.9.2 |
+| Accountability | 100% of AI systems have named owners | A.2.3, A.3.2 |
+| Safety | Zero high-severity AI incidents per quarter | A.4.4, A.6.2.4 |
+| Privacy | Zero GDPR violations related to AI | A.7.3 |
+| Performance | All AI systems operating within 5% of baseline | A.4.3, A.6.2.6 |
 | Regulatory | Full EU AI Act compliance before Aug 2026 | A.10.2 |
 
 See `AI-OBJECTIVES-REGISTER.md` for the live objectives register.
@@ -94,14 +94,14 @@ See `AI-OBJECTIVES-REGISTER.md` for the live objectives register.
 
 | Responsible AI Principle | Primary Annex A Domain | Key Controls |
 |--------------------------|----------------------|-------------|
-| Fairness / Non-discrimination | A.4 | A.4.7 |
-| Transparency / Explainability | A.4, A.9 | A.4.8, A.9.2 |
-| Accountability | A.2, A.4 | A.2.3, A.4.10 |
-| Human oversight and control | A.3, A.6 | A.3.2, A.6.2.9 |
-| Privacy | A.4 | A.4.9 |
-| Safety | A.4, A.6 | A.4.4, A.6.2.13 |
+| Fairness / Non-discrimination | A.4 | A.7.6 |
+| Transparency / Explainability | A.4, A.9 | A.8.2, A.9.2 |
+| Accountability | A.2, A.4 | A.2.3, A.3.2 |
+| Human oversight and control | A.3, A.6 | A.3.2, A.9.2 |
+| Privacy | A.4 | A.7.3 |
+| Safety | A.4, A.6 | A.4.4, A.6.2.4 |
 | Security | A.4, A.6 | A.4.5 |
-| Reliability / Robustness | A.4, A.6 | A.4.3, A.6.2.10 |
+| Reliability / Robustness | A.4, A.6 | A.4.3, A.6.2.6 |
 | Societal benefit | A.7 | A.7.2 |
 | Environmental sustainability | A.7 | A.7.2 |
 
@@ -117,9 +117,9 @@ ISO/IEC 42001:2023 uses a consistent lifecycle model for AI systems. Understandi
 | Data | Collect, prepare, and govern training/operational data | A.6.2.2 | AI-RISK-REGISTER.md |
 | Development | Build, train, validate AI model | A.6.2.4, A.6.2.5 | AI-DEPLOYMENT-CHECKLIST.md |
 | Deployment | Release AI system to production | A.6.2.7, A.6.3 | AI-DEPLOYMENT-CHECKLIST.md |
-| Operation | Monitor, maintain, update | A.6.2.8, A.6.2.10 | AI-PERFORMANCE-MONITORING-PLAN.md |
-| Change | Modify the system materially | A.6.2.11 | AI-CHANGE-CONTROL-PROCEDURE.md |
-| Decommission | Retire the AI system | A.6.2.12 | AI-LIFECYCLE-MANAGEMENT-PROCEDURE.md |
+| Operation | Monitor, maintain, update | A.6.2.8, A.6.2.6 | AI-PERFORMANCE-MONITORING-PLAN.md |
+| Change | Modify the system materially | A.6.2.6 | AI-CHANGE-CONTROL-PROCEDURE.md |
+| Decommission | Retire the AI system | A.6.2.5 | AI-LIFECYCLE-MANAGEMENT-PROCEDURE.md |
 
 ---
 
@@ -143,10 +143,10 @@ Note: EU AI Act classification (prohibited, high-risk, limited-risk, minimal-ris
 | Term | Definition | AIMS Relevance |
 |------|-----------|---------------|
 | Algorithm | Set of rules or instructions for solving a problem | Foundation of AI systems |
-| Bias (AI) | Systematic errors in AI outputs due to flawed training data or model design | Fairness control A.4.7 |
-| Concept drift | Change in the statistical relationship between input and output over time | Monitoring A.6.2.10 |
-| Data drift | Change in the statistical distribution of input data over time | Monitoring A.6.2.10 |
-| Explainability | Ability to explain an AI decision in understandable terms | Transparency A.4.8 |
+| Bias (AI) | Systematic errors in AI outputs due to flawed training data or model design | Fairness control A.7.6 |
+| Concept drift | Change in the statistical relationship between input and output over time | Monitoring A.6.2.6 |
+| Data drift | Change in the statistical distribution of input data over time | Monitoring A.6.2.6 |
+| Explainability | Ability to explain an AI decision in understandable terms | Transparency A.8.2 |
 | Feature | An input variable used by an AI model | Data governance A.6.2.2 |
 | Hallucination | AI generating confident but incorrect outputs (especially LLMs) | Reliability A.4.3 |
 | Human-in-the-loop | Human reviews and approves each AI decision | Human oversight A.3.2 |

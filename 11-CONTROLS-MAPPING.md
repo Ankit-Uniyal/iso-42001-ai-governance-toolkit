@@ -134,11 +134,11 @@ This document helps organizations that need to comply with **multiple AI governa
 | EU AI Act Requirement | Key Articles | Primary ISO 42001 Clauses | Key Annex A Controls |
 |----------------------|--------------|--------------------------|---------------------|
 | Risk Management System | Art. 9 | Clause 6, 8.2, 8.3 | A.2, A.5, A.6.2 |
-| Data and Data Governance | Art. 10 | Clause 8.5 | A.7 |
-| Technical Documentation | Art. 11 | Clause 7.5, 8.5 | A.6.2.3, A.6.2.7 |
+| Data and Data Governance | Art. 10 | Clause 8.1 | A.7 |
+| Technical Documentation | Art. 11 | Clause 7.5, 8.1 | A.6.2.3, A.6.2.7 |
 | Transparency and Provision of Information | Art. 13 | Clause 7.4 | A.8.2, A.8.5 |
-| Human Oversight | Art. 14 | Clause 8.6 | A.9.2 |
-| Accuracy, Robustness, Cybersecurity | Art. 15 | Clause 8.5 | A.6.2.4, A.4.5 |
+| Human Oversight | Art. 14 | Clause 8.1 | A.9.2 |
+| Accuracy, Robustness, Cybersecurity | Art. 15 | Clause 8.1 | A.6.2.4, A.4.5 |
 | Quality Management System | Art. 17 | Clause 4-10 (entire AIMS) | All Annex A |
 | Fundamental Rights Impact Assessment | Art. 27 | Clause 8.4 | A.5.2, A.5.3, A.5.4 |
 | Post-Market Monitoring | Art. 72 | Clause 9.1 | A.6.2.6 |

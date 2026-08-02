@@ -2764,7 +2764,8 @@ This document must be reviewed and updated when:
 
 | Version | Date | Author | Changes |
 |---------|------|--------|---------|
-| 1.0 | April 2026 | Ankit Uniyal | Initial release — all 38 Annex A controls |
+| 1.0 | April 2026 | Ankit Uniyal | Initial release |
+| 1.1 | August 2026 | Ankit Uniyal | Corrected the Annex A structure to align with ISO/IEC 42001:2023: 38 controls across 9 domains, all domain and control titles aligned to the standard, missing controls added and non-existent controls removed |
 
 ---
 

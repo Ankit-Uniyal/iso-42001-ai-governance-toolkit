@@ -3,9 +3,9 @@
 
 ---
 
-**Document ID:** AIMS-PROC-006
-**Version:** 1.0
-**Owner:** Head of Internal Audit / AI Governance Lead
+**Document ID:** AIMS-PROC-006  
+**Version:** 1.0  
+**Owner:** Head of Internal Audit / AI Governance Lead  
 **Classification:** Internal — Controlled Document
 
 ---
@@ -138,9 +138,9 @@ Evidence shall be:
 
 ### PART A: CONTEXT OF THE ORGANIZATION (Clause 4)
 
-**Audit Reference:** ___________
-**Auditee:** ___________
-**Date:** ___________
+**Audit Reference:** ___________  
+**Auditee:** ___________  
+**Date:** ___________  
 **Auditor:** ___________
 
 | # | Audit Question | Evidence Requested | Finding | Notes |
@@ -339,11 +339,11 @@ All 38 Annex A controls of ISO/IEC 42001:2023, across the nine domains A.2 to A.
 
 **AIMS Internal Audit Report**
 
-**Audit Reference:** ___________
-**Audit Date(s):** ___________
-**Audit Scope:** ___________
-**Lead Auditor:** ___________
-**Audit Team:** ___________
+**Audit Reference:** ___________  
+**Audit Date(s):** ___________  
+**Audit Scope:** ___________  
+**Lead Auditor:** ___________  
+**Audit Team:** ___________  
 **Auditees:** ___________
 
 ### Executive Summary
@@ -379,7 +379,7 @@ For each nonconformity, the auditee shall submit a corrective action plan within
 
 _The audit was conducted in accordance with the AIMS Internal Audit Procedure (AIMS-PROC-006) and ISO 19011 guidance. The findings are based on evidence gathered during the audit and represent a sample of the activities reviewed. The audit team maintains independence from the areas audited._
 
-**Lead Auditor Signature:** ___________
+**Lead Auditor Signature:** ___________  
 **Date:** ___________
 
 ---

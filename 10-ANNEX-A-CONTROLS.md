@@ -926,130 +926,90 @@ Individual-level harm assessments can miss systemic harms. A system that causes 
 
 ---
 
-## DOMAIN A.6 — AI LIFECYCLE
-*10 Controls | Governing AI from design through decommissioning*
+## DOMAIN A.6 — AI SYSTEM LIFE CYCLE
+*9 Controls | Governing responsible design, development, verification, deployment and operation of AI systems*
 
 ---
 
-### A.6.1.1 — AI Design Requirements
+### A.6.1.2 — Objectives for Responsible Development of AI Systems
 
-**Control Statement:** The organization shall define and document responsible AI design requirements for AI systems, covering fairness, transparency, explainability, privacy, safety, and security, before development begins.
+**Control Statement:** The organization shall identify and document the objectives that guide the responsible development of its AI systems, and ensure those objectives are taken into account across the development life cycle.
 
 ---
 
 #### What It Means
 
-A.6.1.1 requires that responsible AI principles are translated into concrete, measurable design requirements before development begins — not as an afterthought. Just as software engineering defines functional requirements before coding, AI governance requires responsible AI requirements to be defined at the design stage.
+A.6.1.2 requires management to state, up front, what responsible development actually means for this organization. These objectives translate the abstract commitments in the AI policy — fairness, safety, transparency, accountability, privacy, robustness, environmental impact — into named goals that development teams are expected to design towards and be measured against.
 
 #### Why It Matters
 
-AI systems designed without explicit fairness, transparency, and safety requirements tend to optimize for performance metrics alone, at the expense of responsible AI properties. By the time bias or explainability gaps are discovered post-deployment, remediation is expensive and harm may already have occurred.
+Without stated objectives, responsible AI collapses into individual judgement. Two teams in the same organization will make opposite trade-offs between accuracy and explainability, or between speed and safety testing, and neither can be said to be wrong. Documented objectives give designers a reference point, give reviewers a basis for challenge, and give auditors something concrete to test development decisions against.
 
 #### How to Implement
 
-- **Develop a Responsible AI Requirements Template** — Define required responsible AI considerations for every AI system: fairness criteria (which protected attributes must be evaluated?); explainability requirements (what level of explanation is needed for this use case?); privacy requirements (data minimization, purpose limitation); safety requirements (what failure modes must be mitigated?); security requirements (adversarial robustness requirements).
-- **Make requirements specific and measurable** — "AI must be fair" is not a requirement. "The false positive rate must not differ by more than 5% between protected groups" is a requirement.
-- **Require sign-off before development begins** — The requirements document must be approved before the development sprint begins.
-- **Link to evaluation criteria** — Design requirements must be traceable to the evaluation and testing phase (A.6.2.6, A.6.2.8).
+- **Derive objectives from the AI policy and ethics framework** — They should be a direct, traceable expression of stated organizational commitments, not a separate list.
+- **Make them specific enough to design against** — "Be fair" is not an objective; "no material disparity in approval rates across protected groups beyond a defined threshold" is.
+- **Cover the recognised responsible-AI dimensions** — Typically fairness, safety, security, robustness, transparency and explainability, privacy, human oversight, accountability, and increasingly environmental footprint.
+- **Set them proportionate to risk** — A high-risk system affecting access to credit or employment warrants tighter objectives than an internal productivity tool.
+- **Assign ownership and measures** — Each objective needs an owner and a way of telling whether it was met.
+- **Communicate them to development teams** — Objectives that live only in a governance document have no effect on what gets built.
+- **Review them** — Reassess as regulation, technology and organizational risk appetite change.
 
 #### Documents to Prepare
 
 | Document | Description | Owner |
 |---|---|---|
-| Responsible AI Requirements Template | Standardized template for defining responsible AI requirements per system | AI Governance Lead |
-| AI System Requirements Specifications | Completed responsible AI requirements for each AI system | Model Owner / AI Governance Lead |
-| Requirements Approval Records | Evidence of approval of requirements before development | AI Governance Lead |
+| Responsible AI Development Objectives | Documented objectives with measures, owners and risk-based tiering | AI Governance Lead |
+| AI Ethics Framework | Principles from which the objectives are derived | AI Governance Lead / Ethics Committee |
+| AI Objectives Register | Objectives, KPIs, targets and achievement tracking | AI Governance Lead |
+| Design Review Records | Evidence that objectives were considered at design checkpoints | AI System Owners |
 
 #### How to Audit
 
 **Document Review:**
-- Verify requirements template exists and covers all responsible AI dimensions
-- Check requirements specifications exist for all live AI systems
-- Confirm requirements were approved before development (date check)
-- Verify fairness requirements are specific and measurable — not generic statements
+- Verify documented responsible development objectives exist and trace back to the AI policy
+- Check objectives are specific and measurable rather than aspirational statements
+- Confirm they are tiered according to system risk
+- Inspect design and gate review records for evidence the objectives were actually applied
+- Confirm objectives have owners and are reviewed periodically
+
+**Personnel Interviews:**
+- Ask a developer or ML engineer: "What responsible AI objectives apply to the system you are building, and how do you know you met them?"
+- Ask the AI Governance Lead: "How do these objectives change the design of a high-risk system compared with a low-risk one?"
 
 **Evidence Required**
-- Responsible AI requirements template
-- Completed AI system requirements specifications
-- Approval records predating development start
+- Documented and approved responsible development objectives
+- Traceability from the AI policy and ethics framework to the objectives
+- Design review or gate records referencing the objectives
+- Measurement results against objective targets
+- Review records showing objectives are kept current
 
 **Common Gaps Found in Audits**
-- Requirements template addresses functional requirements but not responsible AI properties
-- Fairness requirements are generic ("AI will be fair") not measurable
-- Requirements defined after development begins — not influencing design
-- Requirements not linked to evaluation criteria — no way to verify they are met
+- Objectives exist only as ethical principles with no measurable expression
+- Development teams are unaware the objectives exist
+- The same objectives applied identically to trivial and high-risk systems
+- No evidence that objectives influenced any actual design decision
+- Objectives never reviewed after major regulatory or technology change
 
 #### Cross-References
 
 | Framework | Reference |
 |---|---|
-| EU AI Act | Art. 9 (Risk management); Art. 13 (Transparency and provision of information) |
-| NIST AI RMF | MAP 1.1, MAP 2.1 |
+| EU AI Act | Art. 9 (Risk management system); Art. 17 (Quality management system) |
+| NIST AI RMF | GOVERN 1.1, GOVERN 3.2, MAP 1.4 |
+| ISO 27001:2022 | Clause 6.2 (Information security objectives) |
 
 ---
 
-### A.6.1.2 — AI Design Documentation
+### A.6.1.3 — Processes for Responsible AI System Design and Development
 
-**Control Statement:** The organization shall create and maintain design documentation for AI systems, including system architecture, data flows, model design decisions, and rationale, sufficient to enable understanding, evaluation, and audit of the AI system.
-
----
-
-#### What It Means
-
-A.6.1.2 requires that AI systems are documented in sufficient technical detail to enable independent understanding, evaluation, and audit. Without design documentation, the only person who understands how an AI system works is the person who built it — creating a single point of failure and making governance, maintenance, and audit impossible.
-
-#### How to Implement
-
-- **Create architecture documentation** — System architecture diagrams showing all components, data flows, integration points, and external dependencies.
-- **Model design documentation** — For each model: the problem it solves; the modeling approach chosen and rationale; input features and their sources; output format; training approach; key design decisions and rationale.
-- **Maintain as the system evolves** — Documentation must be updated when the system changes significantly.
-- **Version control documentation** — Store in version control linked to the model version it describes.
-
-#### Documents to Prepare
-
-| Document | Description | Owner |
-|---|---|---|
-| AI System Architecture Document | Architecture diagrams and component descriptions | ML Engineer / Software Architect |
-| Model Design Document | Detailed description of model design, decisions, and rationale | ML Engineer / Model Owner |
-| Data Flow Diagrams | Diagrams showing all data inputs, processing, and outputs | ML Engineer |
-
-#### How to Audit
-
-**Document Review:**
-- Verify architecture document exists for each AI system
-- Check documentation is current — updated after last significant system change
-- Confirm data flows are documented — can you trace personal data through the system?
-
-**Evidence Required**
-- AI system architecture documents (version-controlled)
-- Model design documents
-- Data flow diagrams
-- Evidence of documentation updates following system changes
-
-**Common Gaps Found in Audits**
-- Architecture documented at implementation and never updated after significant changes
-- Data flows not documented — cannot trace what data the AI processes
-- Design rationale missing — documentation describes what was built but not why
-
-#### Cross-References
-
-| Framework | Reference |
-|---|---|
-| EU AI Act | Art. 11 (Technical documentation for high-risk AI) |
-| NIST AI RMF | MAP 1.1, MAP 2.2 |
-| ISO 27001:2022 | A.8.9 (Configuration management) |
-
----
-
-### A.6.2.1 — AI Development Process
-
-**Control Statement:** The organization shall implement a defined, controlled, and auditable AI development process that incorporates responsible AI practices, version control, documentation, and review checkpoints throughout development.
+**Control Statement:** The organization shall define and implement documented processes for the responsible design and development of AI systems, covering the activities, checkpoints and approvals that apply across the development life cycle.
 
 ---
 
 #### What It Means
 
-A.6.2.1 requires that AI development follows a structured, repeatable process — not an ad hoc, individual-driven activity. This includes version control for all model artifacts, code review checkpoints, and documented development practices that ensure responsible AI considerations are embedded throughout development, not just at the end.
+A.6.1.3 requires that AI development follows a structured, repeatable process — not an ad hoc, individual-driven activity. This includes version control for all model artifacts, code review checkpoints, and documented development practices that ensure responsible AI considerations are embedded throughout development, not just at the end.
 
 #### Why It Matters
 
@@ -1102,256 +1062,199 @@ Uncontrolled AI development produces systems that are difficult to reproduce, au
 
 ---
 
-### A.6.2.3 — Model Documentation (Model Cards)
+### A.6.2.2 — AI System Requirements and Specification
 
-**Control Statement:** The organization shall create and maintain model documentation (model cards or equivalent) for AI models, covering model purpose, performance metrics, limitations, bias evaluation results, and intended and prohibited use cases.
+**Control Statement:** The organization shall specify and document the requirements for each AI system, including its intended purpose, functional and performance requirements, and the responsible-AI requirements it must satisfy.
 
 ---
 
 #### What It Means
 
-A.6.2.3 requires that every AI model has a standardized documentation artifact — commonly called a "model card" — that provides a transparent, accessible account of what the model does, how well it does it, where it fails, and who should and should not use it. Model cards originated at Google and have become a de facto standard for AI model documentation.
+A.6.2.2 requires that responsible AI principles are translated into concrete, measurable design requirements before development begins — not as an afterthought. Just as software engineering defines functional requirements before coding, AI governance requires responsible AI requirements to be defined at the design stage.
 
 #### Why It Matters
 
-Without model documentation: business users don't understand the model's limitations; governance personnel cannot assess whether the model is being used within its validated scope; auditors cannot determine if the model meets fairness requirements; downstream users inherit undisclosed risks.
+AI systems designed without explicit fairness, transparency, and safety requirements tend to optimize for performance metrics alone, at the expense of responsible AI properties. By the time bias or explainability gaps are discovered post-deployment, remediation is expensive and harm may already have occurred.
 
 #### How to Implement
 
-- **Develop a model card template** — Standardized structure covering: model description and purpose; intended use cases and out-of-scope uses; training data summary; performance metrics overall and disaggregated by relevant subgroups; fairness evaluation results; known limitations and failure modes; environmental impact (training energy/CO2); caveats and recommendations.
-- **Populate model cards at deployment** — Model cards must be complete before a model is deployed to production.
-- **Maintain a model registry** — All production models listed with links to their model cards.
-- **Update on retraining** — When a model is significantly retrained, update the model card.
+- **Develop a Responsible AI Requirements Template** — Define required responsible AI considerations for every AI system: fairness criteria (which protected attributes must be evaluated?); explainability requirements (what level of explanation is needed for this use case?); privacy requirements (data minimization, purpose limitation); safety requirements (what failure modes must be mitigated?); security requirements (adversarial robustness requirements).
+- **Make requirements specific and measurable** — "AI must be fair" is not a requirement. "The false positive rate must not differ by more than 5% between protected groups" is a requirement.
+- **Require sign-off before development begins** — The requirements document must be approved before the development sprint begins.
+- **Link to evaluation criteria** — Design requirements must be traceable to the evaluation and testing phase (A.6.2.6, A.6.2.8).
 
 #### Documents to Prepare
 
 | Document | Description | Owner |
 |---|---|---|
-| Model Card Template | Standardized template for model documentation | AI Governance Lead / ML Lead |
-| Completed Model Cards | One per model in the model registry | ML Engineer / Model Owner |
-| Model Registry | Register of all production AI models with version, status, and model card link | AI Governance Lead |
+| Responsible AI Requirements Template | Standardized template for defining responsible AI requirements per system | AI Governance Lead |
+| AI System Requirements Specifications | Completed responsible AI requirements for each AI system | Model Owner / AI Governance Lead |
+| Requirements Approval Records | Evidence of approval of requirements before development | AI Governance Lead |
 
 #### How to Audit
 
 **Document Review:**
-- Verify model card template exists
-- Check model registry — is every production model listed?
-- Review a sample of model cards — are performance metrics disaggregated by relevant subgroups?
-- Check subgroup fairness metrics are populated — not blank or "not evaluated"
+- Verify requirements template exists and covers all responsible AI dimensions
+- Check requirements specifications exist for all live AI systems
+- Confirm requirements were approved before development (date check)
+- Verify fairness requirements are specific and measurable — not generic statements
 
 **Evidence Required**
-- Model card template
-- Completed model cards for all production models
-- Model registry
+- Responsible AI requirements template
+- Completed AI system requirements specifications
+- Approval records predating development start
 
 **Common Gaps Found in Audits**
-- Model cards exist but subgroup fairness metrics are blank
-- Model registry is incomplete — some production models not listed
-- Model cards not updated after significant retraining
-- Model cards exist for some systems but not all
+- Requirements template addresses functional requirements but not responsible AI properties
+- Fairness requirements are generic ("AI will be fair") not measurable
+- Requirements defined after development begins — not influencing design
+- Requirements not linked to evaluation criteria — no way to verify they are met
 
 #### Cross-References
 
 | Framework | Reference |
 |---|---|
-| EU AI Act | Art. 11 (Technical documentation); Art. 13 (Transparency) |
-| NIST AI RMF | MAP 1.1, GOVERN 1.5 |
+| EU AI Act | Art. 9 (Risk management); Art. 13 (Transparency and provision of information) |
+| NIST AI RMF | MAP 1.1, MAP 2.1 |
 
 ---
 
-### A.6.2.5 — Adversarial Testing
+### A.6.2.3 — Documentation of AI System Design and Development
 
-**Control Statement:** The organization shall conduct adversarial testing of AI systems to identify vulnerabilities to adversarial inputs, prompt injection, data poisoning, model evasion, and other attacks relevant to the AI system's threat model.
+**Control Statement:** The organization shall document the design and development of each AI system, including the design decisions taken, the rationale for them, and the alternatives considered.
 
 ---
 
 #### What It Means
 
-A.6.2.5 requires that AI systems are tested against adversarial attacks — deliberate attempts to manipulate, deceive, or exploit the AI system. Unlike functional testing, adversarial testing requires a "red team" mindset: actively trying to break the system rather than verify it works under normal conditions.
-
-#### Why It Matters
-
-AI systems face unique attack vectors: adversarial examples (inputs crafted to fool the model); prompt injection (for LLM-based systems); model inversion (reconstructing training data from model outputs); data poisoning (corrupting training data to manipulate model behavior); model evasion (evading classification by AI security tools). Without adversarial testing, these vulnerabilities are discovered in production by attackers rather than in testing by security teams.
+A.6.2.3 requires that AI systems are documented in sufficient technical detail to enable independent understanding, evaluation, and audit. Without design documentation, the only person who understands how an AI system works is the person who built it — creating a single point of failure and making governance, maintenance, and audit impossible.
 
 #### How to Implement
 
-- **Define the threat model for each AI system** — What adversarial attacks are plausible given the system's context? Who would benefit from attacking it? What is the impact of a successful attack?
-- **Conduct adversarial testing per threat model** — For each relevant attack type: define test scenarios; execute tests; document findings.
-- **LLM-specific testing** — For any generative AI or LLM: prompt injection testing; jailbreaking attempts; harmful output elicitation; indirect prompt injection (from documents/web content processed by the LLM).
-- **Red team exercises** — For high-risk AI, conduct structured red team exercises with dedicated attackers.
-- **Document results and remediation** — All adversarial test findings must be documented. Critical findings must be remediated before deployment.
+- **Create architecture documentation** — System architecture diagrams showing all components, data flows, integration points, and external dependencies.
+- **Model design documentation** — For each model: the problem it solves; the modeling approach chosen and rationale; input features and their sources; output format; training approach; key design decisions and rationale.
+- **Maintain as the system evolves** — Documentation must be updated when the system changes significantly.
+- **Version control documentation** — Store in version control linked to the model version it describes.
 
 #### Documents to Prepare
 
 | Document | Description | Owner |
 |---|---|---|
-| AI Threat Model | Threat model per AI system identifying relevant adversarial attack types | CISO / AI Governance Lead |
-| Adversarial Test Plan | Test plan per AI system covering relevant attack types | CISO / ML Security Engineer |
-| Adversarial Test Results | Documented results of adversarial testing | CISO / ML Security Engineer |
-| Red Team Exercise Records | Records of red team exercises for high-risk AI systems | CISO |
+| AI System Architecture Document | Architecture diagrams and component descriptions | ML Engineer / Software Architect |
+| Model Design Document | Detailed description of model design, decisions, and rationale | ML Engineer / Model Owner |
+| Data Flow Diagrams | Diagrams showing all data inputs, processing, and outputs | ML Engineer |
 
 #### How to Audit
 
 **Document Review:**
-- Verify threat model exists for each high-risk AI system
-- Check adversarial test plans and results exist
-- For LLM systems: confirm prompt injection testing has been conducted
+- Verify architecture document exists for each AI system
+- Check documentation is current — updated after last significant system change
+- Confirm data flows are documented — can you trace personal data through the system?
+
+**Evidence Required**
+- AI system architecture documents (version-controlled)
+- Model design documents
+- Data flow diagrams
+- Evidence of documentation updates following system changes
+
+**Common Gaps Found in Audits**
+- Architecture documented at implementation and never updated after significant changes
+- Data flows not documented — cannot trace what data the AI processes
+- Design rationale missing — documentation describes what was built but not why
+
+#### Cross-References
+
+| Framework | Reference |
+|---|---|
+| EU AI Act | Art. 11 (Technical documentation for high-risk AI) |
+| NIST AI RMF | MAP 1.1, MAP 2.2 |
+| ISO 27001:2022 | A.8.9 (Configuration management) |
+
+---
+
+### A.6.2.4 — AI System Verification and Validation
+
+**Control Statement:** The organization shall define and apply verification and validation measures for its AI systems, and retain evidence that those measures were carried out and their acceptance criteria met before the system is released.
+
+---
+
+#### What It Means
+
+Verification asks whether the system was built correctly against its specification; validation asks whether the resulting system actually performs as intended in its real operating context. For AI this goes well beyond conventional software testing: it must cover statistical performance, behaviour across subgroups, robustness under adversarial and out-of-distribution conditions, and behaviour in an environment that genuinely represents production.
+
+#### Why It Matters
+
+AI systems fail in ways that traditional test suites do not detect. A model can pass every unit test while being systematically less accurate for one demographic, collapsing under slightly shifted input distributions, or being trivially manipulated through crafted inputs. Verification and validation evidence is also the artefact regulators ask for first, and it is the organization's principal defence in demonstrating that a failure was not foreseeable and unaddressed.
+
+#### How to Implement
+
+- **Define acceptance criteria before testing** — Set the thresholds the system must meet in advance, so results cannot be rationalised after the fact.
+- **Test in representative environments** — Validate against data and conditions that reflect the real deployment population, including the edge cases and rare segments that development datasets typically under-represent.
+- **Evaluate for bias across subgroups** — Measure performance and outcomes separately for relevant groups rather than relying on aggregate metrics, and record the fairness metric chosen and why.
+- **Conduct adversarial and robustness testing** — Probe for prompt injection, evasion, data poisoning, model extraction and membership inference as applicable to the system type, and test behaviour under distribution shift and degraded inputs.
+- **Test the human oversight path** — Verify that reviewers can actually understand, question and override the system's output in practice, not just in principle.
+- **Keep validation independent** — The person who built the model should not be the sole party attesting that it passed.
+- **Record results and the release decision** — Retain the evidence, the residual issues accepted, and who authorised release.
+- **Re-run on material change** — Retraining, a new data source or a new deployment context invalidates prior results.
+
+#### Documents to Prepare
+
+| Document | Description | Owner |
+|---|---|---|
+| AI Verification and Validation Plan | Scope, methods, acceptance criteria and responsibilities per system | AI System Owner / QA |
+| Test and Evaluation Results | Performance, subgroup, robustness and adversarial testing evidence | Data Science / ML Engineering |
+| Bias Evaluation Report | Subgroup outcome analysis, chosen fairness metrics and mitigations | Data Science / AI Governance Lead |
+| Release Approval Record | Documented decision to release, residual issues and approver | AI System Owner / Governance Board |
+
+#### How to Audit
+
+**Document Review:**
+- Confirm acceptance criteria were defined before testing and were met, or that deviations were formally accepted
+- Verify subgroup and bias evaluation was performed, not just aggregate accuracy
+- Check adversarial and robustness testing appropriate to the system type was carried out
+- Confirm the test environment and data genuinely represent production conditions
+- Verify independence between the build team and the validation sign-off
+- Check that retraining or significant change triggered revalidation
 
 **Personnel Interviews:**
-- Ask: "What adversarial attacks have you tested this AI system against? Show me the results."
+- Ask an ML engineer: "What were the pass criteria for this model, and were any missed?"
+- Ask the validator: "What would have caused you to block this release?"
+- Ask the AI System Owner: "When this model was last retrained, what testing was repeated?"
 
 **Evidence Required**
-- AI threat models
-- Adversarial test plans and results
-- Evidence of remediation for critical findings
+- Verification and validation plan with pre-defined acceptance criteria
+- Test results including subgroup and robustness evidence
+- Bias evaluation report with methodology stated
+- Release approval records naming the approver
+- Revalidation records following material changes
 
 **Common Gaps Found in Audits**
-- No adversarial testing conducted — only functional testing
-- LLM systems deployed without prompt injection testing
-- Adversarial testing conducted by the development team rather than an independent red team
-- Findings documented but remediation not tracked
+- Only aggregate accuracy reported, with no subgroup breakdown
+- Acceptance thresholds set after seeing the results
+- Testing performed on a clean development dataset that does not reflect production
+- No adversarial or robustness testing for systems clearly exposed to manipulation
+- The model developer is also the sole approver of the release
+- Model retrained repeatedly with validation performed only for the original version
 
 #### Cross-References
 
 | Framework | Reference |
 |---|---|
-| EU AI Act | Art. 9 (Risk management); Art. 15 (Accuracy, robustness, cybersecurity) |
-| NIST AI RMF | MANAGE 2.2, MAP 5.1 |
-| ISO 27001:2022 | A.8.8 (Management of technical vulnerabilities) |
+| EU AI Act | Art. 9 (Risk management); Art. 15 (Accuracy, robustness and cybersecurity); Art. 10 (Data governance) |
+| NIST AI RMF | MEASURE 2.1, MEASURE 2.5, MEASURE 2.7, MEASURE 2.11 |
+| ISO 27001:2022 | A.8.29 (Security testing in development and acceptance) |
 
 ---
 
-### A.6.2.6 — Bias Evaluation
+### A.6.2.5 — AI System Deployment
 
-**Control Statement:** The organization shall conduct systematic bias evaluation of AI systems against defined fairness criteria before deployment and periodically during operation, with results documented and used to inform risk treatment decisions.
-
----
-
-#### What It Means
-
-A.6.2.6 requires systematic, documented evaluation of AI model bias against defined fairness criteria. Bias evaluation must be: conducted before deployment (prospective); repeated periodically in production (operational); disaggregated by relevant protected attributes; measured against defined fairness thresholds; and used to make go/no-go decisions.
-
-#### Why It Matters
-
-AI bias causes real harm: discriminatory employment decisions; unfair credit assessments; differential quality of medical AI recommendations; biased law enforcement predictions. Bias evaluation is the mechanism by which organizations detect and address unfair AI behavior before it causes harm at scale.
-
-#### How to Implement
-
-- **Define fairness criteria per AI system** — Based on the use case and applicable law: which protected attributes are relevant (race, gender, age, disability, etc.)? Which fairness metrics are appropriate (demographic parity, equalized odds, calibration)? What are the acceptable thresholds?
-- **Conduct bias evaluation using representative datasets** — Ensure evaluation datasets are sufficiently large and representative for each subgroup being assessed.
-- **Disaggregate all performance metrics** — Report accuracy, precision, recall, false positive rate, and false negative rate separately for each protected group.
-- **Apply defined thresholds** — Does the model meet the defined fairness thresholds? If not, the model should not be deployed until bias is addressed.
-- **Document methodology and results** — Full bias evaluation report with methodology, datasets used, metrics, and findings.
-
-#### Documents to Prepare
-
-| Document | Description | Owner |
-|---|---|---|
-| Fairness Criteria and Thresholds | Defined fairness metrics and acceptable thresholds per AI system | AI Governance Lead / ML Lead |
-| Bias Evaluation Methodology | Documented methodology for bias evaluation | ML Engineer / AI Risk Manager |
-| Bias Evaluation Reports | Results of bias evaluation per AI system, with disaggregated metrics | ML Engineer |
-| Bias Remediation Records | Actions taken to address identified bias | ML Engineer / Model Owner |
-
-#### How to Audit
-
-**Document Review:**
-- Verify fairness criteria and thresholds are defined for each AI system
-- Check bias evaluation reports exist and contain disaggregated metrics by protected attribute
-- Confirm evaluation datasets were representative for each subgroup
-
-**Audit Testing:**
-- Select a live AI system. Review its bias evaluation report. Are metrics disaggregated by relevant protected attributes? Did the system pass defined fairness thresholds?
-
-**Evidence Required**
-- Fairness criteria and threshold definitions
-- Bias evaluation reports with disaggregated metrics
-- Bias remediation records (where bias was found)
-- Evidence fairness thresholds were met before deployment
-
-**Common Gaps Found in Audits**
-- Overall accuracy reported but no disaggregation by protected group
-- Fairness thresholds not defined — no basis for a pass/fail determination
-- Evaluation datasets too small for meaningful subgroup analysis
-- Bias evaluation conducted but findings did not delay deployment
-
-#### Cross-References
-
-| Framework | Reference |
-|---|---|
-| EU AI Act | Art. 10 (Data and data governance); Art. 9 (Risk management) |
-| NIST AI RMF | MAP 5.1, MAP 5.2, MEASURE 2.5 |
-
----
-
-### A.6.2.8 — Testing in Representative Environments
-
-**Control Statement:** The organization shall test AI systems in environments and with data that are representative of the actual operational deployment context before deployment to production.
+**Control Statement:** The organization shall define and apply a documented process for deploying AI systems into operational use, including the approval criteria, release conditions, human oversight arrangements and rollback provisions that must be satisfied before and during deployment.
 
 ---
 
 #### What It Means
 
-A.6.2.8 requires that testing is conducted in conditions that reflect reality: using data representative of the production population; in an environment that reflects production infrastructure; under realistic operating conditions (load, data quality, edge cases). Testing in unrepresentative environments produces unreliable assurance that the system will behave as expected in production.
-
-#### Why It Matters
-
-AI systems frequently perform well in test environments and poorly in production because: test data does not reflect the diversity and quality of production data; test environment does not replicate production infrastructure; edge cases in production were not anticipated in testing; the model was optimized for the test distribution, not the production distribution.
-
-#### How to Implement
-
-- **Define "representative" for each AI system** — What is the production data distribution? What are the edge cases and challenging inputs? What infrastructure characteristics must the test environment replicate?
-- **Use production-representative test data** — Avoid using only "clean" test data. Include realistic noise, missing values, distribution shifts, and rare cases.
-- **Test with protected group representation** — Ensure test data is representative for all protected groups relevant to fairness evaluation.
-- **Staging environment** — Maintain a staging environment that replicates production infrastructure for pre-deployment testing.
-- **Load and performance testing** — Test under realistic load conditions.
-- **Document test environment and data** — Record what data was used for testing and how the test environment compares to production.
-
-#### Documents to Prepare
-
-| Document | Description | Owner |
-|---|---|---|
-| Test Environment Specification | Description of test environment and how it reflects production | ML Engineer / DevOps |
-| Test Data Specification | Description of test datasets including representativeness assessment | ML Engineer |
-| Test Plans and Results | Documented test plans and results for each AI system | ML Engineer / QA |
-| Test Environment vs Production Comparison | Analysis of differences between test and production environments | ML Engineer / DevOps |
-
-#### How to Audit
-
-**Document Review:**
-- Verify test data documentation includes representativeness assessment
-- Check test environment specification — how closely does it replicate production?
-
-**Personnel Interviews:**
-- Ask: "How do you know your test data is representative of the population your model will serve in production?"
-
-**Evidence Required**
-- Test data specification with representativeness evidence
-- Test environment documentation
-- Test results
-
-**Common Gaps Found in Audits**
-- Test data is a clean, curated dataset that does not reflect production data quality
-- Test environment does not replicate production — different infrastructure, data volumes
-- No analysis of whether test data is representative for relevant protected groups
-
-#### Cross-References
-
-| Framework | Reference |
-|---|---|
-| EU AI Act | Art. 9 (Risk management); Art. 10 (Data and data governance) |
-| NIST AI RMF | MEASURE 2.5, MANAGE 1.2 |
-
----
-
-### A.6.3.1 — AI Deployment Controls
-
-**Control Statement:** The organization shall implement controls for the deployment of AI systems to production, including deployment authorization, staged rollout, rollback capability, and post-deployment validation.
-
----
-
-#### What It Means
-
-A.6.3.1 requires that deploying an AI system to production is a controlled, authorized, and reversible action. Production deployment should require formal authorization, should follow a documented procedure, and should be designed so that a failed deployment can be quickly reversed.
+A.6.2.5 requires that deploying an AI system to production is a controlled, authorized, and reversible action. Production deployment should require formal authorization, should follow a documented procedure, and should be designed so that a failed deployment can be quickly reversed.
 
 #### Why It Matters
 
@@ -1407,72 +1310,15 @@ Uncontrolled AI deployment leads to: unauthorized AI systems in production (gove
 
 ---
 
-### A.6.3.3 — Human Oversight at Deployment
+### A.6.2.6 — AI System Operation and Monitoring
 
-**Control Statement:** The organization shall verify that human oversight mechanisms are operational and effective before deploying AI systems to production, and shall document this verification.
-
----
-
-#### What It Means
-
-A.6.3.3 is the deployment-stage verification that human oversight (designed in A.6.1.1 and governed operationally by A.9.3) is actually working. Before go-live, the organization must verify: the override mechanism works technically; overseers are trained and ready; the oversight process has been rehearsed; logging of override decisions is functional.
-
-#### Why It Matters
-
-Human oversight mechanisms that exist on paper but fail in practice are a critical governance gap. The time to discover that the override button is broken or that no one knows how to use it is not when a harmful AI output needs to be stopped. A.6.3.3 requires pre-deployment verification that oversight is operational.
-
-#### How to Implement
-
-- **Human oversight verification checklist** — Verify before deployment: override mechanism tested and confirmed working; oversight personnel identified and trained; oversight process rehearsed with realistic scenarios; override logging confirmed operational; escalation path confirmed.
-- **Live test of override** — Demonstrate that the override mechanism works by actually exercising it in the staging environment.
-- **Overseer readiness confirmation** — Confirm that designated oversight personnel are available and prepared for go-live.
-- **Document verification** — Create an oversight verification record as part of the deployment package.
-
-#### Documents to Prepare
-
-| Document | Description | Owner |
-|---|---|---|
-| Human Oversight Verification Checklist | Pre-deployment checklist for verifying oversight is operational | AI Governance Lead |
-| Oversight Verification Record | Completed verification record per deployment | AI Governance Lead / Model Owner |
-| Overseer Training Records | Evidence that oversight personnel are trained for this specific system | HR / AI Governance Lead |
-
-#### How to Audit
-
-**Document Review:**
-- Verify oversight verification records exist for recent deployments
-- Check overseer training records are current
-
-**Audit Testing:**
-- For a live AI system: demonstrate that the override mechanism works. Can an overseer actually override an AI recommendation right now?
-
-**Evidence Required**
-- Oversight verification records (pre-deployment)
-- Overseer training records
-- Evidence of override mechanism testing
-
-**Common Gaps Found in Audits**
-- No pre-deployment oversight verification — oversight assumed to work without testing
-- Override mechanism exists in design but has never been tested
-- Oversight personnel identified but not trained for this specific AI system
-
-#### Cross-References
-
-| Framework | Reference |
-|---|---|
-| EU AI Act | Art. 14 (Human oversight for high-risk AI) |
-| NIST AI RMF | MANAGE 1.3, GOVERN 6.2 |
-
----
-
-### A.6.4.1 — AI Operation Monitoring
-
-**Control Statement:** The organization shall implement and maintain monitoring of AI systems in operation to detect performance degradation, unexpected behavior, data quality issues, and security incidents affecting AI systems.
+**Control Statement:** The organization shall operate and monitor its AI systems in accordance with defined arrangements, covering ongoing performance, drift, incidents and the eventual retirement of the system.
 
 ---
 
 #### What It Means
 
-A.6.4.1 requires ongoing monitoring of AI systems in production. Unlike traditional software where failures are typically binary (working or not), AI failures are often gradual and soft: model performance slowly degrades; data quality issues accumulate; bias increases over time; security incidents affect AI outputs. Monitoring must be designed to detect these AI-specific failure modes.
+A.6.2.6 requires ongoing monitoring of AI systems in production. Unlike traditional software where failures are typically binary (working or not), AI failures are often gradual and soft: model performance slowly degrades; data quality issues accumulate; bias increases over time; security incidents affect AI outputs. Monitoring must be designed to detect these AI-specific failure modes.
 
 #### Why It Matters
 
@@ -1525,124 +1371,136 @@ Without monitoring, AI systems that are degrading go undetected until a visible 
 
 ---
 
-### A.6.4.2 — Performance Drift Monitoring
+### A.6.2.7 — AI System Technical Documentation
 
-**Control Statement:** The organization shall monitor AI systems for performance drift, data drift, and concept drift, and shall define and implement processes to detect, investigate, and respond to drift that affects AI system performance or fairness.
+**Control Statement:** The organization shall produce and maintain technical documentation for each AI system, sufficient to enable interested parties to understand how the system works, how it was built and evaluated, and the limits of its intended use.
 
 ---
 
 #### What It Means
 
-A.6.4.2 specifically addresses drift — one of the most important operational AI risks. AI models are trained on historical data, but the world changes: the statistical properties of input data change (data drift); the relationship between inputs and outputs changes (concept drift); model performance on production data degrades (performance drift). Without monitoring for drift, organizations discover problems only after significant degradation has occurred.
+A.6.2.7 requires that every AI model has a standardized documentation artifact — commonly called a "model card" — that provides a transparent, accessible account of what the model does, how well it does it, where it fails, and who should and should not use it. Model cards originated at Google and have become a de facto standard for AI model documentation.
 
 #### Why It Matters
 
-Drift is pervasive in production AI: a hiring AI trained on historical data becomes less accurate as the job market changes; a fraud detection AI trained on historical fraud patterns becomes less effective as fraud tactics evolve; a medical AI trained on historical patient populations becomes less accurate as patient demographics shift.
+Without model documentation: business users don't understand the model's limitations; governance personnel cannot assess whether the model is being used within its validated scope; auditors cannot determine if the model meets fairness requirements; downstream users inherit undisclosed risks.
 
 #### How to Implement
 
-- **Implement statistical drift detection** — Monitor for changes in: input data distributions (feature drift); prediction output distributions; model performance metrics (if ground truth is available); fairness metrics by subgroup.
-- **Define drift detection methods** — Population Stability Index (PSI), Kolmogorov-Smirnov test, Jensen-Shannon divergence, or other appropriate statistical methods per feature type.
-- **Set drift alert thresholds** — Define what level of drift triggers an alert requiring investigation.
-- **Define response procedures** — When drift is detected: investigate root cause; assess impact on model performance and fairness; determine whether retraining or recalibration is required.
-- **Document retraining decisions** — All retraining decisions must be documented: what drift was detected; what investigation was conducted; why retraining was decided; the retraining approach.
+- **Develop a model card template** — Standardized structure covering: model description and purpose; intended use cases and out-of-scope uses; training data summary; performance metrics overall and disaggregated by relevant subgroups; fairness evaluation results; known limitations and failure modes; environmental impact (training energy/CO2); caveats and recommendations.
+- **Populate model cards at deployment** — Model cards must be complete before a model is deployed to production.
+- **Maintain a model registry** — All production models listed with links to their model cards.
+- **Update on retraining** — When a model is significantly retrained, update the model card.
 
 #### Documents to Prepare
 
 | Document | Description | Owner |
 |---|---|---|
-| Drift Detection Configuration | Technical configuration of drift monitoring per AI system | ML Engineer / DevOps |
-| Drift Monitoring Reports | Regular reports on drift metrics and status | ML Engineer / Model Owner |
-| Retraining Decision Records | Documented decisions to retrain, with rationale | Model Owner / AI Governance Lead |
-| Model Retraining Records | Evidence of model retraining including data version, parameters, evaluation results | ML Engineer |
+| Model Card Template | Standardized template for model documentation | AI Governance Lead / ML Lead |
+| Completed Model Cards | One per model in the model registry | ML Engineer / Model Owner |
+| Model Registry | Register of all production AI models with version, status, and model card link | AI Governance Lead |
 
 #### How to Audit
 
 **Document Review:**
-- Verify drift detection is configured for each production AI system
-- Check drift monitoring reports — is drift being tracked and reviewed?
-- Review retraining records — are retraining decisions documented with rationale?
+- Verify model card template exists
+- Check model registry — is every production model listed?
+- Review a sample of model cards — are performance metrics disaggregated by relevant subgroups?
+- Check subgroup fairness metrics are populated — not blank or "not evaluated"
+
+**Evidence Required**
+- Model card template
+- Completed model cards for all production models
+- Model registry
+
+**Common Gaps Found in Audits**
+- Model cards exist but subgroup fairness metrics are blank
+- Model registry is incomplete — some production models not listed
+- Model cards not updated after significant retraining
+- Model cards exist for some systems but not all
+
+#### Cross-References
+
+| Framework | Reference |
+|---|---|
+| EU AI Act | Art. 11 (Technical documentation); Art. 13 (Transparency) |
+| NIST AI RMF | MAP 1.1, GOVERN 1.5 |
+
+---
+
+### A.6.2.8 — AI System Recording of Event Logs
+
+**Control Statement:** The organization shall determine which events its AI systems record, and shall implement and maintain logging that is sufficient to support traceability, investigation and oversight throughout the system life cycle.
+
+---
+
+#### What It Means
+
+A.6.2.8 requires deliberate decisions about what an AI system records while it runs. Logging must be adequate to reconstruct, after the event, what the system did and on what basis: which model version produced an output, what inputs it received, what confidence it reported, whether a human reviewed or overrode it, and what changed in the system's configuration. Retention must be long enough to be useful to investigators and regulators.
+
+#### Why It Matters
+
+When an AI system produces a harmful or disputed outcome, the organization must be able to explain that specific decision, sometimes years later. Without adequate logs it cannot investigate an incident, cannot respond to an individual exercising a right to explanation or contest, cannot prove that human oversight actually occurred, and cannot detect drift or misuse. Insufficient logging is one of the most consequential and least reversible AI governance failures, because the evidence simply does not exist after the fact.
+
+#### How to Implement
+
+- **Define the events to log per system** — Typically inputs and outputs or their references, model and configuration version, timestamp, confidence or score, the decision taken, and the identity of any human reviewer.
+- **Log human oversight actions explicitly** — Record when a human reviewed, approved, modified or overrode an output, so oversight can be evidenced rather than asserted.
+- **Log model and configuration changes** — Deployments, retraining, threshold changes and feature updates must be traceable to a time and an authoriser.
+- **Set risk-based retention periods** — Align retention to the operational life of the system and any statutory limitation or regulatory requirement, and document the basis.
+- **Protect log integrity** — Restrict who can alter or delete logs, and apply tamper-evidence for high-risk systems.
+- **Reconcile logging with data protection** — Apply minimisation, pseudonymisation or referencing so that logging does not itself become an unlawful accumulation of personal data.
+- **Make logs usable** — Ensure logs can actually be queried to reconstruct an individual decision, not merely stored.
+- **Monitor and alert** — Feed logs into monitoring so anomalies, drift and misuse are detected rather than merely recorded.
+
+#### Documents to Prepare
+
+| Document | Description | Owner |
+|---|---|---|
+| AI Logging Standard | Defines events to be logged per system risk tier, formats and retention | AI Governance Lead / IT |
+| Log Retention Schedule | Retention periods with legal and operational justification | Compliance / Records Manager |
+| Log Access Control Record | Who may read, alter or delete AI logs and how integrity is assured | CISO |
+| Traceability Test Evidence | Demonstration that an individual decision can be reconstructed from logs | AI System Owner |
+
+#### How to Audit
+
+**Document Review:**
+- Confirm a logging standard exists and specifies events per system or risk tier
+- Verify model version and configuration changes are captured
+- Check that human oversight actions are logged
+- Confirm retention periods are defined, justified and enforced
+- Verify log integrity protection and restricted deletion rights
+- Confirm logging has been assessed against data protection obligations
 
 **Personnel Interviews:**
-- Ask: "When was this model last retrained? Why? What drift was detected? Show me the records."
+- Ask the AI System Owner: "Pick a decision this system made three months ago and reconstruct it for me."
+- Ask the CISO: "Who can delete or alter these logs, and how would you know if they had?"
+- Ask the DPO: "What personal data ends up in these logs and on what basis is it retained?"
 
 **Evidence Required**
-- Drift detection configuration evidence
-- Drift monitoring reports
-- Retraining decision records
+- Documented logging standard and retention schedule
+- Sample logs demonstrating decision-level traceability
+- Evidence of logged human oversight actions
+- Access control and integrity protection configuration
+- Records of log review or monitoring alerts
 
 **Common Gaps Found in Audits**
-- No drift monitoring in place — model is never retrained unless it visibly fails
-- Drift monitoring configured for input features but not for fairness metrics by subgroup
-- Retraining occurs informally with no documented decision rationale
+- Only errors and system health are logged, with no record of decisions made
+- Model version not recorded, so outputs cannot be attributed to a specific model
+- Human review claimed but never logged, so oversight cannot be evidenced
+- Logs retained for a short operational period well below the time limit for challenge
+- Logs writable or deletable by the same team that operates the model
+- Logs technically retained but impossible to query for an individual case
 
 #### Cross-References
 
 | Framework | Reference |
 |---|---|
-| EU AI Act | Art. 72 (Post-market monitoring); Art. 9 (Risk management) |
-| NIST AI RMF | MANAGE 2.4, MEASURE 2.7 |
+| EU AI Act | Art. 12 (Record-keeping and automatic logging); Art. 19 (Automatically generated logs); Art. 26 (Deployer log retention) |
+| NIST AI RMF | MEASURE 1.1, MEASURE 2.4, MANAGE 4.1 |
+| ISO 27001:2022 | A.8.15 (Logging); A.8.16 (Monitoring activities); A.8.17 (Clock synchronization) |
 
 ---
-
-### A.6.5.1 — AI Decommissioning
-
-**Control Statement:** The organization shall implement controlled processes for decommissioning AI systems, including proper data disposal, documentation archival, stakeholder notification, and transition planning.
-
----
-
-#### What It Means
-
-A.6.5.1 requires that AI systems are decommissioned in a controlled manner when they reach end-of-life. Decommissioning includes: turning off the AI system; properly disposing of training data and model artifacts in accordance with data retention policies; archiving documentation; notifying affected stakeholders; and ensuring any dependent processes are transitioned.
-
-#### Why It Matters
-
-Uncontrolled AI decommissioning leads to: training data (including personal data) remaining on servers indefinitely after the AI system it supported has been discontinued; model artifacts accessible to unauthorized parties long after decommissioning; stakeholders (including individuals affected by the AI) not notified of changes; no record of when an AI system was shut down and why.
-
-#### How to Implement
-
-- **Define an AI decommissioning procedure** — Steps required to decommission an AI system: decision and authorization; stakeholder notification; data disposal (aligned with retention policy and GDPR right to erasure); model artifact disposal or archival; documentation archival; transition of dependent processes; decommissioning record.
-- **Data disposal** — Training data and personal data processed by the AI must be disposed of in accordance with data retention schedules and GDPR obligations.
-- **Model artifact disposal** — Model weights and artifacts should be deleted (or archived in controlled storage) according to a defined retention schedule.
-- **Documentation archival** — ASIA, model cards, and other governance documentation should be archived for audit purposes for a defined retention period.
-- **Maintain a decommissioning register** — Record all decommissioned AI systems with dates and disposal evidence.
-
-#### Documents to Prepare
-
-| Document | Description | Owner |
-|---|---|---|
-| AI Decommissioning Procedure | Documented procedure for controlled AI system decommissioning | AI Governance Lead / DevOps |
-| Decommissioning Authorization Records | Formal authorization of decommissioning decisions | AI Governance Lead |
-| Data Deletion Certificates | Evidence of data disposal for training and operational data | DevOps / DPO |
-| Decommissioning Register | Register of all decommissioned AI systems | AI Governance Lead |
-
-#### How to Audit
-
-**Document Review:**
-- Verify decommissioning procedure exists
-- Check decommissioning register — are all discontinued AI systems recorded?
-- Review data deletion certificates for decommissioned systems
-
-**Audit Testing:**
-- Identify any AI systems known to have been discontinued. Is data from those systems still on servers?
-
-**Evidence Required**
-- Decommissioning procedure
-- Decommissioning register
-- Data deletion certificates for decommissioned systems
-
-**Common Gaps Found in Audits**
-- No decommissioning procedure — AI systems are "switched off" informally
-- Training data from decommissioned AI systems remains on servers with no deletion record
-- No decommissioning register — no record of which AI systems have been discontinued
-
-#### Cross-References
-
-| Framework | Reference |
-|---|---|
-| EU AI Act | Art. 9 (Risk management throughout lifecycle) |
-| NIST AI RMF | MANAGE 4.1 |
-| ISO 27001:2022 | A.8.10 (Information deletion) |
 
 ## DOMAIN A.7 — DATA FOR AI
 *5 Controls | Governing data quality, provenance, privacy, and access for AI systems*

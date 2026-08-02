@@ -248,89 +248,90 @@ Evidence shall be:
 
 ### PART H: ANNEX A CONTROLS AUDIT
 
-**A.2 — Policies for AI**
+All 38 Annex A controls of ISO/IEC 42001:2023, across the nine domains A.2 to A.10.
+
+**A.2 — Policies Related to AI**
 
 | Control | Audit Question | Evidence | Finding |
 |---------|---------------|---------|---------|
-| A.2.2 | Is the AI Policy documented, approved, communicated, and reviewed? Show current version, approval, and distribution evidence. | Policy document; approval record; communication evidence | C / NC / OBS |
-| A.2.3 | Do AI-specific policies address prohibited uses, ethics principles, and human oversight? | Policy content review; specific policy documents | C / NC / OBS |
+| A.2.2 | Is the AI Policy documented, approved, communicated and available? Show current version, approval and distribution evidence. | Policy document; approval record; communication evidence | C / NC / OBS |
+| A.2.3 | Is the AI Policy aligned with related policies (security, privacy, data, HR, procurement)? How were conflicts reconciled? | Policy set; cross-references; reconciliation record | C / NC / OBS |
+| A.2.4 | Is the AI Policy reviewed at planned intervals and on significant change? Show the last review. | Review record; review triggers; version history | C / NC / OBS |
 
 **A.3 — Internal Organization**
 
 | Control | Audit Question | Evidence | Finding |
 |---------|---------------|---------|---------|
-| A.3.2 | Are AI governance roles and responsibilities clearly defined and assigned? Who is responsible for AI governance? | RACI; job descriptions; org chart | C / NC / OBS |
-| A.3.3 | Is segregation of duties applied in AI development and oversight? | Access controls; development/production separation | C / NC / OBS |
-| A.3.4 | Does the organization maintain contacts with AI regulators and authorities? | Contact register; regulatory engagement records | C / NC / OBS |
-| A.3.6 | Is AI governance integrated into project management? | Project governance framework; project templates | C / NC / OBS |
+| A.3.2 | Are AI roles, responsibilities and authorities defined, assigned and communicated, including separation of conflicting duties? | RACI; job descriptions; org chart; access controls | C / NC / OBS |
+| A.3.3 | Can staff and third parties raise concerns about AI systems through a defined, protected channel? | Reporting channel; awareness evidence; concerns log | C / NC / OBS |
 
-**A.4 — Resources**
+**A.4 — Resources for AI Systems**
 
 | Control | Audit Question | Evidence | Finding |
 |---------|---------------|---------|---------|
-| A.4.2 | Do staff involved in AI have required competencies? How is this assessed? | Training records; competency assessments | C / NC / OBS |
-| A.4.3 | Does AI infrastructure meet security requirements? | Infrastructure assessment; security controls | C / NC / OBS |
-| A.4.4 | Are AI tools assessed and controlled before use? | Approved tools list; tool assessment records | C / NC / OBS |
+| A.4.2 | Are the resources needed across the AI life cycle identified and documented? | Resource plan; resource register per AI system | C / NC / OBS |
+| A.4.3 | Are the data resources used by AI systems documented and managed? | Data inventory; dataset records; access controls | C / NC / OBS |
+| A.4.4 | Are AI tooling resources (frameworks, libraries, pre-trained models) assessed and controlled before use? | Approved tools list; model registry; assessment records | C / NC / OBS |
+| A.4.5 | Are system and computing resources for AI managed and secured? | Infrastructure inventory; security controls; DR plan | C / NC / OBS |
+| A.4.6 | Do people involved in AI have the required competence, and how is it assessed? | Competency framework; training records; gap assessments | C / NC / OBS |
 
-**A.5 — Impact Assessment**
-
-| Control | Audit Question | Evidence | Finding |
-|---------|---------------|---------|---------|
-| A.5.2 | Are AI System Impact Assessments conducted before deployment? Show examples. | ASIA records; ASIA register; approval evidence | C / NC / OBS |
-| A.5.3 | Do ASIAs assess societal, human rights, and fairness impacts? | ASIA template; completed ASIAs | C / NC / OBS |
-| A.5.4 | How are ASIA results used in risk treatment decisions? | Risk treatment plans linking to ASIA findings | C / NC / OBS |
-
-**A.6 — AI System Lifecycle**
+**A.5 — Assessing Impacts of AI Systems**
 
 | Control | Audit Question | Evidence | Finding |
 |---------|---------------|---------|---------|
-| A.6.1.1 | Are responsible AI principles included in design requirements? | Design specifications; requirements documentation | C / NC / OBS |
-| A.6.1.2 | Is AI system design documented? Show examples. | Architecture documentation; design documents | C / NC / OBS |
-| A.6.2.1 | Is AI development following a controlled process? | Development lifecycle procedure; evidence of use | C / NC / OBS |
-| A.6.2.3 | Are model cards maintained for AI models? Show examples. | Model card template; completed model cards | C / NC / OBS |
-| A.6.2.5 | Is adversarial testing conducted? Show evidence. | Adversarial test plans; test results | C / NC / OBS |
-| A.6.2.6 | Is bias evaluation conducted during development? | Bias evaluation methodology; fairness test results | C / NC / OBS |
-| A.6.2.8 | Are AI systems tested in representative environments? | Test environment documentation; staging test results | C / NC / OBS |
-| A.6.3.1 | Are deployment controls implemented? Show last deployment record. | Deployment checklist; deployment authorization | C / NC / OBS |
-| A.6.3.3 | Are human oversight mechanisms operational at deployment? | Oversight design documentation; operational evidence | C / NC / OBS |
-| A.6.4.1 | Are deployed AI systems monitored? What metrics are tracked? | Monitoring configuration; dashboards; alert history | C / NC / OBS |
-| A.6.4.2 | Is performance drift monitored and responded to? | Drift detection system; response records | C / NC / OBS |
-| A.6.5.1 | Is there a decommissioning process? Has it been used? | Decommissioning procedure; records if applicable | C / NC / OBS |
+| A.5.2 | Is there a defined process for assessing AI system impacts, with clear triggers and approvals? | Impact assessment procedure; template; trigger criteria | C / NC / OBS |
+| A.5.3 | Are impact assessment results documented, retained and available to those who need them? | Assessment register; completed assessments; retention evidence | C / NC / OBS |
+| A.5.4 | Are impacts on individuals and identifiable groups assessed, and are the findings acted on? | Completed assessments; subgroup analysis; risk treatment records | C / NC / OBS |
+| A.5.5 | Are wider societal and environmental impacts assessed? | Societal impact sections; ethics review; stakeholder engagement | C / NC / OBS |
+
+**A.6 — AI System Life Cycle**
+
+| Control | Audit Question | Evidence | Finding |
+|---------|---------------|---------|---------|
+| A.6.1.2 | Are objectives for responsible development of AI systems documented and communicated? | Responsible AI objectives; design briefs | C / NC / OBS |
+| A.6.1.3 | Are there defined processes for responsible AI system design and development? | Development lifecycle procedure; governance gates; evidence of use | C / NC / OBS |
+| A.6.2.2 | Are AI system requirements and specifications documented, including intended purpose and acceptance criteria? | Requirements specification; acceptance criteria | C / NC / OBS |
+| A.6.2.3 | Is AI system design and development documented, including rationale and dependencies? | Architecture documentation; design decisions; version control | C / NC / OBS |
+| A.6.2.4 | Are AI systems verified and validated before release, including bias, robustness and adversarial testing? | Test plans; bias evaluation; adversarial test results | C / NC / OBS |
+| A.6.2.5 | Is AI system deployment controlled and authorised, with a tested rollback path? | Deployment procedure; authorisation records; rollback test | C / NC / OBS |
+| A.6.2.6 | Are deployed AI systems operated and monitored, including drift detection and decommissioning? | Monitoring configuration; dashboards; drift reports; decommissioning records | C / NC / OBS |
+| A.6.2.7 | Is technical documentation produced and maintained for each AI system? | Model cards; technical documentation; update history | C / NC / OBS |
+| A.6.2.8 | Are event logs recorded, protected and retained for AI systems? | Logging design; retention settings; sample log extract | C / NC / OBS |
 
 **A.7 — Data for AI Systems**
 
 | Control | Audit Question | Evidence | Finding |
 |---------|---------------|---------|---------|
-| A.7.2 | Are data quality criteria defined for AI training data? | Data quality framework; quality assessment records | C / NC / OBS |
-| A.7.3 | Is training data provenance documented? Show examples. | Data provenance records; data catalog | C / NC / OBS |
-| A.7.4 | How is personal data in AI systems protected? What legal bases are used? | DPIA records; data processing records; privacy controls | C / NC / OBS |
-| A.7.5 | Is bias in training data identified and mitigated? | Bias assessment records; mitigation evidence | C / NC / OBS |
-| A.7.6 | Are access controls applied to AI training data and models? | Access control matrix; access logs | C / NC / OBS |
+| A.7.2 | Are data requirements defined for developing and enhancing each AI system? | Data requirements; dataset catalogue; split documentation | C / NC / OBS |
+| A.7.3 | Is data acquired lawfully and with appropriate authorisation? What legal bases are used? | Lawful basis records; licensing register; DPIAs; DPAs | C / NC / OBS |
+| A.7.4 | Are data quality criteria defined and assessed for AI data? | Data quality framework; quality assessment records | C / NC / OBS |
+| A.7.5 | Is data provenance and lineage documented and traceable? | Provenance records; lineage documentation; data catalogue | C / NC / OBS |
+| A.7.6 | Is data preparation governed, including labelling and bias treatment? | Preparation procedures; labelling guidelines; bias mitigation evidence | C / NC / OBS |
 
-**A.8 — Information for Interested Parties**
+**A.8 — Information for Interested Parties of AI Systems**
 
 | Control | Audit Question | Evidence | Finding |
 |---------|---------------|---------|---------|
-| A.8.2 | Is accurate information about AI capabilities provided to users? | User documentation; capability documentation; disclaimers | C / NC / OBS |
-| A.8.3 | Are explainability requirements defined and implemented? | Explainability framework; explanation mechanisms | C / NC / OBS |
-| A.8.4 | Are users informed when interacting with AI? Show how disclosure is implemented. | UI screenshots; disclosure mechanisms; user communications | C / NC / OBS |
-| A.8.5 | Is there an AI incident communication process? Was it used recently? | Incident procedure; incident communications sent | C / NC / OBS |
+| A.8.2 | Is accurate documentation about capabilities, limitations and explanations provided to users? | User documentation; capability sheets; explanation mechanisms | C / NC / OBS |
+| A.8.3 | Are external reporting obligations to authorities and other external parties identified and met? | Obligation register; regulatory watch list; reports made | C / NC / OBS |
+| A.8.4 | Is there a process for communicating AI incidents to those who need to know, within defined timescales? | Incident communication procedure; templates; communications sent | C / NC / OBS |
+| A.8.5 | Are interested parties informed where AI is involved in decisions affecting them? | Disclosure policy; UI evidence; customer communications | C / NC / OBS |
 
 **A.9 — Use of AI Systems**
 
 | Control | Audit Question | Evidence | Finding |
 |---------|---------------|---------|---------|
-| A.9.2 | Is there an acceptable use policy for AI? How is it enforced? | Acceptable use policy; training records; enforcement evidence | C / NC / OBS |
-| A.9.3 | Are human oversight mechanisms implemented for high-stakes decisions? | Oversight design; operational evidence; override logs | C / NC / OBS |
-| A.9.4 | Are AI error handling processes defined? Show examples of errors handled. | Error handling procedure; incident records | C / NC / OBS |
+| A.9.2 | Are there processes for responsible use of AI, covering acceptable use, oversight and error handling? | Acceptable use policy; error handling procedure; enforcement evidence | C / NC / OBS |
+| A.9.3 | Are objectives and limits for the responsible use of AI systems documented? | Responsible use objectives; reporting to management review | C / NC / OBS |
+| A.9.4 | Are AI systems used only for their intended purpose, and is out-of-scope use prevented or detected? | Intended use statements; usage monitoring; override logs | C / NC / OBS |
 
-**A.10 — Third-Party and Customer AI**
+**A.10 — Third-Party and Customer Relationships**
 
 | Control | Audit Question | Evidence | Finding |
 |---------|---------------|---------|---------|
-| A.10.2 | Are third-party AI systems risk-assessed before adoption? Show records. | Third-party assessment procedure; assessment records | C / NC / OBS |
-| A.10.3 | Do supplier contracts include AI governance requirements? Show example clauses. | Supplier agreements; AI-specific contract clauses | C / NC / OBS |
-| A.10.4 | Are customer AI governance requirements identified and met? | Customer requirements documentation; compliance evidence | C / NC / OBS |
+| A.10.2 | Are responsibilities allocated across the AI value chain and recorded? | Third-party AI inventory; responsibility matrix; assessment records | C / NC / OBS |
+| A.10.3 | Are AI suppliers assessed, contracted and monitored appropriately? | Supplier assessments; AI contract clauses; monitoring records | C / NC / OBS |
+| A.10.4 | Are customer requirements and information needs for AI systems identified and met? | Customer requirements; customer-facing documentation; compliance evidence | C / NC / OBS |
 
 ---
 

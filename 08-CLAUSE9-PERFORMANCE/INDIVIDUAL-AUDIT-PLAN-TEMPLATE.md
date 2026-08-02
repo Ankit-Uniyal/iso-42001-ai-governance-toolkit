@@ -1,12 +1,12 @@
 # Individual Audit Plan
 ## ISO/IEC 42001:2023 | Clause 9.2 — Template
 
-**Audit Reference:** AUD-[###]-[YEAR]
-**Audit Area:** ___________________________
-**ISO 42001 Clauses:** ___________________________
-**Audit Type:** Full AIMS / Clause-specific / AI System Audit
-**Lead Auditor:** ___________________________
-**Auditees:** ___________________________
+**Audit Reference:** AUD-[###]-[YEAR]  
+**Audit Area:** ___________________________  
+**ISO 42001 Clauses:** ___________________________  
+**Audit Type:** Full AIMS / Clause-specific / AI System Audit  
+**Lead Auditor:** ___________________________  
+**Auditees:** ___________________________  
 **Programme Reference:** AIMS-AUDITPROG-[YEAR]
 
 ---

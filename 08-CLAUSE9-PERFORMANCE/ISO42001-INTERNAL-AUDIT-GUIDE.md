@@ -176,7 +176,7 @@ Use the checklists in Part 4 of this guide. Print them out or have them on a tab
 
 ### 3.1 — PHASE 1: Opening Meeting
 
-**Duration:** 30–45 minutes
+**Duration:** 30–45 minutes  
 **Who attends:** You (auditor) + AI Governance Lead + any key managers
 
 The opening meeting is your introduction. Keep it friendly and professional.
@@ -203,7 +203,7 @@ The opening meeting is your introduction. Keep it friendly and professional.
 
 ### 3.2 — PHASE 2: Document Review
 
-**Duration:** Half a day to a full day
+**Duration:** Half a day to a full day  
 **Where:** Your desk / meeting room with the documents
 
 Document review is where you read all the documents and ask: *"Does this document meet the requirement, or does it fall short?"*
@@ -252,7 +252,7 @@ Document review is where you read all the documents and ask: *"Does this documen
 
 ### 3.3 — PHASE 3: Interviews
 
-**Duration:** 30–60 minutes per interview
+**Duration:** 30–60 minutes per interview  
 **Who to interview:** See the list below
 
 Interviews are where the audit comes to life. Documents tell you what the organization says it does. People tell you what actually happens. The gap between these two is where your most important findings live.
@@ -555,7 +555,7 @@ Result boxes:
 
 ### 3.5 — PHASE 5: Closing Meeting
 
-**Duration:** 45–60 minutes
+**Duration:** 45–60 minutes  
 **Who attends:** You (auditor) + AI Governance Lead + relevant managers + top management representative
 
 The closing meeting is where you share what you found. The key rule: **no surprises**. Every finding should have been informally previewed with the relevant manager before the closing meeting.

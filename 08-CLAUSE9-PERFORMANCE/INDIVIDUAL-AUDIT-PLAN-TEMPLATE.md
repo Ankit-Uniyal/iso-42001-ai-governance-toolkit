@@ -21,11 +21,11 @@
 
 ## 2. Scope
 
-6. **In Scope:** [Specific clauses, processes, AI systems, activities]
+**In Scope:** [Specific clauses, processes, AI systems, activities]
 
-7. **Out of Scope:** [Excluded areas and justification]
+**Out of Scope:** [Excluded areas and justification]
 
-8. **Sampling Approach:** [e.g., "All High-risk AI systems"; "Random sample of 3 recent Impact Assessments"]
+**Sampling Approach:** [e.g., "All High-risk AI systems"; "Random sample of 3 recent Impact Assessments"]
 
 ---
 
@@ -55,7 +55,7 @@
 
 ## 5. Audit Criteria
 
-29. 1. ISO/IEC 42001:2023 — [specific clauses]
+1. ISO/IEC 42001:2023 — [specific clauses]
 2. Organisation's AIMS policies and procedures
 3. Applicable regulatory requirements
 
@@ -73,17 +73,17 @@
 
 ## 7. Independence Statement
 
-13. I confirm no conflict of interest with areas being audited.
+I confirm no conflict of interest with areas being audited.
 
-14. **Lead Auditor:** ___________________________ **Date:** ___________________________
+**Lead Auditor:** ___________________________ **Date:** ___________________________
 
 ---
 
 ## 8. Report Reference
 
-17. Findings reported in: AUD-[###]-[YEAR]-REPORT
-18. NCRs raised in: NCR-REGISTER.md
+- Findings reported in: AUD-[###]-[YEAR]-REPORT
+- NCRs raised in: NCR-REGISTER.md
 
 ---
 
-20. *ISO/IEC 42001:2023 AI Governance Toolkit | Clause 9.2 | See root README.md for full index*
+*ISO/IEC 42001:2023 AI Governance Toolkit | Clause 9.2 | See root README.md for full index*

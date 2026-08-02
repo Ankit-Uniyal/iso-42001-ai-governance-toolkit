@@ -1,9 +1,9 @@
 # AIMS Change Log
 ## ISO/IEC 42001:2023 | Clause 6.3 — Template
 
-**Document ID:** AIMS-CHGLOG-001
-**Version:** 1.0
-**Owner:** AI Governance Lead
+**Document ID:** AIMS-CHGLOG-001  
+**Version:** 1.0  
+**Owner:** AI Governance Lead  
 **Review Cycle:** Reviewed at each management review
 
 ---
@@ -43,8 +43,8 @@ Changes to the AIMS must be documented when triggered by:
 
 For each significant change, complete the following before approval:
 
-**Change ID:** ___
-**Change Description:** ___
+**Change ID:** ___  
+**Change Description:** ___  
 **Change Driver:** ___
 
 | Assessment Area | Impact? (Y/N) | Description of Impact | Action Required |
@@ -60,8 +60,8 @@ For each significant change, complete the following before approval:
 | Supplier Contracts | | | |
 | Regulatory Compliance | | | |
 
-**Recommendation:** Approve / Approve with conditions / Reject
-**Approved by:** ___________________________
+**Recommendation:** Approve / Approve with conditions / Reject  
+**Approved by:** ___________________________  
 **Date:** ___________________________
 
 ---

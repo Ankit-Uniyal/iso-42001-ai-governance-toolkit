@@ -36,9 +36,9 @@ These examples show practitioners exactly how to complete the blank templates fo
 |---|---|---|---|
 | 1 | [README.md](README.md) | This overview | — |
 | 2 | [NFS-AIMS-SCOPE-STATEMENT.md](NFS-AIMS-SCOPE-STATEMENT.md) | Completed AIMS Scope Statement | Clause 4.3 |
-| 3 | [NFS-AI-SYSTEM-MODEL-CARD.md](NFS-AI-SYSTEM-MODEL-CARD.md) | Completed AI System Model Card for CreditIQ v2.1 | Clause 8.4, Annex A.6 |
-| 4 | [NFS-RISK-REGISTER-ENTRY.md](NFS-RISK-REGISTER-ENTRY.md) | Three fully populated AI risk register entries | Clause 6.1, Annex A.6 |
-| 5 | [NFS-INCIDENT-LOG-ENTRY.md](NFS-INCIDENT-LOG-ENTRY.md) | Completed AI incident log entry (bias detection event) | Clause 10.1, Annex A.9 |
+| 3 | [NFS-AI-SYSTEM-MODEL-CARD.md](NFS-AI-SYSTEM-MODEL-CARD.md) | Completed AI System Model Card for CreditIQ v2.1 | Annex A.6.2.7 |
+| 4 | [NFS-RISK-REGISTER-ENTRY.md](NFS-RISK-REGISTER-ENTRY.md) | Three fully populated AI risk register entries | Clause 6.1.2, Annex A.5 |
+| 5 | [NFS-INCIDENT-LOG-ENTRY.md](NFS-INCIDENT-LOG-ENTRY.md) | Completed AI incident log entry (bias detection event) | Clause 10.2, Annex A.8.4 |
 
 ---
 
@@ -56,9 +56,9 @@ These examples show practitioners exactly how to complete the blank templates fo
 | Worked Example | Blank Template Location |
 |---|---|
 | NFS-AIMS-SCOPE-STATEMENT.md | `03-CLAUSE4-CONTEXT/AIMS-SCOPE-STATEMENT.md` |
-| NFS-AI-SYSTEM-MODEL-CARD.md | `07-CLAUSE8-OPERATION/AI-SYSTEM-MODEL-CARD.md` |
+| NFS-AI-SYSTEM-MODEL-CARD.md | `07-CLAUSE8-OPERATION/AI-MODEL-CARD-TEMPLATE.md` |
 | NFS-RISK-REGISTER-ENTRY.md | `05-CLAUSE6-PLANNING/AI-RISK-REGISTER.md` |
-| NFS-INCIDENT-LOG-ENTRY.md | `09-CLAUSE10-IMPROVEMENT/NONCONFORMITY-CORRECTIVE-ACTION-LOG.md` |
+| NFS-INCIDENT-LOG-ENTRY.md | `09-CLAUSE10-IMPROVEMENT/NCR-REGISTER.md` and `09-CLAUSE10-IMPROVEMENT/AI-INCIDENT-RESPONSE-PROCEDURE.md` |
 
 ---
 

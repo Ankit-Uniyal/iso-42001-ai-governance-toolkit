@@ -1,10 +1,10 @@
 # AI Performance Monitoring Plan
 ## ISO/IEC 42001:2023 | Clause 9.1 — Template
 
-**Document ID:** AIMS-MONPLAN-001
-**Version:** 1.0
-**Owner:** Risk Manager / AI Governance Lead
-**Date:** ___________________________
+**Document ID:** AIMS-MONPLAN-001  
+**Version:** 1.0  
+**Owner:** Risk Manager / AI Governance Lead  
+**Date:** ___________________________  
 **Review Cycle:** Annual; updated when systems or objectives change
 
 ---

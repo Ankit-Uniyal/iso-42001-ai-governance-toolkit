@@ -60,19 +60,19 @@ ISO 42001 has two main parts:
 
 **Main Clauses (Clauses 4–10):** These are the core management system requirements — things like leadership commitment, planning, support, operation, evaluation, and improvement. Every organization must implement all of these.
 
-**Annex A (Controls):** These are 39 specific controls organized into 9 domains. They cover everything from AI policies to data management to supplier oversight. Most organizations implement all 39, but they can document justified exclusions.
+**Annex A (Controls):** These are 38 specific controls organized into 9 domains. They cover everything from AI policies to data management to supplier oversight. Most organizations implement all 38, but they can document justified exclusions.
 
 | Domain | What It Covers | Number of Controls |
 |---|---|---|
-| A.2 — Policies | AI policy documents and rules | 2 |
-| A.3 — Organisation | Roles, responsibilities, governance structure | 4 |
-| A.4 — Resources | People skills, tools, infrastructure | 3 |
-| A.5 — Impact Assessment | Assessing AI risks before deployment | 3 |
-| A.6 — AI Lifecycle | Design, build, test, deploy, monitor, retire | 11 |
-| A.7 — Data | Data quality, privacy, access control | 5 |
-| A.8 — Information | Transparency, explainability, disclosure | 4 |
-| A.9 — Use of AI | Acceptable use, human oversight, error handling | 3 |
-| A.10 — Third Party & Customer AI | Supplier management, customer obligations | 4 |
+| A.2 — Policies Related to AI | AI policy, alignment with other policies, policy review | 3 |
+| A.3 — Internal Organisation | Roles, responsibilities, reporting of concerns | 2 |
+| A.4 — Resources for AI Systems | Resource documentation, data, tooling, compute, people | 5 |
+| A.5 — Assessing Impacts | Impact assessment process, documentation, individual and societal impacts | 4 |
+| A.6 — AI System Life Cycle | Design, build, verify, deploy, operate, document, log | 9 |
+| A.7 — Data for AI Systems | Development data, acquisition, quality, provenance, preparation | 5 |
+| A.8 — Information for Interested Parties | User documentation, external reporting, incidents, disclosure | 4 |
+| A.9 — Use of AI Systems | Responsible use processes, objectives, intended use | 3 |
+| A.10 — Third-Party & Customer Relationships | Allocating responsibilities, suppliers, customers | 3 |
 
 ---
 
@@ -105,7 +105,7 @@ Your organization should have an **Audit Programme** — a plan that says which 
 
 - [ ] Does an Audit Programme exist?
 - [ ] Is this audit on the programme?
-- [ ] What is the scope of this specific audit? (All 39 controls? Just one domain?)
+- [ ] What is the scope of this specific audit? (All 38 controls? Just one domain?)
 - [ ] How much time is allocated?
 
 If there is no Audit Programme, that itself is a finding — ISO 42001 Clause 9.2 requires one.
@@ -120,7 +120,7 @@ Before the audit, ask the organization to give you these documents. Read them be
 |---|---|---|
 | 1 | AIMS Scope Statement | Tells you what's in and out of scope |
 | 2 | AI Policy (top-level) | The foundational governance document |
-| 3 | Statement of Applicability (SoA) | Shows which of the 39 controls apply and why |
+| 3 | Statement of Applicability (SoA) | Shows which of the 38 controls apply and why |
 | 4 | AI System Inventory / Register | List of all AI systems |
 | 5 | AI Risk Register | Identified AI risks and their treatment |
 | 6 | Previous audit reports | What was found before — has it been fixed? |
@@ -587,14 +587,11 @@ The closing meeting is where you share what you found. The key rule: **no surpri
 
 ---
 
-> **How to use these checklists:**
-> For each item, mark: ✅ Conforming | ❌ Non-Conforming | ⚠️ Observation | ➡️ Not Applicable
-> Write your evidence note in the "Evidence / Notes" column.
-> Any ❌ becomes a formal finding in your report.
+These checklists cover all **38 Annex A controls of ISO/IEC 42001:2023**, in the order they appear in the standard. Control titles match the standard exactly, so a finding raised here maps straight onto the Statement of Applicability.
 
 ---
 
-### CHECKLIST A.2 — POLICIES
+### CHECKLIST A.2 — POLICIES RELATED TO AI
 
 **A.2.2 — AI Policy**
 
@@ -610,26 +607,34 @@ The closing meeting is where you share what you found. The key rule: **no surpri
 | 8 | Evidence of communication to staff | | |
 | 9 | Addresses generative AI and large language models | | |
 
-**A.2.3 — AI-Specific Policies**
+**A.2.3 — Alignment with Other Organizational Policies**
 
 | # | What to Check | Status | Evidence / Notes |
 |---|---|---|---|
-| 1 | Prohibited Use of AI Policy exists | | |
-| 2 | Prohibited use list covers EU AI Act prohibited practices | | |
-| 3 | Acceptable Use of AI Policy exists | | |
-| 4 | Acceptable use policy explicitly names permitted/prohibited external AI tools | | |
-| 5 | AI Human Oversight Policy exists | | |
-| 6 | AI Ethics Policy exists | | |
-| 7 | AI Data Governance Policy exists | | |
-| 8 | All policies have named owners | | |
-| 9 | All policies reviewed within last 12 months | | |
-| 10 | Training on policies completed and recorded | | |
+| 1 | Related policies identified (security, privacy, data, HR, procurement, quality) | | |
+| 2 | AI Policy cross-references those policies rather than contradicting them | | |
+| 3 | Conflicts between the AI Policy and other policies have been reconciled and recorded | | |
+| 4 | Supporting AI policies exist where needed (acceptable use, prohibited use, human oversight) | | |
+| 5 | Prohibited use list covers EU AI Act prohibited practices | | |
+| 6 | All AI-related policies have named owners | | |
+| 7 | Training on the policy set completed and recorded | | |
+
+**A.2.4 — Review of the AI Policy**
+
+| # | What to Check | Status | Evidence / Notes |
+|---|---|---|---|
+| 1 | Defined review interval for the AI Policy | | |
+| 2 | Review triggers defined (regulatory change, incident, scope change, new AI system) | | |
+| 3 | Evidence of at least one completed review | | |
+| 4 | Regulatory monitoring feeds the review (watch list, alerts, consultation responses) | | |
+| 5 | Review outcomes recorded, including a decision when no change is made | | |
+| 6 | Policy version history maintained | | |
 
 ---
 
-### CHECKLIST A.3 — ORGANISATION
+### CHECKLIST A.3 — INTERNAL ORGANIZATION
 
-**A.3.2 — AI Governance Roles**
+**A.3.2 — AI Roles and Responsibilities**
 
 | # | What to Check | Status | Evidence / Notes |
 |---|---|---|---|
@@ -639,48 +644,72 @@ The closing meeting is where you share what you found. The key rule: **no surpri
 | 4 | AI System Owner assigned for EVERY AI system in inventory | | |
 | 5 | Role profiles define competency requirements | | |
 | 6 | Role assignments formally acknowledged by individuals | | |
-| 7 | Clear escalation path defined for AI governance concerns | | |
+| 7 | Conflicting duties separated: developer is not the deployment approver | | |
+| 8 | Model trainer is not the bias evaluation approver | | |
+| 9 | Where duties cannot be separated, compensating controls are documented | | |
+| 10 | AI governance responsibilities are reflected in project governance gates | | |
 
-**A.3.3 — Segregation of Duties**
-
-| # | What to Check | Status | Evidence / Notes |
-|---|---|---|---|
-| 1 | SoD Policy exists covering AI development and deployment | | |
-| 2 | Developer ≠ deployment approver (check access controls) | | |
-| 3 | Model trainer ≠ bias evaluation approver | | |
-| 4 | Access control matrix shows developer/production separation | | |
-| 5 | Deployment approvals in records show different individuals from developers | | |
-| 6 | SoD conflicts documented with compensating controls | | |
-
-**A.3.4 — Contact with AI Authorities**
+**A.3.3 — Reporting of Concerns**
 
 | # | What to Check | Status | Evidence / Notes |
 |---|---|---|---|
-| 1 | AI Regulatory Watch List exists | | |
-| 2 | List covers all relevant authorities (EU AI Office, sectoral regulators, DPA) | | |
-| 3 | Evidence of monitoring in the last 3 months (newsletter, consultation response, meeting) | | |
-| 4 | Regulatory intelligence has fed into AIMS management review | | |
-
-**A.3.6 — AI in Project Management**
-
-| # | What to Check | Status | Evidence / Notes |
-|---|---|---|---|
-| 1 | AI Project Governance Framework exists | | |
-| 2 | AI project classification criteria documented | | |
-| 3 | AI governance gates mapped to project phases | | |
-| 4 | AI project register exists and is complete | | |
-| 5 | Sample 3 AI projects — all governance gates completed? | | |
-| 6 | PMO is aware of AI governance requirements | | |
+| 1 | A defined channel exists for raising concerns about AI systems | | |
+| 2 | The channel is available to staff, contractors and third parties | | |
+| 3 | Staff can describe how to raise a concern (test in interviews) | | |
+| 4 | Confidentiality and non-retaliation are stated and understood | | |
+| 5 | Concerns log maintained with outcomes and timescales | | |
+| 6 | Concerns are triaged into the risk register or incident process where relevant | | |
 
 ---
 
-### CHECKLIST A.4 — RESOURCES
+### CHECKLIST A.4 — RESOURCES FOR AI SYSTEMS
 
-**A.4.2 — AI Competencies**
+**A.4.2 — Resource Documentation**
 
 | # | What to Check | Status | Evidence / Notes |
 |---|---|---|---|
-| 1 | AI Competency Framework exists by role | | |
+| 1 | Resources needed across the AI life cycle are identified and documented | | |
+| 2 | Documentation distinguishes data, tooling, compute and people | | |
+| 3 | Resources are mapped to individual AI systems | | |
+| 4 | Documentation is current — updated after the last significant change | | |
+
+**A.4.3 — Data Resources**
+
+| # | What to Check | Status | Evidence / Notes |
+|---|---|---|---|
+| 1 | Data resources used by each AI system are documented | | |
+| 2 | Source, owner and permitted use recorded for each dataset | | |
+| 3 | Training data encrypted at rest | | |
+| 4 | Access to training data follows least privilege | | |
+| 5 | Access logs retained and reviewed for AI training data | | |
+
+**A.4.4 — Tooling Resources**
+
+| # | What to Check | Status | Evidence / Notes |
+|---|---|---|---|
+| 1 | Approved AI tools and libraries list exists | | |
+| 2 | Pre-trained model registry exists | | |
+| 3 | Licence reviewed for each pre-trained model (AI training use confirmed) | | |
+| 4 | Bias assessment conducted for each adopted pre-trained model | | |
+| 5 | Approval record exists before any pre-trained model is used | | |
+| 6 | No unapproved tools found in codebase (spot check) | | |
+
+**A.4.5 — System and Computing Resources**
+
+| # | What to Check | Status | Evidence / Notes |
+|---|---|---|---|
+| 1 | AI infrastructure inventory exists (compute, storage, model registry) | | |
+| 2 | Access controls applied to AI infrastructure | | |
+| 3 | Model weights protected against tampering | | |
+| 4 | Patching and vulnerability management applied to AI infrastructure | | |
+| 5 | AI infrastructure included in the disaster recovery plan | | |
+| 6 | Capacity is sufficient for the intended workload | | |
+
+**A.4.6 — Human Resources**
+
+| # | What to Check | Status | Evidence / Notes |
+|---|---|---|---|
+| 1 | AI competency framework exists by role | | |
 | 2 | Covers technical roles AND business/operational roles | | |
 | 3 | Competency gap assessments conducted (within last 12 months) | | |
 | 4 | Training programme designed to close identified gaps | | |
@@ -688,336 +717,317 @@ The closing meeting is where you share what you found. The key rule: **no surpri
 | 6 | Training effectiveness evaluated (not just completion) | | |
 | 7 | Training content updated for recent regulatory changes | | |
 
-**A.4.3 — AI Infrastructure Security**
-
-| # | What to Check | Status | Evidence / Notes |
-|---|---|---|---|
-| 1 | AI infrastructure inventory exists (compute, storage, model registry) | | |
-| 2 | Access controls applied to AI infrastructure | | |
-| 3 | Model weights protected against tampering | | |
-| 4 | Training data encrypted at rest | | |
-| 5 | Patching/vulnerability management applied to AI infrastructure | | |
-| 6 | AI infrastructure included in DR plan | | |
-
-**A.4.4 — AI Tool Security**
-
-| # | What to Check | Status | Evidence / Notes |
-|---|---|---|---|
-| 1 | Approved AI tools and libraries list exists | | |
-| 2 | Pre-trained model registry exists | | |
-| 3 | License reviewed for each pre-trained model (AI training use confirmed) | | |
-| 4 | Bias assessment conducted for each adopted pre-trained model | | |
-| 5 | Approval record exists before any pre-trained model is used | | |
-| 6 | No unapproved tools found in codebase (spot check) | | |
-
 ---
 
-### CHECKLIST A.5 — IMPACT ASSESSMENT
+### CHECKLIST A.5 — ASSESSING IMPACTS OF AI SYSTEMS
 
-**A.5.2 — AI System Impact Assessment**
-
-| # | What to Check | Status | Evidence / Notes |
-|---|---|---|---|
-| 1 | ASIA template exists covering individual, group, societal impacts | | |
-| 2 | ASIA register exists | | |
-| 3 | Every in-scope AI system has a completed ASIA | | |
-| 4 | ASIAs dated BEFORE deployment date | | |
-| 5 | ASIAs are substantive — not all risks rated "low" | | |
-| 6 | Periodic reviews of ASIAs for operational systems evidenced | | |
-| 7 | ASIA findings led to actual design changes or conditions | | |
-
-**A.5.3 — Societal and Ethical Impact**
+**A.5.2 — AI System Impact Assessment Process**
 
 | # | What to Check | Status | Evidence / Notes |
 |---|---|---|---|
-| 1 | ASIA template includes societal/ethical impact section | | |
-| 2 | Societal sections of completed ASIAs are genuinely completed | | |
+| 1 | A documented AIA/ASIA process exists | | |
+| 2 | Template covers individual, group and societal impacts | | |
+| 3 | Triggers defined (new system, significant change, periodic review) | | |
+| 4 | Roles for preparing, reviewing and approving assessments are defined | | |
+| 5 | Process integrates with the AI risk assessment process | | |
+
+**A.5.3 — Documentation of AI System Impact Assessments**
+
+| # | What to Check | Status | Evidence / Notes |
+|---|---|---|---|
+| 1 | Impact assessment register exists | | |
+| 2 | Every in-scope AI system has a completed assessment | | |
+| 3 | Assessments are dated BEFORE the deployment date | | |
+| 4 | Assessments are substantive — not all risks rated "low" | | |
+| 5 | Results are retained per the records retention schedule | | |
+| 6 | Results are available to the people who need them | | |
+| 7 | Periodic reviews of assessments for operational systems evidenced | | |
+
+**A.5.4 — Assessing AI System Impact on Individuals or Groups of Individuals**
+
+| # | What to Check | Status | Evidence / Notes |
+|---|---|---|---|
+| 1 | Potential harms to individuals identified and rated for severity | | |
+| 2 | Subgroup analysis performed for identifiable groups | | |
+| 3 | Fundamental rights impact considered for high-risk AI | | |
+| 4 | Findings have documented treatment decisions | | |
+| 5 | Significant findings appear in the AI risk register | | |
+| 6 | Deployment conditions arising from findings are enforced in production | | |
+| 7 | Residual risk formally accepted by an authorised person | | |
+
+**A.5.5 — Assessing Societal Impacts of AI Systems**
+
+| # | What to Check | Status | Evidence / Notes |
+|---|---|---|---|
+| 1 | Template includes a societal and environmental impact section | | |
+| 2 | Societal sections of completed assessments are genuinely completed | | |
 | 3 | Environmental impact assessed for large AI models | | |
 | 4 | External perspectives sought for high-impact AI (ethics review, stakeholder engagement) | | |
-| 5 | Fundamental rights impact assessment for high-risk AI | | |
-
-**A.5.4 — Use of Assessment Results**
-
-| # | What to Check | Status | Evidence / Notes |
-|---|---|---|---|
-| 1 | ASIA findings have documented treatment decisions | | |
-| 2 | Significant ASIA findings appear in the AI risk register | | |
-| 3 | Deployment conditions from ASIAs are enforced in production | | |
-| 4 | Residual risk formally accepted by authorized person | | |
-| 5 | Corrective actions from ASIA findings are tracked to completion | | |
+| 5 | Corrective actions arising from societal findings are tracked to completion | | |
 
 ---
 
-### CHECKLIST A.6 — AI LIFECYCLE
+### CHECKLIST A.6 — AI SYSTEM LIFE CYCLE
 
-**A.6.1.1 — AI Design Requirements**
-
-| # | What to Check | Status | Evidence / Notes |
-|---|---|---|---|
-| 1 | Responsible AI requirements template exists | | |
-| 2 | Requirements are specific and measurable (not vague) | | |
-| 3 | Requirements include named demographic groups for fairness | | |
-| 4 | Requirements derived from ASIA findings | | |
-| 5 | Requirements appear in AI system design specifications | | |
-
-**A.6.1.2 — AI Design Documentation**
+**A.6.1.2 — Objectives for Responsible Development of AI Systems**
 
 | # | What to Check | Status | Evidence / Notes |
 |---|---|---|---|
-| 1 | Architecture documentation exists for all in-scope AI systems | | |
-| 2 | Documentation is current — updated after last system change | | |
-| 3 | Design rationale documented (why decisions were made) | | |
-| 4 | Dependencies (pre-trained models, third-party components) documented | | |
+| 1 | Responsible development objectives are documented | | |
+| 2 | Objectives are specific and measurable (not vague) | | |
+| 3 | Objectives name the demographic groups relevant to fairness | | |
+| 4 | Objectives are derived from impact assessment findings | | |
+| 5 | Objectives are communicated to development teams | | |
 
-**A.6.2.1 — AI Development Process**
+**A.6.1.3 — Processes for Responsible AI System Design and Development**
 
 | # | What to Check | Status | Evidence / Notes |
 |---|---|---|---|
 | 1 | AI development lifecycle procedure exists | | |
-| 2 | Version control applied to training code | | |
-| 3 | Version control applied to training data | | |
-| 4 | Version control applied to model weights | | |
-| 5 | Peer review conducted for model development | | |
-| 6 | Experiment logs complete and enable reproduction | | |
-| 7 | Responsible AI checkpoints in development process | | |
+| 2 | Responsible AI checkpoints built into the development process | | |
+| 3 | AI governance gates mapped to project phases | | |
+| 4 | AI project register exists and is complete | | |
+| 5 | Sample three AI projects — all governance gates completed? | | |
+| 6 | Peer review conducted for model development | | |
 
-**A.6.2.3 — Model Cards**
+**A.6.2.2 — AI System Requirements and Specification**
+
+| # | What to Check | Status | Evidence / Notes |
+|---|---|---|---|
+| 1 | Requirements specification exists per AI system | | |
+| 2 | Intended purpose and out-of-scope uses are stated | | |
+| 3 | Responsible AI requirements (fairness, robustness, oversight) are included | | |
+| 4 | Acceptance criteria are defined and testable | | |
+| 5 | Requirements trace to impact assessment findings | | |
+
+**A.6.2.3 — Documentation of AI System Design and Development**
+
+| # | What to Check | Status | Evidence / Notes |
+|---|---|---|---|
+| 1 | Architecture documentation exists for all in-scope AI systems | | |
+| 2 | Documentation is current — updated after the last system change | | |
+| 3 | Design rationale documented (why decisions were made) | | |
+| 4 | Dependencies (pre-trained models, third-party components) documented | | |
+| 5 | Version control applied to training code, data and model weights | | |
+| 6 | Experiment logs complete and enable reproduction | | |
+
+**A.6.2.4 — AI System Verification and Validation**
+
+| # | What to Check | Status | Evidence / Notes |
+|---|---|---|---|
+| 1 | Verification and validation plan exists per AI system | | |
+| 2 | Fairness criteria defined (groups, metrics, thresholds) | | |
+| 3 | Bias evaluation conducted before deployment, disaggregated by protected characteristic | | |
+| 4 | Bias mitigation applied where thresholds exceeded | | |
+| 5 | Adversarial and robustness testing performed; LLMs tested for prompt injection | | |
+| 6 | Test data representativeness criteria defined and assessed | | |
+| 7 | Test environment mirrors production infrastructure | | |
+| 8 | Results compared against acceptance criteria and retained | | |
+| 9 | Vulnerabilities and failures found are tracked to remediation | | |
+
+**A.6.2.5 — AI System Deployment**
+
+| # | What to Check | Status | Evidence / Notes |
+|---|---|---|---|
+| 1 | Deployment procedure exists with authorisation requirements | | |
+| 2 | Deployment log maintained for all AI deployments | | |
+| 3 | Authorisation records exist and predate deployment | | |
+| 4 | Authoriser is not the developer (separation of duties check) | | |
+| 5 | Rollback procedure exists and has been tested | | |
+| 6 | Human oversight design verified as operational before go-live | | |
+| 7 | Oversight personnel qualified before deployment | | |
+
+**A.6.2.6 — AI System Operation and Monitoring**
+
+| # | What to Check | Status | Evidence / Notes |
+|---|---|---|---|
+| 1 | Monitoring framework defines AI-specific metrics | | |
+| 2 | Monitoring dashboards live and current | | |
+| 3 | Alert thresholds configured for key metrics | | |
+| 4 | Alert response log shows alerts are acted on | | |
+| 5 | Drift detection configured with defined thresholds | | |
+| 6 | Retraining decisions documented with rationale | | |
+| 7 | Decommissioning procedure exists and has been followed for any retired systems | | |
+| 8 | Data disposal evidence for retired systems; no orphaned AI data left behind | | |
+
+**A.6.2.7 — AI System Technical Documentation**
 
 | # | What to Check | Status | Evidence / Notes |
 |---|---|---|---|
 | 1 | Model card template exists | | |
 | 2 | Model registry exists with all deployed models | | |
 | 3 | Completed model card for every deployed model | | |
-| 4 | Model cards include disaggregated performance metrics | | |
+| 4 | Model cards include disaggregated performance metrics and known limitations | | |
 | 5 | Model cards updated after each model change | | |
-| 6 | Model cards accessible to oversight personnel | | |
+| 6 | Documentation is accessible to oversight personnel and, where relevant, to users | | |
 
-**A.6.2.5 — Adversarial Testing**
-
-| # | What to Check | Status | Evidence / Notes |
-|---|---|---|---|
-| 1 | Adversarial test plans exist for AI systems | | |
-| 2 | LLMs tested for prompt injection specifically | | |
-| 3 | Test results documented pre-deployment | | |
-| 4 | Red team exercises for high-risk AI | | |
-| 5 | Periodic adversarial testing scheduled | | |
-| 6 | Vulnerabilities found are tracked to remediation | | |
-
-**A.6.2.6 — Bias Evaluation**
+**A.6.2.8 — AI System Recording of Event Logs**
 
 | # | What to Check | Status | Evidence / Notes |
 |---|---|---|---|
-| 1 | Fairness criteria defined per AI system (groups, metrics, thresholds) | | |
-| 2 | Bias evaluation conducted before deployment | | |
-| 3 | Results disaggregated by protected characteristic | | |
-| 4 | Thresholds defined and results compared to thresholds | | |
-| 5 | Bias mitigation applied where thresholds exceeded | | |
-| 6 | Periodic bias re-evaluation scheduled | | |
-
-**A.6.2.8 — Testing in Representative Environments**
-
-| # | What to Check | Status | Evidence / Notes |
-|---|---|---|---|
-| 1 | Test data representativeness criteria defined | | |
-| 2 | Test data assessed against representativeness criteria | | |
-| 3 | Test environment mirrors production infrastructure | | |
-| 4 | Test results document representativeness approach | | |
-
-**A.6.3.1 — AI Deployment Controls**
-
-| # | What to Check | Status | Evidence / Notes |
-|---|---|---|---|
-| 1 | Deployment procedure exists with authorization requirements | | |
-| 2 | Deployment log maintained for all AI deployments | | |
-| 3 | Authorization records exist and predate deployment | | |
-| 4 | Authorizer ≠ developer (SoD check) | | |
-| 5 | Rollback procedure exists | | |
-| 6 | Rollback procedure has been tested | | |
-
-**A.6.3.3 — Human Oversight at Deployment**
-
-| # | What to Check | Status | Evidence / Notes |
-|---|---|---|---|
-| 1 | Oversight design documented per AI system | | |
-| 2 | Oversight verification record created pre-deployment | | |
-| 3 | Override mechanism tested before go-live | | |
-| 4 | Oversight personnel qualified before deployment | | |
-
-**A.6.4.1 — AI Operation Monitoring**
-
-| # | What to Check | Status | Evidence / Notes |
-|---|---|---|---|
-| 1 | AI monitoring framework defines AI-specific metrics | | |
-| 2 | Monitoring dashboards live and current | | |
-| 3 | Alert thresholds configured for key metrics | | |
-| 4 | Alert response log shows alerts are acted on | | |
-| 5 | Monitoring reviewed regularly (evidence of regular review) | | |
-
-**A.6.4.2 — Performance Drift Monitoring**
-
-| # | What to Check | Status | Evidence / Notes |
-|---|---|---|---|
-| 1 | Drift detection configured per AI system | | |
-| 2 | Drift thresholds defined | | |
-| 3 | Drift analysis reports produced periodically | | |
-| 4 | Retraining decisions documented with rationale | | |
-
-**A.6.5.1 — AI Decommissioning**
-
-| # | What to Check | Status | Evidence / Notes |
-|---|---|---|---|
-| 1 | Decommissioning procedure exists | | |
-| 2 | Decommissioning records exist for any retired AI systems | | |
-| 3 | Data disposal evidence for retired systems | | |
-| 4 | No orphaned AI data on servers from decommissioned systems | | |
+| 1 | Logging requirements defined per AI system | | |
+| 2 | Logs capture inputs, outputs, model version and human overrides as appropriate | | |
+| 3 | Log retention period defined and applied | | |
+| 4 | Logs are protected against tampering and unauthorised access | | |
+| 5 | Logs are sufficient to reconstruct a past decision during an investigation | | |
 
 ---
 
-### CHECKLIST A.7 — DATA FOR AI
+### CHECKLIST A.7 — DATA FOR AI SYSTEMS
 
-**A.7.2 — AI Data Quality**
+**A.7.2 — Data for Development and Enhancement of AI Systems**
+
+| # | What to Check | Status | Evidence / Notes |
+|---|---|---|---|
+| 1 | Data requirements defined per AI system | | |
+| 2 | AI data catalogue covers all training and evaluation datasets | | |
+| 3 | Training, validation and test splits documented | | |
+| 4 | Data used for enhancement and retraining is governed the same way | | |
+
+**A.7.3 — Acquisition of Data**
+
+| # | What to Check | Status | Evidence / Notes |
+|---|---|---|---|
+| 1 | Lawful basis confirmed for each AI personal data processing activity | | |
+| 2 | Data licensing register confirms AI training use is permitted | | |
+| 3 | Web-scraped data assessed for copyright and privacy | | |
+| 4 | DPIAs conducted for high-risk AI personal data processing | | |
+| 5 | DPAs in place for all cloud AI providers processing personal data | | |
+| 6 | DPAs specifically address AI training use of customer data | | |
+| 7 | Data subject rights procedure covers AI systems | | |
+
+**A.7.4 — Quality of Data for AI Systems**
 
 | # | What to Check | Status | Evidence / Notes |
 |---|---|---|---|
 | 1 | AI data quality standards defined with specific thresholds | | |
 | 2 | Pre-training data quality assessments conducted | | |
-| 3 | Representativeness included in quality assessment | | |
+| 3 | Representativeness included in the quality assessment | | |
 | 4 | Production input data quality monitored | | |
 | 5 | Data quality issue log maintained | | |
 
-**A.7.3 — Data Provenance**
+**A.7.5 — Data Provenance**
 
 | # | What to Check | Status | Evidence / Notes |
 |---|---|---|---|
-| 1 | AI data catalog exists covering all training datasets | | |
-| 2 | Data lineage documented (source to model) | | |
-| 3 | Data licensing register confirms AI training use permitted | | |
-| 4 | Web-scraped data assessed for copyright and privacy | | |
+| 1 | Data lineage documented from source to model | | |
+| 2 | Origin and permitted use recorded for every dataset | | |
+| 3 | Changes to source data are traceable | | |
+| 4 | Provenance records are retained for the life of the model | | |
 
-**A.7.4 — Data Privacy for AI**
-
-| # | What to Check | Status | Evidence / Notes |
-|---|---|---|---|
-| 1 | Register of AI systems processing personal data exists | | |
-| 2 | Lawful basis confirmed for each AI personal data processing activity | | |
-| 3 | DPIAs conducted for high-risk AI personal data processing | | |
-| 4 | Data subject rights procedure for AI systems exists | | |
-| 5 | DPAs in place for all cloud AI providers processing personal data | | |
-| 6 | DPAs specifically address AI training use of customer data | | |
-
-**A.7.5 — Bias Mitigation in Data**
+**A.7.6 — Data Preparation**
 
 | # | What to Check | Status | Evidence / Notes |
 |---|---|---|---|
-| 1 | Training data bias assessments conducted pre-training | | |
-| 2 | Demographic representation assessed | | |
-| 3 | Proxy variables assessed | | |
-| 4 | Bias mitigation applied where assessment found issues | | |
-| 5 | Mitigation effectiveness verified | | |
-
-**A.7.6 — Data Access Controls**
-
-| # | What to Check | Status | Evidence / Notes |
-|---|---|---|---|
-| 1 | AI data access control matrix exists | | |
-| 2 | Least privilege applied to training data access | | |
-| 3 | Access logs retained for AI training data | | |
-| 4 | Access reviews conducted in last 12 months | | |
+| 1 | Data preparation steps (cleaning, labelling, augmentation) are documented | | |
+| 2 | Labelling quality controls exist (guidelines, inter-annotator agreement) | | |
+| 3 | Training data bias assessments conducted pre-training | | |
+| 4 | Demographic representation and proxy variables assessed | | |
+| 5 | Bias mitigation applied where assessment found issues, and effectiveness verified | | |
 
 ---
 
-### CHECKLIST A.8 — INFORMATION
+### CHECKLIST A.8 — INFORMATION FOR INTERESTED PARTIES OF AI SYSTEMS
 
-**A.8.2 — AI Capability Information**
+**A.8.2 — System Documentation and Information for Users**
 
 | # | What to Check | Status | Evidence / Notes |
 |---|---|---|---|
-| 1 | AI capability sheets / product documentation exists | | |
-| 2 | Documentation is accurate (not overstated) | | |
+| 1 | AI capability sheets or product documentation exist | | |
+| 2 | Documentation is accurate and not overstated | | |
 | 3 | Known limitations documented and communicated | | |
 | 4 | Marketing claims compared to verified performance metrics | | |
+| 5 | Explainability requirements defined per AI system | | |
+| 6 | Explanation mechanism implemented, functional and meaningful | | |
+| 7 | Affected individuals can receive explanations on request | | |
 
-**A.8.3 — AI Explainability**
-
-| # | What to Check | Status | Evidence / Notes |
-|---|---|---|---|
-| 1 | Explainability requirements defined per AI system | | |
-| 2 | Explanation mechanism implemented and functional | | |
-| 3 | Explanations are meaningful — not just "the AI decided" | | |
-| 4 | Affected individuals can receive explanations on request | | |
-
-**A.8.4 — AI Disclosure to Users**
+**A.8.3 — External Reporting**
 
 | # | What to Check | Status | Evidence / Notes |
 |---|---|---|---|
-| 1 | AI Disclosure Policy exists | | |
-| 2 | Users are told when they are interacting with AI | | |
-| 3 | Disclosure is clear and prominent (not buried in T&Cs) | | |
-| 4 | Disclosure tested — is it actually visible to users? | | |
+| 1 | External reporting obligations identified (regulators, authorities, customers) | | |
+| 2 | AI regulatory watch list exists and covers the relevant authorities | | |
+| 3 | Evidence of monitoring in the last three months | | |
+| 4 | A route exists for external parties to report adverse impacts | | |
+| 5 | Regulatory intelligence has fed into the AIMS management review | | |
 
-**A.8.5 — AI Incident Communication**
+**A.8.4 — Communication of Incidents**
 
 | # | What to Check | Status | Evidence / Notes |
 |---|---|---|---|
-| 1 | AI Incident Communication Policy exists | | |
+| 1 | AI incident communication procedure exists | | |
 | 2 | Communication templates prepared for different incident types | | |
 | 3 | Notification timelines defined (regulatory, customer, public) | | |
-| 4 | Communication log for any past AI incidents | | |
+| 4 | Escalation path and named approvers defined | | |
+| 5 | Communication log for any past AI incidents | | |
+
+**A.8.5 — Information for Interested Parties**
+
+| # | What to Check | Status | Evidence / Notes |
+|---|---|---|---|
+| 1 | AI disclosure policy exists | | |
+| 2 | Users are told when they are interacting with AI | | |
+| 3 | Disclosure is clear and prominent (not buried in terms and conditions) | | |
+| 4 | Disclosure tested — is it actually visible to users? | | |
+| 5 | Interested parties are identified and their information needs recorded | | |
 
 ---
 
-### CHECKLIST A.9 — USE OF AI
+### CHECKLIST A.9 — USE OF AI SYSTEMS
 
-**A.9.2 — Acceptable Use of AI**
+**A.9.2 — Processes for Responsible Use of AI Systems**
 
 | # | What to Check | Status | Evidence / Notes |
 |---|---|---|---|
 | 1 | Acceptable Use of AI Policy exists | | |
-| 2 | Policy explicitly addresses external AI tools (ChatGPT, Copilot, Claude, etc.) | | |
+| 2 | Policy explicitly addresses external AI tools (approved and prohibited) | | |
 | 3 | Approved external AI tools list exists and is current | | |
 | 4 | Data restrictions for external AI tools are specified | | |
 | 5 | Staff have acknowledged the policy | | |
 | 6 | Policy enforced — violations are logged and acted on | | |
+| 7 | Error handling design covers hard AND soft failures | | |
+| 8 | Confidence thresholds and output validation implemented | | |
+| 9 | Error logs include soft failures and are reviewed regularly | | |
+| 10 | Human fallback procedure exists for high-stakes AI | | |
 
-**A.9.3 — Human Oversight**
-
-| # | What to Check | Status | Evidence / Notes |
-|---|---|---|---|
-| 1 | Human Oversight Policy defines which AI requires oversight | | |
-| 2 | Override logs maintained | | |
-| 3 | Override rate is plausible (not 0% for months) | | |
-| 4 | Overseers are qualified (training and domain knowledge) | | |
-| 5 | Oversight quality audits conducted | | |
-| 6 | Anti-automation-bias design evidence exists | | |
-
-**A.9.4 — AI Error Handling**
+**A.9.3 — Objectives for Responsible Use of AI Systems**
 
 | # | What to Check | Status | Evidence / Notes |
 |---|---|---|---|
-| 1 | AI error handling design covers hard AND soft failures | | |
-| 2 | Confidence thresholds configured | | |
-| 3 | Output validation implemented | | |
-| 4 | Error logs include soft failures (not just server errors) | | |
-| 5 | Error logs reviewed regularly | | |
-| 6 | Human fallback procedure exists for high-stakes AI | | |
+| 1 | Objectives for responsible use are documented | | |
+| 2 | Objectives cover human oversight expectations | | |
+| 3 | Objectives are measurable and owned | | |
+| 4 | Progress against objectives is reported to management review | | |
+
+**A.9.4 — Intended Use of the AI System**
+
+| # | What to Check | Status | Evidence / Notes |
+|---|---|---|---|
+| 1 | Intended use is documented for each AI system in operation | | |
+| 2 | Actual use in production matches the documented intended use | | |
+| 3 | Controls prevent or detect out-of-scope use | | |
+| 4 | Human oversight policy defines which AI requires oversight | | |
+| 5 | Override logs maintained and the override rate is plausible | | |
+| 6 | Overseers are qualified (training and domain knowledge) | | |
+| 7 | Anti-automation-bias design evidence exists | | |
 
 ---
 
-### CHECKLIST A.10 — THIRD-PARTY AND CUSTOMER AI
+### CHECKLIST A.10 — THIRD-PARTY AND CUSTOMER RELATIONSHIPS
 
-**A.10.2 — Third-Party AI Risk Assessment**
+**A.10.2 — Allocating Responsibilities**
 
 | # | What to Check | Status | Evidence / Notes |
 |---|---|---|---|
 | 1 | Third-party AI inventory exists | | |
-| 2 | All third-party AI tools inventoried (including SaaS with AI features) | | |
-| 3 | Risk-based assessment depth applied | | |
-| 4 | Assessment records cover technical, bias, security, privacy, regulatory | | |
-| 5 | Assessments predate adoption | | |
-| 6 | Approval records exist before high-risk third-party AI adopted | | |
+| 2 | All third-party AI tools inventoried (including SaaS with embedded AI features) | | |
+| 3 | Responsibilities allocated across the AI value chain and recorded | | |
+| 4 | Risk-based assessment depth applied | | |
+| 5 | Assessment records cover technical, bias, security, privacy and regulatory aspects | | |
+| 6 | Assessments predate adoption and approval records exist for high-risk third-party AI | | |
 | 7 | Periodic reassessment schedule exists and is followed | | |
 
-**A.10.3 — AI Supplier Contracts**
+**A.10.3 — Suppliers**
 
 | # | What to Check | Status | Evidence / Notes |
 |---|---|---|---|
@@ -1028,8 +1038,9 @@ The closing meeting is where you share what you found. The key rule: **no surpri
 | 5 | Audit rights in high-risk supplier contracts | | |
 | 6 | Regulatory compliance obligation in contracts | | |
 | 7 | DPAs in place for all AI suppliers processing personal data | | |
+| 8 | Ongoing supplier monitoring evidenced, not just onboarding checks | | |
 
-**A.10.4 — Customer AI Governance**
+**A.10.4 — Customers**
 
 | # | What to Check | Status | Evidence / Notes |
 |---|---|---|---|
@@ -1334,7 +1345,7 @@ Track these numbers across audit cycles to show AIMS maturity improvement:
 |---|---|---|---|---|
 | Major Non-Conformities | | | | 0 |
 | Minor Non-Conformities | | | | <3 |
-| Controls fully conforming | | | | 39/39 |
+| Controls fully conforming | | | | 38/38 |
 | % AI systems with completed ASIA | | | | 100% |
 | % AI systems with bias evaluation | | | | 100% |
 | % staff trained in AI governance | | | | 100% |
@@ -1414,7 +1425,7 @@ Track these numbers across audit cycles to show AIMS maturity improvement:
 | Term | Plain English Meaning |
 |---|---|
 | **AIMS** | AI Management System — the whole set of policies, processes, and controls an organization uses to govern its AI responsibly |
-| **Annex A** | The list of 39 specific controls in ISO 42001 that organizations should implement |
+| **Annex A** | The list of 38 specific controls in ISO 42001 that organizations should implement |
 | **ASIA** | AI System Impact Assessment — a structured analysis of what harm an AI system could cause, done before deployment |
 | **Audit** | A systematic check to verify whether the AIMS works as it should |
 | **Auditor** | The person conducting the audit — that's you! |
@@ -1439,7 +1450,7 @@ Track these numbers across audit cycles to show AIMS maturity improvement:
 | **Prompt Injection** | An attack where someone tricks a language model by embedding instructions in the input text |
 | **RACI** | Responsible, Accountable, Consulted, Informed — a way of documenting who is responsible for what |
 | **SoD** | Segregation of Duties — making sure the same person doesn't both build and approve their own AI system |
-| **Statement of Applicability** | A document listing which of the 39 controls apply to the organization and why |
+| **Statement of Applicability** | A document listing which of the 38 controls apply to the organization and why |
 | **Third-Party AI** | AI systems or services built by someone else that the organization buys or uses |
 
 ---
@@ -1455,7 +1466,7 @@ Track these numbers across audit cycles to show AIMS maturity improvement:
 | Review Cycle | Annual |
 | Next Review Date | April 2027 |
 | Standard Reference | ISO/IEC 42001:2023 |
-| Related Documents | 09-INTERNAL-AUDIT-PROCEDURE.md, 12-ANNEX-A-CONTROLS.md, 01-GAP-ASSESSMENT.md |
+| Related Documents | INTERNAL-AUDIT-PROCEDURE.md, ../10-ANNEX-A-CONTROLS.md, ../01-GAP-ASSESSMENT.md |
 
 ---
 

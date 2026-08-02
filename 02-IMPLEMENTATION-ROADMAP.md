@@ -162,7 +162,7 @@ AIMS-PROC-001: AI Risk Assessment Procedure
 
 #### 2.2 Statement of Applicability (Clause 6.1.3)
 
-- [ ] Review all 39 Annex A controls
+- [ ] Review all 38 Annex A controls
 - [ ] Determine applicability of each control
 - [ ] Document justification for any exclusions
 - [ ] Record current implementation status for applicable controls
@@ -467,7 +467,7 @@ Focus areas for Stage 2 auditors:
 | 5 | Acceptable Use of AI Policy | A.9.2 | Build from AIMS-POLICY-TEMPLATE.md |
 | 6 | Model Card Template | A.6.2.3 | In AI-LIFECYCLE-MANAGEMENT-PROCEDURE.md ✓ |
 | 7 | AI Data Governance Procedure | A.7 | Build from lifecycle procedure |
-| 8 | Human Oversight Framework | A.9.3, A.6.3.3 | In lifecycle procedure |
+| 8 | Human Oversight Framework | A.9.2, A.6.2.5 | In lifecycle procedure |
 | 9 | Bias Evaluation Methodology | A.6.2.6 | In lifecycle procedure ✓ |
 
 ---
@@ -492,7 +492,7 @@ Focus areas for Stage 2 auditors:
 | Model Registry | Version control for AI models | MLflow, W&B, DVC |
 | Bias/Fairness Testing | A.6.2.6 | Fairlearn, AIF360, Aequitas |
 | Adversarial Testing | A.6.2.5 | Adversarial Robustness Toolbox, TextAttack |
-| AI Monitoring | A.6.4.1, A.6.4.2 | Evidently AI, Fiddler, Arize AI, WhyLabs |
+| AI Monitoring | A.6.2.6 | Evidently AI, Fiddler, Arize AI, WhyLabs |
 | Explainability | A.8.3 | SHAP, LIME, InterpretML |
 | GRC Platform | AIMS documentation | ServiceNow, OneTrust, LogicGate, Archer |
 | Data Lineage | A.7.3 | Apache Atlas, OpenMetadata, dbt |

@@ -769,7 +769,7 @@ These checklists cover all **38 Annex A controls of ISO/IEC 42001:2023**, in the
 
 ### CHECKLIST A.6 — AI SYSTEM LIFE CYCLE
 
-**A.6.1.2 — Objectives for Responsible Development of AI Systems**
+**A.6.1.2 — Objectives for Responsible Development of AI System**
 
 | # | What to Check | Status | Evidence / Notes |
 |---|---|---|---|
@@ -779,7 +779,7 @@ These checklists cover all **38 Annex A controls of ISO/IEC 42001:2023**, in the
 | 4 | Objectives are derived from impact assessment findings | | |
 | 5 | Objectives are communicated to development teams | | |
 
-**A.6.1.3 — Processes for Responsible AI System Design and Development**
+**A.6.1.3 — Processes for Responsible Design and Development of AI Systems**
 
 | # | What to Check | Status | Evidence / Notes |
 |---|---|---|---|

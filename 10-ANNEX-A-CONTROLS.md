@@ -2744,7 +2744,7 @@ A consolidated list of the most impactful audit questions across all 38 controls
 | Document ID | AIMS-ANNEXA-001 |
 | Document Title | Annex A Controls — ISO 42001:2023 Implementation, Audit & Evidence Guide |
 | Version | 1.0 |
-| Author | Ankit Uniyal — ISO 42001 Lead Auditor | GRC Lead, PureHealth Group |
+| Author | Ankit Uniyal — ISO 42001 Lead Auditor; GRC Lead, PureHealth Group |
 | Review Cycle | Annual (minimum) |
 | Next Review Date | April 2027 |
 | Standard Reference | ISO/IEC 42001:2023 Annex A |

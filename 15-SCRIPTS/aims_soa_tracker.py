@@ -49,8 +49,8 @@ ANNEX_A_CONTROLS = [
     {"id": "A.5.4", "domain": "Assessing impacts of AI systems", "control": "Assessing AI system impact on individuals or groups of individuals", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
     {"id": "A.5.5", "domain": "Assessing impacts of AI systems", "control": "Assessing societal impacts of AI systems", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
     # Domain: AI system life cycle
-    {"id": "A.6.1.2", "domain": "AI system life cycle", "control": "Objectives for responsible development of AI systems", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
-    {"id": "A.6.1.3", "domain": "AI system life cycle", "control": "Processes for responsible AI system design and development", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
+    {"id": "A.6.1.2", "domain": "AI system life cycle", "control": "Objectives for responsible development of AI system", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
+    {"id": "A.6.1.3", "domain": "AI system life cycle", "control": "Processes for responsible design and development of AI systems", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
     {"id": "A.6.2.2", "domain": "AI system life cycle", "control": "AI system requirements and specification", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
     {"id": "A.6.2.3", "domain": "AI system life cycle", "control": "Documentation of AI system design and development", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
     {"id": "A.6.2.4", "domain": "AI system life cycle", "control": "AI system verification and validation", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
@@ -59,7 +59,7 @@ ANNEX_A_CONTROLS = [
     {"id": "A.6.2.7", "domain": "AI system life cycle", "control": "AI system technical documentation", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
     {"id": "A.6.2.8", "domain": "AI system life cycle", "control": "AI system recording of event logs", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
     # Domain: Data for AI systems
-    {"id": "A.7.2", "domain": "Data for AI systems", "control": "Data for development and enhancement of AI systems", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
+    {"id": "A.7.2", "domain": "Data for AI systems", "control": "Data for development and enhancement of AI system", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
     {"id": "A.7.3", "domain": "Data for AI systems", "control": "Acquisition of data", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
     {"id": "A.7.4", "domain": "Data for AI systems", "control": "Quality of data for AI systems", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
     {"id": "A.7.5", "domain": "Data for AI systems", "control": "Data provenance", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
@@ -71,7 +71,7 @@ ANNEX_A_CONTROLS = [
     {"id": "A.8.5", "domain": "Information for interested parties", "control": "Information for interested parties", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
     # Domain: Use of AI systems
     {"id": "A.9.2", "domain": "Use of AI systems", "control": "Processes for responsible use of AI systems", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
-    {"id": "A.9.3", "domain": "Use of AI systems", "control": "Objectives for responsible use of AI systems", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
+    {"id": "A.9.3", "domain": "Use of AI systems", "control": "Objectives for responsible use of AI system", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
     {"id": "A.9.4", "domain": "Use of AI systems", "control": "Intended use of the AI system", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},
     # Domain: Third-party and customer relationships
     {"id": "A.10.2", "domain": "Third-party and customer relationships", "control": "Allocating responsibilities", "mandatory": True, "status": "not_started", "evidence": "", "owner": ""},

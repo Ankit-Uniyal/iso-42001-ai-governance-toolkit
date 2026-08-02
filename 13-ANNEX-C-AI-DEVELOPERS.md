@@ -117,13 +117,13 @@
 > | Checkpoint | Requirement | ISO/IEC 42001 Ref |
 > |-----------|------------|------------------|
 > | Intended use defined | Clear statement of intended and prohibited uses | A.4.2 |
-> | Fairness requirements | Fairness constraints defined before training | A.4.7 |
-> | Explainability approach | Explainability method selected and documented | A.4.8 |
+> | Fairness requirements | Fairness constraints defined before training | A.6.2.2 |
+> | Explainability approach | Explainability method selected and documented | A.8.2 |
 > | Human oversight mechanism | Designed into system architecture | A.3.2 |
-> | Privacy by design | Personal data minimised; retention limits built in | A.4.9 |
+> | Privacy by design | Personal data minimised; retention limits built in | A.7.3 |
 > | Security by design | Threat model completed; adversarial defences designed in | A.4.5 |
 > | AI Act classification | EU AI Act risk classification completed | A.10.2 |
-> | DPIA trigger assessment | Determined whether DPIA is required | A.4.9 |
+> | DPIA trigger assessment | Determined whether DPIA is required | A.5.4 |
 >
 > ---
 >

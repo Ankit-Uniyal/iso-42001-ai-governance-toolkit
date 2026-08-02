@@ -1,10 +1,10 @@
 # AI Supplier Contract Clauses Template
 ## ISO/IEC 42001:2023 | Clause 8.1 | Annex A.10.2, A.10.3, A.8.2
 
-**Document ID:** AIMS-CONTRACT-001
-**Version:** 1.0
-**Owner:** Legal / AI Governance Lead
-**Date:** ___________________________
+**Document ID:** AIMS-CONTRACT-001  
+**Version:** 1.0  
+**Owner:** Legal / AI Governance Lead  
+**Date:** ___________________________  
 **Review Cycle:** Annual
 
 > **Legal Disclaimer:** These clauses are template starting points developed by an ISO 42001 Lead Auditor. They are NOT legal advice. All contractual provisions must be reviewed and approved by qualified legal counsel before use in actual contracts. Requirements vary by jurisdiction and sector.

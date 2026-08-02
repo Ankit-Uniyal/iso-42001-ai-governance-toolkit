@@ -1,5 +1,5 @@
 # AI System Lifecycle Management Procedure
-## ISO/IEC 42001:2023 — Clause 8.5 & Annex A Domain A.6 (Full Implementation Guide)
+## ISO/IEC 42001:2023 — Clause 8.1 & Annex A Domain A.6 (Full Implementation Guide)
 
 ---
 
@@ -15,8 +15,8 @@
 This procedure defines the end-to-end lifecycle management process for AI systems within the AIMS scope. It covers all phases from conception to decommissioning, embedding responsible AI principles and governance requirements at each stage.
 
 **This procedure implements:**
-- ISO/IEC 42001:2023 Clause 8.5 (AI System Lifecycle)
-- Annex A controls A.6.1.1 through A.6.5.1 (13 controls)
+- ISO/IEC 42001:2023 Clause 8.1 (Operational planning and control)
+- Annex A controls A.6.1.2 through A.6.2.8 (all 9 AI system life cycle controls)
 
 ---
 
@@ -26,14 +26,14 @@ This procedure defines the end-to-end lifecycle management process for AI system
 [PHASE 1]        [PHASE 2]       [PHASE 3]       [PHASE 4]       [PHASE 5]
   Design   →   Development  →  Deployment  →   Operation   →  Decommission
     ↑              ↑                ↑               ↑               ↑
-  A.6.1         A.6.2           A.6.3           A.6.4           A.6.5
+  A.6.1.2/1.3    A.6.2.2-2.4     A.6.2.5         A.6.2.6         A.6.2.6
 ```
 
 Each phase has defined **Governance Gates** — approval checkpoints that must be passed before proceeding to the next phase.
 
 ---
 
-## PHASE 1: AI SYSTEM DESIGN (Controls A.6.1.1, A.6.1.2)
+## PHASE 1: AI SYSTEM DESIGN (Controls A.6.1.2, A.6.1.3, A.6.2.2)
 
 ### 1.1 Design Phase Initiation
 
@@ -45,7 +45,7 @@ Each phase has defined **Governance Gates** — approval checkpoints that must b
 - Executive sponsor designated
 - AI System Owner assigned
 
-### 1.2 Responsible AI Design Requirements (A.6.1.1)
+### 1.2 Responsible AI Design Requirements (A.6.1.2)
 
 All AI system design specifications shall include the following responsible AI requirements:
 
@@ -99,7 +99,7 @@ Security Requirements Template:
 - Security testing requirements: [Penetration testing / Red team / Other]
 ```
 
-### 1.3 AI System Design Documentation (A.6.1.2)
+### 1.3 AI System Design Documentation (A.6.2.3)
 
 The following design documentation shall be produced:
 
@@ -129,9 +129,9 @@ The following design documentation shall be produced:
 
 ---
 
-## PHASE 2: AI SYSTEM DEVELOPMENT (Controls A.6.2.1 through A.6.2.8)
+## PHASE 2: AI SYSTEM DEVELOPMENT (Controls A.6.1.3, A.6.2.2, A.6.2.3, A.6.2.4, A.6.2.7)
 
-### 2.1 Development Process Requirements (A.6.2.1)
+### 2.1 Development Process Requirements (A.6.1.3)
 
 AI systems shall be developed following a controlled process including:
 
@@ -165,13 +165,13 @@ Developers must complete the following checkpoints during development:
 - [ ] Experiment tracking active (hyperparameters, data versions, metrics)
 
 **Checkpoint 3 — Validation (before deployment testing):**
-- [ ] Bias evaluation completed across all relevant demographic groups (A.6.2.6)
-- [ ] Adversarial testing completed (A.6.2.5)
-- [ ] Performance testing in representative environment (A.6.2.8)
-- [ ] Model card completed and reviewed (A.6.2.3)
+- [ ] Bias evaluation completed across all relevant demographic groups (A.6.2.4)
+- [ ] Adversarial testing completed (A.6.2.4)
+- [ ] Performance testing in representative environment (A.6.2.4)
+- [ ] Model card completed and reviewed (A.6.2.7)
 - [ ] Security assessment completed
 
-### 2.2 AI Model Card Template (A.6.2.3)
+### 2.2 AI Model Card Template (A.6.2.7)
 
 Every AI model must have a maintained model card:
 
@@ -227,7 +227,7 @@ Owner: [Team/Person]
 ## Caveats and Recommendations
 ```
 
-### 2.3 Bias Evaluation Methodology (A.6.2.6)
+### 2.3 Bias Evaluation Methodology (A.6.2.4)
 
 **Step 1 — Define Fairness Metric:**
 Select appropriate fairness metric based on use case:
@@ -265,7 +265,7 @@ If thresholds are exceeded:
 - Re-evaluate and document results
 - If threshold cannot be met: escalate to AI Governance Committee before proceeding
 
-### 2.4 Adversarial Testing Methodology (A.6.2.5)
+### 2.4 Adversarial Testing Methodology (A.6.2.4)
 
 **For all AI systems, test against relevant adversarial scenarios:**
 
@@ -322,9 +322,9 @@ Before production deployment, AI systems must be tested in an environment that i
 
 ---
 
-## PHASE 3: AI SYSTEM DEPLOYMENT (Controls A.6.3.1, A.6.3.3)
+## PHASE 3: AI SYSTEM DEPLOYMENT (Control A.6.2.5)
 
-### 3.1 Deployment Controls (A.6.3.1)
+### 3.1 Deployment Controls (A.6.2.5)
 
 **Pre-Deployment Governance Gate:**
 
@@ -372,7 +372,7 @@ All of the following must be completed and approved before production deployment
 - [ ] Initial monitoring review (first 1 hour)
 - [ ] Deployment record created
 
-### 3.3 Human Oversight at Deployment (A.6.3.3)
+### 3.3 Human Oversight at Deployment (A.6.2.5, A.9.2)
 
 **Human Oversight Handover Checklist:**
 - [ ] Oversight staff trained on AI system capabilities and limitations
@@ -383,9 +383,9 @@ All of the following must be completed and approved before production deployment
 
 ---
 
-## PHASE 4: AI SYSTEM OPERATION AND MONITORING (Controls A.6.4.1, A.6.4.2)
+## PHASE 4: AI SYSTEM OPERATION AND MONITORING (Controls A.6.2.6, A.6.2.8)
 
-### 4.1 AI Operation Monitoring Framework (A.6.4.1)
+### 4.1 AI Operation Monitoring Framework (A.6.2.6)
 
 **Mandatory Monitoring Metrics:**
 
@@ -404,7 +404,7 @@ All of the following must be completed and approved before production deployment
 | **Security** | Adversarial input patterns | Real-time | Any detected |
 | **Availability** | System uptime | Real-time | SLA breach |
 
-### 4.2 Performance Drift Monitoring and Response (A.6.4.2)
+### 4.2 Performance Drift Monitoring and Response (A.6.2.6)
 
 **Drift Detection:**
 | Drift Type | Detection Method | Threshold | Response |
@@ -427,7 +427,7 @@ All of the following must be completed and approved before production deployment
 
 ---
 
-## PHASE 5: AI SYSTEM DECOMMISSIONING (Control A.6.5.1)
+## PHASE 5: AI SYSTEM DECOMMISSIONING (Control A.6.2.6)
 
 ### 5.1 Decommissioning Process
 
@@ -492,4 +492,4 @@ Maintain a register of all AI systems within AIMS scope:
 ---
 
 *Maintained by Ankit Uniyal — ISO 42001 Lead Auditor | GRC Lead, PureHealth Group*
-*Implements ISO/IEC 42001:2023 Clause 8.5 and Annex A Domain A.6 controls A.6.1.1 through A.6.5.1*
+*Implements ISO/IEC 42001:2023 Clause 8.1 and Annex A Domain A.6 controls A.6.1.2 through A.6.2.8*

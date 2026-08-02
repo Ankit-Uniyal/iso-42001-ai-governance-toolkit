@@ -1,11 +1,11 @@
 # AI Risk Assessment Process
 ## ISO/IEC 42001:2023 | Clause 6.1.2 — Documented Process
 
-**Document ID:** AIMS-RISKPROC-001
-**Version:** 1.0
-**Owner:** Risk Manager / AI Governance Lead
-**Approved by:** ___________________________
-**Date:** ___________________________
+**Document ID:** AIMS-RISKPROC-001  
+**Version:** 1.0  
+**Owner:** Risk Manager / AI Governance Lead  
+**Approved by:** ___________________________  
+**Date:** ___________________________  
 **Review Cycle:** Annual or upon significant change to AI systems or risk environment
 
 ---

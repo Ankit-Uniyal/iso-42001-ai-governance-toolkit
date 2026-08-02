@@ -1,5 +1,5 @@
-————# AI Supplier Risk Register
-## ISO/IEC 42001:2023 | Clause 8.4 — Template
+# AI Supplier Risk Register
+## ISO/IEC 42001:2023 | Clause 8.1 & Annex A.10.3 — Template
 
 **Document ID:** AIMS-SUPPRISK-001
 **Version:** 1.0

@@ -1,17 +1,17 @@
-# Annex B — AI Concepts and Their Application to ISO/IEC 42001
-## ISO/IEC 42001:2023 | Informative Reference Guide
+# AI Concepts and Their Application to ISO/IEC 42001
+## ISO/IEC 42001:2023 | Supplementary Reference Guide
 
-> **Note:** This document is an implementation reference guide. It is NOT a reproduction of the ISO/IEC 42001:2023 standard. Users must obtain a licensed copy of the standard from ISO (iso.org) for the full normative text.
+> **Note:** This is a supplementary reference guide written for practitioners. It is NOT a reproduction of, or a summary of, any annex of the standard. In ISO/IEC 42001:2023 the informative annexes are: **Annex B** — implementation guidance for the Annex A controls; **Annex C** — potential AI-related organisational objectives and risk sources; **Annex D** — use of the AI management system across domains or sectors. Obtain a licensed copy from ISO (iso.org) for the normative text.
 
 ---
 
 ## Purpose
 
-ISO/IEC 42001:2023 Annex B provides guidance on how AI-specific concepts referenced in the standard should be understood and applied in an AIMS context. This document summarises those concepts and provides practical implementation notes to help practitioners apply them correctly.
+This guide explains how the AI-specific concepts referenced throughout ISO/IEC 42001:2023 should be understood and applied in an AIMS context, and provides practical implementation notes to help practitioners apply them correctly. It complements Annex C of the standard, which lists potential AI-related organisational objectives and risk sources.
 
 ---
 
-## B.1 — AI Systems and Their Characteristics
+## 1 — AI Systems and Their Characteristics
 
 ### What is an AI System?
 An AI system is a machine-based system that, for a given set of objectives, makes predictions, recommendations, or decisions influencing real or virtual environments. AI systems are designed to operate with varying levels of autonomy.
@@ -27,7 +27,7 @@ The AIMS must account for the full lifecycle of AI systems — not just deployme
 
 ---
 
-## B.2 — Types of AI Systems Encountered in AIMS Scope
+## 2 — Types of AI Systems Encountered in AIMS Scope
 
 | AI System Type | Description | Typical AIMS Considerations |
 |---------------|-------------|---------------------------|
@@ -42,7 +42,7 @@ The AIMS must account for the full lifecycle of AI systems — not just deployme
 
 ---
 
-## B.3 — AI Risk Concepts
+## 3 — AI Risk Concepts
 
 ### Risk vs. Traditional IT Risk
 AI risk is distinct from traditional IT risk in several important ways:
@@ -70,9 +70,9 @@ AI risk is distinct from traditional IT risk in several important ways:
 
 ---
 
-## B.4 — AI Objectives and Their Relationship to AIMS Objectives
+## 4 — AI Objectives and Their Relationship to AIMS Objectives
 
-ISO/IEC 42001:2023 Clause 6.2 requires the organisation to establish AI objectives. Annex B provides guidance on how these relate to responsible AI principles.
+ISO/IEC 42001:2023 Clause 6.2 requires the organisation to establish AI objectives. Annex C of the standard lists potential AI-related organisational objectives that can inform them.
 
 ### Recommended AI Objective Categories
 
@@ -90,7 +90,7 @@ See `AI-OBJECTIVES-REGISTER.md` for the live objectives register.
 
 ---
 
-## B.5 — Responsible AI Principles and Their Annex A Mapping
+## 5 — Responsible AI Principles and Their Annex A Mapping
 
 | Responsible AI Principle | Primary Annex A Domain | Key Controls |
 |--------------------------|----------------------|-------------|
@@ -107,23 +107,23 @@ See `AI-OBJECTIVES-REGISTER.md` for the live objectives register.
 
 ---
 
-## B.6 — AI Lifecycle Phases
+## 6 — AI Lifecycle Phases
 
 ISO/IEC 42001:2023 uses a consistent lifecycle model for AI systems. Understanding which phase an AI system is in determines which controls apply.
 
 | Phase | Description | Key Controls | Key Documents |
 |-------|-------------|-------------|--------------|
 | Design | Define purpose, requirements, responsible AI design | A.6.1.2 | AI-SYSTEM-IMPACT-ASSESSMENT.md |
-| Data | Collect, prepare, and govern training/operational data | A.6.2.2 | AI-RISK-REGISTER.md |
-| Development | Build, train, validate AI model | A.6.2.4, A.6.2.5 | AI-DEPLOYMENT-CHECKLIST.md |
-| Deployment | Release AI system to production | A.6.2.7, A.6.3 | AI-DEPLOYMENT-CHECKLIST.md |
+| Data | Collect, prepare, and govern training/operational data | A.7.2, A.7.6 | AI-RISK-REGISTER.md |
+| Development | Build, train, validate AI model | A.6.1.3, A.6.2.4 | AI-DEPLOYMENT-CHECKLIST.md |
+| Deployment | Release AI system to production | A.6.2.5, A.6.2.7 | AI-DEPLOYMENT-CHECKLIST.md |
 | Operation | Monitor, maintain, update | A.6.2.8, A.6.2.6 | AI-PERFORMANCE-MONITORING-PLAN.md |
 | Change | Modify the system materially | A.6.2.6 | AI-CHANGE-CONTROL-PROCEDURE.md |
-| Decommission | Retire the AI system | A.6.2.5 | AI-LIFECYCLE-MANAGEMENT-PROCEDURE.md |
+| Decommission | Retire the AI system | A.6.2.6 | AI-LIFECYCLE-MANAGEMENT-PROCEDURE.md |
 
 ---
 
-## B.7 — AI System Classification for Risk-Based Controls
+## 7 — AI System Classification for Risk-Based Controls
 
 A risk-tiering approach helps apply proportionate controls. Recommended classification:
 
@@ -138,7 +138,7 @@ Note: EU AI Act classification (prohibited, high-risk, limited-risk, minimal-ris
 
 ---
 
-## B.8 — Key AI Terminology Quick Reference
+## 8 — Key AI Terminology Quick Reference
 
 | Term | Definition | AIMS Relevance |
 |------|-----------|---------------|

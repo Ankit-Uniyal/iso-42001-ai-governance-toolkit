@@ -39,11 +39,11 @@ This document maps all processes within the AI Management System (AIMS), showing
                                                                         [Clause 10 — Improvement: Corrective Actions, Continual Improvement]
                                                                               |
                                                                                     +---> Feeds back into Clauses 4-9 (continuous loop)
-                                                                                    ```
+```
 
-                                                                                    ---
+---
 
-                                                                                    ## 3. Process Register
+## 3. Process Register
 
 | Process ID | Process Name | Clause | Owner | Inputs | Outputs | Key Controls | Review Cycle |
 |-----------|-------------|--------|-------|--------|---------|--------------|-------------|
@@ -69,9 +69,9 @@ This document maps all processes within the AI Management System (AIMS), showing
 | P-20 | Corrective Action | 10.1 | AI Governance Lead | NCRs, incidents, audit findings | Corrective Action Plans, NCR log | Root cause analysis | As triggered |
 | P-21 | Continual Improvement | 10.2 | AI Governance Lead | Management review outputs, best practices | Improvement Log | PDCA cycle | Ongoing |
 
-                                                                                    ---
+---
 
-                                                                                    ## 4. Process Interactions
+## 4. Process Interactions
 
 | Process | Feeds Into | Receives From |
 |---------|-----------|---------------|
@@ -82,20 +82,20 @@ This document maps all processes within the AI Management System (AIMS), showing
 | P-19 Management Review | P-20, P-21, P-01 | P-17, P-18, P-08 |
 | P-20 Corrective Action | P-06, P-21 | P-18, P-19, P-14 |
 
-                                                                                    ---
+---
 
-                                                                                    ## 5. Master Document List Cross-Reference
+## 5. Master Document List Cross-Reference
 
-                                                                                    See `06-CLAUSE7-SUPPORT/MASTER-DOCUMENT-LIST.md` for the complete list of all AIMS documents, owners, versions, and review dates.
+See `06-CLAUSE7-SUPPORT/MASTER-DOCUMENT-LIST.md` for the complete list of all AIMS documents, owners, versions, and review dates.
 
-                                                                                    ---
+---
 
-                                                                                    ## Review History
+## Review History
 
 | Version | Date | Changes | Approved By |
 |---------|------|---------|-------------|
 | 1.0 | | Initial issue | |
 
-                                                                                    ---
+---
 
-                                                                                    *ISO/IEC 42001:2023 AI Governance Toolkit | Clause 4.4 | See root README.md for full index*
+*ISO/IEC 42001:2023 AI Governance Toolkit | Clause 4.4 | See root README.md for full index*

@@ -3,14 +3,14 @@
 
 ---
 
-**Document ID:** AIMS-TEMP-003
-**Version:** 1.0
-**Owner:** AI Governance Lead / CAIO
+**Document ID:** AIMS-TEMP-003  
+**Version:** 1.0  
+**Owner:** AI Governance Lead / CAIO  
 **Classification:** Internal — Controlled Document
 
-**Meeting Reference:** MR-[YYYY]-[N]
-**Date:** ___________________________
-**Chair:** ___________________________
+**Meeting Reference:** MR-[YYYY]-[N]  
+**Date:** ___________________________  
+**Chair:** ___________________________  
 **Location/Format:** ___________________________
 
 ---

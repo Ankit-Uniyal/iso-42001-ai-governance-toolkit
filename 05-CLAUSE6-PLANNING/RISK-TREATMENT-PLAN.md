@@ -1,11 +1,11 @@
 # AI Risk Treatment Plan
 ## ISO/IEC 42001:2023 | Clause 6.1.3 — Template
 
-**Document ID:** AIMS-RTP-001
-**Version:** 1.0
-**Owner:** Risk Manager
-**Approved by:** ___________________________
-**Date:** ___________________________
+**Document ID:** AIMS-RTP-001  
+**Version:** 1.0  
+**Owner:** Risk Manager  
+**Approved by:** ___________________________  
+**Date:** ___________________________  
 **Review Cycle:** Following each risk assessment cycle; minimum annual
 
 ---

@@ -23,6 +23,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) 
 - Fixed `15-SCRIPTS/ai_assessment_checker.py`: default paths pointed at a non-existent `scripts/` directory and the report directory was never created.
 - Replaced the placeholder contact address in `SECURITY.md`.
 
+- Restored the YAML front matter in `.github/ISSUE_TEMPLATE/bug-report.md`, which had the file path pasted onto the opening delimiter and so was not recognised as an issue template.
+- Corrected the ISO reference example in `.github/ISSUE_TEMPLATE/feature-request.md` (Clause 8.4, not 8.2, for impact assessment; A.7.5 is Data provenance).
+- Removed stray em dashes that sat in front of the H1 heading in five templates, so the titles render as headings again.
+- Swapped the clause references in `09-CLAUSE10-IMPROVEMENT/CONTINUAL-IMPROVEMENT-LOG.md` (now 10.1) and `09-CLAUSE10-IMPROVEMENT/NCR-REGISTER.md` (now 10.2).
+- Renumbered the Clause 8 audit checklist rows in `08-CLAUSE9-PERFORMANCE/INTERNAL-AUDIT-PROCEDURE.md` from the non-existent 8.5.x to 8.1.x.
+- Repointed `07-CLAUSE8-OPERATION/AI-SUPPLIER-RISK-REGISTER.md` at Clause 8.1 / A.10.3 and `14-WORKED-EXAMPLE/NFS-AI-SYSTEM-MODEL-CARD.md` at Clause 8.1 / A.6.2.3.
+- Closed the code fences on the diagrams in `03-CLAUSE4-CONTEXT/AIMS-PROCESS-MAP.md`, `03-CLAUSE4-CONTEXT/README.md` and `14-WORKED-EXAMPLE/NFS-AIMS-SCOPE-STATEMENT.md`; runaway indentation had swallowed the rest of each document.
+- Rebuilt the corrupted list numbering in `08-CLAUSE9-PERFORMANCE/INDIVIDUAL-AUDIT-PLAN-TEMPLATE.md`.
+- Escaped a stray pipe that split the version control table in `10-ANNEX-A-CONTROLS.md`.
+- Added hard line breaks to the document metadata block in 48 files so Document ID, Version, Owner and Review Cycle no longer run together into one paragraph.
+- Described Annex C accurately in `05-CLAUSE6-PLANNING/AI-RISK-REGISTER.md` and matched four Annex A control titles in `15-SCRIPTS/aims_soa_tracker.py` to the wording of the standard.
 ### Added
 - Missing folder README entries for `LEGAL-REGULATORY-REQUIREMENTS-REGISTER.md`, `AI-ETHICS-FRAMEWORK.md` and `AI-SUPPLIER-CONTRACT-CLAUSES.md`.
 - Documentation for `aims_soa_tracker.py` in `15-SCRIPTS/README.md`.

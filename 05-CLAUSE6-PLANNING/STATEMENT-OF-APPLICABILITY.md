@@ -1,12 +1,12 @@
 # Statement of Applicability (SoA)
 ## ISO/IEC 42001:2023 | Clause 6.1.3
 
-**Document ID:** AIMS-SOA-001
-**Organisation:** [Organisation Name]
-**Version:** 1.1
-**Prepared By:** AI Governance Lead
-**Approved By:** [CEO / Top Management]
-**Date:** ___________________________
+**Document ID:** AIMS-SOA-001  
+**Organisation:** [Organisation Name]  
+**Version:** 1.1  
+**Prepared By:** AI Governance Lead  
+**Approved By:** [CEO / Top Management]  
+**Date:** ___________________________  
 **Review Cycle:** Annual or after significant risk assessment changes
 
 ---

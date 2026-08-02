@@ -270,6 +270,7 @@
 |---------|-------------|-----------------|--------|-------|
 | A.2.2 | AI Policy is documented, approved, communicated, and reviewed | | | |
 | A.2.3 | AI-specific policies address prohibited uses, ethics principles, and human oversight | | | |
+| A.2.4 | The AI policy is reviewed at planned intervals and when significant changes occur | | | |
 
 ### Domain A.3 — Internal Organization
 
@@ -277,7 +278,6 @@
 |---------|-------------|-----------------|--------|-------|
 | A.3.2 | Roles and responsibilities for AI governance are defined and assigned | | | |
 | A.3.3 | Segregation of duties is applied where appropriate in AI development | | | |
-| A.3.4 | Contact with AI authorities and regulators is maintained | | | |
 
 ### Domain A.4 — Resources for AI Systems
 
@@ -285,6 +285,9 @@
 |---------|-------------|-----------------|--------|-------|
 | A.4.2 | Human resources competencies for AI are maintained and documented | | | |
 | A.4.3 | Infrastructure for AI systems meets security and performance requirements | | | |
+| A.4.4 | Tooling resources (frameworks, libraries, pre-trained models) are documented and managed | | | |
+| A.4.5 | System and computing resources for AI systems are identified and managed | | | |
+| A.4.6 | Human resources, competence and awareness needs for AI are documented | | | |
 
 ### Domain A.5 — Assessing Impacts of AI Systems
 
@@ -293,17 +296,21 @@
 | A.5.2 | AI system impact assessments are conducted before deployment | | | |
 | A.5.3 | Societal, ethical, and human rights impacts are considered in assessments | | | |
 | A.5.4 | Assessment results inform AI risk treatment decisions | | | |
+| A.5.5 | Societal impacts of AI systems are assessed and documented | | | |
 
 ### Domain A.6 — AI System Lifecycle
 
 | Control | Requirement | Applicable (Y/N) | Status | Notes |
 |---------|-------------|-----------------|--------|-------|
-| A.6.1 | AI system design requirements include responsible AI principles | | | |
-| A.6.2 | AI system development follows a documented process with version control | | | |
-| A.6.2.3 | AI model documentation (model cards) is maintained | | | |
-| A.6.2.5 | Adversarial testing and robustness testing is performed | | | |
-| A.6.2.6 | Bias evaluation is conducted during development and validation | | | |
-| A.6.2.8 | AI systems are tested in representative environments before deployment | | | |
+| A.6.1.2 | Objectives for the responsible development of AI systems are documented | | | |
+| A.6.1.3 | Documented processes govern responsible AI system design and development | | | |
+| A.6.2.2 | AI system requirements and specifications, including responsible AI requirements, are defined | | | |
+| A.6.2.3 | AI system design and development decisions and rationale are documented | | | |
+| A.6.2.4 | AI systems are verified and validated against defined acceptance criteria, including bias and robustness testing | | | |
+| A.6.2.5 | AI system deployment is controlled, approved and reversible | | | |
+| A.6.2.6 | AI systems are operated and monitored, including for drift, through to retirement | | | |
+| A.6.2.7 | Technical documentation is produced and maintained for each AI system | | | |
+| A.6.2.8 | Event logs are recorded to support traceability and investigation | | | |
 
 ### Domain A.7 — Data for AI Systems
 
@@ -313,6 +320,7 @@
 | A.7.3 | Data provenance and lineage are documented | | | |
 | A.7.4 | Personal data used in AI systems is handled in compliance with privacy regulations | | | |
 | A.7.5 | Bias in training data is identified and mitigated | | | |
+| A.7.6 | Data preparation (cleaning, labelling, bias treatment) is defined and documented | | | |
 
 ### Domain A.8 — Information for Interested Parties
 
@@ -321,6 +329,7 @@
 | A.8.2 | Information about AI system capabilities and limitations is provided to users | | | |
 | A.8.3 | AI system transparency and explainability requirements are defined | | | |
 | A.8.4 | Users are informed when interacting with AI systems | | | |
+| A.8.5 | Information required by interested parties, including AI disclosure, is provided | | | |
 
 ### Domain A.9 — Use of AI Systems
 

@@ -1,11 +1,11 @@
 # AIMS Resource Plan
 ## ISO/IEC 42001:2023 | Clause 7.1 — Template
 
-**Document ID:** AIMS-RESPLAN-001
-**Version:** 1.0
-**Owner:** AI Governance Lead
-**Approved by:** ___________________________
-**Date:** ___________________________
+**Document ID:** AIMS-RESPLAN-001  
+**Version:** 1.0  
+**Owner:** AI Governance Lead  
+**Approved by:** ___________________________  
+**Date:** ___________________________  
 **Review Cycle:** Annual; reviewed at management review
 
 ---

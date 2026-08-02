@@ -30,153 +30,159 @@ Scope summary: [Insert one-line scope description, e.g., "Design, deployment and
 ## How to Use This Document
 
 - **Included (Y):** Control applies to the organisation — must be implemented
-- - **Excluded (N):** Control does not apply — justification must be documented
-  - - **Implementation Status:** Implemented / Partial / Planned / Not Started
-    - - **Evidence Reference:** Document, record, or system where evidence of implementation can be found
-     
-      - ---
+- **Excluded (N):** Control does not apply — justification must be documented
+- **Implementation Status:** Implemented / Partial / Planned / Not Started
+- **Evidence Reference:** Document, record, or system where evidence of implementation can be found
 
-      ## Annex A Controls — Full Mapping
+---
 
-      ### Domain 1: Policies for AI (A.2)
+## Annex A Controls — Full Mapping
 
-      | Control | Ref | Included | Justification | Status | Evidence |
-      |---------|-----|----------|--------------|--------|----------|
-      | AI policy | A.2.2 | Y | Mandatory — establishes governance framework | Implemented | AIMS-POLICY-TEMPLATE.md |
-      | Allocation of roles and responsibilities | A.2.3 | Y | Mandatory — accountability for each AI system | Implemented | RACI-MATRIX.md |
-      | Reporting obligations | A.2.4 | Y | Required for regulatory compliance and management oversight | Planned | MANAGEMENT-REVIEW-TEMPLATE.md |
-      | Addressing AI considerations in contracts | A.2.5 | Y | Organisation uses third-party AI systems | Partial | AI-SUPPLIER-ASSESSMENT.md |
-      | Records related to AI systems | A.2.6 | Y | Mandatory documented information requirement | Implemented | MASTER-DOCUMENT-LIST.md |
+> All 38 controls of ISO/IEC 42001:2023 Annex A across 9 domains. Control references and titles follow the standard.
 
-      ---
+### Domain 1: Policies Related to AI (A.2)
 
-      ### Domain 2: Human Oversight of AI Systems (A.3)
+| Control | Ref | Included | Justification | Status | Evidence |
+|---------|-----|----------|--------------|--------|----------|
+| AI policy | A.2.2 | Y | Mandatory — establishes the top-level AI governance framework | Implemented | AIMS-POLICY-TEMPLATE.md |
+| Alignment with other organizational policies | A.2.3 | Y | Required — AI policy must be consistent with security, privacy and data policies | Partial | AIMS-POLICY-TEMPLATE.md; MASTER-DOCUMENT-LIST.md |
+| Review of the AI policy | A.2.4 | Y | Mandatory — policy must be reviewed at planned intervals and on change | Planned | MANAGEMENT-REVIEW-TEMPLATE.md |
 
-      | Control | Ref | Included | Justification | Status | Evidence |
-      |---------|-----|----------|--------------|--------|----------|
-      | Establishment of human oversight mechanisms | A.3.2 | Y | Required for all AI systems affecting individuals | Planned | AI-DEPLOYMENT-CHECKLIST.md |
+---
 
-      ---
+### Domain 2: Internal Organization (A.3)
 
-      ### Domain 3: Responsibilities Related to AI Systems (A.4)
+| Control | Ref | Included | Justification | Status | Evidence |
+|---------|-----|----------|--------------|--------|----------|
+| AI roles and responsibilities | A.3.2 | Y | Mandatory — accountability must be allocated for each AI system | Implemented | RACI-MATRIX.md; AI-SYSTEM-OWNERSHIP-REGISTER.md |
+| Reporting of concerns | A.3.3 | Y | Required — personnel need a protected route to raise AI concerns | Planned | AI-INCIDENT-RESPONSE-PROCEDURE.md |
 
-      | Control | Ref | Included | Justification | Status | Evidence |
-      |---------|-----|----------|--------------|--------|----------|
-      | Intended use | A.4.2 | Y | Mandatory — defines acceptable use boundaries | Implemented | AI-MODEL-CARD-TEMPLATE.md |
-      | Accuracy, reliability and performance of AI systems | A.4.3 | Y | Core operational control | Partial | AI-PERFORMANCE-MONITORING-PLAN.md |
-      | Safety of AI systems | A.4.4 | Y | Required for all AI systems | Planned | OPERATIONAL-CONTROLS-REGISTER.md |
-      | Security of AI systems | A.4.5 | Y | Mandatory — AI systems are subject to adversarial threats | Partial | OPERATIONAL-CONTROLS-REGISTER.md |
-      | Availability of AI systems | A.4.6 | Y | Business continuity requirement | Planned | AI-LIFECYCLE-MANAGEMENT-PROCEDURE.md |
-      | Eliminating bias and promoting fairness | A.4.7 | Y | Legal and ethical requirement (GDPR, EU AI Act) | Partial | AI-SYSTEM-IMPACT-ASSESSMENT.md |
-      | Transparency | A.4.8 | Y | Required for explainability and stakeholder trust | Partial | AI-MODEL-CARD-TEMPLATE.md |
-      | Privacy | A.4.9 | Y | GDPR and data protection requirement | Partial | INTERESTED-PARTIES-REGISTER.md |
-      | Accountability | A.4.10 | Y | Core governance principle — ownership for each system | Implemented | AI-SYSTEM-OWNERSHIP-REGISTER.md |
+---
 
-      ---
+### Domain 3: Resources for AI Systems (A.4)
 
-      ### Domain 4: Impact Assessment for AI Systems (A.5)
+| Control | Ref | Included | Justification | Status | Evidence |
+|---------|-----|----------|--------------|--------|----------|
+| Resource documentation | A.4.2 | Y | Required — resources must be identified across the AI life cycle | Partial | AIMS-RESOURCE-PLAN.md |
+| Data resources | A.4.3 | Y | Required — organisation relies on data for AI development | Partial | AI-SYSTEMS-INVENTORY.md |
+| Tooling resources | A.4.4 | Y | Required — ML frameworks, libraries and pre-trained models are in use | Partial | AIMS-RESOURCE-PLAN.md |
+| System and computing resources | A.4.5 | Y | Required — compute and environments support AI development and operation | Partial | AIMS-RESOURCE-PLAN.md |
+| Human resources | A.4.6 | Y | Mandatory — competence and awareness are required for responsible AI | Implemented | COMPETENCE-REQUIREMENTS-MATRIX.md; TRAINING-PLAN.md |
 
-      | Control | Ref | Included | Justification | Status | Evidence |
-      |---------|-----|----------|--------------|--------|----------|
-      | AI system impact assessment process | A.5.2 | Y | Mandatory before deploying AI systems affecting individuals | Partial | AI-SYSTEM-IMPACT-ASSESSMENT.md |
-      | Documentation of AI system impact assessments | A.5.3 | Y | Mandatory documented information | Planned | AI-SYSTEM-IMPACT-ASSESSMENT.md |
+---
 
-      ---
+### Domain 4: Assessing Impacts of AI Systems (A.5)
 
-      ### Domain 5: AI System Lifecycle (A.6)
+| Control | Ref | Included | Justification | Status | Evidence |
+|---------|-----|----------|--------------|--------|----------|
+| AI system impact assessment process | A.5.2 | Y | Mandatory — a defined impact assessment process is required | Implemented | AI-SYSTEM-IMPACT-ASSESSMENT.md |
+| Documentation of AI system impact assessments | A.5.3 | Y | Mandatory — assessments must be recorded and retained | Partial | AI-SYSTEM-IMPACT-ASSESSMENT.md; RECORDS-RETENTION-SCHEDULE.md |
+| Assessing AI system impact on individuals or groups | A.5.4 | Y | Required — AI systems affect individuals and identifiable groups | Partial | AI-SYSTEM-IMPACT-ASSESSMENT.md |
+| Assessing societal impacts of AI systems | A.5.5 | Y | Required — wider societal and environmental effects must be considered | Planned | AI-ETHICS-FRAMEWORK.md |
 
-      | Control | Ref | Included | Justification | Status | Evidence |
-      |---------|-----|----------|--------------|--------|----------|
-      | General | A.6.1.2 | Y | Lifecycle controls mandatory for all AI systems in scope | Implemented | AI-LIFECYCLE-MANAGEMENT-PROCEDURE.md |
-      | Data for AI systems | A.6.2.2 | Y | Data quality directly affects AI reliability and fairness | Partial | OPERATIONAL-CONTROLS-REGISTER.md |
-      | Acquisition of AI systems and components | A.6.2.3 | Y | Organisation acquires third-party AI components | Implemented | AI-SUPPLIER-ASSESSMENT.md |
-      | Design and development of AI systems | A.6.2.4 | Y | Organisation develops AI models internally | Partial | AI-MODEL-CARD-TEMPLATE.md |
-      | Testing of AI systems | A.6.2.5 | Y | Pre-deployment testing is mandatory | Planned | AI-DEPLOYMENT-CHECKLIST.md |
-      | AI system documentation | A.6.2.6 | Y | Mandatory documented information | Partial | AI-MODEL-CARD-TEMPLATE.md |
-      | Deployment of AI systems | A.6.2.7 | Y | Deployment controls mandatory | Partial | AI-DEPLOYMENT-CHECKLIST.md |
-      | Operation of AI systems | A.6.2.8 | Y | Ongoing operational monitoring required | Partial | AI-PERFORMANCE-MONITORING-PLAN.md |
-      | Human oversight of AI systems during operation | A.6.2.9 | Y | Required — especially for high-risk AI systems | Planned | OPERATIONAL-CONTROLS-REGISTER.md |
-      | Monitoring AI systems | A.6.2.10 | Y | Performance monitoring mandatory | Partial | AI-PERFORMANCE-MONITORING-PLAN.md |
-      | Change management of AI systems | A.6.2.11 | Y | Change control required for all AI modifications | Implemented | AI-CHANGE-CONTROL-PROCEDURE.md |
-      | Decommissioning of AI systems | A.6.2.12 | Y | Lifecycle control — must manage end-of-life | Planned | AI-LIFECYCLE-MANAGEMENT-PROCEDURE.md |
-      | Incident management for AI systems | A.6.2.13 | Y | Mandatory — AI incidents must be captured and resolved | Partial | AI-INCIDENT-RESPONSE-PROCEDURE.md |
+---
 
-      ---
+### Domain 5: AI System Life Cycle (A.6)
 
-      ### Domain 6: Responsible and Trustworthy AI (A.7)
+| Control | Ref | Included | Justification | Status | Evidence |
+|---------|-----|----------|--------------|--------|----------|
+| Objectives for responsible development of AI systems | A.6.1.2 | Y | Required — responsible development objectives must guide design | Planned | AI-ETHICS-FRAMEWORK.md; AI-OBJECTIVES-REGISTER.md |
+| Processes for responsible AI system design and development | A.6.1.3 | Y | Mandatory — a documented development process is required | Implemented | AI-LIFECYCLE-MANAGEMENT-PROCEDURE.md |
+| AI system requirements and specification | A.6.2.2 | Y | Mandatory — requirements must be specified per AI system | Partial | AI-LIFECYCLE-MANAGEMENT-PROCEDURE.md |
+| Documentation of AI system design and development | A.6.2.3 | Y | Required — design decisions and rationale must be documented | Partial | AI-MODEL-CARD-TEMPLATE.md |
+| AI system verification and validation | A.6.2.4 | Y | Mandatory — testing, bias evaluation and robustness checks are required | Partial | AI-DEPLOYMENT-CHECKLIST.md |
+| AI system deployment | A.6.2.5 | Y | Mandatory — controlled release with approval and rollback | Implemented | AI-DEPLOYMENT-CHECKLIST.md; AI-CHANGE-CONTROL-PROCEDURE.md |
+| AI system operation and monitoring | A.6.2.6 | Y | Mandatory — ongoing monitoring including drift is required | Partial | AI-PERFORMANCE-MONITORING-PLAN.md |
+| AI system technical documentation | A.6.2.7 | Y | Mandatory — technical documentation must be maintained | Partial | AI-MODEL-CARD-TEMPLATE.md |
+| AI system recording of event logs | A.6.2.8 | Y | Mandatory — logging is required for traceability and investigation | Planned | OPERATIONAL-CONTROLS-REGISTER.md |
 
-      | Control | Ref | Included | Justification | Status | Evidence |
-      |---------|-----|----------|--------------|--------|----------|
-      | Responsible and ethical use | A.7.2 | Y | Core AIMS principle — policy commitment | Partial | AIMS-POLICY-TEMPLATE.md |
+---
 
-      ---
+### Domain 6: Data for AI Systems (A.7)
 
-      ### Domain 7: AI System Suppliers (A.8)
+| Control | Ref | Included | Justification | Status | Evidence |
+|---------|-----|----------|--------------|--------|----------|
+| Data for development and enhancement of AI systems | A.7.2 | Y | Mandatory — data requirements must be defined per system | Partial | AI-SYSTEMS-INVENTORY.md |
+| Acquisition of data | A.7.3 | Y | Mandatory — data must be lawfully and appropriately acquired | Partial | LEGAL-REGULATORY-REQUIREMENTS-REGISTER.md |
+| Quality of data for AI systems | A.7.4 | Y | Mandatory — data quality requirements must be defined and verified | Partial | AI-RISK-REGISTER.md |
+| Data provenance | A.7.5 | Y | Mandatory — origin and chain of custody must be recorded | Planned | AI-MODEL-CARD-TEMPLATE.md |
+| Data preparation | A.7.6 | Y | Mandatory — preparation and bias treatment must be documented | Partial | AI-MODEL-CARD-TEMPLATE.md |
 
-      | Control | Ref | Included | Justification | Status | Evidence |
-      |---------|-----|----------|--------------|--------|----------|
-      | Supplier relationships for AI systems | A.8.2 | Y | Organisation depends on third-party AI systems and components | Implemented | AI-SUPPLIER-RISK-REGISTER.md |
+---
 
-      ---
+### Domain 7: Information for Interested Parties of AI Systems (A.8)
 
-      ### Domain 8: Documentation and Information Related to AI Systems (A.9)
+| Control | Ref | Included | Justification | Status | Evidence |
+|---------|-----|----------|--------------|--------|----------|
+| System documentation and information for users | A.8.2 | Y | Mandatory — users need capability, limitation and use information | Partial | AI-MODEL-CARD-TEMPLATE.md |
+| External reporting | A.8.3 | Y | Required — regulatory and contractual reporting duties apply | Planned | LEGAL-REGULATORY-REQUIREMENTS-REGISTER.md |
+| Communication of incidents | A.8.4 | Y | Mandatory — AI incidents must be communicated to those who need to know | Implemented | AI-INCIDENT-RESPONSE-PROCEDURE.md |
+| Information for interested parties | A.8.5 | Y | Mandatory — AI involvement must be disclosed to affected parties | Partial | AWARENESS-COMMUNICATION-PLAN.md |
 
-      | Control | Ref | Included | Justification | Status | Evidence |
-      |---------|-----|----------|--------------|--------|----------|
-      | Documentation of AI systems | A.9.2 | Y | Mandatory documented information requirement | Partial | MASTER-DOCUMENT-LIST.md |
+---
 
-      ---
+### Domain 8: Use of AI Systems (A.9)
 
-      ### Domain 9: AI Standards and Sector-Specific Issues (A.10)
+| Control | Ref | Included | Justification | Status | Evidence |
+|---------|-----|----------|--------------|--------|----------|
+| Processes for responsible use of AI systems | A.9.2 | Y | Mandatory — acceptable use and human oversight must be defined | Implemented | OPERATIONAL-CONTROLS-REGISTER.md |
+| Objectives for responsible use of AI systems | A.9.3 | Y | Required — objectives must balance efficiency against responsible use | Planned | AI-OBJECTIVES-REGISTER.md |
+| Intended use of the AI system | A.9.4 | Y | Mandatory — systems must be used within their validated purpose | Partial | AI-MODEL-CARD-TEMPLATE.md |
 
-      | Control | Ref | Included | Justification | Status | Evidence |
-      |---------|-----|----------|--------------|--------|----------|
-      | Compliance with applicable standards | A.10.2 | Y | ISO 42001, GDPR, EU AI Act, ISO 27001 alignment required | Partial | 11-CONTROLS-MAPPING.md |
+---
 
-      ---
+### Domain 9: Third-Party and Customer Relationships (A.10)
 
-      ## Exclusions Summary
+| Control | Ref | Included | Justification | Status | Evidence |
+|---------|-----|----------|--------------|--------|----------|
+| Allocating responsibilities | A.10.2 | Y | Mandatory — responsibilities across the AI value chain must be allocated | Partial | AI-SUPPLIER-ASSESSMENT.md; RACI-MATRIX.md |
+| Suppliers | A.10.3 | Y | Required — organisation procures third-party AI systems and services | Partial | AI-SUPPLIER-RISK-REGISTER.md; AI-SUPPLIER-CONTRACT-CLAUSES.md |
+| Customers | A.10.4 | Y | Required where AI systems or AI-based services are provided to customers | Planned | AI-SUPPLIER-CONTRACT-CLAUSES.md |
 
-      | Control | Ref | Reason for Exclusion |
-      |---------|-----|---------------------|
-      | None at this time | — | All 38 Annex A controls are applicable to this organisation |
+---
 
-      > **Note:** If your organisation excludes any controls, you must document a clear justification here. Auditors will scrutinise exclusions closely. Controls may only be excluded where the relevant AI risk genuinely does not apply to your scope.
-      >
-      > ---
-      >
-      > ## Implementation Status Summary
-      >
-      > | Status | Count | % of Total |
-      > |--------|-------|-----------|
-      > | Implemented | 9 | 24% |
-      > | Partial | 17 | 45% |
-      > | Planned | 9 | 24% |
-      > | Not Started | 3 | 8% |
-      > | **Total Controls** | **38** | **100%** |
-      >
-      > > Update this table as implementation progresses. Target: all controls at "Implemented" before certification audit.
-      > >
-      > > ---
-      > >
-      > > ## SoA Sign-Off
-      > >
-      > > | Role | Name | Signature | Date |
-      > > |------|------|-----------|------|
-      > > | AI Governance Lead | | | |
-      > > | Risk Manager | | | |
-      > > | CEO / Top Management | | | |
-      > > | Certification Preparation Lead | | | |
-      > >
-      > > ---
-      > >
-      > > ## Review History
-      > >
-      > > | Version | Date | Changes | Approved By |
-      > > |---------|------|---------|-------------|
-      > > | 1.0 | | Initial issue — all 38 controls assessed | |
-      > > | | | | |
-      > >
-      > > ---
-      > >
-      > > *ISO/IEC 42001:2023 AI Governance Toolkit | Clause 6.1.3 — Statement of Applicability | See root README.md for full index*
+## Exclusions Summary
+
+| Control | Ref | Reason for Exclusion |
+|---------|-----|---------------------|
+| None at this time | — | All 38 Annex A controls are applicable to this organisation |
+
+> **Note:** If your organisation excludes any controls, you must document a clear justification here. Auditors will scrutinise exclusions closely. Controls may only be excluded where the relevant AI risk genuinely does not apply to your scope.
+
+---
+
+## Implementation Status Summary
+
+| Status | Count | % of Total |
+|--------|-------|-----------|
+| Implemented | 8 | 21% |
+| Partial | 21 | 55% |
+| Planned | 9 | 24% |
+| Not Started | 0 | 0% |
+| **Total Controls** | **38** | **100%** |
+
+> Update this table as implementation progresses. Target: all controls at "Implemented" before the certification audit.
+
+---
+
+## SoA Sign-Off
+
+| Role | Name | Signature | Date |
+|------|------|-----------|------|
+| AI Governance Lead | | | |
+| Risk Manager | | | |
+| CEO / Top Management | | | |
+| Certification Preparation Lead | | | |
+
+---
+
+## Review History
+
+| Version | Date | Changes | Approved By |
+|---------|------|---------|-------------|
+| 1.0 | | Initial issue — all 38 controls assessed | |
+| 1.1 | | Control references and titles corrected to align with ISO/IEC 42001:2023 Annex A | |
+
+---
+
+*ISO/IEC 42001:2023 AI Governance Toolkit | Clause 6.1.3 — Statement of Applicability | See root README.md for full index*

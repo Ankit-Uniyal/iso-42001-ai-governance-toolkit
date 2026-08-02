@@ -17,12 +17,12 @@
 | 4 — Context | 12 | | | | | |
 | 5 — Leadership | 10 | | | | | |
 | 6 — Planning | 15 | | | | | |
-| 7 — Support | 12 | | | | | |
-| 8 — Operation | 25 | | | | | |
-| 9 — Performance | 10 | | | | | |
+| 7 — Support | 14 | | | | | |
+| 8 — Operation | 20 | | | | | |
+| 9 — Performance | 9 | | | | | |
 | 10 — Improvement | 6 | | | | | |
 | Annex A Controls | 38 | | | | | |
-| **TOTAL** | **128** | | | | | |
+| **TOTAL** | **124** | | | | | |
 
 ---
 
@@ -117,6 +117,16 @@
 
 ---
 
+### 6.3 Planning of Changes
+
+| # | Requirement | Status | Evidence / Notes |
+|---|-------------|--------|-----------------|
+| 6.3.1 | Are changes to the AIMS planned rather than made ad hoc? | | |
+| 6.3.2 | Is the purpose of each change and its potential consequences considered before it is made? | | |
+| 6.3.3 | Are the integrity of the AIMS, resource availability and responsibilities reviewed as part of change planning? | | |
+
+---
+
 ## Clause 7 — Support
 
 ### 7.1 Resources
@@ -192,25 +202,25 @@
 | 8.4.3 | Are ASIA results documented and used to inform risk treatment decisions? | | |
 | 8.4.4 | Are ASIAs repeated when AI systems undergo significant changes? | | |
 
-### 8.5 AI System Lifecycle
+### 8.1 (continued) — AI System Life Cycle Controls (Annex A.6)
 
 | # | Requirement | Status | Evidence / Notes |
 |---|-------------|--------|-----------------|
-| 8.5.1 | Is there a defined and documented AI system lifecycle process? | | |
-| 8.5.2 | Are data governance controls in place for AI training data (quality, provenance, bias, privacy)? | | |
-| 8.5.3 | Are AI system design and development processes controlled (documentation, version control, security by design)? | | |
-| 8.5.4 | Are AI systems verified and validated before deployment (performance testing, bias evaluation, adversarial testing)? | | |
-| 8.5.5 | Are AI system deployment processes controlled (human oversight, monitoring setup, rollback procedures)? | | |
-| 8.5.6 | Are deployed AI systems monitored (performance drift, fairness degradation, security incidents)? | | |
-| 8.5.7 | Is there a process for AI system decommissioning (data deletion, model archiving, stakeholder notification)? | | |
+| 8.1.3 | Is there a defined and documented AI system lifecycle process? | | |
+| 8.1.4 | Are data governance controls in place for AI training data (quality, provenance, bias, privacy)? | | |
+| 8.1.5 | Are AI system design and development processes controlled (documentation, version control, security by design)? | | |
+| 8.1.6 | Are AI systems verified and validated before deployment (performance testing, bias evaluation, adversarial testing)? | | |
+| 8.1.7 | Are AI system deployment processes controlled (human oversight, monitoring setup, rollback procedures)? | | |
+| 8.1.8 | Are deployed AI systems monitored (performance drift, fairness degradation, security incidents)? | | |
+| 8.1.9 | Is there a process for AI system decommissioning (data deletion, model archiving, stakeholder notification)? | | |
 
-### 8.6 Related Policies and Processes
+### 8.1 (continued) — Responsible Use in Operations (Annex A.9)
 
 | # | Requirement | Status | Evidence / Notes |
 |---|-------------|--------|-----------------|
-| 8.6.1 | Are responsible AI principles embedded into operational processes? | | |
-| 8.6.2 | Is human oversight maintained for high-stakes AI decisions? | | |
-| 8.6.3 | Are AI incident response procedures defined and documented? | | |
+| 8.1.10 | Are responsible AI principles embedded into operational processes? | | |
+| 8.1.11 | Is human oversight maintained for high-stakes AI decisions? | | |
+| 8.1.12 | Are AI incident response procedures defined and documented? | | |
 
 ---
 

@@ -138,13 +138,13 @@ Folder: [09-CLAUSE10-IMPROVEMENT/](09-CLAUSE10-IMPROVEMENT/)
 
 ### Scripts and Automation
 
-Folder: [12-SCRIPTS/](12-SCRIPTS/)
+Folder: [15-SCRIPTS/](15-SCRIPTS/)
 
 | File | Purpose |
 |------|---------|
-| [ai_assessment_checker.py](12-SCRIPTS/ai_assessment_checker.py) | Automated AIMS gap assessment checker |
-| [aims_soa_tracker.py](12-SCRIPTS/aims_soa_tracker.py) | SoA implementation tracker — all 38 controls with progress reporting |
-| [sample_ai_systems.csv](12-SCRIPTS/sample_ai_systems.csv) | Sample AI systems inventory CSV |
+| [ai_assessment_checker.py](15-SCRIPTS/ai_assessment_checker.py) | Automated AIMS gap assessment checker |
+| [aims_soa_tracker.py](15-SCRIPTS/aims_soa_tracker.py) | SoA implementation tracker — all 38 controls with progress reporting |
+| [sample_ai_systems.csv](15-SCRIPTS/sample_ai_systems.csv) | Sample AI systems inventory CSV |
 
 ---
 

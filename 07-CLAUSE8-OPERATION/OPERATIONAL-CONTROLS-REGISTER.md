@@ -1,10 +1,10 @@
 # Operational Controls Register
 ## ISO/IEC 42001:2023 | Clause 8.1 — Template
 
-**Document ID:** AIMS-OPCONT-001
-**Version:** 1.0
-**Owner:** AI Governance Lead
-**Date:** ___________________________
+**Document ID:** AIMS-OPCONT-001  
+**Version:** 1.0  
+**Owner:** AI Governance Lead  
+**Date:** ___________________________  
 **Review Cycle:** Annual; updated when systems or controls change
 
 ---

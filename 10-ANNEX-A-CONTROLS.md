@@ -1502,20 +1502,166 @@ When an AI system produces a harmful or disputed outcome, the organization must 
 
 ---
 
-## DOMAIN A.7 — DATA FOR AI
-*5 Controls | Governing data quality, provenance, privacy, and access for AI systems*
+## DOMAIN A.7 — DATA FOR AI SYSTEMS
+*5 Controls | Governing the data AI systems are built on, from acquisition through preparation*
 
 ---
 
-### A.7.2 — AI Data Quality
+### A.7.2 — Data for Development and Enhancement of AI Systems
 
-**Control Statement:** The organization shall define, implement, and verify data quality requirements for AI training, validation, and testing data, including accuracy, completeness, consistency, and representativeness standards appropriate to the AI system's purpose and risk level.
+**Control Statement:** The organization shall define and document the data required to develop and enhance its AI systems, including the types, sources and volumes of data needed and the constraints on their use.
 
 ---
 
 #### What It Means
 
-A.7.2 recognizes that AI system quality is fundamentally dependent on data quality: "garbage in, garbage out" applies with particular force to AI. This control requires that data quality requirements are defined before training (not just assumed), measured, and verified before data is used for AI development.
+A.7.2 is the entry control for Domain A.7. It requires a deliberate, documented answer to a basic question: what data does this AI system need in order to be built, trained, tuned and subsequently improved, and on what terms may that data be used. It covers training, validation and test data, fine-tuning and reinforcement data, and any data used later to enhance a system already in production.
+
+#### Why It Matters
+
+Most serious AI failures trace back to a data decision made early and never examined. Teams frequently use whatever data is convenient, then discover after deployment that it was unrepresentative, unlawfully obtained, or contractually barred from that use. Defining data requirements before collection makes those constraints visible while they can still be acted upon, and gives the organization a defensible account of why it holds the data it holds.
+
+#### How to Implement
+
+- **Specify data requirements per system** — Record the data types, sources, volumes, coverage and refresh frequency the system needs, tied to its intended purpose.
+- **Define representativeness expectations** — State which populations and conditions the data must cover so the system performs adequately for everyone it will affect.
+- **Record permitted and prohibited uses** — Capture licence terms, contractual restrictions, consent scope and lawful basis, and state explicitly what the data may not be used for.
+- **Separate development, validation and test data** — Define how data is partitioned and prevent leakage between the sets.
+- **Plan for enhancement data** — Decide in advance whether production data, user feedback or human labelling may be fed back into the system, and under what safeguards.
+- **Assess synthetic data explicitly** — Where synthetic data is used, document why, how it was generated and how its fidelity was checked.
+- **Review when purpose changes** — A change of purpose requires a fresh assessment of whether the existing data may still lawfully and appropriately be used.
+
+#### Documents to Prepare
+
+| Document | Description | Owner |
+|---|---|---|
+| AI Data Requirements Specification | Per-system definition of data types, sources, volumes and coverage | AI System Owner / Data Science |
+| Permitted Use Record | Licence, contract, consent scope and lawful basis per dataset | Legal / DPO |
+| Data Partitioning Standard | Rules for separating training, validation and test data | Data Science Lead |
+| Enhancement Data Procedure | Rules for reusing production or feedback data to improve systems | AI Governance Lead |
+
+#### How to Audit
+
+**Document Review:**
+- Confirm data requirements are documented per AI system and tied to intended purpose
+- Verify representativeness expectations are stated, not assumed
+- Check permitted and prohibited uses are recorded for each dataset
+- Confirm training, validation and test data separation is defined and enforced
+- Verify any use of production data for enhancement is authorised and safeguarded
+
+**Personnel Interviews:**
+- Ask a data scientist: "What data does this system need, and who decided that?"
+- Ask Legal or the DPO: "What are we permitted to do with this dataset, and what are we not?"
+- Ask the AI System Owner: "Is production data fed back into this model, and who approved that?"
+
+**Evidence Required**
+- Documented data requirements per system
+- Licence, contract or consent evidence for each data source
+- Data partitioning configuration or procedure
+- Approvals for use of production or feedback data in enhancement
+- Reassessment records where system purpose changed
+
+**Common Gaps Found in Audits**
+- Data requirements never documented, with datasets chosen opportunistically
+- Representativeness assumed rather than specified or verified
+- Data collected for one purpose reused for training with no legal review
+- Test data contaminated with training data, inflating reported performance
+- Production data quietly recycled into retraining without authorisation or safeguards
+
+#### Cross-References
+
+| Framework | Reference |
+|---|---|
+| EU AI Act | Art. 10 (Data and data governance) |
+| NIST AI RMF | MAP 2.3, MEASURE 2.2 |
+| ISO 27001:2022 | A.5.9 (Inventory of assets); A.5.34 (Privacy and protection of PII) |
+
+---
+
+### A.7.3 — Acquisition of Data
+
+**Control Statement:** The organization shall determine and document how data for its AI systems is acquired, ensuring that acquisition is lawful, authorised, and consistent with the terms under which the data was made available.
+
+---
+
+#### What It Means
+
+A.7.3 governs the act of obtaining data, whatever the route: collected directly from users, generated internally, purchased from a broker, licensed from a vendor, scraped from public sources, obtained through a partnership, or produced synthetically. Each route carries different legal, ethical and security conditions, and the organization must be able to show that those conditions were identified and satisfied at the point of acquisition, and that access to the acquired data is properly controlled thereafter.
+
+#### Why It Matters
+
+Acquisition is where the organization's legal exposure is created, and it is largely irreversible. A model trained on improperly acquired data may have to be retrained or withdrawn entirely, and regulators have ordered exactly that. Web-scraped and broker-sourced datasets are the highest-risk category because their lawful basis is frequently untested and their contents unverified. Acquisition is also a security boundary: externally sourced data is an established vector for poisoning attacks.
+
+#### How to Implement
+
+- **Define approved acquisition routes** — State which sources are permitted, which require review, and which are prohibited outright.
+- **Establish lawful basis before acquiring** — Confirm consent, contract, legitimate interest or another basis for personal data, and record the assessment.
+- **Verify licence and terms compliance** — Check that the source's terms actually permit AI training, which many expressly do not.
+- **Apply heightened scrutiny to scraped and brokered data** — Require documented legal review before any such dataset is used.
+- **Screen acquired data for integrity and safety** — Check for poisoning, embedded malicious content, unexpected personal data and prohibited content before ingestion.
+- **Apply access controls from the point of acquisition** — Restrict who can read, copy, export or delete acquired datasets, applying least privilege and logging access to sensitive data.
+- **Apply data minimisation** — Acquire only what the documented requirements justify.
+- **Record the acquisition** — Log source, date, terms, approver and the checks performed, so provenance under A.7.5 can be established.
+
+#### Documents to Prepare
+
+| Document | Description | Owner |
+|---|---|---|
+| Data Acquisition Procedure | Approved routes, review gates and prohibitions | Data Governance Lead |
+| Data Source Approval Records | Per-source legal, ethical and security review and sign-off | Legal / DPO / CISO |
+| Data Access Control Matrix | Who may access each dataset, at what privilege level | CISO / Data Owners |
+| Acquisition Log | Record of datasets acquired with source, terms, date and approver | Data Governance Lead |
+
+#### How to Audit
+
+**Document Review:**
+- Confirm an acquisition procedure exists and defines permitted and prohibited sources
+- Sample datasets and verify lawful basis and licence terms were assessed before acquisition
+- Check that scraped or purchased datasets received documented legal review
+- Verify integrity and safety screening was applied to externally sourced data
+- Confirm access controls and logging are applied to sensitive datasets
+- Check that acquisition records are complete enough to support provenance claims
+
+**Personnel Interviews:**
+- Ask a data engineer: "Where did this dataset come from and what approval did it go through?"
+- Ask Legal: "Do the source's terms permit using this data to train a model?"
+- Ask the CISO: "Who can access the training data, and how is that access monitored?"
+
+**Evidence Required**
+- Documented acquisition procedure and approval gates
+- Per-source legal and lawful basis assessments
+- Licence agreements or terms evidencing permitted AI use
+- Integrity and safety screening results
+- Access control configuration and access logs
+- Acquisition log entries with approver and date
+
+**Common Gaps Found in Audits**
+- Scraped data used for training with no assessment of the source's terms
+- Vendor datasets accepted on the vendor's assurance with no independent verification
+- No screening of external data for poisoning or unexpected personal data
+- Training data accessible to the entire engineering organization
+- Acquisition undocumented, making provenance impossible to reconstruct
+- Data acquired far beyond the documented requirement, with no minimisation
+
+#### Cross-References
+
+| Framework | Reference |
+|---|---|
+| EU AI Act | Art. 10 (Data and data governance); Art. 53 (GPAI training data transparency) |
+| NIST AI RMF | MAP 2.3, MEASURE 2.2, MANAGE 2.2 |
+| ISO 27001:2022 | A.5.15 (Access control); A.5.34 (Privacy and protection of PII); A.8.12 (Data leakage prevention) |
+
+---
+
+### A.7.4 — Quality of Data for AI Systems
+
+**Control Statement:** The organization shall define and apply requirements for the quality of data used in its AI systems, and verify that the data meets those requirements before and during use.
+
+---
+
+#### What It Means
+
+A.7.4 recognizes that AI system quality is fundamentally dependent on data quality: "garbage in, garbage out" applies with particular force to AI. This control requires that data quality requirements are defined before training (not just assumed), measured, and verified before data is used for AI development.
 
 #### Why It Matters
 
@@ -1563,15 +1709,15 @@ Poor data quality in AI training produces unreliable, biased, or dangerous AI ou
 
 ---
 
-### A.7.3 — Data Provenance
+### A.7.5 — Data Provenance
 
-**Control Statement:** The organization shall establish and maintain documentation of the provenance, lineage, and licensing of data used for AI training, validation, and testing, sufficient to enable reproducibility, audit, and compliance verification.
+**Control Statement:** The organization shall record and maintain the provenance of data used in its AI systems, so that the origin, chain of custody and permitted uses of that data can be established throughout its life cycle.
 
 ---
 
 #### What It Means
 
-A.7.3 requires that organizations know exactly where their AI training data comes from, what transformations it has undergone, and what rights exist to use it. Data provenance is the documented history of data from its origin to its use in AI training. This is essential for: reproducing training runs; investigating model behavior; verifying licensing compliance; responding to GDPR subject access requests; regulatory audit.
+A.7.5 requires that organizations know exactly where their AI training data comes from, what transformations it has undergone, and what rights exist to use it. Data provenance is the documented history of data from its origin to its use in AI training. This is essential for: reproducing training runs; investigating model behavior; verifying licensing compliance; responding to GDPR subject access requests; regulatory audit.
 
 #### Why It Matters
 
@@ -1625,78 +1771,15 @@ Data provenance gaps create serious risks: using data for AI training without th
 
 ---
 
-### A.7.4 — Data Privacy for AI
+### A.7.6 — Data Preparation
 
-**Control Statement:** The organization shall identify, assess, and address privacy risks associated with personal data used in AI systems, including for training, validation, testing, and operation, in compliance with applicable data protection requirements.
-
----
-
-#### What It Means
-
-A.7.4 applies data protection requirements specifically to AI use of personal data — which has unique characteristics: personal data embedded in training data persists in the model itself; AI systems can infer sensitive attributes from non-sensitive data; AI systems can reconstruct personal data from model outputs (model inversion). Standard GDPR compliance processes may not capture these AI-specific privacy risks.
-
-#### Why It Matters
-
-Using personal data in AI without appropriate legal basis, privacy assessment, and safeguards exposes organizations to: regulatory enforcement action (GDPR fines); reputational damage; inability to fulfill data subject rights (erasure, access) for data used in AI training; processing personal data in ways data subjects did not anticipate or consent to.
-
-#### How to Implement
-
-- **Conduct DPIAs for AI systems processing personal data** — Every AI system processing personal data requires a Data Protection Impact Assessment (DPIA) covering AI-specific risks: inference risks; profiling; automated decision-making; model inversion risk.
-- **Establish lawful basis for each AI processing activity** — Training on personal data, validation, operational inference, and output processing may each require separate lawful basis analysis.
-- **Address GDPR automated decision-making** — For AI that makes solely automated decisions with significant effects on individuals: ensure compliance with GDPR Art. 22; implement right to human review; provide meaningful information about the logic.
-- **Data minimization for AI training** — Use the minimum personal data necessary for the purpose. Consider synthetic data or anonymization where possible.
-- **Data Processing Agreements (DPAs)** — For cloud AI APIs that process personal data, ensure DPAs are in place.
-
-#### Documents to Prepare
-
-| Document | Description | Owner |
-|---|---|---|
-| DPIAs for AI Systems | Data Protection Impact Assessments for each AI system processing personal data | DPO / AI Governance Lead |
-| Lawful Basis Register for AI Processing | Documented lawful basis for each AI processing activity | DPO / Legal |
-| GDPR Art. 22 Compliance Assessment | Assessment of automated decision-making compliance for relevant AI systems | DPO / Legal |
-| DPAs for Cloud AI Services | Data Processing Agreements with cloud AI providers processing personal data | Legal / DPO |
-
-#### How to Audit
-
-**Document Review:**
-- Verify DPIAs exist for all AI systems processing personal data
-- Check lawful basis is documented for all AI processing activities
-- Confirm DPAs are in place for cloud AI services processing personal data
-
-**Personnel Interviews:**
-- Ask the DPO: "If a data subject requests erasure and their data was used to train one of our AI models, what happens?"
-- Ask Legal: "Do we have DPAs with all cloud AI services that process personal data for us?"
-
-**Evidence Required**
-- DPIAs for AI systems (covering AI-specific privacy risks)
-- Lawful basis register
-- DPAs for cloud AI services
-
-**Common Gaps Found in Audits**
-- DPIAs conducted using standard template that does not address AI-specific risks (inference, model inversion)
-- Personal data used for AI training without documented lawful basis
-- Cloud AI APIs processing personal data without DPAs in place
-- Right to erasure for AI training data not addressed — technically complex challenge unresolved
-
-#### Cross-References
-
-| Framework | Reference |
-|---|---|
-| EU AI Act | Art. 10 (Data governance); Art. 26 (Deployer obligations) |
-| NIST AI RMF | MAP 1.6, GOVERN 1.6 |
-| ISO 27001:2022 | A.5.34 (Privacy and protection of PII) |
-
----
-
-### A.7.5 — Bias Mitigation in Data
-
-**Control Statement:** The organization shall assess AI training, validation, and testing data for bias affecting protected groups and implement appropriate data-level bias mitigation measures prior to model training.
+**Control Statement:** The organization shall define and document how data is prepared for use in its AI systems, including cleaning, transformation, labelling, feature engineering and the treatment of bias introduced or corrected during preparation.
 
 ---
 
 #### What It Means
 
-A.7.5 addresses bias at the data level — distinct from model-level bias evaluation (A.6.2.6). Data-level bias assessment examines whether training data itself contains historical bias, underrepresentation, or skewed labeling that will be learned by the model. Data-level mitigation (resampling, reweighting, relabeling) is often more effective than post-hoc model-level correction.
+A.7.6 addresses bias at the data level — distinct from model-level bias evaluation (A.6.2.6). Data-level bias assessment examines whether training data itself contains historical bias, underrepresentation, or skewed labeling that will be learned by the model. Data-level mitigation (resampling, reweighting, relabeling) is often more effective than post-hoc model-level correction.
 
 #### Why It Matters
 
@@ -1743,76 +1826,14 @@ Historical data frequently encodes historical discrimination: historical hiring 
 
 ---
 
-### A.7.6 — Data Access Controls
-
-**Control Statement:** The organization shall implement access controls for AI training data, validation data, test data, and production inference data, applying least-privilege principles and maintaining access logs sufficient for audit.
-
----
-
-#### What It Means
-
-A.7.6 applies information security access control principles specifically to AI-related data. AI data environments have specific access control requirements: training data (often large, sensitive, and accessed by ML engineers); validation and test data (must be protected from contamination and information leakage); production inference data (may contain personal data requiring access restriction); output data (AI predictions and decisions, potentially sensitive).
-
-#### Why It Matters
-
-Inadequate access controls on AI data lead to: unauthorized access to personal data used in AI training; training data contamination (if test data is accessible during training, test results are unreliable); intellectual property loss through model theft; insider threats (employees extracting sensitive training data).
-
-#### How to Implement
-
-- **Create an AI data access control matrix** — For each AI data category and each role, define: read access; write access; delete access; export access. Apply least privilege.
-- **Implement access controls technically** — Storage-level access controls (S3 bucket policies, database permissions, file system ACLs). Identity-based access controls linked to organizational identity management.
-- **Separate training/validation/test data stores** — Prevent test data contamination. Separate access for data used in different ML pipeline stages.
-- **Access logging** — Log all access to AI data. Retain logs for audit purposes.
-- **Periodic access reviews** — Review access rights periodically (minimum annually) and revoke when no longer needed.
-
-#### Documents to Prepare
-
-| Document | Description | Owner |
-|---|---|---|
-| AI Data Access Control Matrix | Defined access rights by role for each AI data category | CISO / Chief Data Officer |
-| Access Control Configuration Records | Technical evidence of access control implementation | DevOps / CISO |
-| AI Data Access Logs | Audit logs of access to AI training and production data | DevOps |
-| Access Review Records | Periodic review of access rights with revocation evidence | CISO / Chief Data Officer |
-
-#### How to Audit
-
-**Document Review:**
-- Verify access control matrix exists for AI data
-- Check access controls are technically implemented (not just documented)
-- Confirm access logs are retained
-
-**Technical Review:**
-- Review access control configuration for AI data stores
-- Check audit log retention period
-
-**Evidence Required**
-- AI data access control matrix
-- Access control configuration evidence
-- Access logs (sample)
-- Periodic access review records
-
-**Common Gaps Found in Audits**
-- Training data accessible to all members of the AI team — no least privilege
-- No separation between training, validation, and test data stores
-- Access logs not retained — cannot reconstruct who accessed data
-- Access rights never reviewed — departed employees retain access
-
-#### Cross-References
-
-| Framework | Reference |
-|---|---|
-| EU AI Act | Art. 10 (Data governance); Art. 9 (Risk management) |
-| NIST AI RMF | MAP 2.3, GOVERN 1.6 |
-| ISO 27001:2022 | A.5.15 (Access control); A.5.18 (Access rights) |
-
-## DOMAIN A.8 — INFORMATION FOR INTERESTED PARTIES
-*4 Controls | Ensuring transparency, explainability, and communication about AI*
+## DOMAIN A.8 — INFORMATION FOR INTERESTED PARTIES OF AI SYSTEMS
+*4 Controls | Ensuring users, authorities and affected parties receive the information they need*
 
 ---
 
-### A.8.2 — AI Capability Information
+### A.8.2 — System Documentation and Information for Users
 
-**Control Statement:** The organization shall provide accurate, clear, and non-misleading information about the capabilities, performance, and limitations of its AI systems to relevant interested parties.
+**Control Statement:** The organization shall provide users of its AI systems with documentation and information sufficient to understand the system’s capabilities, limitations, intended purpose and appropriate use, including how its outputs should be interpreted.
 
 ---
 
@@ -1830,6 +1851,8 @@ AI capability overclaiming causes real harm: business users make decisions based
 - **Ensure marketing claims are verified** — Any public claim about AI performance must be verifiable against actual test results. Marketing team must consult AI governance before making performance claims.
 - **Produce AI performance fact sheets** — Standardized documents showing actual verified performance metrics for each AI system, available for customers and regulators.
 - **Internal capability communication** — Ensure internal stakeholders (product teams, sales, executives) have accurate information about AI system capabilities and limitations.
+
+- **Explain the system in terms the user can act on** — Describe, at a level appropriate to the audience, what drives the system's outputs, what an output does and does not mean, and what the user should do when they disagree with it. Technical interpretability artefacts such as feature attributions support this but are not a substitute for a usable explanation.
 
 #### Documents to Prepare
 
@@ -1865,132 +1888,89 @@ AI capability overclaiming causes real harm: business users make decisions based
 
 ---
 
-### A.8.3 — AI Explainability
+### A.8.3 — External Reporting
 
-**Control Statement:** The organization shall implement explainability mechanisms appropriate to the AI system's risk level and use case, enabling affected individuals and relevant stakeholders to understand AI-driven decisions or recommendations to the degree necessary.
+**Control Statement:** The organization shall determine its external reporting obligations in relation to its AI systems and shall provide the required reports to the relevant authorities and other external parties within the applicable timescales.
 
 ---
 
 #### What It Means
 
-A.8.3 requires that AI decisions can be explained — particularly when those decisions affect individuals. The required level of explainability depends on the use case: a low-risk content recommendation may require minimal explanation; an employment or credit decision may require a full explanation of the factors that drove the outcome. This control requires organizations to design explainability into AI systems, not to add it as an afterthought.
+A.8.3 covers the reports the organization owes to the outside world, as distinct from the information it gives to users under A.8.2. This includes registration and conformity submissions to regulators, serious incident notifications, responses to supervisory requests, disclosures to customers under contract, and any transparency reporting the organization has committed to voluntarily. The control requires these obligations to be identified in advance and discharged reliably, rather than discovered under pressure.
 
 #### Why It Matters
 
-Without explainability: individuals affected by AI decisions cannot understand or challenge them; human reviewers cannot meaningfully evaluate AI recommendations; regulators cannot assess compliance; systemic bias is harder to detect and address. GDPR Article 22 requires meaningful information about automated decision-making logic for individuals.
+External reporting obligations for AI carry hard deadlines and personal and corporate liability. Under the EU AI Act, serious incidents must be reported to authorities within defined and short periods, and providers of high-risk systems have registration duties before placing systems on the market. Organizations that have not mapped these obligations in advance routinely miss them, and a missed statutory notification is treated far more seriously than the underlying incident.
 
 #### How to Implement
 
-- **Define explainability requirements per AI system** — Based on: risk level (higher risk = higher explainability requirement); regulatory requirements (GDPR Art. 22 for automated decisions); operational need (human reviewers need to understand AI recommendations to exercise meaningful oversight).
-- **Implement appropriate explainability techniques** — Options: feature importance (SHAP, LIME); counterfactual explanations ("if X had been different, the outcome would have been Y"); example-based explanations; rule extraction. Choose technique appropriate to the use case and audience.
-- **Design explanations for the intended audience** — Explanations for data scientists, for human reviewers, and for affected individuals are different. Design accordingly.
-- **Ensure explanations are actionable** — Explanations that tell someone their application was rejected because "features contributed negatively" are not actionable. Explanations must enable the individual to understand what to do differently.
+- **Map every reporting obligation** — Work through applicable regulation, sector rules and contracts, and record what must be reported, to whom, in what format and by when.
+- **Determine the organization's role** — Obligations differ sharply depending on whether the organization is a provider, deployer, importer or distributor of a given system.
+- **Assign named accountability** — Each obligation needs an owner and a deputy, because deadlines do not pause for absence.
+- **Pre-build the reporting artefacts** — Prepare templates and identify the data that will be needed, so a report can be assembled quickly under time pressure.
+- **Define the trigger and escalation path** — Specify what threshold turns an internal incident into a reportable event and who makes that determination.
+- **Rehearse it** — Test the reporting path in incident exercises, including the decision to notify.
+- **Keep records of what was reported** — Retain submissions, timestamps and correspondence as evidence of compliance.
+- **Monitor for change** — AI regulation is moving quickly, so the obligations register needs periodic review.
 
 #### Documents to Prepare
 
 | Document | Description | Owner |
 |---|---|---|
-| Explainability Requirements per AI System | Defined explainability requirements based on risk and regulatory obligations | AI Governance Lead |
-| Explainability Design Documentation | Technical design of explainability mechanisms per AI system | ML Engineer |
-| Individual Explanation Examples | Examples of the explanations provided to affected individuals | AI Governance Lead / Product Owner |
+| External Reporting Obligations Register | All AI reporting duties with recipient, trigger, deadline, format and owner | Compliance / Legal |
+| Regulatory Reporting Procedure | How reports are prepared, approved and submitted | Compliance |
+| Report Templates | Pre-prepared formats for incident and conformity reporting | Compliance / AI Governance Lead |
+| Submitted Reports Archive | Copies of reports with submission evidence and correspondence | Compliance |
 
 #### How to Audit
 
 **Document Review:**
-- Verify explainability requirements are defined per AI system
-- Review individual explanation examples — are they meaningful and actionable?
+- Verify a register of external reporting obligations exists and reflects current applicable regulation
+- Confirm the organization's role per AI system has been determined, since obligations flow from it
+- Check each obligation has a named owner and defined deadline
+- Confirm reporting triggers and escalation thresholds are documented
+- Inspect the archive of submitted reports and check timeliness against deadlines
+- Confirm the register has been reviewed as regulation changed
 
-**Behavioral Testing:**
-- Ask to see the explanation a user would receive if this AI system made a decision affecting them.
-- Is the explanation meaningful? Can the individual understand what factors drove the decision and what to do differently?
+**Personnel Interviews:**
+- Ask Compliance: "Which AI reporting obligations apply to us, and what is the shortest deadline among them?"
+- Ask the AI Governance Lead: "Who decides whether an incident is reportable, and how quickly?"
+- Ask the obligation owner: "Walk me through the last report you submitted."
 
 **Evidence Required**
-- Explainability requirements documentation
-- Explainability design documentation
-- Sample individual explanations
+- External reporting obligations register
+- Documented reporting procedure and escalation criteria
+- Evidence of reports actually submitted, with dates
+- Correspondence with authorities or customers
+- Review records showing the register is kept current
 
 **Common Gaps Found in Audits**
-- Explainability not designed into the system — added post-hoc with limited capability
-- Explanations provided in technical terms not comprehensible to affected individuals
-- Explainability exists for data scientists but not for affected individuals
-- Explanations describe what the AI did but are not actionable — individual cannot understand what to do differently
+- No register of obligations, so duties are identified only when an incident occurs
+- Provider versus deployer role never determined, leaving obligations unassigned
+- Reporting deadlines unknown to the people who would need to meet them
+- No defined threshold for what constitutes a reportable serious incident
+- Reporting path never tested, so first use is during a live incident
+- No archive of what was reported, making compliance unprovable
 
 #### Cross-References
 
 | Framework | Reference |
 |---|---|
-| EU AI Act | Art. 13 (Transparency); Art. 86 (Right to explanation) |
-| NIST AI RMF | MAP 1.1, MEASURE 2.6 |
+| EU AI Act | Art. 73 (Reporting of serious incidents); Art. 49 and Art. 71 (Registration in the EU database); Art. 62 (Reporting by deployers); Art. 21 (Cooperation with authorities) |
+| NIST AI RMF | GOVERN 4.3, MANAGE 4.1, MANAGE 4.3 |
+| ISO 27001:2022 | A.5.5 (Contact with authorities); A.5.31 (Legal, statutory and contractual requirements) |
 
 ---
 
-### A.8.4 — AI Disclosure to Users
+### A.8.4 — Communication of Incidents
 
-**Control Statement:** The organization shall ensure that users interacting with AI systems are appropriately informed that they are interacting with AI, and shall provide relevant information about the AI system's nature, capabilities, and limitations.
-
----
-
-#### What It Means
-
-A.8.4 requires that AI is not used to deceive users into thinking they are interacting with a human or with a more capable system than actually exists. This includes: disclosure when chatbots or virtual agents are AI (not humans); disclosure when AI is making or significantly influencing decisions that affect users; disclosure when content is AI-generated.
-
-#### Why It Matters
-
-Undisclosed AI use erodes trust, undermines informed consent, and in some jurisdictions violates legal requirements. Users who don't know they are interacting with AI cannot: make informed decisions about sharing personal information; seek human assistance where needed; exercise their right to challenge automated decisions; understand the limitations of the system they are interacting with.
-
-#### How to Implement
-
-- **Define disclosure requirements per AI system** — What must be disclosed? To whom? When? How (in-interface, in terms of service, on request)?
-- **Implement disclosures in user interface** — At the point of interaction: "You are chatting with an AI assistant." "This recommendation is generated by AI." "This decision was made with AI assistance — you have the right to request human review."
-- **Test disclosure prominence** — Disclosures should be clear and prominent, not buried in terms of service.
-- **Maintain compliance with regulatory disclosure requirements** — EU AI Act requires disclosure when AI systems interact with natural persons; GDPR Art. 13/14 requires information about automated decision-making.
-
-#### Documents to Prepare
-
-| Document | Description | Owner |
-|---|---|---|
-| AI Disclosure Policy | Policy defining disclosure requirements for each AI system | AI Governance Lead / Legal |
-| UI/UX Disclosure Evidence | Screenshots or records of AI disclosures in user interfaces | Product Owner |
-| Regulatory Compliance Assessment | Assessment of disclosure compliance against applicable regulations | Legal / AI Governance Lead |
-
-#### How to Audit
-
-**Document Review:**
-- Verify disclosure policy exists
-- Review UI/UX evidence — are disclosures present, clear, and prominent?
-
-**Behavioral Testing:**
-- Interact with the AI system as a user would. Is it clear you are interacting with AI? Is the disclosure prominent?
-
-**Evidence Required**
-- AI disclosure policy
-- UI/UX evidence of disclosures (screenshots, recordings)
-- Regulatory compliance assessment
-
-**Common Gaps Found in Audits**
-- Chatbots do not disclose they are AI — can be mistaken for human agents
-- AI disclosure buried in terms of service — not visible during interaction
-- AI-generated content not labeled as such
-- No disclosure of automated decision-making — individuals unaware AI made or influenced a decision affecting them
-
-#### Cross-References
-
-| Framework | Reference |
-|---|---|
-| EU AI Act | Art. 50 (Transparency obligations for certain AI systems) |
-| NIST AI RMF | GOVERN 1.5, MAP 1.1 |
-
----
-
-### A.8.5 — AI Incident Communication
-
-**Control Statement:** The organization shall establish and implement processes for timely and appropriate communication with affected individuals, regulators, and other relevant parties when AI-related incidents occur.
+**Control Statement:** The organization shall define and apply arrangements for communicating AI system incidents to the interested parties who need to know, within the timescales required by regulation, contract and its own policy.
 
 ---
 
 #### What It Means
 
-A.8.5 requires that when an AI system fails, causes harm, or is involved in a significant incident, the organization communicates appropriately. This includes: internal incident communication (to management, board); regulatory notification (to data protection authority, sector regulator, EU AI Office for high-risk AI); individual notification (to affected individuals); public communication (where incident is of public significance).
+A.8.4 requires that when an AI system fails, causes harm, or is involved in a significant incident, the organization communicates appropriately. This includes: internal incident communication (to management, board); regulatory notification (to data protection authority, sector regulator, EU AI Office for high-risk AI); individual notification (to affected individuals); public communication (where incident is of public significance).
 
 #### Why It Matters
 
@@ -2039,6 +2019,64 @@ Inadequate incident communication: delays remediation because relevant parties a
 | EU AI Act | Art. 73 (Reporting of serious incidents for high-risk AI) |
 | NIST AI RMF | MANAGE 3.1, GOVERN 6.2 |
 | ISO 27001:2022 | A.5.26 (Response to information security incidents) |
+
+### A.8.5 — Information for Interested Parties
+
+**Control Statement:** The organization shall determine what information about its AI systems needs to be made available to interested parties, including disclosure that a person is interacting with or subject to an AI system, and shall provide that information in an accessible form.
+
+---
+
+#### What It Means
+
+A.8.5 requires that AI is not used to deceive users into thinking they are interacting with a human or with a more capable system than actually exists. This includes: disclosure when chatbots or virtual agents are AI (not humans); disclosure when AI is making or significantly influencing decisions that affect users; disclosure when content is AI-generated.
+
+#### Why It Matters
+
+Undisclosed AI use erodes trust, undermines informed consent, and in some jurisdictions violates legal requirements. Users who don't know they are interacting with AI cannot: make informed decisions about sharing personal information; seek human assistance where needed; exercise their right to challenge automated decisions; understand the limitations of the system they are interacting with.
+
+#### How to Implement
+
+- **Define disclosure requirements per AI system** — What must be disclosed? To whom? When? How (in-interface, in terms of service, on request)?
+- **Implement disclosures in user interface** — At the point of interaction: "You are chatting with an AI assistant." "This recommendation is generated by AI." "This decision was made with AI assistance — you have the right to request human review."
+- **Test disclosure prominence** — Disclosures should be clear and prominent, not buried in terms of service.
+- **Maintain compliance with regulatory disclosure requirements** — EU AI Act requires disclosure when AI systems interact with natural persons; GDPR Art. 13/14 requires information about automated decision-making.
+
+#### Documents to Prepare
+
+| Document | Description | Owner |
+|---|---|---|
+| AI Disclosure Policy | Policy defining disclosure requirements for each AI system | AI Governance Lead / Legal |
+| UI/UX Disclosure Evidence | Screenshots or records of AI disclosures in user interfaces | Product Owner |
+| Regulatory Compliance Assessment | Assessment of disclosure compliance against applicable regulations | Legal / AI Governance Lead |
+
+#### How to Audit
+
+**Document Review:**
+- Verify disclosure policy exists
+- Review UI/UX evidence — are disclosures present, clear, and prominent?
+
+**Behavioral Testing:**
+- Interact with the AI system as a user would. Is it clear you are interacting with AI? Is the disclosure prominent?
+
+**Evidence Required**
+- AI disclosure policy
+- UI/UX evidence of disclosures (screenshots, recordings)
+- Regulatory compliance assessment
+
+**Common Gaps Found in Audits**
+- Chatbots do not disclose they are AI — can be mistaken for human agents
+- AI disclosure buried in terms of service — not visible during interaction
+- AI-generated content not labeled as such
+- No disclosure of automated decision-making — individuals unaware AI made or influenced a decision affecting them
+
+#### Cross-References
+
+| Framework | Reference |
+|---|---|
+| EU AI Act | Art. 50 (Transparency obligations for certain AI systems) |
+| NIST AI RMF | GOVERN 1.5, MAP 1.1 |
+
+---
 
 ## DOMAIN A.9 — USE OF AI SYSTEMS
 *3 Controls | Governing how AI is used in operational contexts*

@@ -195,7 +195,7 @@ AIMS-PROC-001: AI Risk Assessment Procedure
 | AI objectives | Clause 6.2 | |
 | Evidence of competence | Clause 7.2 | |
 | AI System Impact Assessments | Clause 8.4 | |
-| AI system lifecycle records | Clause 8.5 | |
+| AI system lifecycle records | Clause 8.1 / Annex A.6 | |
 | Monitoring and measurement results | Clause 9.1 | |
 | Internal audit program and results | Clause 9.2 | |
 | Management review records | Clause 9.3 | |
@@ -205,7 +205,7 @@ AIMS-PROC-001: AI Risk Assessment Procedure
 
 **Month 3 Priority Procedures:**
 1. AI Risk Assessment Procedure (Clause 6.1)
-2. AI System Lifecycle Procedure (Clause 8.5) — use AIMS-PROC-002
+2. AI System Lifecycle Procedure (Clause 8.1, Annex A.6) — use AIMS-PROC-002
 3. AI System Impact Assessment procedure (Clause 8.4) — use AIMS-TEMP-001
 4. AI Incident Response Procedure (Clause 10.2) — use AIMS-PROC-003
 
@@ -219,13 +219,13 @@ AIMS-PROC-001: AI Risk Assessment Procedure
 
 #### Annex A.6 Controls Implementation
 
-**A.6.1 Design Controls:**
+**A.6.1.2 / A.6.1.3 — Responsible design and development objectives and processes:**
 - [ ] Create responsible AI design requirements template
 - [ ] Integrate into project initiation process
 - [ ] Train AI architects and designers
 - [ ] Implement design documentation standard
 
-**A.6.2 Development Controls:**
+**A.6.2.2 / A.6.2.3 / A.6.2.4 / A.6.2.7 — Requirements, design documentation, verification and validation, technical documentation:**
 - [ ] Implement AI development lifecycle procedure (AIMS-PROC-002)
 - [ ] Set up model registry and versioning
 - [ ] Implement experiment tracking (MLflow / Weights & Biases / etc.)
@@ -234,19 +234,19 @@ AIMS-PROC-001: AI Risk Assessment Procedure
 - [ ] Implement adversarial testing framework
 - [ ] Set up staging/representative test environment
 
-**A.6.3 Deployment Controls:**
+**A.6.2.5 — AI system deployment:**
 - [ ] Create deployment checklist and governance gate process
 - [ ] Implement change management for AI systems
 - [ ] Set up rollback procedures
 - [ ] Implement human oversight mechanisms
 
-**A.6.4 Monitoring Controls:**
+**A.6.2.6 / A.6.2.8 — Operation, monitoring and event logging:**
 - [ ] Implement AI-specific monitoring (Evidently AI / Fiddler / Arize / custom)
 - [ ] Define monitoring metrics and alert thresholds
 - [ ] Set up drift detection
 - [ ] Create monitoring dashboards
 
-**A.6.5 Decommissioning Controls:**
+**A.6.2.6 — Decommissioning and retirement:**
 - [ ] Create decommissioning checklist
 - [ ] Integrate with data retention/deletion procedures
 
@@ -450,7 +450,7 @@ Focus areas for Stage 2 auditors:
 | 6 | AI Objectives and Plans | 6.2 | In MANAGEMENT-REVIEW-TEMPLATE.md ✓ |
 | 7 | Competency Evidence | 7.2 | Training records |
 | 8 | AI System Impact Assessments | 8.4 | AI-SYSTEM-IMPACT-ASSESSMENT.md ✓ |
-| 9 | AI Lifecycle Records | 8.5 | AI-LIFECYCLE-MANAGEMENT-PROCEDURE.md ✓ |
+| 9 | AI Lifecycle Records | 8.1 / A.6 | AI-LIFECYCLE-MANAGEMENT-PROCEDURE.md ✓ |
 | 10 | Monitoring/Measurement Results | 9.1 | In MANAGEMENT-REVIEW-TEMPLATE.md ✓ |
 | 11 | Internal Audit Program and Results | 9.2 | INTERNAL-AUDIT-PROCEDURE.md ✓ |
 | 12 | Management Review Records | 9.3 | MANAGEMENT-REVIEW-TEMPLATE.md ✓ |
@@ -460,15 +460,15 @@ Focus areas for Stage 2 auditors:
 
 | # | Document | Purpose | Template Available |
 |---|----------|---------|-------------------|
-| 1 | AI Incident Response Procedure | Clause 10.2, A.8.5, A.9.4 | AI-INCIDENT-RESPONSE-PROCEDURE.md ✓ |
-| 2 | AI Lifecycle Management Procedure | Clause 8.5, A.6 | AI-LIFECYCLE-MANAGEMENT-PROCEDURE.md ✓ |
+| 1 | AI Incident Response Procedure | Clause 10.2, A.8.4, A.3.3 | AI-INCIDENT-RESPONSE-PROCEDURE.md ✓ |
+| 2 | AI Lifecycle Management Procedure | Clause 8.1, A.6 | AI-LIFECYCLE-MANAGEMENT-PROCEDURE.md ✓ |
 | 3 | AI Supplier Assessment | A.10.2, A.10.3 | AI-SUPPLIER-ASSESSMENT.md ✓ |
 | 4 | Controls Mapping | Clause 6.1, Annex A | CONTROLS-MAPPING.md ✓ |
 | 5 | Acceptable Use of AI Policy | A.9.2 | Build from AIMS-POLICY-TEMPLATE.md |
-| 6 | Model Card Template | A.6.2.3 | In AI-LIFECYCLE-MANAGEMENT-PROCEDURE.md ✓ |
+| 6 | Model Card Template | A.6.2.7 | In AI-LIFECYCLE-MANAGEMENT-PROCEDURE.md ✓ |
 | 7 | AI Data Governance Procedure | A.7 | Build from lifecycle procedure |
 | 8 | Human Oversight Framework | A.9.2, A.6.2.5 | In lifecycle procedure |
-| 9 | Bias Evaluation Methodology | A.6.2.6 | In lifecycle procedure ✓ |
+| 9 | Bias Evaluation Methodology | A.6.2.4 | In lifecycle procedure ✓ |
 
 ---
 

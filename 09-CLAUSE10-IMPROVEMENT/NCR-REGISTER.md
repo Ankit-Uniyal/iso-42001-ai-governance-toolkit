@@ -1,10 +1,10 @@
 # Nonconformity and Corrective Action Register (NCR Register)
 ## ISO/IEC 42001:2023 | Clause 10.2 — Template
 
-**Document ID:** AIMS-NCR-001
-**Version:** 1.0
-**Owner:** AI Governance Lead
-**Date:** ___________________________
+**Document ID:** AIMS-NCR-001  
+**Version:** 1.0  
+**Owner:** AI Governance Lead  
+**Date:** ___________________________  
 **Review Cycle:** Monthly; updated as NCRs arise
 
 ---

@@ -1,4 +1,4 @@
-———# Document Control Procedure
+# Document Control Procedure
 ## ISO/IEC 42001:2023 | Clause 7.5 — Template
 
 **Document ID:** AIMS-DOCPROC-001

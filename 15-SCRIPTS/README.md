@@ -1,4 +1,4 @@
-# 12-SCRIPTS — GRC Engineering Automation
+# 15-SCRIPTS — GRC Engineering Automation
 
 > **Bridging Policy and Engineering** for ISO/IEC 42001:2023 AI Governance
 
@@ -29,7 +29,7 @@ All commands below are written to be run from the **repository root**.
 Reads a CSV inventory of AI systems and evaluates whether each system's **Last Assessment Date** falls within an acceptable window (default: 365 days). It produces:
 
 - A formatted **console report** with status for every system
-- A saved **text report** for audit evidence (default: `12-SCRIPTS/reports/assessment_report.txt`)
+- A saved **text report** for audit evidence (default: `15-SCRIPTS/reports/assessment_report.txt`)
 - A **non-zero exit code** when overdue or undated systems exist (CI/CD pipeline friendly)
 
 ### Status levels
@@ -45,16 +45,16 @@ Reads a CSV inventory of AI systems and evaluates whether each system's **Last A
 
 ```bash
 # Basic run using the sample CSV
-python 12-SCRIPTS/ai_assessment_checker.py
+python 15-SCRIPTS/ai_assessment_checker.py
 
 # Specify a custom input file
-python 12-SCRIPTS/ai_assessment_checker.py --input path/to/your/ai_inventory.csv
+python 15-SCRIPTS/ai_assessment_checker.py --input path/to/your/ai_inventory.csv
 
 # Use a 180-day threshold instead of 365
-python 12-SCRIPTS/ai_assessment_checker.py --input 12-SCRIPTS/sample_ai_systems.csv --threshold 180
+python 15-SCRIPTS/ai_assessment_checker.py --input 15-SCRIPTS/sample_ai_systems.csv --threshold 180
 
 # Specify a custom output report path
-python 12-SCRIPTS/ai_assessment_checker.py --output 12-SCRIPTS/reports/q2_assessment.txt
+python 15-SCRIPTS/ai_assessment_checker.py --output 15-SCRIPTS/reports/q2_assessment.txt
 ```
 
 The output directory is created automatically if it does not already exist.
@@ -118,19 +118,19 @@ State is persisted to a JSON file between runs (default: `soa_state.json`), so p
 
 ```bash
 # Full readiness report for all 38 controls
-python 12-SCRIPTS/aims_soa_tracker.py
+python 15-SCRIPTS/aims_soa_tracker.py
 
 # Report on a single Annex A domain
-python 12-SCRIPTS/aims_soa_tracker.py --domain "AI System Lifecycle"
+python 15-SCRIPTS/aims_soa_tracker.py --domain "AI System Lifecycle"
 
 # Interactively update control statuses
-python 12-SCRIPTS/aims_soa_tracker.py --update
+python 15-SCRIPTS/aims_soa_tracker.py --update
 
 # Export the SoA to CSV for the audit pack
-python 12-SCRIPTS/aims_soa_tracker.py --export-csv 12-SCRIPTS/reports/soa_report.csv
+python 15-SCRIPTS/aims_soa_tracker.py --export-csv 15-SCRIPTS/reports/soa_report.csv
 
 # Use a specific state file
-python 12-SCRIPTS/aims_soa_tracker.py --state 12-SCRIPTS/reports/soa_state.json
+python 15-SCRIPTS/aims_soa_tracker.py --state 15-SCRIPTS/reports/soa_state.json
 ```
 
 ---

@@ -1,5 +1,5 @@
 # AI Supplier Contract Clauses Template
-## ISO/IEC 42001:2023 | Clause 8.4 / Annex A.2.5 / A.8.2
+## ISO/IEC 42001:2023 | Clause 8.1 | Annex A.10.2, A.10.3, A.8.2
 
 **Document ID:** AIMS-CONTRACT-001
 **Version:** 1.0
@@ -14,9 +14,10 @@
 ## Purpose
 
 This document provides standard AI governance clauses for inclusion in contracts with AI suppliers, AI vendors, and third parties that develop, supply, or operate AI systems on behalf of the organisation. It implements:
-- ISO/IEC 42001:2023 Annex A.2.5 — Addressing AI considerations in contracts
-- ISO/IEC 42001:2023 Annex A.8.2 — Supplier relationships for AI systems
-- ISO/IEC 42001:2023 Clause 8.4 — Externally provided processes, products and services
+- ISO/IEC 42001:2023 Annex A.10.2 — Allocating responsibilities across the AI value chain
+- ISO/IEC 42001:2023 Annex A.10.3 — Suppliers
+- ISO/IEC 42001:2023 Annex A.8.2 — System documentation and information for users
+- ISO/IEC 42001:2023 Clause 8.1 — Operational planning and control (externally provided processes, products and services)
 
 ---
 
@@ -28,20 +29,13 @@ This document provides standard AI governance clauses for inclusion in contracts
 4. Ensure clauses are proportionate to the AI risk tier of the supplier
 5. Track which clauses are included in each supplier contract in `AI-SUPPLIER-RISK-REGISTER.md`
 
+> **Note on numbering:** The Section A / B / C clause references below are numbering for *this contract template only*. They are not ISO/IEC 42001:2023 Annex A control references. The Annex A controls this template supports are listed under Purpose above.
+
 ---
 
 ## Section A — Core AI Governance Clauses (Include in ALL AI supplier contracts)
 
-### A.1 — AI System Identification and Documentation
-
-**Clause A.1.1 — AI System Disclosure**
-The Supplier shall, at contract commencement and upon any material change, provide the Customer with a written description of all AI systems, AI models, and AI-enabled features used in the provision of the Services, including: (a) the purpose of each AI system; (b) the type  of AI technology; (c) training data used; (d) known limitations; (e) EU AI Act risk class.
-
-**Clause A.1.2 — Model Cards:** Supplier shall provide a model card for each AI system making decisions affecting individuals, updated within 30 days of material change.
-
----
-
-## Section A — Core Clauses (ALL AI supplier contracts)
+**A.1 — AI System Identification and Documentation:** The Supplier shall, at contract commencement and upon any material change, provide the Customer with a written description of all AI systems, AI models, and AI-enabled features used in the provision of the Services, including: (a) the purpose of each AI system; (b) the type of AI technology; (c) training data used; (d) known limitations; (e) EU AI Act risk class. The Supplier shall provide a model card for each AI system making decisions affecting individuals, updated within 30 days of material change.
 
 **A.2 — Fairness:** Supplier shall conduct fairness evaluations before deployment and notify Customer within 5 days of detecting material bias. Remediation plan within 15 days; implemented within 60 days.
 
@@ -97,4 +91,4 @@ The Supplier shall, at contract commencement and upon any material change, provi
 
 ---
 
-*ISO/IEC 42001:2023 AI Governance Toolkit | Clause 8.4 / A.2.5 / A.8.2 — AI Supplier Contract Clauses | See root README.md for full index*
+*ISO/IEC 42001:2023 AI Governance Toolkit | Clause 8.1 | A.10.2, A.10.3, A.8.2 — AI Supplier Contract Clauses | See root README.md for full index*

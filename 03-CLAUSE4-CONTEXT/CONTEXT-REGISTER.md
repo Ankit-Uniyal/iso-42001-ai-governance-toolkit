@@ -1,12 +1,12 @@
 # Context of the Organisation Register
 ## ISO/IEC 42001:2023 | Clause 4.1 — Template
 
-**Organisation:** ___________________________
-**Document ID:** AIMS-CTX-001
-**Version:** 1.0
-**Owner:** AI Governance Lead
-**Approved by:** ___________________________
-**Date:** ___________________________
+**Organisation:** ___________________________  
+**Document ID:** AIMS-CTX-001  
+**Version:** 1.0  
+**Owner:** AI Governance Lead  
+**Approved by:** ___________________________  
+**Date:** ___________________________  
 **Review Date:** ___________________________ (annual minimum)
 
 ---

@@ -3,9 +3,9 @@
 
 ---
 
-**Document ID:** AIMS-PROC-002
-**Version:** 1.0
-**Owner:** AI Development Lead / AI Governance Lead
+**Document ID:** AIMS-PROC-002  
+**Version:** 1.0  
+**Owner:** AI Development Lead / AI Governance Lead  
 **Classification:** Internal — Controlled Document
 
 ---

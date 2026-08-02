@@ -1,11 +1,11 @@
 # Interested Parties Register
 ## ISO/IEC 42001:2023 | Clause 4.2 — Template
 
-**Organisation:** ___________________________
-**Document ID:** AIMS-IPR-001
-**Version:** 1.0
-**Owner:** AI Governance Lead
-**Date:** ___________________________
+**Organisation:** ___________________________  
+**Document ID:** AIMS-IPR-001  
+**Version:** 1.0  
+**Owner:** AI Governance Lead  
+**Date:** ___________________________  
 **Review Cycle:** Annual or upon significant stakeholder change
 
 ---

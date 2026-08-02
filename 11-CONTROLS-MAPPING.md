@@ -17,105 +17,104 @@ This document helps organizations that need to comply with **multiple AI governa
 
 ---
 
-## Domain A.2 — Policies for AI
+## Domain A.2 — Policies Related to AI
 
 | ISO 42001 Control | Control Description | EU AI Act | NIST AI RMF | ISO 27001 |
-|-------------------|--------------------|-----------|----|-----------|
-| A.2.2 | AI policy — establish, document, communicate, and review an organizational AI policy | Art. 9 (Risk management system), Art. 13 (Transparency) | GOVERN 1.1, GOVERN 1.2 | A.5.1 (Policies for information security) |
-| A.2.3 | AI-specific policies — address prohibited uses, ethics principles, human oversight, and acceptable use | Art. 5 (Prohibited practices), Art. 9 | GOVERN 1.3, GOVERN 1.4, GOVERN 6.1 | A.5.1, A.5.10 |
+|-------------------|--------------------|-----------|-------------|-----------|
+| A.2.2 | AI policy — establish, document, communicate and review a top-level AI policy | Art. 17; Art. 26 | GOVERN 1.1, GOVERN 1.2 | A.5.1 |
+| A.2.3 | Alignment with other organizational policies — reconcile the AI policy with related policies | Art. 17 | GOVERN 1.1, GOVERN 2.1 | A.5.1 |
+| A.2.4 | Review of the AI policy — review at planned intervals and on significant change | Art. 17; Art. 9 | GOVERN 1.1, MANAGE 4.1 | A.5.1 |
 
 ---
 
 ## Domain A.3 — Internal Organization
 
 | ISO 42001 Control | Control Description | EU AI Act | NIST AI RMF | ISO 27001 |
-|-------------------|--------------------|-----------|----|-----------|
-| A.3.2 | AI governance roles — define and assign responsibilities for AI governance | Art. 9(5), Art. 26 (Obligations of deployers) | GOVERN 2.1, GOVERN 2.2 | A.5.2 (Information security roles and responsibilities) |
-| A.3.3 | Segregation of duties in AI — apply appropriate segregation where AI system integrity is at risk | Art. 9 | GOVERN 2.1 | A.5.3 (Segregation of duties) |
-| A.3.4 | Contact with AI authorities — maintain contact with AI regulators, standards bodies | Art. 70 (Cooperation with authorities), Art. 74 | GOVERN 5.1 | A.5.5 (Contact with authorities) |
-| A.3.6 | AI in project management — integrate AI governance into project management methodology | Art. 9 | GOVERN 1.7 | A.5.8 (Information security in project management) |
+|-------------------|--------------------|-----------|-------------|-----------|
+| A.3.2 | AI roles and responsibilities — define, assign and communicate accountability | Art. 26; Art. 22 | GOVERN 2.1, GOVERN 2.2 | A.5.2 |
+| A.3.3 | Reporting of concerns — accessible, protected channel for raising AI concerns | Art. 26; Art. 73; Dir. (EU) 2019/1937 | GOVERN 4.1, GOVERN 4.2, GOVERN 4.3 | A.6.8 |
 
 ---
 
 ## Domain A.4 — Resources for AI Systems
 
 | ISO 42001 Control | Control Description | EU AI Act | NIST AI RMF | ISO 27001 |
-|-------------------|--------------------|-----------|----|-----------|
-| A.4.2 | AI competencies — ensure staff have required AI governance competencies | Art. 9(4), Art. 26(6) | GOVERN 2.2, GOVERN 4.1 | A.6.3 (Information security awareness, education, training) |
-| A.4.3 | AI infrastructure security — ensure computing infrastructure meets AI security requirements | Art. 9, Art. 17 | MANAGE 2.2, MANAGE 4.1 | A.8.1 (User endpoint devices), A.8.8 (Management of technical vulnerabilities) |
-| A.4.4 | AI tool security — assess and control tools used in AI development | Art. 17 | MAP 3.5 | A.8.25 (Secure development lifecycle) |
+|-------------------|--------------------|-----------|-------------|-----------|
+| A.4.2 | Resource documentation — identify and document resources across the life cycle | Art. 17; Art. 11 | GOVERN 1.2, MAP 1.1 | A.5.9 |
+| A.4.3 | Data resources — document and manage the data resources AI systems rely on | Art. 10 | MAP 2.3, MEASURE 2.2 | A.5.9, A.5.34 |
+| A.4.4 | Tooling resources — govern frameworks, libraries, pre-trained models and MLOps tooling | Art. 15 | MAP 4.1, MANAGE 2.2 | A.8.28, A.8.31 |
+| A.4.5 | System and computing resources — manage compute, storage, networking and environments | Art. 15 | MAP 4.1, MANAGE 3.1 | A.8.1, A.8.9 |
+| A.4.6 | Human resources — roles, competence, training and awareness for AI | Art. 4; Art. 26 | GOVERN 2.2, GOVERN 3.2 | A.6.3 |
 
 ---
 
 ## Domain A.5 — Assessing Impacts of AI Systems
 
 | ISO 42001 Control | Control Description | EU AI Act | NIST AI RMF | ISO 27001 |
-|-------------------|--------------------|-----------|----|-----------|
-| A.5.2 | AI system impact assessment (ASIA) — conduct impact assessments before deployment | Art. 9(2), Art. 27 (Fundamental rights impact assessment) | MAP 1.1, MAP 1.5, MAP 2.3 | A.5.30 (ICT readiness for business continuity) |
-| A.5.3 | Societal and ethical impact — consider societal, human rights, and fairness impacts | Art. 27, Recital 47 | MAP 1.5, MAP 2.3 | — |
-| A.5.4 | Use of assessment results — inform risk treatment decisions with ASIA findings | Art. 9, Art. 27 | MAP 2.3, MAP 5.1 | A.5.29 (Information security during disruption) |
+|-------------------|--------------------|-----------|-------------|-----------|
+| A.5.2 | AI system impact assessment process — defined, triggered and approved process | Art. 27; Art. 9 | MAP 5.1, MAP 5.2 | A.5.35 |
+| A.5.3 | Documentation of AI system impact assessments — record, retain and make available | Art. 27; Art. 11; Art. 18 | MAP 5.1, GOVERN 1.4 | A.5.33 |
+| A.5.4 | Assessing impact on individuals or groups — harms, severity and subgroup analysis | Art. 27; Art. 5; Art. 14 | MAP 1.1, MAP 3.3, MEASURE 2.11 | A.5.34 |
+| A.5.5 | Assessing societal impacts — wider social, economic and environmental effects | Art. 27; Recital 27 | MAP 3.1, MAP 5.1 | — |
 
 ---
 
-## Domain A.6 — AI System Lifecycle
+## Domain A.6 — AI System Life Cycle
 
 | ISO 42001 Control | Control Description | EU AI Act | NIST AI RMF | ISO 27001 |
-|-------------------|--------------------|-----------|----|-----------|
-| A.6.1.1 | AI design requirements — include responsible AI principles in design specifications | Art. 9, Art. 13, Art. 14 | MAP 1.1, MAP 3.1, MAP 3.5 | A.8.25 (Secure development lifecycle) |
-| A.6.1.2 | AI design documentation — document AI system design and architecture | Art. 11 (Technical documentation) | MAP 3.1 | A.5.37 (Documented operating procedures) |
-| A.6.2.1 | AI development process — follow a documented development process | Art. 17 (Quality management) | MAP 3.1, MANAGE 1.3 | A.8.25 |
-| A.6.2.3 | AI model documentation — maintain model cards documenting model characteristics | Art. 11, Art. 13 | MAP 3.1, MEASURE 2.5 | A.5.37 |
-| A.6.2.5 | AI adversarial testing — conduct adversarial robustness testing | Art. 9(7), Art. 15 (Accuracy, robustness, cybersecurity) | MEASURE 2.6, MEASURE 2.7 | A.8.29 (Security testing in development and acceptance) |
-| A.6.2.6 | AI bias evaluation — conduct bias and fairness evaluation | Art. 9(7), Art. 10(5) | MEASURE 2.5, MEASURE 2.11 | — |
-| A.6.2.8 | AI testing in representative environments — test in production-representative environment before deployment | Art. 9(6) | MEASURE 2.7, MANAGE 1.3 | A.8.29 |
-| A.6.3.1 | AI deployment controls — implement controls for safe deployment | Art. 9, Art. 26 | MANAGE 1.0, MANAGE 1.3 | A.8.32 (Change management) |
-| A.6.3.3 | Human oversight at deployment — ensure human oversight mechanisms in deployed systems | Art. 14 (Human oversight) | MANAGE 1.2 | — |
-| A.6.4.1 | AI operation monitoring — monitor deployed AI system performance | Art. 9(1)(f), Art. 72 (Post-market monitoring) | MEASURE 1.1, MANAGE 4.1 | A.8.16 (Monitoring activities) |
-| A.6.4.2 | AI performance drift monitoring — detect and respond to model performance degradation | Art. 72 | MEASURE 2.2, MANAGE 4.1 | A.8.16 |
-| A.6.5.1 | AI decommissioning — secure decommissioning with data deletion and model archiving | Art. 10(6) | MANAGE 4.2 | A.8.10 (Information deletion) |
+|-------------------|--------------------|-----------|-------------|-----------|
+| A.6.1.2 | Objectives for responsible development of AI systems | Art. 9; Art. 17 | GOVERN 1.1, GOVERN 3.2, MAP 1.4 | Clause 6.2 |
+| A.6.1.3 | Processes for responsible AI system design and development | Art. 9; Art. 17 | MAP 1.1, MANAGE 1.1 | A.8.25 |
+| A.6.2.2 | AI system requirements and specification | Art. 9; Art. 13 | MAP 1.1, MAP 2.1 | A.8.26 |
+| A.6.2.3 | Documentation of AI system design and development | Art. 11; Annex IV | MAP 2.2, GOVERN 1.4 | A.5.37 |
+| A.6.2.4 | AI system verification and validation, including bias and robustness testing | Art. 9; Art. 15; Art. 10 | MEASURE 2.1, MEASURE 2.5, MEASURE 2.7, MEASURE 2.11 | A.8.29 |
+| A.6.2.5 | AI system deployment, including release approval and rollback | Art. 16; Art. 43 | MANAGE 1.1, MANAGE 2.1 | A.8.32 |
+| A.6.2.6 | AI system operation and monitoring, including drift and retirement | Art. 72; Art. 26 | MEASURE 2.4, MANAGE 4.1 | A.8.16 |
+| A.6.2.7 | AI system technical documentation | Art. 11; Art. 13; Annex IV | MAP 2.2, MEASURE 1.1 | A.5.37 |
+| A.6.2.8 | AI system recording of event logs | Art. 12; Art. 19; Art. 26 | MEASURE 1.1, MEASURE 2.4 | A.8.15, A.8.16 |
 
 ---
 
 ## Domain A.7 — Data for AI Systems
 
 | ISO 42001 Control | Control Description | EU AI Act | NIST AI RMF | ISO 27001 |
-|-------------------|--------------------|-----------|----|-----------|
-| A.7.2 | AI data quality — define and apply data quality criteria for AI training | Art. 10(2)(3) (Data and data governance) | MAP 2.3, MEASURE 2.5 | A.8.1 |
-| A.7.3 | Data provenance — document AI training data lineage and provenance | Art. 10(3) | MAP 2.3 | A.5.13 (Labelling of information) |
-| A.7.4 | Data privacy for AI — handle personal data in AI training per privacy regulations | Art. 10(5), GDPR Article 6 | MAP 1.5 | A.5.34 (Privacy and protection of PII) |
-| A.7.5 | Bias mitigation in data — identify and mitigate bias in AI training data | Art. 10(2)(f), Art. 10(5) | MEASURE 2.5 | — |
-| A.7.6 | Data access controls — control access to AI training and operational data | Art. 10 | MANAGE 2.4 | A.5.15 (Access control), A.8.3 (Information access restriction) |
+|-------------------|--------------------|-----------|-------------|-----------|
+| A.7.2 | Data for development and enhancement of AI systems | Art. 10 | MAP 2.3, MEASURE 2.2 | A.5.9 |
+| A.7.3 | Acquisition of data, including lawful basis and access control | Art. 10; Art. 53 | MAP 2.3, MANAGE 2.2 | A.5.15, A.5.34, A.8.12 |
+| A.7.4 | Quality of data for AI systems | Art. 10 | MEASURE 2.2, MEASURE 2.3 | A.5.12 |
+| A.7.5 | Data provenance and lineage | Art. 10; Art. 53 | MAP 2.3, MEASURE 2.2 | A.5.13 |
+| A.7.6 | Data preparation, including labelling and bias treatment | Art. 10 | MEASURE 2.11, MAP 2.3 | A.5.12 |
 
 ---
 
-## Domain A.8 — Information for Interested Parties
+## Domain A.8 — Information for Interested Parties of AI Systems
 
 | ISO 42001 Control | Control Description | EU AI Act | NIST AI RMF | ISO 27001 |
-|-------------------|--------------------|-----------|----|-----------|
-| A.8.2 | AI capability information — provide accurate information about AI capabilities and limitations | Art. 13 (Transparency and provision of information to deployers) | GOVERN 1.6, MAP 1.6 | — |
-| A.8.3 | AI explainability — define and implement explainability requirements | Art. 13, GDPR Art. 22 (right to explanation) | MEASURE 2.8 | — |
-| A.8.4 | AI disclosure to users — inform users when interacting with an AI system | Art. 50 (Obligations for providers of general-purpose AI) | GOVERN 1.6 | — |
-| A.8.5 | AI incident communication — communicate AI incidents and performance issues to affected parties | Art. 73 (Reporting of serious incidents) | MANAGE 3.2 | A.5.24 (Information security incident management planning) |
+|-------------------|--------------------|-----------|-------------|-----------|
+| A.8.2 | System documentation and information for users, including explainability | Art. 13; Art. 11 | MEASURE 2.8, MEASURE 2.9 | A.5.37 |
+| A.8.3 | External reporting to authorities and other external parties | Art. 73; Art. 49; Art. 71; Art. 62 | GOVERN 4.3, MANAGE 4.1 | A.5.5, A.5.31 |
+| A.8.4 | Communication of incidents to those who need to know | Art. 73; Art. 26 | MANAGE 4.1, MANAGE 4.3 | A.5.24, A.5.26, A.6.8 |
+| A.8.5 | Information for interested parties, including AI disclosure | Art. 50; Art. 13; Art. 86 | GOVERN 5.1, MAP 5.2 | A.5.34 |
 
 ---
 
 ## Domain A.9 — Use of AI Systems
 
 | ISO 42001 Control | Control Description | EU AI Act | NIST AI RMF | ISO 27001 |
-|-------------------|--------------------|-----------|----|-----------|
-| A.9.2 | Acceptable use of AI — define acceptable use policies for AI systems | Art. 26(1) | GOVERN 6.1, GOVERN 6.2 | A.5.10 (Acceptable use of information) |
-| A.9.3 | Human oversight — implement human oversight for high-stakes AI decisions | Art. 14 (Human oversight) | GOVERN 6.2, MANAGE 1.2 | — |
-| A.9.4 | AI error handling — define processes to detect and handle AI system errors | Art. 9(1)(c), Art. 15 | MANAGE 3.1, MANAGE 3.2 | A.5.26 (Response to information security incidents) |
+|-------------------|--------------------|-----------|-------------|-----------|
+| A.9.2 | Processes for responsible use, including human oversight and error handling | Art. 26; Art. 14 | GOVERN 5.1, MANAGE 1.1, MANAGE 2.3 | A.5.10 |
+| A.9.3 | Objectives for responsible use of AI systems | Art. 26; Art. 14 | GOVERN 1.1, GOVERN 5.1, MANAGE 1.1 | Clause 6.2 |
+| A.9.4 | Intended use of the AI system and prevention of out-of-scope use | Art. 26; Art. 25; Art. 13 | MAP 1.1, MAP 3.4, MANAGE 1.2 | A.5.10 |
 
 ---
 
-## Domain A.10 — Third-Party and Customer AI
+## Domain A.10 — Third-Party and Customer Relationships
 
 | ISO 42001 Control | Control Description | EU AI Act | NIST AI RMF | ISO 27001 |
-|-------------------|--------------------|-----------|----|-----------|
-| A.10.2 | Third-party AI risk assessment — assess AI-related risks before adopting third-party AI | Art. 25 (Obligations of distributors), Art. 28 | MAP 3.5, MAP 5.2 | A.5.21 (Managing information security in the ICT supply chain) |
-| A.10.3 | AI supplier contracts — include AI governance requirements in supplier agreements | Art. 25, Art. 26(7) | MAP 3.5 | A.5.20 (Addressing information security within supplier agreements) |
-| A.10.4 | Customer AI governance — identify and meet customer AI governance requirements | Art. 13, Art. 26 | GOVERN 5.1 | A.5.19 (Information security in supplier relationships) |
+|-------------------|--------------------|-----------|-------------|-----------|
+| A.10.2 | Allocating responsibilities across the AI value chain | Art. 25; Art. 26; Art. 16 | GOVERN 2.1, GOVERN 6.1, GOVERN 6.2 | A.5.19, A.5.2 |
+| A.10.3 | Suppliers — assessment, contractual terms and ongoing monitoring | Art. 25; Art. 16 | GOVERN 6.1, GOVERN 6.2, MAP 4.1 | A.5.19, A.5.20, A.5.21, A.5.22 |
+| A.10.4 | Customers — information, support and contractual commitments | Art. 13; Art. 25; Art. 26 | GOVERN 5.1, GOVERN 6.1 | A.5.20 |
 
 ---
 
@@ -125,8 +124,8 @@ This document helps organizations that need to comply with **multiple AI governa
 |---------------------|----------------|--------------------------|---------------------|
 | **GOVERN** | AI governance structures, policies, culture, roles | Clause 4, 5, 6.2 | A.2, A.3, A.9 |
 | **MAP** | Context, risk identification, AI system classification | Clause 4, 6.1 | A.5, A.6.1, A.7, A.10 |
-| **MEASURE** | Risk evaluation, testing, monitoring, metrics | Clause 6.1, 8.2, 9.1 | A.6.2, A.6.4, A.7 |
-| **MANAGE** | Risk treatment, incident response, continual improvement | Clause 6.1.3, 8.3, 10 | A.6.3, A.8.5, A.9.4 |
+| **MEASURE** | Risk evaluation, testing, monitoring, metrics | Clause 6.1, 8.2, 9.1 | A.5, A.6.2, A.7 |
+| **MANAGE** | Risk treatment, incident response, continual improvement | Clause 6.1.3, 8.3, 10 | A.6.2, A.8.4, A.9.2 |
 
 ---
 
@@ -136,14 +135,14 @@ This document helps organizations that need to comply with **multiple AI governa
 |----------------------|--------------|--------------------------|---------------------|
 | Risk Management System | Art. 9 | Clause 6, 8.2, 8.3 | A.2, A.5, A.6.2 |
 | Data and Data Governance | Art. 10 | Clause 8.5 | A.7 |
-| Technical Documentation | Art. 11 | Clause 7.5, 8.5 | A.6.1.2, A.6.2.3 |
-| Transparency and Provision of Information | Art. 13 | Clause 7.4 | A.8.2, A.8.3, A.8.4 |
-| Human Oversight | Art. 14 | Clause 8.6 | A.9.3 |
-| Accuracy, Robustness, Cybersecurity | Art. 15 | Clause 8.5 | A.6.2.5, A.4.3 |
+| Technical Documentation | Art. 11 | Clause 7.5, 8.5 | A.6.2.3, A.6.2.7 |
+| Transparency and Provision of Information | Art. 13 | Clause 7.4 | A.8.2, A.8.5 |
+| Human Oversight | Art. 14 | Clause 8.6 | A.9.2 |
+| Accuracy, Robustness, Cybersecurity | Art. 15 | Clause 8.5 | A.6.2.4, A.4.5 |
 | Quality Management System | Art. 17 | Clause 4-10 (entire AIMS) | All Annex A |
-| Fundamental Rights Impact Assessment | Art. 27 | Clause 8.4 | A.5.2, A.5.3 |
-| Post-Market Monitoring | Art. 72 | Clause 9.1 | A.6.4 |
-| Reporting of Serious Incidents | Art. 73 | Clause 10.2 | A.8.5 |
+| Fundamental Rights Impact Assessment | Art. 27 | Clause 8.4 | A.5.2, A.5.3, A.5.4 |
+| Post-Market Monitoring | Art. 72 | Clause 9.1 | A.6.2.6 |
+| Reporting of Serious Incidents | Art. 73 | Clause 10.2 | A.8.3, A.8.4 |
 
 ---
 

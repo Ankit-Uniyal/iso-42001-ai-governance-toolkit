@@ -1,10 +1,10 @@
 # Records Retention Schedule
 ## ISO/IEC 42001:2023 | Clause 7.5 — Template
 
-**Document ID:** AIMS-RETSCHED-001
-**Version:** 1.0
-**Owner:** AI Governance Lead
-**Date:** ___________________________
+**Document ID:** AIMS-RETSCHED-001  
+**Version:** 1.0  
+**Owner:** AI Governance Lead  
+**Date:** ___________________________  
 **Review Cycle:** Annual or when regulatory requirements change
 
 ---

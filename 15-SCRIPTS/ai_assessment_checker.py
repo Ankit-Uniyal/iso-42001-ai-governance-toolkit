@@ -10,15 +10,15 @@ Purpose:
     Supports ISO 42001 Clause 9.1 (Monitoring, Measurement, Analysis and Evaluation).
 
 Usage:
-    python 12-SCRIPTS/ai_assessment_checker.py --input 12-SCRIPTS/sample_ai_systems.csv
-    python 12-SCRIPTS/ai_assessment_checker.py --input 12-SCRIPTS/sample_ai_systems.csv --threshold 180
+    python 15-SCRIPTS/ai_assessment_checker.py --input 15-SCRIPTS/sample_ai_systems.csv
+    python 15-SCRIPTS/ai_assessment_checker.py --input 15-SCRIPTS/sample_ai_systems.csv --threshold 180
 
 Expected CSV Columns:
     system_id, system_name, owner, risk_level, last_assessment_date (YYYY-MM-DD)
 
 Output:
     - Console summary table
-    - Saves a report to: 12-SCRIPTS/reports/assessment_report.txt
+    - Saves a report to: 15-SCRIPTS/reports/assessment_report.txt
 
 Author:  Ankit Uniyal
 Toolkit: ISO/IEC 42001:2023 AI Governance Toolkit
@@ -179,8 +179,8 @@ def main():
     )
     parser.add_argument(
         "--input", "-i",
-        default="12-SCRIPTS/sample_ai_systems.csv",
-        help="Path to the AI systems CSV file (default: 12-SCRIPTS/sample_ai_systems.csv)"
+        default="15-SCRIPTS/sample_ai_systems.csv",
+        help="Path to the AI systems CSV file (default: 15-SCRIPTS/sample_ai_systems.csv)"
     )
     parser.add_argument(
         "--threshold", "-t",
@@ -190,8 +190,8 @@ def main():
     )
     parser.add_argument(
         "--output", "-o",
-        default="12-SCRIPTS/reports/assessment_report.txt",
-        help="Path for the output report file (default: 12-SCRIPTS/reports/assessment_report.txt)"
+        default="15-SCRIPTS/reports/assessment_report.txt",
+        help="Path for the output report file (default: 15-SCRIPTS/reports/assessment_report.txt)"
     )
     args = parser.parse_args()
 

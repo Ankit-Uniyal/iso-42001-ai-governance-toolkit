@@ -19,7 +19,10 @@ If you discover a security issue in this repository — for example, a script th
 
 ### How to Report
 
-Please report security vulnerabilities by emailing: **[your contact email]**
+Please report security vulnerabilities privately using GitHub's security advisory form:
+**https://github.com/Ankit-Uniyal/iso-42001-ai-governance-toolkit/security/advisories/new**
+
+If you cannot use that form, contact the maintainer via the website listed on the repository profile.
 
 Include the following in your report:
 - Description of the potential vulnerability

@@ -214,13 +214,13 @@ Evidence shall be:
 | 8.4.1 | Is there a process for AI System Impact Assessments? | ASIA procedure; ASIA register | C / NC / OBS | |
 | 8.4.2 | Do ASIAs consider societal impacts, fairness, privacy, human rights? | ASIA template; completed ASIAs | C / NC / OBS | |
 | 8.4.3 | Are ASIA results used to inform risk treatment? | Evidence of ASIA → risk treatment linkage | C / NC / OBS | |
-| 8.5.1 | Is there a defined AI system lifecycle process? | Lifecycle procedure | C / NC / OBS | |
-| 8.5.2 | Are data governance controls in place for AI training data? | Data governance documentation; controls evidence | C / NC / OBS | |
-| 8.5.3 | Are AI development processes documented and controlled? | Development procedure; version control evidence | C / NC / OBS | |
-| 8.5.4 | Are AI systems tested and validated before deployment? | Test results; validation records | C / NC / OBS | |
-| 8.5.5 | Are deployment processes controlled with human oversight? | Deployment checklist; oversight documentation | C / NC / OBS | |
-| 8.5.6 | Are deployed AI systems monitored? | Monitoring system; alert configuration; monitoring reports | C / NC / OBS | |
-| 8.5.7 | Is there a decommissioning process? | Decommissioning procedure; any completed records | C / NC / OBS | |
+| 8.1.2 | Is there a defined AI system lifecycle process? | Lifecycle procedure | C / NC / OBS | |
+| 8.1.3 | Are data governance controls in place for AI training data? | Data governance documentation; controls evidence | C / NC / OBS | |
+| 8.1.4 | Are AI development processes documented and controlled? | Development procedure; version control evidence | C / NC / OBS | |
+| 8.1.5 | Are AI systems tested and validated before deployment? | Test results; validation records | C / NC / OBS | |
+| 8.1.6 | Are deployment processes controlled with human oversight? | Deployment checklist; oversight documentation | C / NC / OBS | |
+| 8.1.7 | Are deployed AI systems monitored? | Monitoring system; alert configuration; monitoring reports | C / NC / OBS | |
+| 8.1.8 | Is there a decommissioning process? | Decommissioning procedure; any completed records | C / NC / OBS | |
 
 ### PART F: PERFORMANCE EVALUATION (Clause 9)
 
